@@ -12,3 +12,7 @@ html,body,h1,ul,ol{
 ul,ol{
     list-style: none;
 }
+
+html{
+    font-size: 10px;
+}

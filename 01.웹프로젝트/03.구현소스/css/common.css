@@ -2,3 +2,10 @@
 
 /* 달콤커피 공통 디자인CSS - common.css */
 /* 상단, 하단 */
+
+h1.logo{
+    width: 150px;
+}
+.logo img{
+    width: 150px;
+}
