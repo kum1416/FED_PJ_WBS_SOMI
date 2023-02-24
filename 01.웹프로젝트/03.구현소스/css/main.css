@@ -10,26 +10,31 @@
 body * {
     outline: 1px dashed gray;
 }
+section{
+    height: 100vh;
+}
+
 
 /* 섹션별 배경색 */
-.bg1{
-    background: ;
+.msbx1{
+    background-image: url(../imges/dk_main1.png);
+    background-size: cover;
 }
-.bg2{
-    background: #def1ee;
+.msbx2{
+    background-color: #def1ee;
 }
-.bg3{
+.msbx3{
     background: #fff5d9;
 }
-.bg4{
+.msbx4{
     background: #def1ee;
 }
-.bg5{
+.msbx5{
     background: #def1ee;
 }
-.bg6{
+.msbx6{
     background: #fff5d9;
 }
-.bg7{
+.msbx7{
     background: ;
 }

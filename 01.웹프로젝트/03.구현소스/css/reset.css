@@ -16,3 +16,6 @@ ul,ol{
 html{
     font-size: 10px;
 }
+a{
+    text-decoration: none;
+}
