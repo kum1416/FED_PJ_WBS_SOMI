@@ -8,7 +8,7 @@ html,body,h1,ul,ol{
     padding: 0;
 }
 
-/* 초기화 */
+/* ul, ol 초기화 */
 ul,ol{
     list-style: none;
 }

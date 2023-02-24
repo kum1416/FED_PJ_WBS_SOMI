@@ -5,9 +5,15 @@
 #top{
     background-color: #fff;
 }
+.top{
+    height: 80px;
+}
 h1.logo{
-    height: 150px;
+   height: 75%;
+   padding-top: 18px;
+   outline: 2px dotted red;
+
 }
 .logo img{
-    width: 150px;
+    height: 75%;
 }
