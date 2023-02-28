@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* 페리페라 서브페이지 - sns.css */
+
+/* 공사중표시 */
+body *{
+    /* outline: 2px dashed red; */
+}
+section{
+    padding: 107px;
+}
+
+.content{
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 그리드박스 */
+.titgrid{
+    display: grid;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(3,2fr);
+    grid-column-gap: min(1vw,15px);
+    grid-row-gap: min(1.5vw,15px);
+}
+
+/* 갤러리박스 */
+.titgrid>div{
+    position: relative;
+    width: 322px;
+    height: 356px;
+    aspect-ratio: 300 / 300;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* 그리드 이미지 */
+.titgrid>div>img{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+}
+
+/* 이미지 하단 박스 */
+.titgrid aside{
+    position: absolute;
+    bottom: 0;
+}
+
+/* 인스타그램 아이콘 */
+.aside img{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+}
