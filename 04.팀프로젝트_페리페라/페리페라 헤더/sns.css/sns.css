@@ -109,12 +109,13 @@ section {
 }
 /* 아이콘글자 박스 */
 .titgrid aside {
-    position: absolute;
     display: inline-block;
+    position: absolute;
     top: 305px;
     padding: 14px 15px;
-    font-family: 'Nanum Gothic', sans-serif;
     margin: auto 0;
+
+    font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
 }
 .titgrid>aside>span{
