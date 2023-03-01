@@ -1,57 +1,122 @@
 @charset "utf-8";
 
 /* 페리페라 서브페이지 - sns.css */
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 초기화 */
+html,body,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
 
 /* 공사중표시 */
-body *{
-    /* outline: 2px dashed red; */
+body * {
+    /* outline: 1px dotted red; */
 }
-section{
+
+/* 오른쪽상단 루트박스 */
+.sbx{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1000px;
+    height: 40px;
+    /* 글자설정 */
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+}
+
+/* 타이틀박스 */
+.tbx{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.tbx>div{
+    padding: 0 0 13px;
+    width: 1000px;
+}
+.tbx h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.tbx h3{
+    font-size: 12px;
+    color: #5c5c5c;
+}
+
+/* 핑크 인스타그램 박스 */
+.inbx{
+    margin: 25px 0 55px 0;
+    width: 1000px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bold;
+
+    color: #fff;
+    background-color: #e1425d;
+}
+
+
+section {
+    padding: 107px;
+}
+.sct{
     padding: 107px;
 }
 
-.content{
+.content {
     display: block;
     width: 1000px;
     margin: 0 auto;
+    padding: 0 0 130px;
 }
 
 /* 그리드박스 */
-.titgrid{
+.titgrid {
     display: grid;
     max-width: 1300px;
     margin: 0 auto;
+    cursor: pointer;
 
-    grid-template-columns: repeat(3,2fr);
-    grid-column-gap: min(1vw,15px);
-    grid-row-gap: min(1.5vw,20px);
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-gap: min(1vw, 15px);
+    grid-row-gap: min(1.5vw, 20px);
 }
 
 /* 갤러리박스 */
-.titgrid>div{
+.titgrid > div {
     position: relative;
     width: 322px;
     height: 356px;
     aspect-ratio: 300 / 300;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* 그리드 이미지 */
-.titgrid>div>img{
+.titgrid > div > img {
     position: absolute;
     width: 290px;
     height: 290px;
-}
-
-/* 이미지 하단 박스 */
-.titgrid aside{
-    position: absolute;
-    bottom: 0;
+    left: 15px;
+    top: 15px;
 }
 
 /* 인스타그램 아이콘 */
-.aside img{
+.titgrid.aside.icon {
+
+}
+/* 아이콘글자 박스 */
+.titgrid aside {
     position: absolute;
-    width: 21px;
-    height: 21px;
+    display: inline-block;
+    top: 305px;
+    padding: 14px 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+.titgrid>aside>span{
+    padding:18px 0;
 }
