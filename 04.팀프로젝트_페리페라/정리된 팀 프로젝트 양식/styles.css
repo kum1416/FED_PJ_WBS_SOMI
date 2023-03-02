@@ -80,7 +80,7 @@ section {
     padding: 107px;
 }
 .sct{
-    padding: 107px;
+    padding: 90px;
 }
 
 .content {
@@ -133,8 +133,8 @@ section {
     font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
 }
-.titgrid>aside>span{
-    padding:18px 0;
+.titgrid aside img{
+  vertical-align: -6px;
 }
 
 
