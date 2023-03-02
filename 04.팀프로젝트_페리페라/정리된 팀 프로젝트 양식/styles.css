@@ -38,7 +38,7 @@ body * {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 0 10px;
+    padding: 0 0 15px;
     /* 글자설정 */
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 11px;
@@ -60,6 +60,7 @@ body * {
 .tbx h3{
     font-size: 12px;
     font-weight: 600;
+    letter-spacing: -1px;
     color: #8C8C8C;
 }
 
@@ -120,8 +121,6 @@ section {
     top: 15px;
 }
 
-/* 인스타그램 아이콘 */
-
 /* 아이콘글자 박스 */
 .titgrid aside {
     display: inline-block;
@@ -133,8 +132,14 @@ section {
     font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
 }
+/* 아이콘이미지 박스 */
 .titgrid aside img{
   vertical-align: -6px;
+}
+aside>span{
+  font-size: 12px;
+  font-weight: bold;
+  color: #5C5C5C;
 }
 
 
