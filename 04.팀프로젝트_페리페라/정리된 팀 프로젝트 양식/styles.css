@@ -38,8 +38,8 @@ body * {
   position: absolute;
 }
 .bg1{
-  background: url(./images/images_SNS/color2.jpg) no-repeat 130%;
-  box-shadow: 0 0 15px 2px #f9c1c2, inset 0 0 15px #f9c1c2;;
+  background: url(./images/images_SNS/color2.jpg) no-repeat 500%;
+  box-shadow: 0 0 5px 3px #f9c1c2, inset 0 0 5px #f9c1c2;;
   background-size: contain;
   border-radius: 50%;
   width: 300px;
@@ -49,23 +49,23 @@ body * {
 }
 .bg2{
   background: url(./images/images_SNS/color4.jpg) no-repeat 220%;
-  box-shadow: 0 0 15px 2px #f9a8c9, inset 0 0 15px #f9a8c9;
+  box-shadow: 0 0 5px 1px #f9a8c9, inset 0 0 3px #f9a8c9;
   background-size: contain;
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  top: 165px;
+  top: 190px;
   right: -225px;
 }
 .bg3{
   background: url(./images/images_SNS/color3.jpg) no-repeat 220%;
-  box-shadow: 0 0 15px 2px #f3a4a0, inset 0 0 15px #f3a4a0;
+  box-shadow: 0 0 5px #f3a4a0, inset 0 0 2px #f3a4a0;
   background-size: contain;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  bottom: 50px;
-  left: 10px;
+  width: 150px;
+  height: 150px;
+  top: 23px;
+  right: -236px;
 }
 
 /* 오른쪽상단 루트박스 */
@@ -189,7 +189,7 @@ aside>span{
 
 
 
-
+/* 미디어쿼리 */
 @media screen and (max-width: 1070px) {
 
   .titgrid {
