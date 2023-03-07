@@ -1,13 +1,13 @@
 /* 페리페라 서브페이지 - sns.css */
 /* 웹폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 /* CSS연결 */
 @import url(/css/reset.css);
 @import url(/css/footer.css);
 @import url(/css/header.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /* 메인공통CSS */
@@ -23,188 +23,164 @@ main {
 /***************************************************************/
 
 /* 초기화 */
-html,body,h1,h2,h3{
-    margin: 0;
-    padding: 0;
+html,
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 /* 공사중표시 */
 body * {
-    /* outline: 1px dotted red; */
+  /* outline: 1px dotted red; */
 }
 
-/* 배경 동그라미 */
-.circle{
-  position: absolute;
-}
-.bg1{
-  background: url(./images/images_SNS/color2.jpg) no-repeat 500%;
-  box-shadow: 0 0 5px 3px #f9c1c2, inset 0 0 5px #f9c1c2;;
-  background-size: contain;
+/* 루트동그라미 */
+.circle1 > div {
+  background-image: url(./images/images_SNS/color2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  top: -40px;
-  left: -225px;
 }
-.bg2{
-  background: url(./images/images_SNS/color4.jpg) no-repeat 220%;
-  box-shadow: 0 0 5px 1px #f9a8c9, inset 0 0 3px #f9a8c9;
-  background-size: contain;
+.circle2 > div {
+  background-image: url(./images/images_SNS/color3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  top: 190px;
-  right: -225px;
 }
-.bg3{
-  background: url(./images/images_SNS/color3.jpg) no-repeat 220%;
-  box-shadow: 0 0 5px #f3a4a0, inset 0 0 2px #f3a4a0;
-  background-size: contain;
+.circle3 > div {
+  background-image: url(./images/images_SNS/color4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  top: 23px;
-  right: -236px;
 }
 
 /* 오른쪽상단 루트박스 */
-.sbx{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 0 15px;
-    /* 글자설정 */
-    font-family: 'Nanum Gothic', sans-serif;
+.sbx {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 15px;
+  /* 글자설정 */
+  /* font-family: 'Nanum Gothic', sans-serif;
     font-size: 11px;
-    color: #646464;
+    color: #646464; */
 }
 
 /* 타이틀박스 */
-.tbx{
-    font-family: 'Nanum Gothic', sans-serif;
+.tbx {
+  font-family: "Nanum Gothic", sans-serif;
 }
-.tbx>div{
-    padding: 0 0 13px;
+.tbx > div {
+  padding: 0 0 13px;
 }
-.tbx h2{
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 0 10px;
+.tbx h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
 }
-.tbx h3{
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    color: #8C8C8C;
+.tbx h3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #8c8c8c;
 }
 
 /* 핑크 인스타그램 박스 */
-.inbx{
-    margin: 25px 0 55px 0;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    font-weight: bold;
+.inbx {
+  
+  margin: 25px 0 55px 0;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-weight: bold;
 
-    color: #fff;
-    background-color: #e1425d;
+  color: #fff;
+  background-color: #e1425d;
 }
 
-
-
-.sct{
-    padding-top: 90px;
-
-
+.sct {
+  padding-top: 90px;
 }
 
 .content {
   position: relative;
-    display: block;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 0 130px;
+  display: block;
+  max-width: 1000px;
+  /* width: max(1.5vw,1000); */
+  margin: 0 auto;
+  padding: 0 0 130px;
 }
 
 /* 그리드박스 */
 .titgrid {
-    display: grid;
-    max-width: 1300px;
-    margin: 0 auto;
-    cursor: pointer;
+  display: grid;
+  margin: 0 auto;
+  cursor: pointer;
 
-    justify-items: center;
+  justify-items: center;
 
-    grid-template-columns: repeat(3, 2fr);
-    grid-column-gap: min(1vw, 15px);
-    grid-row-gap: min(1.5vw, 20px);
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: min(1vw, 15px);
+  grid-row-gap: min(1.5vw, 20px);
+}
 
-  }
-  
-  /* 갤러리박스 */
-  .titgrid > div {
-    position: relative;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+/* 갤러리박스 */
+.titgrid > div {
+  position: relative;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 
-    background-color: #fff;
-    aspect-ratio: 300 / 300;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 15px;
 }
 
 /* 그리드 이미지 */
 .titgrid > div > img {
-   margin-top: 1em;
+  margin-top: 1em;
 
-    width: 290px;
-    height: 290px;
-
+  width: 290px;
+  height: max(1.5vh,290px);
 }
 
 /* 아이콘글자 박스 */
 .titgrid aside {
+  padding-top: 14px;
 
-    padding-top:14px;
+  margin: auto 0;
+  margin-bottom: 1em;
 
-    margin: auto 0;
-    margin-bottom: 1em;
-
-    font-family: 'Nanum Gothic', sans-serif;
-    box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+  box-sizing: border-box;
 }
 /* 아이콘이미지 박스 */
-.titgrid aside img{
+.titgrid aside img {
   vertical-align: -6px;
 }
-aside>span{
+aside > span {
   font-size: 12px;
   font-weight: bold;
-  color: #5C5C5C;
+  color: #5c5c5c;
 }
-
-
 
 /* 미디어쿼리 */
 @media screen and (max-width: 1070px) {
-
   .titgrid {
-
     grid-template-columns: 1fr 1fr;
-
-
 
     grid-column-gap: 0;
     grid-row-gap: 0;
-
-
   }
-
-  
 }
-
-
