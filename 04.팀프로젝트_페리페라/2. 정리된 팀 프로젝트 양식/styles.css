@@ -38,29 +38,21 @@ body * {
 }
 
 /* 루트동그라미 */
-.circle1 > div {
-  background-image: url(./images/images_SNS/color2.jpg);
+.sbx h2>div{
   background-repeat: no-repeat;
   background-position: center;
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+.circle1 > div {
+  background-image: url(./images/images_SNS/color2.jpg);
 }
 .circle2 > div {
   background-image: url(./images/images_SNS/color3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
 }
 .circle3 > div {
   background-image: url(./images/images_SNS/color4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
 }
 
 /* 오른쪽상단 루트박스 */
@@ -151,7 +143,7 @@ body * {
 .titgrid > div > img {
   margin-top: 1em;
 
-  width: 290px;
+  width: max(1.5vw,290px);
   height: max(1.5vh,290px);
 }
 
