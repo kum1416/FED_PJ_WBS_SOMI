@@ -128,7 +128,7 @@ body * {
 /* 갤러리박스 */
 .titgrid > div {
   position: relative;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,8 +143,10 @@ body * {
 .titgrid > div > img {
   margin-top: 1em;
 
-  width: max(1.5vw,290px);
-  height: max(1.5vh,290px);
+  width: 100%;
+  height: 100%;
+  /* width: max(1.5vw,290px);
+  height: max(1.5vh,290px); */
 }
 
 /* 아이콘글자 박스 */
