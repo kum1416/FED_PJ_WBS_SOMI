@@ -102,7 +102,6 @@ body * {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 0 130px;
 }
 
 /* 그리드박스 */
@@ -155,8 +154,25 @@ aside > span {
   font-weight: bold;
   color: #5c5c5c;
 }
+/* 하단버튼 */
+.btn{
+  width: max(1vw,180px);
+  height: 5vh;
+  border-radius: 35px;
+  border: 5px outset #f49bba;
+  background-color: #fff;
+  
+  margin: 55px 0 120px 0;
+}
+.btn a{
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 750;
+  color: #f49bba;
+}
 
-/* 미디어쿼리 */
+
+/***** 미디어쿼리 *****/
 @media screen and (max-width: 1070px) {
   .sct {
     padding: 90px 20px 0 0;
@@ -186,9 +202,7 @@ aside > span {
     display: none;
   }
   .sct {
-    padding: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
   /* 타이틀박스 */
   .tbx h2 {
