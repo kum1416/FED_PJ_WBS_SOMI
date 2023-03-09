@@ -170,6 +170,12 @@ aside > span {
   font-weight: 750;
   color: #f49bba;
 }
+.btn:hover{
+  background-color: #f49bba;
+}
+.btn:hover a{
+  color: #fff;
+}
 
 
 /***** 미디어쿼리 *****/
@@ -226,15 +232,15 @@ aside > span {
   .titgrid > div {
     aspect-ratio: 1 / 1;
     padding: 0;
+    border: none;
   }
   /* 그리드 이미지 */
   .titgrid > div > img {
     height: 100%;
     margin: 0;
   }
-}
-@media screen and (max-width: 375px) {
-.btn{
-  width: max(1vw,130px);
-}
+  /* 하단버튼 */
+  .btn{
+    width: max(1vw,130px);
+  }
 }
