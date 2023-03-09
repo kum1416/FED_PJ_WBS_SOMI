@@ -233,3 +233,8 @@ aside > span {
     margin: 0;
   }
 }
+@media screen and (max-width: 375px) {
+.btn{
+  width: max(1vw,130px);
+}
+}
