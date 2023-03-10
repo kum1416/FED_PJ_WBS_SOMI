@@ -105,10 +105,8 @@ body * {
 /* 그리드박스 */
 .titgrid {
   display: grid;
-  /* max-width: 1300px; */
   margin: 0 auto;
 
-  /* justify-items: center; */
   grid-template-columns: repeat(3, 2fr);
   grid-column-gap: min(1vw, 15px);
   grid-row-gap: min(1.5vw, 20px);
