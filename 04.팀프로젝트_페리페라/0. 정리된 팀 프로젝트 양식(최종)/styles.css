@@ -178,6 +178,10 @@ aside > span {
 
 /***** 미디어쿼리 *****/
 @media screen and (max-width: 1070px) {
+  main {
+    width: 100%;
+    min-height: 0;
+  }
   .sct {
     padding: 90px 20px 0 0;
   }
@@ -201,6 +205,7 @@ aside > span {
     height: 94%;
   }
 }
+
 @media screen and (max-width: 765px) {
   .sbx {
     display: none;
@@ -239,7 +244,12 @@ aside > span {
   }
   /* 하단버튼 */
   .btn{
-    width: max(1vw,130px);
+    width: max(1vw,120px);
+    height: 4vh;
+    margin: 25px 0 50px 0;
+  }
+  .btn a{
+    font-size: min(3vw,16px);
   }
 }
 
