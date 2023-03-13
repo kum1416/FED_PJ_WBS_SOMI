@@ -90,7 +90,7 @@
   vertical-align: middle;
 }
 .sidebx li + li {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 /* .sidebx>ul>li:first-child>a{
     font-size: 2rem;
