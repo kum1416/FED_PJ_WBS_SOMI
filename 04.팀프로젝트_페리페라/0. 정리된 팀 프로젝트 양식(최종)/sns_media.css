@@ -1,4 +1,6 @@
-/***** SNS 미디어쿼리 *****/
+@charset "UTF-8";
+/* 서브페이지 SNS 미디어쿼리 CSS - sns_media.css */
+
 @media screen and (max-width: 1070px) {
   main {
     width: 100%;
