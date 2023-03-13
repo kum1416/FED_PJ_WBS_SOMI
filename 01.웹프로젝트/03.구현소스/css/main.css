@@ -8,7 +8,7 @@
 
 /* 공사중 표시 */
 body * {
-    outline: 1px dashed gray;
+    /* outline: 1px dashed gray; */
 }
 section{
     height: 100vh;
