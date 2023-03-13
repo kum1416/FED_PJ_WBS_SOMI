@@ -243,7 +243,7 @@ aside > span {
   /* 하단버튼 */
   .btn{
     width: max(1vw,120px);
-    height: 4vh;
+    height: 5vh;
     margin: 25px 0 50px 0;
   }
   .btn a{
