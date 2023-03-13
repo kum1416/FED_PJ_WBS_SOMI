@@ -53,12 +53,31 @@
 /* 1-3.상단사이드박스 */
 .sidebx {
   position: relative;
+  display: flex;
   margin-right: 50px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebx>div{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    padding: 0 50px;
+    margin-right: 25px;
+    line-height: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+
+    border: 3px solid #f52334;
+    border-radius: 30px;
+
+    color: #f52334;
+
 }
 .sidebx > ul {
   display: flex;
   top: 20%;
-  height: 80px;
+  height: 40px;
 }
 
 .sidebx > ul > li {
@@ -73,13 +92,12 @@
 .sidebx li + li {
   margin-left: 25px;
 }
-.sidebx>ul>li:nth-child(1)>a{
+/* .sidebx>ul>li:first-child>a{
+    font-size: 2rem;
+} */
 
-}
-
-
-.sidebx>ul>li:nth-child(2)>a,
-.sidebx>ul>li:nth-child(3)>a{
-    font-size: 1.2rem;
-    font-weight: bold;
+.sidebx > ul > li:nth-child(2) > a,
+.sidebx > ul > li:nth-child(3) > a {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
