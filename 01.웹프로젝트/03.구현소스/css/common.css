@@ -13,8 +13,11 @@
 .top {
   display: flex;
   justify-content: space-between;
-  height: 80px;
   white-space: nowrap;
+
+  max-width: 1660px;
+  height: 80px;
+  margin: 0 auto;
 }
 
 /* 1-1.달콤커피 로고 */
@@ -24,7 +27,7 @@
 
   max-width: 175px;
   height: 0;
-  margin-left: 80px;
+  margin-left: 20px;
 }
 .logo img {
   max-width: 100%;
@@ -38,12 +41,12 @@
 .gnb > ul {
   display: flex;
   /* flex-wrap: wrap; */
-  gap: 0 20px;
+  gap: 0 30px;
   margin-top: 20px;
 
   transform: translateY(25%);
   /* height: 80px; */
-  margin-right: 120px;
+  margin-right: 180px;
 }
 .smenu {
   height: 0;
@@ -66,10 +69,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 /* 가맹점 개설 안내 */
-.sidebx>div{
+.sidebx>div:first-child{
     height: 100%;
     padding: 0 45px;
-    margin-right: 25px;
+    /* margin-right: 25px; */
     line-height: 48px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -79,30 +82,29 @@
 
     color: #f52334;
 }
-.sidebx > ul {
-  display: flex;
-  top: 20%;
-  line-height: 30px;
-}
-
-.sidebx > ul > li> a {
+.app a {
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   width: 150px;
 }
-.sidebx > ul > li img {
+.app img {
   height: 20px;
   margin-right: 10px;
   vertical-align: -6px;
   padding-left: 15px;
 }
-.sidebx li + li {
-  margin-left: 10px;
-}
-
-.sidebx > ul > li:nth-child(1) > a,
-.sidebx > ul > li:nth-child(2) > a {
+.app {
   font-size: 1.1rem;
   font-weight: bold;
+  margin-left: 10px;
+  line-height: 30px;
+  /* 위치이동 */
+  transform: translateY(20%);
+}
+.sidebx>div:last-child img{
+  width: 3.5vw;
+  height: 6vh;
+  /* 위치이동 */
+  transform: translateY(-7%);
 }
