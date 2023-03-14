@@ -14,6 +14,12 @@
         /* width: 579px; */
         width: min(100vw,400px);
     }
-
-
+    .contents_wrap {
+        padding: 20px 0 0;
+        text-align: center;
+    }
+    /* .tit_cat hgroup h2{
+    line-height: 40px;
+    font-size: 18px;
+    } */
 }
