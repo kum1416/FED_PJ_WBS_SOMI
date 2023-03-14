@@ -11,30 +11,83 @@ body * {
     /* outline: 1px dashed gray; */
 }
 section{
+    width: 100vw;
     height: 100vh;
 }
 
 
-/* 섹션별 배경색 */
+/*************************** 메인섹션1페이지 ***************************/
 .msbx1{
-    background-image: url(../imges/dk_main1.png);
-    background-size: cover;
+    background: url(../imges/dk_main1.png) no-repeat center/cover;
 }
+/* 하단 미니배너 박스 */
+.minibx{
+    position: absolute;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    bottom: 5%;
+    left: 10vw;   
+}
+.minibx li{
+    
+}
+.mbx{
+    max-width: 500px;
+    width: 11vw;
+    height: 7vw;
+    /* 🍅Q.질문
+    max-width: 500px;
+    width: 11vw; 일때와
+    height: 7vw;
+
+    width: max(11vw,500px); 일때의 차이점
+    height: 7vw;
+    */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************** 메인섹션2페이지 ***************************/
 .msbx2{
     background-color: #def1ee;
 }
+
+
+/*************************** 메인섹션3페이지 ***************************/
 .msbx3{
     background: #fff5d9;
 }
+
+
+/*************************** 메인섹션4페이지 ***************************/
 .msbx4{
     background: #def1ee;
 }
+
+
+/*************************** 메인섹션5페이지 ***************************/
 .msbx5{
     background: #def1ee;
 }
+
+
+/*************************** 메인섹션6페이지 ***************************/
 .msbx6{
     background: #fff5d9;
 }
+
+
+/*************************** 메인섹션7페이지 ***************************/
 .msbx7{
     background: #fff;
 }
