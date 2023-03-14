@@ -209,7 +209,8 @@ Menu
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
-    width: 40rem;
+    width: 36rem; /* 🥝수정 */
+    /* width: 40rem; */
   }
   .photo {
     height: 175px;
@@ -276,7 +277,8 @@ Menu
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; 주석처리 */
+    justify-content: normal; /* 🥝추가 */
   }
   .photo {
     height: 150px;
@@ -298,5 +300,12 @@ Menu
 
 
   
+}
+
+@media screen and (min-width: 1320px) { /* 🥝추가 */
+  .section-center {
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+  }
 }
 

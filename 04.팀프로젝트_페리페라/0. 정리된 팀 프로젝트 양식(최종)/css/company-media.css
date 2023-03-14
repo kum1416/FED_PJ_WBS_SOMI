@@ -9,6 +9,14 @@
 
 
 }
+@media screen and (max-width: 840px) {
+    hgroup{
+        text-align: center;
+    }
+    .contents {
+        width: min(100vw,650px);
+    }
+}
 @media screen and (max-width: 700px) {
     .contents {
         /* width: 579px; */
