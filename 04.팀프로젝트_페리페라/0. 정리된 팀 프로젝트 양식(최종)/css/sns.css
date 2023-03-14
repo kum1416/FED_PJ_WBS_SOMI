@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* 서브페이지 SNS CSS - sns.css */
 
-@import url(./css/reset.css);
-@import url(./css/footer.css); 
-@import url(./css/footer-media.css); 
-@import url(./css/main.css);
-@import url(./css/main-media.css);
-@import url(./css/header.css);
+@import url(./reset.css);
+@import url(./footer.css); 
+@import url(./footer-media.css); 
+@import url(./main.css);
+@import url(./main-media.css);
+@import url(./header.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
@@ -23,7 +23,6 @@ main {
 /* 초기화 */
 html,
 body,
-h1,
 h2,
 h3 {
   margin: 0;

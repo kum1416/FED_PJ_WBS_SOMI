@@ -40,6 +40,8 @@ main {
   font-weight: 600;
   line-height: 34px;
   color: #1e1e1e;
+
+  letter-spacing: -0.05em;
 }
 
 .media_head>p{
@@ -47,6 +49,8 @@ main {
   font-weight: 600;
   line-height: 20px;
   color: #8c8c8c;
+
+  letter-spacing: -0.05em;
 }
 
 .media_Btns{
