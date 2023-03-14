@@ -1,24 +1,6 @@
 
 
 
-
-main {
-  margin-top: 0;
-  min-height: 100vh;
-  width: 100vw;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-
-
-body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, pre, menu {
-  margin: 0;
-  padding: 0;
-}
-/* 
-html,body{min-width:1200px;height:auto;min-height:100%;overflow:auto;} */
-
 .wrapper{overflow:hidden;}
 
 .contents_wrap{padding:107px 0 0;}
@@ -76,18 +58,6 @@ h2 {
     height: 100%;
     text-align: center;
 }
-body {
-    background: #fff;
-    min-width: 320px;
-    -webkit-text-size-adjust: none;
-    -webkit-text-stroke-width: 0.1px;
-    font-family: 'Nanum Gothic','Droid Sans','Apple-Gothic',sans-serif;
-    font-size: 12px;
-    line-height: 1.66666em;
-    color: #5c5c5c;
-    letter-spacing: -0.05em;
-    -webkit-letter-spacing: -0.05em;
-}
 
 img {
   border: 0;
@@ -107,19 +77,10 @@ img, hr {
 }
 
 
-body, p, div, ul, li, dl, dt, dd, ol, fieldset, textarea, input, select, table, th, td, address, cite, h1, h2, h3, h4, h5, h6, strong, b, label, button {
-  font-family: 'Noto Sans KR', sans-serif;
-}
 .aboutus .way_top {
   padding: 50px 0 100px;
   background: #99877b;
   text-align: center;
-}
-body {
-  color: #555;
-  font-size: 13px;
-  line-height: 1.2;
-  letter-spacing: normal;
 }
 
 /* media="screen and (min-width: 768px)" */
@@ -144,7 +105,6 @@ h1, h2, h3, h4, h5, h6, b, strong {
 strong {
     font-weight: bold;
 }
-/* media="screen and (min-width: 768px)" */
 
 .about .company_top .bg p {
     padding-top: 35px;
