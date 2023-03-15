@@ -89,12 +89,11 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   width: 150px;
+  text-align: center;
 }
 .app img {
   height: 20px;
-  margin-right: 10px;
   vertical-align: -6px;
-  padding-left: 15px;
 }
 .app {
   font-size: 1.1rem;
