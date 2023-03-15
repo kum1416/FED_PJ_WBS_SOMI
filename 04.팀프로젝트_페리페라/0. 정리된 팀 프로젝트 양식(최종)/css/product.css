@@ -128,6 +128,7 @@ Menu
 .productTitle{
   font-size: 1.5rem;
   font-weight: 600;
+  line-height: 34px;
 }
 
 .prodocutP{
@@ -210,6 +211,7 @@ Menu
 
 /******************* 미디어쿼리 *******************/
 @media screen and (min-width: 768px) {
+
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
@@ -263,11 +265,13 @@ Menu
     height: 70px;
   }
 
+
 }
 
 
 
 @media screen and (min-width: 1200px) {
+  
   .section-center {
     width: 95vw;
     /* grid-template-columns: 1fr 1fr; 주석처리 */
@@ -290,6 +294,11 @@ Menu
   main{
     margin-top: 100px;
   }
+  /* 🥝상하패딩 조정 */
+  .menu{
+    padding-top: 0;
+  }
+
   
 }
 

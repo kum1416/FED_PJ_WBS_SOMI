@@ -8,10 +8,10 @@
 @import url(./main-media.css);
 @import url(./header.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
 main {
   min-height: 100vh;
   width: 100vw;
@@ -70,9 +70,8 @@ h3 { /* 🧅h1 태그 없앰->푸터 로고 마진 덮어쓰기돼서 중앙으�
 .tbx h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px;
   color: #1e1e1e;
+  /* margin: 0 0 10px; */
 }
 .tbx h3 {
   font-size: 12px;

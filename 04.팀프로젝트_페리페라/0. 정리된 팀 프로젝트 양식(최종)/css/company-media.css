@@ -30,4 +30,10 @@
     line-height: 40px;
     font-size: 18px;
     } */
+    hgroup>h3{
+        display: none;
+    }
+    .tit_cat {
+        margin-bottom: 20px;
+    }
 }
