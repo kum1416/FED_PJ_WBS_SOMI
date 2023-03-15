@@ -17,17 +17,10 @@ main{
 }
 .tit_wrap h2{
     display: inline-block;
-    font-size: 24px;
-    
-    font-weight: 700;
-    color: #1e1e1e;
+    font-size: 40px;
 }
 .tit_wrap h5{
     display: inline-block;
-
-    line-height: 20px;
-    font-size: 12px;
-    color: #8c8c8c;
 }
 .table_wrap{
     margin: 0 auto;
@@ -67,7 +60,6 @@ main{
     border-collapse: separate;
     padding-bottom: 20px;
     line-height: 1.66666em;
-    font-size: 12px;
 }
 .news th{
     border-top: 1.5px solid #000;
@@ -94,15 +86,6 @@ main{
     text-align: left;
     font-weight: 600;
 }
-/* 🥝추가 */
-.news .tit a{
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-}
-
 .page{
     margin-bottom: 150px;
 }
