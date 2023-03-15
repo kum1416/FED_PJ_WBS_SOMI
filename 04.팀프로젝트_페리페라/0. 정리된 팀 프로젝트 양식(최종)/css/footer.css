@@ -7,8 +7,8 @@ html,body,h1,h2,h3,h4,h5,h6,p, section,div, header, main, footer, address,dl,dt,
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
 body{
-    font-size: 12px;
-    line-height: 1.6666em;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #5c5c5c;
     font-family: "Nanum Gothic";
     /* letter-spacing: -0.05em; */
