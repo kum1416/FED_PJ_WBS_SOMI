@@ -82,6 +82,11 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+.title>p{
+  line-height: 20px;
+  font-size: 12px;
+  color: #8c8c8c;
+}
 
 /*  global classes */
 
@@ -298,14 +303,20 @@ Menu
   .menu{
     padding-top: 0;
   }
-
   
 }
 
-@media screen and (min-width: 1320px) { /* 🥝추가 */
+@media screen and (min-width: 1395px) { /* 🥝추가 */
   .section-center {
     grid-template-columns: repeat(2,1fr);
     justify-content: space-evenly;
   }
+
+}
+@media screen and (min-width: 1500px) { /* 🥝추가 */
+  .menu {
+    width: 72vw;
+  }
+
 }
 
