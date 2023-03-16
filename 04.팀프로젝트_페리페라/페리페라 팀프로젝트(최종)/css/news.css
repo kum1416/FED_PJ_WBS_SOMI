@@ -13,7 +13,7 @@ main{
     flex-direction: column;
     align-items: flex-start;
     padding-top: 120px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
 }
 .tit_wrap h2{
     display: inline-block;
