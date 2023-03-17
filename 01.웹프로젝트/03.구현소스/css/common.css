@@ -111,6 +111,7 @@
 
   border: 3px solid #f52334;
   border-radius: 30px;
+  box-sizing: border-box;
 
   color: #f52334;
 }
@@ -140,8 +141,7 @@
   vertical-align: -6px;
 }
 .sidebx > div:last-child img {
-  width: 3.5vw;
   height: 6vh;
   /* 위치이동 */
-  transform: translateY(-7%);
+  transform: translateY(-15%);
 }

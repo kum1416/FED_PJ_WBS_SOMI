@@ -2,7 +2,13 @@
 /* 웹폰트,공통 CSS - core.css */
 
 /* 웹폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito+Sans:wght@200;300;400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito+Sans:wght@200;300;400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
 
 /* 
 1. 섹션별 큰제목

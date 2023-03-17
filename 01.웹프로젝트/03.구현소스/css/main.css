@@ -6,9 +6,13 @@
 @import url(./core.css);
 @import url(./reset.css);
 
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+
 /* 공사중 표시 */
 body * {
-    /* outline: 1px dashed gray; */
+    outline: 1px dashed gray;
 }
 section{
     width: 100vw;
@@ -29,13 +33,15 @@ section{
     bottom: 5%;
     left: 10vw;   
 }
-.minibx li{
+.mbx li:nth-child(1){
+    background: url();
     
 }
 .mbx{
     max-width: 500px;
     width: 11vw;
     height: 7vw;
+    border: 2px solid #000;
     border-radius: 15px;
     /* 🍅Q.질문
     max-width: 500px;
@@ -46,6 +52,63 @@ section{
     height: 7vw;
     */
 }
+
+/*************************** 메인섹션2페이지 ***************************/
+/* 상위박스 */
+.msbx2{
+    display: flex;
+
+    /* height: 100%; */
+    padding-top: 130px;
+}
+.bg2{
+    flex: 1;
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+
+/* 2-1. 스티키페이지*/
+/* 스티키할 이미지 */
+.stk1{
+    position: sticky;
+    top: 0;
+    /* 부모박스 범위 안에서
+    fixed처럼 상단에 고정했다가
+    범위가 끝나면 부모박스와 함께
+    위로 static하게 올라감! */
+}
+/* 스티키 1페이지 */
+#stk img {
+    width: 80%;
+    height: auto;
+    /* object-fit: contain; */
+    margin-bottom: 50px;
+}
+#stk>h4{
+    font-family: 'Joti One', cursive;
+    font-size: 40px;
+    line-height: 60px;
+    color: #3C2121;
+}
+#stk>h5{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    color: #F43800;
+    margin-top: 10px;
+}
+#stk>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+/* 스티키2페이지 */
+.stk{
+    height: auto;
+}
+
+
 
 
 
