@@ -11,40 +11,40 @@
 
 /* 공사중 표시 */
 body * {
-  outline: 1px dashed gray;
+    outline: 1px dashed gray;
 }
 section {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 /* 변수셋팅 */
 :root {
-  --bs1: 400px;
+    --bs1: 280px;
 }
 
 /*************************** 메인섹션1페이지 ***************************/
 .msbx1 {
-  background: url(../imges/dk_main1.png) no-repeat center/cover;
+    background: url(../imges/dk_main1.png) no-repeat center/cover;
 }
 /* 하단 미니배너 박스 */
 .minibx {
-  position: absolute;
-  /* margin: 0;
+    position: absolute;
+    /* margin: 0;
     padding: 0; */
-  display: flex;
-  bottom: 5%;
-  left: 10vw;
+    display: flex;
+    bottom: 5%;
+    left: 10vw;
 }
 .mbx li:nth-child(1) {
-  background: url();
+    background: url();
 }
 .mbx {
-  max-width: 500px;
-  width: 11vw;
-  height: 7vw;
-  border: 2px solid #000;
-  border-radius: 15px;
-  /* 🍅Q.질문
+    max-width: 500px;
+    width: 11vw;
+    height: 7vw;
+    border: 2px solid #000;
+    border-radius: 15px;
+    /* 🍅Q.질문
     max-width: 500px;
     width: 11vw; 일때와
     height: 7vw;
@@ -57,113 +57,176 @@ section {
 /*************************** 메인섹션2페이지 ***************************/
 /* 상위 섹션박스 */
 .msbx2 {
-  display: flex;
-  height: 100vh;
-  /* padding-top: 130px; */
+    display: flex;
+    height: 100vh;
+    /* padding-top: 130px; */
 }
 /* 플렉스박스 */
 .msbx2 .fbx {
-  flex: 1;
-  text-align: center;
-  /* width: 50%;
-    height: auto; */
+    flex: 1;
+    /* width: 50%;
+  height: auto; */
 }
 .fbx img {
-  /* #stk>img{ */
-  width: 85%;
-  margin-bottom: 50px;
+    /* #stk>img{ */
+    width: 70%;
+    margin-bottom: 30px;
 }
 
 /* 스티키 페이지 */
 #stk {
-  position: sticky;
-  top: 0;
-  padding: 50px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 50px 0;
 }
 
 /*********** 메인2 내용- 첫번째(스티키) ***********/
 #stk > h4 {
-  font-family: "Joti One", cursive;
-  font-size: 40px;
-  line-height: 60px;
-  color: #3c2121;
+    font-family: "Joti One", cursive;
+    font-size: 40px;
+    line-height: 70px;
+    color: #3c2121;
 }
 #stk > p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 #stk > h5 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  line-height: 45px;
-  color: #f43800;
-  margin-top: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #f43800;
+    margin-top: 15px;
 }
 
 /*********** 메인2 내용- 두번째 ***********/
 #bmu {
-  height: auto;
+    height: auto;
+}
+/* .bmenubgi2{
+  position: absolute;
+} */
+.bmc {
+    background-color: #fff;
 }
 
-.movetext{
+.movetext {
     position: relative;
-    top: 120px;
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
+    text-align: center;
     font-weight: 900;
-    margin-bottom: 50px;
-    color: #F43800;
+    margin: 120px 0 80px 0;
+    color: #f43800;
 }
 
 /* 그리드박스 */
 .grid {
-  display: grid;
-  /* 가로방향 12그리드 셋팅 */
-  grid-template-columns: repeat(12, 1fr);
-  /* 세로방향 높이값 */
-  grid-template-rows: var(--bs1) var(--bs1) var(--bs1) var(--bs1);
-  /* 상하갭 */
-  grid-row-gap: 5px;
-  /* 좌우갭 */
-  grid-column-gap: 5px;
+    display: grid;
+    /* 가로방향 12그리드 셋팅 */
+    grid-template-columns: repeat(12, 1fr);
+    /* 세로방향 높이값 */
+    grid-template-rows: var(--bs1) var(--bs1) var(--bs1) var(--bs1);
+    /* 상하갭 */
+    grid-row-gap: 80px;
+    /* 좌우갭 */
+    grid-column-gap: 5px;
 
-  padding: 0 50px;
+    padding: 0 100px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 }
-.grid .tit1{
+.grid .tit1 {
     font-size: 1.5rem;
-    color: #3C2121;
 }
+/* 베스트메뉴 이미지 */
+.grid .bimg1{
+  background: url(../imges/bmenu1_Strawberry\ Latte.png) no-repeat center/cover;
+  width: 65%;
+  border-radius: 50%;
+  margin-left: 65px;
+}
+.grid .bimg2{
+  background: url(../imges/bmenu2_Strawberry\ Yogurt\ Blended.png) no-repeat center/cover;
+  width: 75%;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+.grid .bimg3{
+  background: url(../imges/bmenu3_Honey\ Grapefruit_ice.jpg) no-repeat center/cover;
+  width: 65%;
+  border-radius: 50%;
+  margin-left: 65px;
+}
+.grid .bimg4{
+  background: url(../imges/bmenu4_Strawberry\ Refreshing\ Ade.png) no-repeat center/cover;
+  width: 75%;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+/* 베스트 메뉴 내용설정 */
+.bname {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: #3c2121;
+    margin-top: 40px;
+}
+.bsub {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.2vw;
+    color: #f43800;
+}
+.tit1 > p,
+.tit3 > p {
+    font-size: 0.75vw;
+    color: #666666;
+    margin-top: 25px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    /* font-weight: 300; */
+}
+.tit2 > p,
+.tit4 > p {
+    font-size: 0.75vw;
+    color: #666666;
+    margin-top: 25px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+}
+
 /* 그리드 영역 나누기 */
-.tit1{
+.tit1 {
     grid-column: 1/6;
 }
-.bimg1{
+.bimg1 {
     grid-column: 6/13;
 }
 
-.bimg2{
+.bimg2 {
     grid-column: 1/7;
 }
-.tit2{
+.tit2 {
     grid-column: 7/13;
+    text-align: end;
 }
 
-.tit3{
+.tit3 {
     grid-column: 1/6;
 }
-.bimg3{
+.bimg3 {
     grid-column: 6/13;
 }
 
-.bimg4{
+.bimg4 {
     grid-column: 1/7;
 }
-.tit4{
+.tit4 {
     grid-column: 7/13;
+    text-align: end;
 }
 
 /* .bg1{
@@ -181,30 +244,30 @@ section {
 
 /*************************** 메인섹션2페이지 ***************************/
 .msbx2 {
-  background-color: #def1ee;
+    background-color: #def1ee;
 }
 
 /*************************** 메인섹션3페이지 ***************************/
 .msbx3 {
-  background: #fff5d9;
+    background: #fff5d9;
 }
 
 /*************************** 메인섹션4페이지 ***************************/
 .msbx4 {
-  background: #def1ee;
+    background: #def1ee;
 }
 
 /*************************** 메인섹션5페이지 ***************************/
 .msbx5 {
-  background: #def1ee;
+    background: #def1ee;
 }
 
 /*************************** 메인섹션6페이지 ***************************/
 .msbx6 {
-  background: #fff5d9;
+    background: #fff5d9;
 }
 
 /*************************** 메인섹션7페이지 ***************************/
 .msbx7 {
-  background: #fff;
+    background: #fff;
 }
