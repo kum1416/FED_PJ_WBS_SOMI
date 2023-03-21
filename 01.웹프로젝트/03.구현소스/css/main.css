@@ -57,55 +57,47 @@ section{
 /* 상위박스 */
 .msbx2{
     display: flex;
-
-    /* height: 100%; */
-    padding-top: 130px;
+    height: 100vh;
+    /* padding-top: 130px; */
 }
-.bg2{
+/* 플렉스박스 */
+.msbx2 .fbx{
     flex: 1;
     text-align: center;
-    width: 50%;
-    height: auto;
+    /* width: 50%;
+    height: auto; */
 }
-
-/* 2-1. 스티키페이지*/
-/* 스티키할 이미지 */
-.stk1{
-    position: sticky;
-    top: 0;
-    /* 부모박스 범위 안에서
-    fixed처럼 상단에 고정했다가
-    범위가 끝나면 부모박스와 함께
-    위로 static하게 올라감! */
-}
-/* 스티키 1페이지 */
-#stk img {
-    width: 80%;
-    height: auto;
-    /* object-fit: contain; */
+.fbx img{
+    width: 85%;
     margin-bottom: 50px;
 }
+
+/* 스티키 페이지 */
+#stk{
+    position: sticky;
+    top: 0;
+    padding: 50px 0;
+}
+
+/* 메인2 - 첫번째 */
 #stk>h4{
     font-family: 'Joti One', cursive;
     font-size: 40px;
     line-height: 60px;
     color: #3C2121;
 }
+#stk>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
 #stk>h5{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     line-height: 45px;
     color: #F43800;
     margin-top: 10px;
-}
-#stk>p{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-}
-/* 스티키2페이지 */
-.stk{
-    height: auto;
 }
 
 
