@@ -105,41 +105,44 @@
 .sidebx > div:first-child {
   font-family: "Montserrat", sans-serif;
   height: 100%;
-  padding: 0 45px;
-  line-height: 48px;
+  padding: 0 30px;
+  line-height: 39px;
   font-size: 1.5rem;
   font-weight: 600;
 
-  border: 3px solid #f52334;
+  border: 3px solid #F43800;
   border-radius: 30px;
   box-sizing: border-box;
 
-  color: #f52334;
+  color: #F43800;
 }
 .sidebx > div:hover:first-child {
-  background-color: #f52334;
+  background-color: #F43800;
   color: #fff;
-  border: 1px solid #fff;
+  /* outline: 3px solid #fff; */
+  border: 3px solid #fff;
+  /* 🍅 Q.질문
+  가맹점 개설안내 보더 사이즈를 조절하면 글자 위치가 변경돼서 안맞는다..! */
   box-shadow: 0 1px 3px #6e6e6e;
 }
 .app {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-left: 10px;
-  line-height: 30px;
   /* 위치이동 */
-  transform: translateY(20%);
+  transform: translateY(3%);
 }
 .app a {
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 25px;
-  width: 150px;
+  width: 145px;
   text-align: center;
+  line-height: 40px;
 }
 .app img {
   height: 20px;
-  vertical-align: -6px;
+  vertical-align: -5px;
 }
 .sidebx > div:last-child img {
   height: 6vh;
