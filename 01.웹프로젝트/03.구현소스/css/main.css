@@ -304,6 +304,11 @@ section {
     border-top: 2.5px solid #3c2121;
     border-bottom: 2.5px solid #3c2121;
     padding: 25px 30px;
+
+    transition: all 0.4s;
+}
+.newsbx:hover{
+    background: #c8e6e2;
 }
 
 .newsimg>img{
