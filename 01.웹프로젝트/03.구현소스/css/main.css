@@ -104,11 +104,44 @@ section {
 
 /*********** 메인2 내용- 두번째 ***********/
 #bmu {
+    position: relative;
+
     height: auto;
 }
-/* .bmenubgi2{
+/* 베스트메뉴 배경이미지 */
+.bmenubgi1{
+    position: absolute;
+    width: 15vw;
+    height: 30vh;
+    top: 40px;
+    right: -25px;
+    border-radius: 50%;
+    background-color: #DEF1EE;
+}
+.bmenubgi2{
   position: absolute;
-} */
+  width: 23vw;
+  left: -42px;
+  top: 423px;
+}
+.bmenubgi3{
+    position: absolute;
+    width: 15vw;
+    right: -48px;
+    bottom: 500px;
+}
+/* 🍅Q.질문
+이미지(박스)가 글자뒤로 보이게 하고 싶은데 어떻게 하면 될까요? */
+.bmenubgi4{
+    position: absolute;
+    width: 15vw;
+    height: 30vh;
+    left: 215px;
+    bottom: 274px;
+    border-radius: 50%;
+    border: 8px solid #DEF1EE;
+}
+
 .bmc {
     background-color: #fff;
 }
@@ -148,24 +181,28 @@ section {
   width: 65%;
   border-radius: 50%;
   margin-left: 65px;
+  transform: scale(1.2);
 }
 .grid .bimg2{
   background: url(../imges/bmenu2_Strawberry\ Yogurt\ Blended.png) no-repeat center/cover;
   width: 75%;
   border-radius: 50%;
   margin-left: 50px;
+  transform: scale(1.2);
 }
 .grid .bimg3{
   background: url(../imges/bmenu3_Honey\ Grapefruit_ice.jpg) no-repeat center/cover;
   width: 65%;
   border-radius: 50%;
   margin-left: 65px;
+  transform: scale(1.2);
 }
 .grid .bimg4{
   background: url(../imges/bmenu4_Strawberry\ Refreshing\ Ade.png) no-repeat center/cover;
   width: 75%;
   border-radius: 50%;
   margin-left: 50px;
+  transform: scale(1.2);
 }
 /* 베스트 메뉴 내용설정 */
 .bname {
