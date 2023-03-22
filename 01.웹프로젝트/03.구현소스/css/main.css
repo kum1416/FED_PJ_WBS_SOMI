@@ -11,7 +11,7 @@
 
 /* 공사중 표시 */
 body * {
-  /* outline: 1px dashed gray; */
+  outline: 1px dashed gray;
 }
 section {
   width: 100vw;
@@ -293,6 +293,7 @@ section {
 /*************************** 메인섹션5페이지 ***************************/
 .msbx5 {
   background: #def1ee;
+  position: relative;
 }
 
 /* 🍅Q.질문
@@ -342,6 +343,29 @@ section {
     color: #444444;
     line-height: 35px;
 }
+
+/* 하단 애니메이션 메뉴 */
+.animenu{
+    position: absolute;
+    bottom: 50px;
+    width: 100vw;
+    height: 228px;
+
+    background: url(../imges/5dk_menuani.png) repeat-x;
+    background-size: auto 100%;
+
+    /* 애니메이션: 이시이지반방마 */
+    animation: animenu 4s linear infinite;
+}
+
+
+/* 스크린배경이동 키프레임 */
+@keyframes animenu {
+    to{
+        background-position: 192px 0;
+    }
+}
+/* 키프레임 */
 
 /*************************** 메인섹션6페이지 ***************************/
 .msbx6 {
