@@ -105,6 +105,7 @@ section {
 /*********** 메인2 내용- 두번째 ***********/
 #bmu {
     position: relative;
+    /* 부모자격-베스트메뉴 배경이미지 */
 
     height: auto;
 }
