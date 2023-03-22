@@ -349,6 +349,8 @@ section {
     line-height: 35px;
 }
 
+/* 🍅Q.질문
+ 애니메이션 튀는거 조절은 어떻게 해야하나요?*/
 /* 하단 애니메이션 메뉴 */
 .animenu{
     position: absolute;
@@ -360,14 +362,13 @@ section {
     background-size: auto 100%;
 
     /* 애니메이션: 이시이지반방마 */
-    animation: animenu 4s linear infinite;
+    animation: animenu 10s linear infinite;
 }
-
 
 /* 스크린배경이동 키프레임 */
 @keyframes animenu {
     to{
-        background-position: 192px 0;
+        background-position: 1200px 0;
     }
 }
 /* 키프레임 */
