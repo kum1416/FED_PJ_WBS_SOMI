@@ -438,6 +438,25 @@ section {
     height: 80%;
     transform: translateY(12%);
 }
+/* 비디오박스 */
+.vidcont{
+    /* right: 2%; */
+}
+/* 비디오타이틀 */
+.vidcont > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 15px;
+    font-size: 37px;
+    color: #3c2121;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+/* 비디오내용 */
+.vidcont > p:last-child {
+    font-size: 18px;
+    color: #444444;
+    line-height: 35px;
+}
 
 /*************************** 메인섹션7페이지 ***************************/
 .msbx7 {
