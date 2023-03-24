@@ -449,7 +449,11 @@ section {
     display: flex;
     font-size: 25px;
     margin-bottom: 15px;
+
+    /* 트랜지션 */
+    transition: ;
 }
+
 .anividtit>p{
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
