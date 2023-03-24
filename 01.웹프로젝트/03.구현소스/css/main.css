@@ -464,7 +464,7 @@ section {
     content: '';
     display: block;
     position: absolute;
-    left: 205px;
+    left: 229px;
     top: -0.5px;
     width: 45px;
     height: 17.7%;
@@ -473,6 +473,9 @@ section {
     background: url(../imges/6dk_dot_board.png) no-repeat center;
     background-size: contain;
 }
+/* 🍅Q.질문
+이미지 화살표가 찌부러졌습니다... */
+
 /* 비디오타이틀 화살표 */
 .anividtit>img{
 }
@@ -482,7 +485,7 @@ section {
 .vidcont{
     position: relative;
     display: inline-block;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 /* 속박스 */
 /* 비디오타이틀 */
