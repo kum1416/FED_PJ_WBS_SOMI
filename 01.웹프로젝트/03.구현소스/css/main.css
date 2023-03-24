@@ -11,7 +11,7 @@
 
 /* 공사중 표시 */
 body * {
-    outline: 1px dashed gray;
+    /* outline: 1px dashed gray; */
 }
 section {
     width: 100vw;
@@ -455,12 +455,26 @@ section {
     font-weight: bold;
     padding: 12px;
 
-    border-radius: 5px;
-    border: 2.5px solid #3c2121;
+    border-radius: 3px;
+    border: 3px solid #3c2121;
+    color: #3c2121;
+    margin-right: 80px;
+}
+.anividtit>p::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 205px;
+    top: -0.5px;
+    width: 45px;
+    height: 17.7%;
+    border: 3px solid #3C2121;
+    border-radius: 3px;
+    background: url(../imges/6dk_dot_board.png) no-repeat center;
+    background-size: contain;
 }
 /* 비디오타이틀 화살표 */
 .anividtit>img{
-    
 }
 /* 🍅Q.질문
 글자박스 위치 이동하는 방법(위,아래) */
@@ -477,7 +491,6 @@ section {
     font-size: 37px;
     color: #3c2121;
     font-weight: 600;
-    letter-spacing: -0.5px;
 }
 /* 비디오내용 */
 .vidcont > p:last-child {
