@@ -421,31 +421,59 @@ section {
     background: #fff5d9;
     position: relative;
 }
-.msbx6>div:nth-child(2){
+.msbx6>div{
+    position: relative;
     max-width: 1200px;
+    margin: 0 auto;
 }
-/* 달콤비디오 */
+/**** 달콤비디오 ****/
+/* 겉박스 */
 .vidscreen{
-    position: absolute;
-    left: 17.3%;
-    height: 60%;
-
+    position: relative;
+    display: inline-block;
+    height: 480px;
+    
     border-radius: 5px;
     background-color: #fff;
 }
+/* 속박스 */
 #vidbx{
     width: 100%;
     height: 80%;
     transform: translateY(12%);
 }
-/* 비디오박스 */
-.vidcont{
-    /* right: 2%; */
+/**** 비디오 글자박스 ****/
+/* 비디오타이틀 애니 */
+.anividtit{
+    display: inline-block;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
+.anividtit>p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 12px;
+
+    border-radius: 5px;
+    border: 2.5px solid #3c2121;
+}
+/* 비디오타이틀 화살표 */
+.anividtit>img{
+    
+}
+/* 🍅Q.질문
+글자박스 위치 이동하는 방법(위,아래) */
+/* 겉박스 */
+.vidcont{
+    position: relative;
+    display: inline-block;
+    padding-left: 3%;
+}
+/* 속박스 */
 /* 비디오타이틀 */
 .vidcont > p {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 37px;
     color: #3c2121;
     font-weight: 600;
@@ -453,9 +481,10 @@ section {
 }
 /* 비디오내용 */
 .vidcont > p:last-child {
-    font-size: 18px;
+    font-size: 16px;
     color: #444444;
-    line-height: 35px;
+    line-height: 30px;
+    font-weight: 400;
 }
 
 /*************************** 메인섹션7페이지 ***************************/
