@@ -450,9 +450,14 @@ section {
     font-size: 25px;
     margin-bottom: 15px;
 
+    /* 트랜스폼
+    -> y축 상단이동 + x축회전 90도 + 스케일 0(안보임) */
+    transform: rotate(5deg);
+
     /* 트랜지션 */
-    transition: ;
+    transition: transform .6s ease-in;
 }
+
 
 .anividtit>p{
     font-family: "Montserrat", sans-serif;
