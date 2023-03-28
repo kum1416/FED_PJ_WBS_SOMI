@@ -7,146 +7,167 @@
 /* 네비게이션 박스 */
 /* 겉박스 */
 #top {
-  position: fixed;
-  background-color: #fff;
-  width: 100%;
-  z-index: 1;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
 }
 /* 속박스 */
 .top {
-  display: flex;
-  /* justify-content: space-between; */
-  white-space: nowrap;
+    display: flex;
+    /* justify-content: space-between; */
+    white-space: nowrap;
 
-  max-width: 1660px;
-  height: 80px;
-  margin: 0 auto;
-  padding: 0 45px 0 50px;
+    max-width: 1660px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 45px 0 50px;
 }
 
 /* 1. 로고 */
 .logo {
-  position: relative;
-  top: 50%;
-  transform: translateY(-48%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-48%);
 
-  /* margin-left: 40px; */
+    /* margin-left: 40px; */
 }
 .logo img {
-  height: 40px;
+    height: 40px;
 }
 
 /****************** 2.GNB메뉴 ******************/
 .gnb {
-  font-family: "Nunito Sans", sans-serif;
-}
-.smbx {
-  position: absolute;
+    font-family: "Nunito Sans", sans-serif;
 }
 .gnb > ul {
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 0 30px;
-  margin-left: 60px;
+    /* 플렉스박스 */
+    display: flex;
 
-  /* transform: translateY(25%); */
-  /* height: 80px; */
+    gap: 0 30px;
+    margin-left: 60px;
+
+    /* transform: translateY(25%); */
+    /* height: 80px; */
 }
-.smenu {
-  height: 0;
-  overflow: hidden;
-  line-height: 80px;
-}
+
+/* 메인메뉴박스 */
 .gnb > ul > .mmenu {
-  line-height: 80px;
-  font-size: 1.7rem;
+    line-height: 80px;
+    font-size: 1.7rem;
 }
-
+.mmenu > a {
+    font-weight: 600;
+    color: #3c2121;
+}
 
 /* .mmenu 가상요소로 배경색넣기 */
 .mmenu:nth-child(-n + 4):after {
-  content: "";
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #fff;
-  /* 트랜지션: 속시이지 */
-  transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    /* 트랜지션: 속시이지 */
+    transition: 0.5s ease-in-out;
 }
 /* .mmenu 오버시 가상요소 */
 .mmenu:hover::after {
-  height: 250px;
-  border-top: 1px solid #dedddd;
+    height: 250px;
+    border-top: 1px solid #dedddd;
 }
-
 
 /* GNB 전체 a요소 오버시 공통 */
 .mmenu a {
-  /* 트랜지션: 속시이지 */
-  transition: 0.5s ease-in-out;
+    /* 트랜지션: 속시이지 */
+    transition: 0.5s ease-in-out;
 }
 .mmenu a:hover {
-  color: #f52334;
+    color: #f52334;
+}
+.smenu a:hover {
+    font-weight: 800;
+}
+
+/* 서브메뉴 */
+.smbx {
+    position: absolute;
+    z-index: 1;
+}
+.smenu {
+    height: 0;
+    overflow: hidden;
+    margin-top: 35px;
+    line-height: 45px;
+
+    font-size: 2rem;
+    letter-spacing: 1;
+
+    /* 트랜지션: 속시이지 */
+    transition: 0.5s ease-in-out;
+}
+.mmenu:hover .smenu {
+    height: 250px;
 }
 
 /*************** 3.상단사이드박스 ***************/
 .sidebx {
-  position: absolute;
-  display: flex;
-  right: 6%;
+    position: absolute;
+    display: flex;
+    right: 6%;
 
-  top: 50%;
-  height: 45px;
-  transform: translateY(-50%);
+    top: 50%;
+    height: 45px;
+    transform: translateY(-50%);
 }
 /* 가맹점 개설 안내 */
 .sidebx > div:first-child {
-  font-family: "Montserrat", sans-serif;
-  height: 100%;
-  padding: 0 30px;
-  line-height: 39px;
-  font-size: 1.5rem;
-  font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    padding: 0 30px;
+    line-height: 39px;
+    font-size: 1.5rem;
+    font-weight: 600;
 
-  border: 3px solid #F43800;
-  border-radius: 30px;
-  box-sizing: border-box;
+    border: 3px solid #f43800;
+    border-radius: 30px;
+    box-sizing: border-box;
 
-  color: #F43800;
+    color: #f43800;
 }
 .sidebx > div:hover:first-child {
-  background-color: #F43800;
-  color: #fff;
-  /* outline: 3px solid #fff; */
-  border: 2px solid #fff;
-  /* 🍅 Q.질문
+    background-color: #f43800;
+    color: #fff;
+    /* outline: 3px solid #fff; */
+    border: 2px solid #fff;
+    /* 🍅 Q.질문
   가맹점 개설안내 보더 사이즈를 조절하면 글자 위치가 변경돼서 안맞는 부분 */
-  box-shadow: 0 1px 3px #6e6e6e;
+    box-shadow: 0 1px 3px #6e6e6e;
 }
 .app {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-left: 10px;
-  /* 위치이동 */
-  transform: translateY(3%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 10px;
+    /* 위치이동 */
+    transform: translateY(3%);
 }
 .app a {
-  display: block;
-  width: 145px;
-  text-align: center;
-  line-height: 40px;
-  
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
+    display: block;
+    width: 145px;
+    text-align: center;
+    line-height: 40px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
 }
 .app img {
-  height: 20px;
-  vertical-align: -5px;
+    height: 20px;
+    vertical-align: -5px;
 }
 .sidebx > div:last-child img {
-  height: 6vh;
-  /* 위치이동 */
-  transform: translateY(-10%);
+    height: 6vh;
+    /* 위치이동 */
+    transform: translateY(-10%);
 }
