@@ -498,7 +498,7 @@ section {
     margin-bottom: 15px;
 
     /* 트랜스폼 */
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 
     /* 트랜지션 */
     transition: transform .8s ease-in;
@@ -514,6 +514,7 @@ section {
     border: 3px solid #3c2121;
     color: #3c2121;
     margin-right: 80px;
+    margin-bottom: 15px;
 }
 .anividtit>p>span{
     position: absolute;
