@@ -36,16 +36,19 @@ function wheelFn(e){
   // console.log("방향:", dir);
 
   // (3) 방향에 따른 페이지번호 증감
-  if(dir<0){
+  if(dir<0){ // 스크롤 아래
     pgnum++;
-    if(pgnum<0) pgnum = 0;
+    if(pgnum>6) pgnum = 6;
   } 
-  else{
+  else{ // 스크롤 위
     pgnum--;
-    if(pgnum>)
+    if(pgnum<0) pgnum = 0;
 
   } 
   console.log("페이지번호:", pgnum);
+
+  // (4) 페이지 이동하기
+  window.scrollTo(0,window.innerHeight*pgnum);
 
 
 } ///////// wheelFn 함수 ///////
