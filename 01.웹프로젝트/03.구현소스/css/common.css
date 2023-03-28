@@ -148,5 +148,5 @@
 .sidebx > div:last-child img {
   height: 6vh;
   /* 위치이동 */
-  transform: translateY(-15%);
+  transform: translateY(-10%);
 }
