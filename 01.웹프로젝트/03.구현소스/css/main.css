@@ -54,6 +54,36 @@ section {
     */
 }
 
+/* 🍓인디케이터 */
+.indic {
+    position: fixed;
+    right: 2%;
+    width: 45px;
+    bottom: 3%;
+    
+    /* outline: 3px dotted blue; */
+}
+/* a요소 */
+.indic a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid #f43800;
+    transition: height 0.4s;
+  }
+  
+  /* 마우스 오버시 */
+  /* .indic a:hover{
+    background-color: #f43800;
+  } */
+  
+  /* 설명글자숨기기 */
+  .indic span {
+    display: none;
+  }
+
 /*************************** 메인섹션2페이지 ***************************/
 .msbx2 {
     background-color: #def1ee;
