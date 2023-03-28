@@ -109,7 +109,8 @@ section {
     position: sticky;
     top: 0;
     text-align: center;
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    transform: translateY(165px);
 }
 
 /*********** 메인2 내용- 첫번째(스티키) ***********/
@@ -180,7 +181,7 @@ section {
 
 /* 움직이는 페이지타이틀 */
 .page{
-    /* overflow: hidden; */
+    overflow: hidden;
     /* 🥚넘치는 자식요소 숨기기 */
 }
 
@@ -191,6 +192,11 @@ section {
 }
 .movetext {
     position: relative;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
@@ -411,6 +417,9 @@ section {
 /* svg박스 */
 .svg1 svg {
     position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
 }
@@ -420,8 +429,8 @@ section {
     stroke-width: 20;
     stroke-linecap: square;
 
-    stroke-dasharray: 320%;
-    stroke-dashoffset: 320%;
+    stroke-dasharray: 324%;
+    stroke-dashoffset: 324%;
 
     /* 트랜지션 */
     transition: 0.8s;
@@ -429,6 +438,7 @@ section {
 .svg1:hover .rt1 {
     stroke-dashoffset: 0;
 }
+
 /* 🍅Q.질문
  애니메이션 튀는거 조절은 어떻게 해야하나요?*/
 /* 하단 애니메이션 메뉴 */

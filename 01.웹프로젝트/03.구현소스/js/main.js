@@ -5,19 +5,12 @@ setTimeout(() => {
   window.scrollTo(0, 0);
 }, 100);
 
-// 이벤트함수연결 셋팅하기 //////////////////////////////////
 // 로딩함수 호출 ////////
 window.addEventListener("DOMContentLoaded", loadFn); // 📢최초호출
 
-/************************************* 
-    함수명: loadFn
-    기능: 페이지 로딩시 기능수행
-*************************************/
 function loadFn() {
-  // 호출확인
   console.log("로딩완료!");
 
-  // 0. 변수 설정
   // (1) 전체 페이지변수
   let pgnum = 0; // 현재 페이지번호(첫페이지 0)
   // (2) 전체 페이지수
@@ -34,7 +27,7 @@ function loadFn() {
     // (0) 기본기능 멈추기
     e.preventDefault();
     // (1) 호출확인
-    // console.log("휠~~~~~");
+    // console.log("휠");
 
     // 광스크롤 막기
     if (prot_sc) return;
@@ -63,18 +56,17 @@ function loadFn() {
     window.scrollTo(0, window.innerHeight * pgnum);
   } ///////// wheelFn 함수 ///////
 
+  // pageAction함수 호출!!!
+    setTimeout(() => pageAction(pgnum), 500);
+
   /*************************************** 
     🧊함수명 : initCSS
-    기능 : 등장할 요소들의 초기값 셋팅
   ***************************************/
   // 1. 대상: .movetext
   const movetext = document.querySelectorAll(".movetext");
   console.log(movetext);
-  // 2. 이벤트설정
-  movetext.forEach((ele, idx) => {
-    initCSS(ele, idx);
-  });
-  // 3. 함수만들기
+
+  // 함수만들기
   function initCSS(ele, seq) {
     // 1. 호출확인
     console.log("초기화!", seq);
@@ -92,12 +84,20 @@ function loadFn() {
 
   /*************************************** 
     🥝함수명 : pageAction
-    기능 : 페이지별 액션주기
   ***************************************/
     function pageAction(seq) {
-      // seq-변경순번
       // 1. 호출확인
-      console.log("액숀~!!!", seq);  // 🥚이 액션을 누가 볼러줘? 페이지 이동후~...
+      console.log("액숀~!!!", seq);
+
+      let sty = movetext[seq].style;
+
+      if (seq) {
+        sty.top = "30%";
+        sty.opacity = 1;
+        sty.transition = "1.5s ease-in";
+      } ///// if //////////
   
    } //////////// pageAction 함수 /////
+
+   setTimeout(() => pageAction(0), 1000); 
 } //////////// loadFn 함수 ///////////////
