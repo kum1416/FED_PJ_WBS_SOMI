@@ -501,7 +501,7 @@ section {
     transform: rotate(5deg);
 
     /* 트랜지션 */
-    transition: transform .6s ease-in;
+    transition: transform .8s ease-in;
 }
 
 
