@@ -193,10 +193,10 @@ section {
 .movetext {
     position: relative;
 
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    
+    transform: translate(-50%, -50%); */
+
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
@@ -497,8 +497,7 @@ section {
     font-size: 25px;
     margin-bottom: 15px;
 
-    /* 트랜스폼
-    -> y축 상단이동 + x축회전 90도 + 스케일 0(안보임) */
+    /* 트랜스폼 */
     transform: rotate(5deg);
 
     /* 트랜지션 */
@@ -509,26 +508,25 @@ section {
 .anividtit>p{
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    padding: 12px;
+    padding: 12px 30px;
 
     border-radius: 3px;
     border: 3px solid #3c2121;
     color: #3c2121;
     margin-right: 80px;
 }
-.anividtit>p::before{
-    content: '';
-    display: block;
+.anividtit>p>span{
     position: absolute;
-    left: 229px;
-    top: -0.5px;
-    width: 45px;
-    height: 17.7%;
+    width: 50px;
+    height: 57px;
+    top: 0;
+    left: 60.5%;
     border: 3px solid #3C2121;
     border-radius: 3px;
     background: url(../imges/6dk_dot_board.png) no-repeat center;
     background-size: contain;
 }
+
 /* 🍅Q.질문
 이미지 화살표가 찌부러졌습니다... */
 

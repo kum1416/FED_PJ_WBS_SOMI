@@ -87,7 +87,7 @@ function loadFn() {
   ***************************************/
     function pageAction(seq) {
       // 1. 호출확인
-      console.log("액숀~!!!", seq);
+      console.log("등장", seq);
 
       let sty = movetext[seq].style;
 
