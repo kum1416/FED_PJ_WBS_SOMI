@@ -32,7 +32,7 @@ function loadFn() {
     // 광스크롤 막기
     if (prot_sc) return;
     prot_sc = 1;
-    setTimeout(() => (prot_sc = 0), 700);
+    setTimeout(() => (prot_sc = 0), 800);
 
     // (2) 휠 방향 알아내기
     let dir = e.wheelDelta;
@@ -57,7 +57,7 @@ function loadFn() {
   } ///////// wheelFn 함수 ///////
 
   // pageAction함수 호출!!!
-    setTimeout(() => pageAction(pgnum), 500);
+    setTimeout(() => pageAction(pgnum), 1000);
 
   /*************************************** 
     🧊함수명 : initCSS
