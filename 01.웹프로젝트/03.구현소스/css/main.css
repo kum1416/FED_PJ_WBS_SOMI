@@ -60,7 +60,7 @@ section {
     right: 2%;
     width: 45px;
     bottom: 3%;
-    
+
     /* outline: 3px dotted blue; */
 }
 /* a요소 */
@@ -72,17 +72,17 @@ section {
     background-color: transparent;
     border: 5px solid #f43800;
     transition: height 0.4s;
-  }
-  
-  /* 마우스 오버시 */
-  /* .indic a:hover{
+}
+
+/* 마우스 오버시 */
+/* .indic a:hover{
     background-color: #f43800;
   } */
-  
-  /* 설명글자숨기기 */
-  .indic span {
+
+/* 설명글자숨기기 */
+.indic span {
     display: none;
-  }
+}
 
 /*************************** 메인섹션2페이지 ***************************/
 .msbx2 {
@@ -145,7 +145,7 @@ section {
 .bmenubgi1 {
     position: absolute;
     width: 15vw;
-    height: 30vh;
+    aspect-ratio: 1/1;
     top: 190px;
     right: -25px;
     border-radius: 50%;
@@ -176,16 +176,19 @@ section {
 }
 
 .bmc {
+    /* 여기만 스크롤바생김! */
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: #fff;
 }
 
 /* 움직이는 페이지타이틀 */
-.page{
+.page {
     overflow: hidden;
     /* 🥚넘치는 자식요소 숨기기 */
 }
 
-.movecenter{
+.movecenter {
     text-align: center;
 
     /* position: relative; */
@@ -206,10 +209,10 @@ section {
     color: #f43800;
 }
 /* movetext 밑줄바 */
-.movetext::after{
-    content: '';
+.movetext::after {
+    content: "";
     display: block;
-    
+
     height: 4px;
     margin-top: 10px;
     /* margin-bottom: 40px; */
@@ -237,33 +240,34 @@ section {
 }
 /* 베스트메뉴 이미지 */
 .grid .bimg1 {
-    background: url(../imges/bmenu1_Strawberry\ Latte.png) no-repeat
-        center/cover;
+    background: url(../imges/bmenu1_Strawberry\ Latte.png) no-repeat center/cover;
     width: 65%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: 65px;
     transform: scale(1.2);
 }
 .grid .bimg2 {
-    background: url(../imges/bmenu2_Strawberry\ Yogurt\ Blended.png) no-repeat
-        center/cover;
+    position: relative;
+    background: url(../imges/bmenu2_Strawberry\ Yogurt\ Blended.png) no-repeat center/cover;
     width: 75%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: 50px;
     transform: scale(1.2);
 }
 .grid .bimg3 {
-    background: url(../imges/bmenu3_Honey\ Grapefruit_ice.jpg) no-repeat
-        center/cover;
+    background: url(../imges/bmenu3_Honey\ Grapefruit_ice.jpg) no-repeat center/cover;
     width: 65%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: 65px;
     transform: scale(1.2);
 }
 .grid .bimg4 {
-    background: url(../imges/bmenu4_Strawberry\ Refreshing\ Ade.png) no-repeat
-        center/cover;
+    background: url(../imges/bmenu4_Strawberry\ Refreshing\ Ade.png) no-repeat center/cover;
     width: 75%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: 50px;
     transform: scale(1.2);
@@ -316,6 +320,8 @@ section {
 }
 
 .tit3 {
+    position: relative;
+    /* 순서 원보다 위 */
     grid-column: 1/6;
 }
 .bimg3 {
@@ -364,6 +370,7 @@ section {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    aspect-ratio: 1/0.1;
     border-top: 2.5px solid #3c2121;
     border-bottom: 2.5px solid #3c2121;
     padding: 25px 30px;
@@ -385,21 +392,22 @@ section {
 }
 .newscont > p {
     font-family: "Noto Sans KR", sans-serif;
+    white-space: nowrap;
 }
 /* 작은뉴스박스 */
 .newscont > p > span {
     display: block;
     width: 85px;
-    line-height: 29px;
+    line-height: min(1.5vw,29px);
     margin-bottom: 10px;
     background: #3c2121;
-    font-size: 15px;
+    font-size: min(1.5vw,15px);
     color: #fff;
     text-align: center;
 }
 /* 뉴스타이틀 */
 .newscont > p:first-child {
-    margin-bottom: 15px;
+    margin-bottom: min(2vw,23px);
     font-size: 23px;
     color: #3c2121;
     font-weight: 600;
@@ -407,9 +415,9 @@ section {
 }
 /* 뉴스내용 */
 .newscont > p:last-child {
-    font-size: 18px;
+    font-size: min(2vw,23px);
     color: #444444;
-    line-height: 35px;
+    line-height: min(2.2vw,35px);
 }
 /* 🍅Q.질문
 1. svg 박스 사이즈랑 위치조정
@@ -421,21 +429,29 @@ section {
     left: 0;
 
     width: 100%;
-    height: 100%;
+    height:  100%;
 }
-.rt1 {
+.ln {
     fill: none;
     stroke: #f43800;
     stroke-width: 20;
-    stroke-linecap: square;
-
-    stroke-dasharray: 324%;
-    stroke-dashoffset: 324%;
+    /* stroke-linecap: square; */
+    /* stroke-dasharray: 290%; */
+/* 
+    stroke-dashoffset: 350%; */
 
     /* 트랜지션 */
-    transition: 0.8s;
+    transition: 1.2s;
 }
-.svg1:hover .rt1 {
+.ln1{
+    stroke-dasharray: 280%;
+    stroke-dashoffset: 280%;
+}
+.ln2{
+    stroke-dasharray: 40%;
+    stroke-dashoffset: 40%;
+}
+.svg1:hover .ln {
     stroke-dashoffset: 0;
 }
 
@@ -444,21 +460,28 @@ section {
 /* 하단 애니메이션 메뉴 */
 .animenu {
     position: absolute;
+    left: 0;
+    display: flex;
     bottom: 50px;
-    width: 100vw;
-    height: 228px;
+    width: 200vw;
+    /* height: 228px; */
 
-    background: url(../imges/5dk_menuani.png) repeat-x;
-    background-size: auto 100%;
+    /* background: url(../imges/5dk_menuani.png) repeat-x;
+    background-size: auto 100%; */
 
     /* 애니메이션: 이시이지반방마 */
     animation: animenu 10s linear infinite;
+}
+.animenu img{
+    flex-shrink: 1;
+    display: block;
+    width: 50%;
 }
 
 /* 스크린배경이동 키프레임 */
 @keyframes animenu {
     to {
-        background-position: 1200px 0;
+        left: -100%;
     }
 }
 /* 키프레임 */
@@ -468,44 +491,43 @@ section {
     background: #fff5d9;
     position: relative;
 }
-.msbx6>div{
+.msbx6 > div {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 /**** 달콤비디오 ****/
 /* 겉박스 */
-.vidscreen{
+.vidscreen {
     position: relative;
     display: inline-block;
     height: 480px;
-    
+
     border-radius: 5px;
     background-color: #fff;
 }
 /* 속박스 */
-#vidbx{
+#vidbx {
     width: 100%;
     height: 80%;
     transform: translateY(12%);
 }
 /**** 비디오 글자박스 ****/
 /* 비디오타이틀 애니 */
-.anividtit{
+.anividtit {
     display: inline-block;
     display: flex;
     font-size: 25px;
     margin-bottom: 15px;
 
     /* 트랜스폼 */
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
 
     /* 트랜지션 */
-    transition: transform .8s ease-in;
+    transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
-
-.anividtit>p{
+.anividtit > p {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     padding: 12px 30px;
@@ -516,13 +538,13 @@ section {
     margin-right: 80px;
     margin-bottom: 15px;
 }
-.anividtit>p>span{
+.anividtit > p > span {
     position: absolute;
     width: 50px;
     height: 57px;
     top: 0;
     left: 60.5%;
-    border: 3px solid #3C2121;
+    border: 3px solid #3c2121;
     border-radius: 3px;
     background: url(../imges/6dk_dot_board.png) no-repeat center;
     background-size: contain;
@@ -532,12 +554,12 @@ section {
 이미지 화살표가 찌부러졌습니다... */
 
 /* 비디오타이틀 화살표 */
-.anividtit>img{
+.anividtit > img {
 }
 /* 🍅Q.질문
 글자박스 위치 이동하는 방법(위,아래) */
 /* 겉박스 */
-.vidcont{
+.vidcont {
     position: relative;
     display: inline-block;
     padding-left: 5%;
@@ -562,25 +584,25 @@ section {
 .msbx7 {
     background: #fff;
 }
-.msbx7>div{
+.msbx7 > div {
     background: #fcf7e8;
     height: 580px;
     text-align: center;
     padding: 150px 0;
     box-sizing: border-box;
 }
-.msbx7>div *{
+.msbx7 > div * {
     color: #f43800;
     margin-top: 30px;
 }
-.msbx7 h2{
+.msbx7 h2 {
     font-size: 48px;
 }
-.msbx7>div p{
+.msbx7 > div p {
     font-size: 16px;
     margin-bottom: 20px;
 }
-.msbx7>div a{
+.msbx7 > div a {
     /* width: 300px; */
     /* height: 70px; */
     line-height: 70px;

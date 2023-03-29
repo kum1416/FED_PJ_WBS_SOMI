@@ -19,12 +19,16 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 */
 
+/* html{
+
+    scroll-behavior: smooth;
+} */
+
 /* 전체 웹폰트 */
 body{
     font-family: 'Noto Sans KR', sans-serif;
     width: 100vw;
     height: 100vh;
 
-    scroll-behavior: smooth;
     overflow: hidden;
 }

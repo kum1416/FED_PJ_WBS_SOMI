@@ -18,25 +18,30 @@ function loadFn() {
   console.log("전체페이지수:", pgcnt);
   // (3) 광스크롤 금지변수
   let prot_sc = 0;
+  // (4) 스크롤가능상태 변수(0-가능,1-불가능)
+  let sc_sts = 0;
 
   // 🍍1. 전체 휠 이벤트 설정하기 ///////
   window.addEventListener("wheel", wheelFn, { passive: false });
 
   // 2. 휠 이벤트 함수 만들기 ///
   function wheelFn(e) {
-    // (0) 기본기능 멈추기
-    e.preventDefault();
+    // (0) 기본기능 멈추기(스크롤 가능 페이지에서 기능멈춤)
+    if(!sc_sts) e.preventDefault();
     // (1) 호출확인
-    // console.log("휠");
+    console.log("스크롤가능상태:",sc_sts);
 
     // 광스크롤 막기
     if (prot_sc) return;
     prot_sc = 1;
-    setTimeout(() => (prot_sc = 0), 800);
+    setTimeout(() => (prot_sc = 0), 600);
 
     // (2) 휠 방향 알아내기
     let dir = e.wheelDelta;
     // console.log("방향:", dir);
+
+    // 스크롤 가능상태로 리턴!
+    if(sc_sts) return;
 
     // (3) 방향에 따른 페이지번호 증감
     // 스크롤 아래
@@ -52,8 +57,25 @@ function loadFn() {
     } ////// else if //////
     console.log("페이지번호:", pgnum);
 
+    // 만약 페이지번호가 1(두번째 페이지)이면
+    // sc_sts = 1 휠불가상태로 변경!
+    if(pgnum===1) sc_sts = 1;
+    else sc_sts = 0;
+
+    
     // (4) 페이지 이동하기
-    window.scrollTo(0, window.innerHeight * pgnum);
+    $("html,body").animate({
+      scrollTop: $(window).height()*pgnum+"px"
+    },600,"easeInOutQuint",()=>{
+      // 이동후 작동함수
+      if(pgnum===5){
+        $(".anividtit").css({transform:"rotate(-10deg)"});
+      }
+      else{
+        $(".anividtit").css({transform:"rotate(0deg)"});
+      }
+    });
+    // window.scrollTo(0, window.innerHeight * pgnum);
   } ///////// wheelFn 함수 ///////
 
   // pageAction함수 호출!!!
@@ -100,4 +122,34 @@ function loadFn() {
    } //////////// pageAction 함수 /////
 
    setTimeout(() => pageAction(0), 1000); 
+
+
+
+   // 두번째 페이지 스크롤 체크
+   // 대상: .bmc 
+   const bmc = $(".bmc");
+
+   bmc.scroll(function(){    
+    // 현재스크롤값
+    let scTop = $(this).scrollTop();
+    // 보이는박스 높이
+    let bxH = $(this).height();
+    // 박스총높이
+    let bxH2 = $(this).prop("scrollHeight");
+    // 스크롤끝값=박스총높이-보이는박스높이
+    let diff = bxH2 - bxH;
+    console.log(scTop,bxH,bxH2,diff);
+
+    // 만약스크롤값이 0이거나 스크롤끝값이면
+    // sc_sts 상태값을 0으로 변경하여
+    // 다시 스크롤 할 수 있게 변경한다!
+    if(scTop === 0 || scTop === diff){
+      sc_sts = 0;
+    } ///////// if //////////
+   })/////////// bmc 함수 //////////
+
+
 } //////////// loadFn 함수 ///////////////
+
+
+
