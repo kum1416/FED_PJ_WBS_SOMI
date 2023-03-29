@@ -171,3 +171,20 @@
     /* 위치이동 */
     transform: translateY(-10%);
 }
+
+footer{
+    display: flex;
+    min-width: 1200px;
+    padding: 120px 0;
+    margin: 0 150px;
+    justify-content: space-between;
+}
+.flogo img{
+    height: 50px;
+}
+.footerinfo>ul{
+    display: flex;
+}
+.footerinfo>ul li{
+    width: 100%;
+}
