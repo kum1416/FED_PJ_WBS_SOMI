@@ -67,6 +67,14 @@ function loadFn() {
     $("html,body").animate({
       scrollTop: $(window).height()*pgnum+"px"
     },600,"easeInOutQuint",()=>{
+
+      // 이동후 해당 페이지의 타이틀 등장액션 클래스 넣기
+      $(".scTg").removeClass("on"); // 전체지우기
+      $(".page").eq(pgnum).find(".scTg").addClass("on");
+
+      // 두번째 페이지 : Best Menu 파트 스크롤바 상위이동
+      if(pgnum!==1) $(".bmc").animate({scrollTop:"1px"});
+
       // 이동후 작동함수
       if(pgnum===5){
         $(".anividtit").css({transform:"rotate(-10deg)"});
@@ -159,6 +167,12 @@ function loadFn() {
       sc_sts = 0;
     } ///////// if //////////
    })/////////// bmc 함수 //////////
+
+
+   $(".movetext").addClass("scTg");
+
+
+
 
 
 } //////////// loadFn 함수 ///////////////
