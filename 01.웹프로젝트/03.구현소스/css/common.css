@@ -175,12 +175,13 @@
 footer{
     display: flex;
     max-width: 1200px;
-    padding: 120px 50px;
+    margin: 0 auto;
+    padding: 100px 50px;
     justify-content: space-between;
 }
 /* 1. 하단로고 */
 .flogo img{
-    height: 50px;
+    height: 45px;
 }
 
 .footerinfo>ul{
@@ -192,6 +193,17 @@ footer{
 }
 .footerinfo{
     width: 70%;
+    white-space: nowrap;
+}
+strong{
+    font-size: max(0.8vw,16px);
+}
+.footersm ul>li:first-child{
+    margin-top: 25px;
+}
+.footersm ul>li{
+    line-height: 35px;
+    font-size: max(0.7vw,10px);
 }
 
 
