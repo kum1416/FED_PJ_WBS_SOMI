@@ -75,6 +75,18 @@ function loadFn() {
         $(".anividtit").css({transform:"rotate(0deg)"});
       }
     });
+    // 🥕(4) 페이지 이동하기
+    // $("html,body").animate({
+    //   scrollTop: $(window).height()*pgnum+"px"
+    // },800,"easeInOutQuint",()=>{
+    //   // 이동후 작동함수
+    //   if(pgnum===5){
+    //     $(".arrow").css({transform:"rotate(-10deg)"});
+    //   }
+    //   else{
+    //     $(".arrow").css({transform:"rotate(0deg)"});
+    //   }
+    // });
     // window.scrollTo(0, window.innerHeight * pgnum);
   } ///////// wheelFn 함수 ///////
 
