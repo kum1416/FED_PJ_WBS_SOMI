@@ -175,9 +175,8 @@
 
 footer{
     display: flex;
-    min-width: 1200px;
-    padding: 120px 0;
-    margin: 0 150px;
+    max-width: 1200px;
+    padding: 120px 50px;
     justify-content: space-between;
 }
 .flogo img{
@@ -185,7 +184,23 @@ footer{
 }
 .footerinfo>ul{
     display: flex;
+    justify-content: space-between;
 }
-.footerinfo>ul li{
-    width: 100%;
+.flogo{
+    width: 195px;
+}
+.footerinfo{
+    width: 70%;
+}
+
+
+/* 등장을 위한 클래스 */
+.scTg{
+    transform: translateY(30%);
+    opacity: 0;
+    transition: .6s ease-out;
+}
+.scTg.on{
+    transform: translateY(0%);
+    opacity: 1;
 }
