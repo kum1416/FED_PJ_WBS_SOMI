@@ -140,11 +140,9 @@
 .sidebx > div:hover:first-child {
     background-color: #f43800;
     color: #fff;
-    /* outline: 3px solid #fff; */
     border: 2px solid #fff;
     line-height: 41px;
-    /* 🍅 Q.질문
-  가맹점 개설안내 보더 사이즈를 조절하면 글자 위치가 변경돼서 안맞는 부분 */
+
     box-shadow: 0 1px 3px #6e6e6e;
 }
 .app {

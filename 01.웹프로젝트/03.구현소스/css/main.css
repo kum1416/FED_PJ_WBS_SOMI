@@ -550,14 +550,11 @@ section {
     background-size: contain;
 }
 
-/* 🍅Q.질문
-이미지 화살표가 찌부러졌습니다... */
 
 /* 비디오타이틀 화살표 */
 .anividtit > img {
 }
-/* 🍅Q.질문
-글자박스 위치 이동하는 방법(위,아래) */
+
 /* 겉박스 */
 .vidcont {
     position: relative;
