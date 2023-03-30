@@ -173,15 +173,18 @@
     transform: translateY(-10%);
 }
 
+/* footer */
 footer{
     display: flex;
     max-width: 1200px;
     padding: 120px 50px;
     justify-content: space-between;
 }
+/* 1. 하단로고 */
 .flogo img{
     height: 50px;
 }
+
 .footerinfo>ul{
     display: flex;
     justify-content: space-between;
