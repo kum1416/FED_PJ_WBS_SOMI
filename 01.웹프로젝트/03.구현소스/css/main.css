@@ -11,40 +11,40 @@
 
 /* 공사중 표시 */
 body * {
-    /* outline: 1px dashed gray; */
+  /* outline: 1px dashed gray; */
 }
 section {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 /* 변수셋팅 */
 :root {
-    --bs1: 280px;
+  --bs1: 280px;
 }
 
-/*************************** 메인섹션1페이지 ***************************/
+/*************************** 메인섹션1페이지 - 배너 ***************************/
 .msbx1 {
-    background: url(../imges/dk_main1.png) no-repeat center/cover;
+  background: url(../imges/dk_main1.png) no-repeat center/cover;
 }
 /* 하단 미니배너 박스 */
 .minibx {
-    position: absolute;
-    /* margin: 0;
+  position: absolute;
+  /* margin: 0;
     padding: 0; */
-    display: flex;
-    bottom: 5%;
-    left: 10vw;
+  display: flex;
+  bottom: 5%;
+  left: 10vw;
 }
 .mbx li:nth-child(1) {
-    background: url();
+  background: url();
 }
 .mbx {
-    max-width: 500px;
-    width: 11vw;
-    height: 7vw;
-    border: 2px solid #000;
-    border-radius: 15px;
-    /* 🍅Q.질문
+  max-width: 500px;
+  width: 11vw;
+  height: 7vw;
+  border: 2px solid #000;
+  border-radius: 15px;
+  /* 🍅Q.질문
     max-width: 500px;
     width: 11vw; 일때와
     height: 7vw;
@@ -56,22 +56,22 @@ section {
 
 /* 🍓인디케이터 */
 .indic {
-    position: fixed;
-    right: 2%;
-    width: 45px;
-    bottom: 3%;
+  position: fixed;
+  right: 2%;
+  width: 45px;
+  bottom: 3%;
 
-    /* outline: 3px dotted blue; */
+  /* outline: 3px dotted blue; */
 }
 /* a요소 */
 .indic a {
-    display: block;
-    width: 100%;
-    height: 45px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 5px solid #f43800;
-    transition: height 0.4s;
+  display: block;
+  width: 100%;
+  height: 45px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid #f43800;
+  transition: height 0.4s;
 }
 
 /* 마우스 오버시 */
@@ -81,530 +81,531 @@ section {
 
 /* 설명글자숨기기 */
 .indic span {
-    display: none;
+  display: none;
 }
 
-/*************************** 메인섹션2페이지 ***************************/
+/*************************** 메인섹션2페이지 - 스크롤 ***************************/
 .msbx2 {
-    background-color: #def1ee;
-    /* 상위 섹션박스 */
-    display: flex;
-    height: 100vh;
-    /* padding-top: 130px; */
+  background-color: #def1ee;
+  /* 상위 섹션박스 */
+  display: flex;
+  height: 100vh;
+  /* padding-top: 130px; */
 }
 /* 플렉스박스 */
 .msbx2 .fbx {
-    flex: 1;
-    /* width: 50%;
+  flex: 1;
+  /* width: 50%;
   height: auto; */
 }
 .fbx img {
-    /* #stk>img{ */
-    width: 70%;
-    margin-bottom: 30px;
+  /* #stk>img{ */
+  width: 70%;
+  margin-bottom: 30px;
 }
 
 /* 스티키 페이지 */
 #stk {
-    position: sticky;
-    top: 0;
-    text-align: center;
-    /* padding: 50px 0; */
-    transform: translateY(165px);
+  position: sticky;
+  top: 0;
+  text-align: center;
+  /* padding: 50px 0; */
+  transform: translateY(165px);
 }
 
 /*********** 메인2 내용- 첫번째(스티키) ***********/
 #stk > h4 {
-    font-family: "Joti One", cursive;
-    font-size: 40px;
-    line-height: 70px;
-    color: #3c2121;
+  font-family: "Joti One", cursive;
+  font-size: 40px;
+  line-height: 70px;
+  color: #3c2121;
 }
 #stk > p {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 14px;
-    line-height: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 #stk > h5 {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    color: #f43800;
-    margin-top: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #f43800;
+  margin-top: 15px;
 }
 
 /*********** 메인2 내용- 두번째 ***********/
 #bmu {
-    position: relative;
-    /* 부모자격-베스트메뉴 배경이미지 */
+  position: relative;
+  /* 부모자격-베스트메뉴 배경이미지 */
 
-    height: auto;
+  height: auto;
 }
 /* 베스트메뉴 배경이미지 */
 .bmenubgi1 {
-    position: absolute;
-    width: 15vw;
-    aspect-ratio: 1/1;
-    top: 190px;
-    right: -25px;
-    border-radius: 50%;
-    background-color: #def1ee;
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  top: 190px;
+  right: -25px;
+  border-radius: 50%;
+  background-color: #def1ee;
 }
 .bmenubgi2 {
-    position: absolute;
-    width: 23vw;
-    left: -42px;
-    top: 518px;
+  position: absolute;
+  width: 23vw;
+  left: -42px;
+  top: 518px;
 }
 .bmenubgi3 {
-    position: absolute;
-    width: 15vw;
-    right: -48px;
-    bottom: 500px;
+  position: absolute;
+  width: 15vw;
+  right: -48px;
+  bottom: 500px;
 }
 /* 🍅Q.질문
 이미지(박스)가 글자뒤로 보이게 하고 싶은데 어떻게 하면 될까요? */
 .bmenubgi4 {
-    position: absolute;
-    width: 15vw;
-    height: 30vh;
-    left: 215px;
-    bottom: 274px;
-    border-radius: 50%;
-    border: 8px solid #def1ee;
+  position: absolute;
+  width: 15vw;
+  height: 30vh;
+  left: 215px;
+  bottom: 274px;
+  border-radius: 50%;
+  border: 8px solid #def1ee;
 }
 
 .bmc {
-    /* 여기만 스크롤바생김! */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #fff;
+  /* 여기만 스크롤바생김! */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
 }
 
 /* 움직이는 페이지타이틀 */
 .page {
-    overflow: hidden;
-    /* 🥚넘치는 자식요소 숨기기 */
+  overflow: hidden;
+  /* 🥚넘치는 자식요소 숨기기 */
 }
 
 .movecenter {
-    text-align: center;
+  text-align: center;
 
-    /* position: relative; */
+  /* position: relative; */
 }
 .movetext {
-    position: relative;
+  position: relative;
 
-    /* top: 50%;
+  /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
 
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
 
-    font-weight: 900;
-    padding: 120px 0 80px 0;
-    color: #f43800;
+  font-weight: 900;
+  padding: 120px 0 80px 0;
+  color: #f43800;
 }
 /* movetext 밑줄바 */
 .movetext::after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 
-    height: 4px;
-    margin-top: 10px;
-    /* margin-bottom: 40px; */
-    background-color: #f43800;
+  height: 4px;
+  margin-top: 10px;
+  /* margin-bottom: 40px; */
+  background-color: #f43800;
 }
 
 /* 그리드박스 */
 .grid {
-    display: grid;
-    /* 가로방향 12그리드 셋팅 */
-    grid-template-columns: repeat(12, 1fr);
-    /* 세로방향 높이값 */
-    grid-template-rows: var(--bs1) var(--bs1) var(--bs1) var(--bs1);
-    /* 상하갭 */
-    grid-row-gap: 80px;
-    /* 좌우갭 */
-    grid-column-gap: 5px;
+  display: grid;
+  /* 가로방향 12그리드 셋팅 */
+  grid-template-columns: repeat(12, 1fr);
+  /* 세로방향 높이값 */
+  grid-template-rows: var(--bs1) var(--bs1) var(--bs1) var(--bs1);
+  /* 상하갭 */
+  grid-row-gap: 80px;
+  /* 좌우갭 */
+  grid-column-gap: 5px;
 
-    padding: 0 100px;
+  padding: 0 100px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .grid .tit1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 /* 베스트메뉴 이미지 */
 .grid .bimg1 {
-    background: url(../imges/bmenu1_Strawberry\ Latte.png) no-repeat center/cover;
-    width: 65%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-left: 65px;
-    transform: scale(1.2);
+  background: url(../imges/bmenu1_Strawberry\ Latte.png) no-repeat center/cover;
+  width: 65%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-left: 65px;
+  transform: scale(1.2);
 }
 .grid .bimg2 {
-    position: relative;
-    background: url(../imges/bmenu2_Strawberry\ Yogurt\ Blended.png) no-repeat center/cover;
-    width: 75%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-left: 50px;
-    transform: scale(1.2);
+  position: relative;
+  background: url(../imges/bmenu2_Strawberry\ Yogurt\ Blended.png) no-repeat center/cover;
+  width: 75%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-left: 50px;
+  transform: scale(1.2);
 }
 .grid .bimg3 {
-    background: url(../imges/bmenu3_Honey\ Grapefruit_ice.jpg) no-repeat center/cover;
-    width: 65%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-left: 65px;
-    transform: scale(1.2);
+  background: url(../imges/bmenu3_Honey\ Grapefruit_ice.jpg) no-repeat center/cover;
+  width: 65%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-left: 65px;
+  transform: scale(1.2);
 }
 .grid .bimg4 {
-    background: url(../imges/bmenu4_Strawberry\ Refreshing\ Ade.png) no-repeat center/cover;
-    width: 75%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    margin-left: 50px;
-    transform: scale(1.2);
+  background: url(../imges/bmenu4_Strawberry\ Refreshing\ Ade.png) no-repeat center/cover;
+  width: 75%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-left: 50px;
+  transform: scale(1.2);
 }
 /* 베스트 메뉴 내용설정 */
 .bname {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.5vw;
-    font-weight: 900;
-    color: #3c2121;
-    margin-top: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 900;
+  color: #3c2121;
+  margin-top: 40px;
 }
 .bsub {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.2vw;
-    color: #f43800;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2vw;
+  color: #f43800;
 }
 .tit1 > p,
 .tit3 > p {
-    font-size: 0.75vw;
-    color: #666666;
-    margin-top: 25px;
-    line-height: 24px;
-    letter-spacing: -0.6px;
-    /* font-weight: 300; */
+  font-size: 0.75vw;
+  color: #666666;
+  margin-top: 25px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  /* font-weight: 300; */
 }
 .tit2 > p,
 .tit4 > p {
-    font-size: 0.75vw;
-    color: #666666;
-    margin-top: 25px;
-    line-height: 24px;
-    letter-spacing: -0.6px;
+  font-size: 0.75vw;
+  color: #666666;
+  margin-top: 25px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
 }
 
 /* 그리드 영역 나누기 */
 .tit1 {
-    grid-column: 1/6;
+  grid-column: 1/6;
 }
 .bimg1 {
-    grid-column: 6/13;
+  grid-column: 6/13;
 }
 
 .bimg2 {
-    grid-column: 1/7;
+  grid-column: 1/7;
 }
 .tit2 {
-    grid-column: 7/13;
-    text-align: end;
+  grid-column: 7/13;
+  text-align: end;
 }
 
 .tit3 {
-    position: relative;
-    /* 순서 원보다 위 */
-    grid-column: 1/6;
+  position: relative;
+  /* 순서 원보다 위 */
+  grid-column: 1/6;
 }
 .bimg3 {
-    grid-column: 6/13;
+  grid-column: 6/13;
 }
 
 .bimg4 {
-    grid-column: 1/7;
+  grid-column: 1/7;
 }
 .tit4 {
-    grid-column: 7/13;
-    text-align: end;
+  grid-column: 7/13;
+  text-align: end;
 }
 
-/*************************** 메인섹션3페이지 ***************************/
+/*************************** 메인섹션3페이지 - 프로덕트 ***************************/
 .msbx3 {
-    background: #fff5d9;
+  background: #fff5d9;
 }
 
-/*************************** 메인섹션4페이지 ***************************/
+/*************************** 메인섹션4페이지 - 이벤트 ***************************/
 .msbx4 {
-    position: relative;
-    /* 부모자격 - .cbx */
-    background: #def1ee;
+  position: relative;
+  /* 부모자격 - .cbx */
+  background: #def1ee;
 }
 
 .cbx {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* 정중앙이동 */
-    width: 300px;
-    height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 정중앙이동 */
+  width: 300px;
+  height: 300px;
 }
 
-/*************************** 메인섹션5페이지 ***************************/
+/*************************** 메인섹션5페이지 - 뉴스 ***************************/
 .msbx5 {
-    background: #def1ee;
-    position: relative;
+  background: #def1ee;
+  position: relative;
 }
 
 /* 🍅Q.질문
 뉴스박스 내부 요소들을 가운데정렬하고 싶으면 어떻게 하나요? */
 .newsbx {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    aspect-ratio: 1/0.1;
-    border-top: 2.5px solid #3c2121;
-    border-bottom: 2.5px solid #3c2121;
-    padding: 25px 30px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  aspect-ratio: 1/0.1;
+  border-top: 2.5px solid #3c2121;
+  border-bottom: 2.5px solid #3c2121;
+  padding: 25px 30px;
 
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 .newsbx:hover {
-    background: #c8e6e2;
+  background: #c8e6e2;
 }
 
 .newsimg > img {
-    width: 18vw;
-    height: 100%;
-    margin-right: 45px;
+  width: 18vw;
+  height: 100%;
+  margin-right: 45px;
 }
 
 .newsbx > ul > li {
-    display: flex;
+  display: flex;
 }
 .newscont > p {
-    font-family: "Noto Sans KR", sans-serif;
-    white-space: nowrap;
+  font-family: "Noto Sans KR", sans-serif;
+  white-space: nowrap;
 }
 /* 작은뉴스박스 */
 .newscont > p > span {
-    display: block;
-    width: 85px;
-    line-height: min(1.5vw,29px);
-    margin-bottom: 10px;
-    background: #3c2121;
-    font-size: min(1.5vw,15px);
-    color: #fff;
-    text-align: center;
+  display: block;
+  width: 85px;
+  line-height: min(1.5vw, 29px);
+  margin-bottom: 10px;
+  background: #3c2121;
+  font-size: min(1.5vw, 15px);
+  color: #fff;
+  text-align: center;
 }
 /* 뉴스타이틀 */
 .newscont > p:first-child {
-    margin-bottom: min(2vw,23px);
-    font-size: 23px;
-    color: #3c2121;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+  margin-bottom: min(2vw, 23px);
+  font-size: 23px;
+  color: #3c2121;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 /* 뉴스내용 */
 .newscont > p:last-child {
-    font-size: min(2vw,23px);
-    color: #444444;
-    line-height: min(2.2vw,35px);
+  font-size: min(2vw, 23px);
+  color: #444444;
+  line-height: min(2.2vw, 35px);
 }
 /* 🍅Q.질문
 1. svg 박스 사이즈랑 위치조정
 2. 한쪽방향말고 양방향에서 svg하는 방법 */
 /* svg박스 */
 .svg1 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height:  100%;
+  width: 100%;
+  height: 100%;
 }
 .ln {
-    fill: none;
-    stroke: #f43800;
-    stroke-width: 20;
-    /* stroke-linecap: square; */
-    /* stroke-dasharray: 290%; */
-/* 
+  fill: none;
+  stroke: #f43800;
+  stroke-width: 20;
+  /* stroke-linecap: square; */
+  /* stroke-dasharray: 290%; */
+  /* 
     stroke-dashoffset: 350%; */
 
-    /* 트랜지션 */
-    transition: 1.2s;
+  /* 트랜지션 */
+  transition: 1.2s;
 }
-.ln1{
-    stroke-dasharray: 280%;
-    stroke-dashoffset: 280%;
+.ln1 {
+  stroke-dasharray: 280%;
+  stroke-dashoffset: 280%;
 }
-.ln2{
-    stroke-dasharray: 40%;
-    stroke-dashoffset: 40%;
+.ln2 {
+  stroke-dasharray: 40%;
+  stroke-dashoffset: 40%;
 }
 .svg1:hover .ln {
-    stroke-dashoffset: 0;
+  stroke-dashoffset: 0;
 }
 
 /* 🍅Q.질문
  애니메이션 튀는거 조절은 어떻게 해야하나요?*/
 /* 하단 애니메이션 메뉴 */
 .animenu {
-    position: absolute;
-    left: 0;
-    display: flex;
-    bottom: 50px;
-    width: 200vw;
-    /* height: 228px; */
+  position: absolute;
+  left: 0;
+  display: flex;
+  bottom: 50px;
+  width: 200vw;
+  /* height: 228px; */
 
-    /* background: url(../imges/5dk_menuani.png) repeat-x;
+  /* background: url(../imges/5dk_menuani.png) repeat-x;
     background-size: auto 100%; */
 
-    /* 애니메이션: 이시이지반방마 */
-    animation: animenu 10s linear infinite;
+  /* 애니메이션: 이시이지반방마 */
+  animation: animenu 10s linear infinite;
 }
-.animenu img{
-    flex-shrink: 1;
-    display: block;
-    width: 50%;
+.animenu img {
+  flex-shrink: 1;
+  display: block;
+  width: 50%;
 }
 
 /* 스크린배경이동 키프레임 */
 @keyframes animenu {
-    to {
-        left: -100%;
-    }
+  to {
+    left: -100%;
+  }
 }
 /* 키프레임 */
 
-/*************************** 메인섹션6페이지 ***************************/
+/*************************** 메인섹션6페이지 - 비디오 ***************************/
 .msbx6 {
-    background: #fff5d9;
-    position: relative;
+  background: #fff5d9;
+  position: relative;
 }
 .msbx6 > div {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /**** 달콤비디오 ****/
 /* 겉박스 */
 .vidscreen {
-    position: relative;
-    display: inline-block;
-    height: 480px;
+  position: relative;
+  display: inline-block;
+  height: 480px;
 
-    border-radius: 5px;
-    background-color: #fff;
+  border-radius: 5px;
+  background-color: #fff;
 }
 /* 속박스 */
 #vidbx {
-    width: 100%;
-    height: 80%;
-    transform: translateY(12%);
+  width: 100%;
+  height: 80%;
+  transform: translateY(12%);
 }
 /**** 비디오 글자박스 ****/
 /* 비디오타이틀 애니 */
 .anividtit {
-    display: inline-block;
-    display: flex;
-    font-size: 25px;
-    margin-bottom: 15px;
+  display: inline-block;
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 15px;
 
-    /* 트랜스폼 */
-    transform: rotate(0deg);
+  /* 트랜스폼 */
+  transform: rotate(0deg);
 
-    /* 트랜지션 */
-    transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  /* 트랜지션 */
+  transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
 .anividtit > p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    padding: 12px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 12px 30px;
 
-    border-radius: 3px;
-    border: 3px solid #3c2121;
-    color: #3c2121;
-    margin-right: 80px;
-    margin-bottom: 15px;
+  border-radius: 3px;
+  border: 3px solid #3c2121;
+  color: #3c2121;
+  margin-right: 80px;
+  margin-bottom: 15px;
 }
 .anividtit > p > span {
-    position: absolute;
-    width: 50px;
-    height: 57px;
-    top: 0;
-    left: 60.5%;
-    border: 3px solid #3c2121;
-    border-radius: 3px;
-    background: url(../imges/6dk_dot_board.png) no-repeat center;
-    background-size: contain;
+  position: absolute;
+  width: 50px;
+  height: 57px;
+  top: 0;
+  left: 60.5%;
+  border: 3px solid #3c2121;
+  border-radius: 3px;
+  background: url(../imges/6dk_dot_board.png) no-repeat center;
+  background-size: contain;
 }
-
 
 /* 비디오타이틀 화살표 */
 .anividtit > img {
+    width: 50px;
+    height: 50px;
 }
 
 /* 겉박스 */
 .vidcont {
-    position: relative;
-    display: inline-block;
-    padding-left: 5%;
+  position: relative;
+  display: inline-block;
+  padding-left: 5%;
 }
 /* 속박스 */
 /* 비디오타이틀 */
 .vidcont > p {
-    margin-bottom: 25px;
-    font-size: 37px;
-    color: #3c2121;
-    font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 37px;
+  color: #3c2121;
+  font-weight: 600;
 }
 /* 비디오내용 */
 .vidcont > p:last-child {
-    font-size: 16px;
-    color: #444444;
-    line-height: 30px;
-    font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+  line-height: 30px;
+  font-weight: 400;
 }
 
-/*************************** 메인섹션7페이지 ***************************/
+/*************************** 메인섹션7페이지 - 가맹점개설안내 ***************************/
 .msbx7 {
-    background: #fff;
+  background: #fff;
 }
 .msbx7 > div {
-    background: #fcf7e8;
-    height: 580px;
-    text-align: center;
-    padding: 150px 0;
-    box-sizing: border-box;
+  background: #fcf7e8;
+  height: 580px;
+  text-align: center;
+  padding: 150px 0;
+  box-sizing: border-box;
 }
 .msbx7 > div * {
-    color: #f43800;
-    margin-top: 30px;
+  color: #f43800;
+  margin-top: 30px;
 }
 .msbx7 h2 {
-    font-size: 48px;
+  font-size: 48px;
 }
 .msbx7 > div p {
-    font-size: 16px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 .msbx7 > div a {
-    /* width: 300px; */
-    /* height: 70px; */
-    line-height: 70px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 30px;
-    border: 1px solid #f43800;
+  /* width: 300px; */
+  /* height: 70px; */
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: 1px solid #f43800;
 }
