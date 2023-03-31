@@ -1,9 +1,9 @@
 // 달콤커피 : main.js
 
 // 새로고침시 맨위로 이동
-// setTimeout(() => {
-//   window.scrollTo(0, 0);
-// }, 100);
+setTimeout(() => {
+  window.scrollTo(0, 0);
+}, 100);
 
 // 로딩함수 호출 ////////
 window.addEventListener("DOMContentLoaded", loadFn); // 📢최초호출
