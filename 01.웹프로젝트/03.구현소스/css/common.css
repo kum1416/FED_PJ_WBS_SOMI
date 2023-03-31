@@ -68,7 +68,7 @@
   top: 80px;
   left: 0;
   width: 100%;
-  height: 0;
+  height: 250px;
   background-color: #fff;
   /* 트랜지션: 속시이지 */
   transition: 0.5s ease-in-out;
@@ -91,13 +91,13 @@
   font-weight: 800;
 }
 
-/* 서브메뉴 */
-.smbx {
+/* 서브메뉴 박스 */
+.sub_bx {
   position: absolute;
   z-index: 1;
 }
-.smenu {
-  height: 0;
+.sub_left {
+  height: 250px;
   overflow: hidden;
   margin-top: 35px;
   line-height: 45px;
@@ -196,7 +196,7 @@ footer {
   white-space: nowrap;
 }
 strong {
-  font-size: max(0.8vw, 16px);
+  font-size: min(1.2vw, 16px);
 }
 .footersm ul > li:first-child {
   margin-top: 25px;
@@ -209,10 +209,10 @@ strong {
 
 /* footer 서브메뉴 오버시 색상변경 */
 .footersm ul > li a {
+  position: relative;
     color: #6e6e6e;
     /* 트랜지션: 속시이지 */
     transition: 0.5s ease-in;
-    position: relative;
   }
 .footersm ul > li:hover a {
     color: #f43800;
