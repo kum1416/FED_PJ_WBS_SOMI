@@ -10,6 +10,110 @@ window.addEventListener("DOMContentLoaded", loadFn); // 📢최초호출
 
 function loadFn() {
   console.log("로딩완료!");
+////////////////////////////////////////////////////////
+
+// 1. 대상: .gnb
+const gnb = document.querySelector(".gnb");
+// console.log(gnb);
+// 2. html코드 담을 변수
+let hcode = "";
+
+// 3. 코드 구조
+// 1. 상위메뉴 반복코드
+hcode += `<ul>`;
+// mdata객체 반복
+// console.log(mdata);
+
+for(let mm in mdata){ // mm -> mdata속성명
+
+  hcode +=
+  `
+  <li class="mmenu">
+    <a href="#">${mm}</a>
+    <div class="sub_bx">
+      <div class="sub_left">
+      <h2>
+          ${mm}
+      </h2>
+            `;
+    
+          hcode += 
+          `<ul>`;
+
+            // 2. 하위메뉴 반복(서브)
+            for(let sub of mdata[mm]){
+              hcode += 
+              `<li>
+                <a href="#">${sub}</a>
+              </li>`;
+            } //////// for of ////// 
+
+          hcode +=`</ul>`;
+
+        hcode += `
+      </div>
+        <div class="sub_right">
+          <div>
+          <img src="./imges/dk_nav1.jpg" alt="서브메뉴 이미지" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  `;
+} //////// for in문 /////////////
+
+hcode += "</ul>";
+
+// 4. GNB 박스에 출력하기
+gnb.innerHTML = hcode;
+
+/**************************************** 
+  GNB 메뉴 오버시 서브메뉴 보이기
+****************************************/
+// 1. 대상선정
+// 이벤트 대상: .gnb>ul>li
+const list = document.querySelectorAll(".gnb>ul>li");
+// 변경 대상: .sub_bx
+// 변경내용: height값, opacity값
+// console.log(list);
+
+// 2. 상위메뉴 li에 이벤트 설정하기
+for(let x of list){
+  // 마우스 오버시 ///
+  x.onmouseenter = () => {
+    // (1) 하위메뉴 박스 .sub_bx 선택하여 변경하기
+    let tg = x.querySelector(".sub_bx");
+    // (2) 하위메뉴 style 변경하기
+    tg.style.height = "250px";
+    tg.style.opacity = 1;
+  }; ///// onmouseenter ////////
+
+  // 마우스 오버시 ///
+  x.onmouseleave = () => {
+    let tg = x.querySelector(".sub_bx");
+    tg.style.height = "0";
+    tg.style.opacity = 0;
+  }; ///// onmouseleave ////////
+} //////// for of //////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////
 
   // (1) 전체 페이지변수
   let pgnum = 0; // 현재 페이지번호(첫페이지 0)
