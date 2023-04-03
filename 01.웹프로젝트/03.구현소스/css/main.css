@@ -481,11 +481,11 @@ section {
 .menulist_cont strong {
   position: relative;
   z-index: 1;
-  padding: 7px 20px;
-  font-size: 22px;
+  padding: 7px 15px;
+  font-size: 21px;
   color: #3c2121;
   white-space: nowrap;
-  letter-spacing: -1.5px;
+  letter-spacing: -2px;
   background: #fff5d9;
   border: 2px solid #3c2121;
 }
