@@ -87,7 +87,7 @@ section {
     }
 } */
 /* 1. 전체 화면 배너 */
-#slide img{
+#slide img {
   width: 100%;
   height: 100%;
 }
@@ -105,7 +105,7 @@ section {
   border-radius: 15px;
   margin-right: 20px;
 }
-.mbx img{
+.mbx img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -398,10 +398,10 @@ section {
   background: #fff5d9;
 }
 /* 메뉴 리스트 */
-.menu_list{
+.menu_list {
   text-align: center;
 }
-.menu_list li{
+.menu_list li {
   position: relative;
   display: inline-block;
   /* vertical-align: middle; */
@@ -414,21 +414,48 @@ section {
   transition: all 0.5s;
 }
 /* 메뉴리스트 배너 */
-.banbx{
+.banbx {
+  position: relative;
   margin-top: 35px;
 }
-.menu_slide{
+.menu_slide {
   display: flex;
 }
-.menu_slide li{
+.menu_slide li {
   margin-left: 20px;
 }
-.menu_slide img{
+.menu_slide img {
   width: 100%;
   height: 280px;
   border-radius: 150px 150px 0 0;
 }
-
+/* 메뉴리스트 내용 */
+.menulist_bx {
+  margin-top: 20px;
+  display: flex;
+}
+.menulist_cont {
+  text-align: center;
+}
+.menulist_cont strong {
+  position: relative;
+  padding: 7px 20px;
+  font-size: 22px;
+  color: #3c2121;
+  letter-spacing: -1.5px;
+  background: #fff5d9;
+  border: 2px solid #3c2121;
+}
+.menulist_cont p {
+  display: block;
+  padding: 0;
+  margin-top: 25px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+  line-height: 1.6;
+}
 
 /*************************** 메인섹션4페이지 - 이벤트 ***************************/
 .msbx4 {
@@ -710,15 +737,15 @@ section {
   height: 100%;
   border: 0;
   box-sizing: border-box;
-  
+
   transition: 0.8s;
 }
 .msbx7 > div > p:last-child:hover::before {
-    transform-origin: inherit;
-    border: 25px solid #ffffff77;
-    opacity: 1;
+  transform-origin: inherit;
+  border: 25px solid #ffffff77;
+  opacity: 1;
 }
-.msbx7 > div > p:last-child span{
-    position: relative;
-    z-index: 999;
+.msbx7 > div > p:last-child span {
+  position: relative;
+  z-index: 999;
 }
