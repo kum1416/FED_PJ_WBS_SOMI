@@ -53,8 +53,8 @@ for(let mm in mdata){ // mm -> mdata속성명
         hcode += `
       </div>
         <div class="sub_right">
-          <div>
-          <img src="./imges/dk_nav1.jpg" alt="서브메뉴 이미지" />
+          <div class="imgbx">
+          <!--<img src="./imges/dk_nav1.png" alt="서브메뉴 이미지" />-->
           </div>
         </div>
       </div>

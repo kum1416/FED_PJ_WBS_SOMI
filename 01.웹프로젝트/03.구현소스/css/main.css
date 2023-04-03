@@ -412,6 +412,7 @@ section {
   margin-right: 30px;
   cursor: pointer;
   transition: all 0.5s;
+  z-index: 1;
 }
 /* 메뉴 이름 오버시 동그라미 */
 .menu_list li::before {
@@ -426,6 +427,7 @@ section {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.5s;
+  z-index: -1;
 }
 .menu_list li:hover::before{
   opacity: 1;
@@ -458,17 +460,8 @@ section {
   text-align: center;
 }
 /* 메뉴이름 */
-.menulist_cont strong {
-  position: relative;
-  padding: 7px 20px;
-  font-size: 22px;
-  color: #3c2121;
-  letter-spacing: -1.5px;
-  background: #fff5d9;
-  border: 2px solid #3c2121;
-}
-/* 메뉴이름 가상요소 */
-.menulist_cont strong::after {
+.menulist_cont strong::before {
+  z-index: -1;
   content: '';
   position: absolute;
   width: 100%;
@@ -478,6 +471,17 @@ section {
   background: #ee7868;
   border: 2px solid #3c2121;
 }
+.menulist_cont strong {
+  position: relative;
+  z-index: 1;
+  padding: 7px 20px;
+  font-size: 22px;
+  color: #3c2121;
+  letter-spacing: -1.5px;
+  background: #fff5d9;
+  border: 2px solid #3c2121;
+}
+/* 메뉴이름 가상요소 */
 
 .menulist_cont p {
   display: block;
@@ -509,10 +513,12 @@ section {
   width: 450px;
   height: 450px;
   transform: scale(0.85);
+  overflow: hidden;
 }
 .cbx img{
   width: 100%;
-  height: 100%
+  height: 100%;
+  transition: .4s;
 }
 .cbx_cont{
   position: Absolute;
@@ -531,11 +537,12 @@ section {
   color: #fff;
 }
 .cbx:hover .cbx_cont{
+  display: block;
   bottom: 0;
   opacity: 1;
 }
 .cbx:hover img{
-  transform: scale(1);
+  transform: scale(1.3);
 }
 
 /*************************** 메인섹션5페이지 - 뉴스 ***************************/

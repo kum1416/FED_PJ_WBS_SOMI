@@ -63,6 +63,7 @@
   justify-content: space-between;
   background-color: #fff;
   border-top: 1px solid #ccc;
+  display: flex;
 
   overflow: hidden;
   /* 높이값 : 250px */
@@ -101,11 +102,28 @@
 }
 
 .sub_right{
-  display: flex;
 }
-.sub_right img{
-  width: 60%;
-  height: 100%;
+.sub_right .imgbx{
+  background-repeat: no-repeat;
+  background-position: 67% 70%;
+  width: 900px;
+  height: 250px;
+}
+.mmenu:nth-child(1) .imgbx{
+  background-image: url(../imges/dk_nav1.png);
+
+}
+.mmenu:nth-child(2) .imgbx{
+  background-image: url(../imges/dk_nav2.png);
+
+}
+.mmenu:nth-child(3) .imgbx{
+  background-image: url(../imges/dk_nav3.png);
+
+}
+.mmenu:nth-child(4) .imgbx{
+  background-image: url(../imges/dk_nav4.png);
+
 }
 /*************** 3.상단사이드박스 ***************/
 .sidebx {
