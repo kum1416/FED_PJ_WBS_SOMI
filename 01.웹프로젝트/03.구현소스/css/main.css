@@ -516,14 +516,26 @@ section {
 }
 .cbx_cont{
   position: Absolute;
-    width: 80%;
-    left: 0;
-    bottom: -150px;
-    padding: 40px 40px;
-    background: #3c2121;
-    text-align: left;
-    opacity: 0;
-    transition: all 0.5s;
+  width: 70%;
+  left: 0;
+  bottom: -150px;
+  padding: 40px 40px;
+  background: #3c2121;
+  text-align: left;
+  opacity: 0;
+  transition: all 0.5s;
+  /* display: none; */
+}
+.cbx_cont p{
+  font-size: 25px;
+  color: #fff;
+}
+.cbx:hover .cbx_cont{
+  bottom: 0;
+  opacity: 1;
+}
+.cbx:hover img{
+  transform: scale(1);
 }
 
 /*************************** 메인섹션5페이지 - 뉴스 ***************************/
