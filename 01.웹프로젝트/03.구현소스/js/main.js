@@ -80,6 +80,8 @@ const list = document.querySelectorAll(".gnb>ul>li");
 
 // 2. 상위메뉴 li에 이벤트 설정하기
 for(let x of list){
+  // console.log(x.querySelector("a").innerText);
+  if(x.querySelector("a").innerText!=="SHOP") {
   // 마우스 오버시 ///
   x.onmouseenter = () => {
     // (1) 하위메뉴 박스 .sub_bx 선택하여 변경하기
@@ -95,6 +97,7 @@ for(let x of list){
     tg.style.height = "0";
     tg.style.opacity = 0;
   }; ///// onmouseleave ////////
+}
 } //////// for of //////
 
 /************************************************ 
@@ -286,6 +289,88 @@ for(let x of list){
 
 
    $(".movetext").addClass("scTg");
+
+
+    // 배너 변경기능구현
+    // 대상: #slide li, .minibx li
+    const sld = $("#slide li");
+    const mib = $(".minibx li");
+    
+    sld.hide().first().show();
+    mib.first().hide();
+
+
+    // 메뉴 클릭시 해당되는 것만 보이기!
+    mib.click(function(){
+      $(this).hide().siblings().show();
+      sld.eq($(this).index()).show().siblings().hide();
+    })
+
+
+
+    /// 슬라이드 이동하기 ////////
+    // 이벤트대상: .arrow_box
+    // 변경대상: .menu_slide
+    const msld = $(".msbx3 .menu_slide");
+    const abx = $(".msbx3 .arrow_box");
+    let prot_sld = 0;
+
+    abx.click(function(){
+      // 광클금지
+      if(prot_sld) return;
+      prot_sld = 1;
+      setTimeout(() => {
+        prot_sld = 0;
+      }, 300);
+
+
+
+      let idx = $(this).index(".msbx3 .arrow_box");
+      // alert(idx);
+      // 1은 오른쪽버튼
+      if(idx){
+        msld.animate({left:"-24%"},300,()=>{
+          msld.append(msld.find("li").first()).css({left:"0"})
+        })
+      }
+      else{
+        msld.prepend(msld.find("li").last()).css({left:"-24%"})
+        .animate({left:"0"},300);
+      }
+    });
+
+
+    /// 슬라이드 이동하기 ////////
+    // 이벤트대상: .arrow_box
+    // 변경대상: .menu_slide
+    const evtbx = $(".msbx4 .eventbx");
+    const abx2 = $(".msbx4 .arrow_box");
+    let prot_sld2 = 0;
+
+    abx2.click(function(){
+      // 광클금지
+      if(prot_sld2) return;
+      prot_sld2 = 1;
+      setTimeout(() => {
+        prot_sld2 = 0;
+      }, 300);
+
+
+
+      let idx = $(this).index(".msbx4 .arrow_box");
+      // alert(idx);
+      // 1은 오른쪽버튼
+      if(idx){
+        evtbx.animate({left:"-33.333%"},300,()=>{
+          evtbx.append(evtbx.find(".cbx").first()).css({left:"0"})
+        })
+      }
+      else{
+        evtbx.prepend(evtbx.find(".cbx").last()).css({left:"-33.333%"})
+        .animate({left:"0"},300);
+      }
+    });
+
 
 
 

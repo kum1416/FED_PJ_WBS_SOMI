@@ -60,6 +60,7 @@
   left: 0;
   width: 100%;
   padding: 0 150px;
+  box-sizing: border-box;
   justify-content: space-between;
   background-color: #fff;
   border-top: 1px solid #ccc;
@@ -83,6 +84,7 @@
   /* display: inline-block;
   vertical-align: top; */
   font-size: 25px;
+  margin-top: -25px;
 }
 .sub_left h2::after {
   content: "";
@@ -103,6 +105,8 @@
 
 /* gnb 이미지 */
 .sub_right{
+  position: absolute;
+  right: 50px;
 }
 .sub_right .imgbx{
   background-repeat: no-repeat;

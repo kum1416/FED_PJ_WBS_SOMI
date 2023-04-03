@@ -41,7 +41,7 @@ section {
     transform-origin: 50% 200%;
 }
 .hovbx:hover .imgbx{
-    animation: imgbxAni 8s;
+    animation: imgbxAni 8s forwards;
 }
 .hovbx:hover .roul{
     animation: roulAni 1s linear infinite;
@@ -57,9 +57,9 @@ section {
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
     left: 898px;
-} 
+}  */
 
-@keyframes roulAni {
+/* @keyframes roulAni {
     to{
         transform: rotate(360deg);
     }
@@ -77,8 +77,11 @@ section {
     45%{
         transform: translate(0, -10px);
     }
-    100%{
+    99%{
         transform: scale(5) translate(-200%, -100%) rotateX(1200deg) skewX(50deg) rotate(5300deg);
+    }
+    100%{
+      display: none;
     }
 }
 @keyframes locaAni {
@@ -433,22 +436,26 @@ section {
 
 /* 메뉴리스트 배너 */
 .banbx {
-  /* position: absolute; */
-  /* top: 30%; */
-  /* transform: translateX(15%); */
-  
+  position: relative;
+  left: 16.666%;
+  width: 66.664%;
+  overflow: hidden;
   margin-top: 50px;
 }
 .menu_slide {
+  position: relative;
+  left: 0;
   display: flex;
   justify-content: center;
+  width: 300%;
 }
 .menu_slide li {
-  margin-left: 20px;
+  width: 25%;
+  padding-left: 1%;
 }
 .menu_slide img {
   width: 100%;
-  height: 280px;
+  /* height: 280px; */
   border-radius: 155px 155px 0 0;
 }
 /* 메뉴리스트 내용 */
@@ -500,17 +507,27 @@ section {
   background: #def1ee;
 }
 
-/* 이벤트 박스 */
-.eventbx{
+/* 이벤트 부모박스 */
+.ebx{
   position: absolute;
-  display: flex;
+  width: 60%;
+  aspect-ratio: 3/1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* 이벤트 박스 */
+.eventbx{
+  position: absolute;
+  width: 200%;
+  display: flex;
+  left: 0;
 }
 .cbx {
-  width: 450px;
-  height: 450px;
+  width: 33.333%;
+  aspect-ratio: 1/1;
   transform: scale(0.85);
   overflow: hidden;
 }
@@ -805,15 +822,13 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  border: 0px solid #ccc;
   box-sizing: border-box;
 
   transition: 0.8s;
 }
 .msbx7 > div > p:last-child:hover::before {
-  transform-origin: inherit;
   border: 25px solid #ffffff77;
-  opacity: 1;
 }
 .msbx7 > div > p:last-child span {
   position: relative;
