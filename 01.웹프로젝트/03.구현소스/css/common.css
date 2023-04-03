@@ -53,6 +53,11 @@
   font-weight: 600;
   color: #3c2121;
 }
+.gnb a:hover{
+  color: #f43800;
+  /* 트랜지션 : 속시이지 */
+  transition: 0.4s ease-out;
+}
 
 /* 서브메뉴박스 */
 .mmenu .sub_bx{

@@ -622,9 +622,7 @@ section {
   color: #444444;
   line-height: min(2.2vw, 35px);
 }
-/* 🍅Q.질문
-1. svg 박스 사이즈랑 위치조정
-2. 한쪽방향말고 양방향에서 svg하는 방법 */
+
 /* svg박스 */
 .svg1 svg {
   position: absolute;
