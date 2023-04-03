@@ -23,7 +23,7 @@ section {
 }
 
 /*************************** 메인섹션1페이지 - 배너 ***************************/
-/* .msbx1 {
+.msbx1 {
     position: relative;
   background: url(../imges/dk_main1.jpg) no-repeat center/cover;
 }
@@ -85,7 +85,7 @@ section {
     to{
         transform: rotate(-15deg);
     }
-} */
+}
 /* 1. 전체 화면 배너 */
 #slide img {
   width: 100%;
