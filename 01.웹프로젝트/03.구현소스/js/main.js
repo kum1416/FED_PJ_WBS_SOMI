@@ -1,9 +1,9 @@
 // 달콤커피 : main.js
 
 // 새로고침시 맨위로 이동
-// setTimeout(() => {
-//   window.scrollTo(0, 0);
-// }, 100);
+setTimeout(() => {
+  window.scrollTo(0, 0);
+}, 100);
 
 // 로딩함수 호출 ////////
 window.addEventListener("DOMContentLoaded", loadFn); // 📢최초호출
@@ -99,31 +99,6 @@ for(let x of list){
   }; ///// onmouseleave ////////
 }
 } //////// for of //////
-
-/************************************************ 
-  3페이지(프로덕트) 화살표버튼 클릭시 슬라이드
-************************************************/
-    // 1. 대상선정 //////////////////////////
-    // 이벤트 대상: .arrow_box
-    const abtn = document.querySelectorAll(".arrow_box");
-
-    // 변경 대상: .move_slide
-    const slide = document.querySelector(".move_slide");
-    // console.log(abtn,slide);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
