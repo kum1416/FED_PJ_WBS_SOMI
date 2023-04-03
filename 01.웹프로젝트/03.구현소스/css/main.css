@@ -23,7 +23,7 @@ section {
 }
 
 /*************************** 메인섹션1페이지 - 배너 ***************************/
-.msbx1 {
+/* .msbx1 {
     position: relative;
   background: url(../imges/dk_main1.jpg) no-repeat center/cover;
 }
@@ -85,7 +85,7 @@ section {
     to{
         transform: rotate(-15deg);
     }
-}
+} */
 /* 1. 전체 화면 배너 */
 #slide img {
   width: 100%;
@@ -219,8 +219,6 @@ section {
   right: -48px;
   bottom: 500px;
 }
-/* 🍅Q.질문
-이미지(박스)가 글자뒤로 보이게 하고 싶은데 어떻게 하면 될까요? */
 .bmenubgi4 {
   position: absolute;
   width: 15vw;
@@ -438,6 +436,7 @@ section {
   /* position: absolute; */
   /* top: 30%; */
   /* transform: translateX(15%); */
+  
   margin-top: 50px;
 }
 .menu_slide {
