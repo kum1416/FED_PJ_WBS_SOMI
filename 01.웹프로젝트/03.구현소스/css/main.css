@@ -169,7 +169,7 @@ section {
   top: 0;
   text-align: center;
   /* padding: 50px 0; */
-  transform: translateY(165px);
+  transform: translateY(140px);
 }
 
 /*********** 메인2 내용- 첫번째(스티키) ***********/
@@ -415,6 +415,7 @@ section {
   transition: all 0.5s;
   z-index: 1;
 }
+
 /* 메뉴 이름 오버시 동그라미 */
 .menu_list li::before {
   content: '';
@@ -483,6 +484,7 @@ section {
   padding: 7px 20px;
   font-size: 22px;
   color: #3c2121;
+  white-space: nowrap;
   letter-spacing: -1.5px;
   background: #fff5d9;
   border: 2px solid #3c2121;
@@ -663,7 +665,7 @@ section {
   position: absolute;
   left: 0;
   display: flex;
-  bottom: 50px;
+  bottom: 70px;
   width: 200vw;
   /* height: 228px; */
 
