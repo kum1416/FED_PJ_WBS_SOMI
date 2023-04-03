@@ -66,8 +66,7 @@
 
   overflow: hidden;
   /* 높이값 : 250px */
-  height: 250px;
-  /* 투명도 : 오버시 0 -> 1 */
+  height: 0px;
   /* opacity: 0; */
   
   /* 트랜지션 : 속시이지 */

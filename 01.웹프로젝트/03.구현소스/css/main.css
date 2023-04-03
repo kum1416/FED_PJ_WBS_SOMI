@@ -23,7 +23,7 @@ section {
 }
 
 /*************************** 메인섹션1페이지 - 배너 ***************************/
-.msbx1 {
+/* .msbx1 {
     position: relative;
   background: url(../imges/dk_main1.jpg) no-repeat center/cover;
 }
@@ -57,7 +57,7 @@ section {
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
     left: 898px;
-}
+} */
 /* .page:hover .imgbx{
     animation: imgbxAni 15s;
 }
@@ -95,43 +95,39 @@ section {
         transform: rotate(-15deg);
     }
 }
-/* 하단 미니배너 박스 */
+/* 1. 전체 화면 배너 */
+#slide img{
+  width: 100%;
+  height: 100%;
+}
+/* 2. 하단 미니배너 박스 */
 .minibx {
   position: absolute;
-  /* margin: 0;
-    padding: 0; */
   display: flex;
   bottom: 5%;
   left: 10vw;
-}
-.mbx li:nth-child(1) {
-  background: url();
 }
 .mbx {
   max-width: 500px;
   width: 11vw;
   height: 7vw;
-  border: 2px solid #000;
   border-radius: 15px;
-  /* 🍅Q.질문
-    max-width: 500px;
-    width: 11vw; 일때와
-    height: 7vw;
-
-    width: max(11vw,500px); 일때의 차이점
-    height: 7vw;
-    */
+  margin-right: 20px;
+}
+.mbx img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 3px solid #fff;
 }
 
 /* 🍓인디케이터 */
-.indic {
+/* .indic {
   position: fixed;
   right: 2%;
   width: 45px;
   bottom: 3%;
-
-  /* outline: 3px dotted blue; */
-}
+} */
 /* a요소 */
 .indic a {
   display: block;
