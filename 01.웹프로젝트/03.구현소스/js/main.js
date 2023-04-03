@@ -97,6 +97,17 @@ for(let x of list){
   }; ///// onmouseleave ////////
 } //////// for of //////
 
+/************************************************ 
+  프로덕트페이지 화살표버튼 클릭시 슬라이드 배너
+************************************************/
+    // 1. 대상선정 //////////////////////////
+    // 이벤트 대상: .arrow_box
+    const abtn = document.querySelectorAll(".arrow_box");
+
+    // 변경 대상: .move_slide
+    const slide = document.querySelector(".move_slide");
+
+
 
 
 
