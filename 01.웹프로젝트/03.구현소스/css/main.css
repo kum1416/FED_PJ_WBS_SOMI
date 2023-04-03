@@ -415,11 +415,14 @@ section {
 }
 /* 메뉴리스트 배너 */
 .banbx {
-  position: relative;
-  margin-top: 35px;
+  /* position: absolute; */
+  /* top: 30%; */
+  /* transform: translateX(15%); */
+  margin-top: 45px;
 }
 .menu_slide {
   display: flex;
+  justify-content: center;
 }
 .menu_slide li {
   margin-left: 20px;
@@ -431,8 +434,9 @@ section {
 }
 /* 메뉴리스트 내용 */
 .menulist_bx {
-  margin-top: 20px;
-  display: flex;
+  /* top: 67%; */
+  /* transform: translateX(20%); */
+  margin-top: 25px;
 }
 .menulist_cont {
   text-align: center;
