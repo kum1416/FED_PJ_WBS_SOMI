@@ -251,3 +251,24 @@ strong {
   transform: translateY(0%);
   opacity: 1;
 }
+
+/* 넘기는 화살표 - 3,4페이지 공통 */
+.arrow_box{
+  position: absolute;
+  width: 50px;
+  height: 22px; 
+  top: 50%;
+}
+/* 왼쪽화살표 */
+.arrow_left{
+  position: absolute;
+  display: flex;
+  left: 10vw;
+}
+/* 오른쪽화살표 */
+.arrow_right{
+  position: absolute;
+  display: flex;
+  right: -90vw;
+}
+

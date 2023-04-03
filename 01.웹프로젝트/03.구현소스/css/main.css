@@ -413,12 +413,30 @@ section {
   cursor: pointer;
   transition: all 0.5s;
 }
+/* 메뉴 이름 오버시 동그라미 */
+.menu_list li::before {
+  content: '';
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background: #f8e61b;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.menu_list li:hover::before{
+  opacity: 1;
+}
+
 /* 메뉴리스트 배너 */
 .banbx {
   /* position: absolute; */
   /* top: 30%; */
   /* transform: translateX(15%); */
-  margin-top: 45px;
+  margin-top: 50px;
 }
 .menu_slide {
   display: flex;
@@ -430,17 +448,16 @@ section {
 .menu_slide img {
   width: 100%;
   height: 280px;
-  border-radius: 150px 150px 0 0;
+  border-radius: 155px 155px 0 0;
 }
 /* 메뉴리스트 내용 */
 .menulist_bx {
-  /* top: 67%; */
-  /* transform: translateX(20%); */
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .menulist_cont {
   text-align: center;
 }
+/* 메뉴이름 */
 .menulist_cont strong {
   position: relative;
   padding: 7px 20px;
@@ -450,6 +467,18 @@ section {
   background: #fff5d9;
   border: 2px solid #3c2121;
 }
+/* 메뉴이름 가상요소 */
+.menulist_cont strong::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -7px;
+  bottom: -7px;
+  background: #ee7868;
+  border: 2px solid #3c2121;
+}
+
 .menulist_cont p {
   display: block;
   padding: 0;
