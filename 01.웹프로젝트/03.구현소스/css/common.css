@@ -68,7 +68,7 @@
   overflow: hidden;
   /* 높이값 : 250px */
   height: 0px;
-  /* opacity: 0; */
+  opacity: 0;
   
   /* 트랜지션 : 속시이지 */
   transition: 0.4s ease-in-out;
@@ -101,12 +101,13 @@
   font-size: 20px;
 }
 
+/* gnb 이미지 */
 .sub_right{
 }
 .sub_right .imgbx{
   background-repeat: no-repeat;
   background-position: 67% 70%;
-  width: 900px;
+  width: 950px;
   height: 250px;
 }
 .mmenu:nth-child(1) .imgbx{
