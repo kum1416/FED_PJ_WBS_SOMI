@@ -106,6 +106,7 @@ for(let x of list){
 
     // 변경 대상: .move_slide
     const slide = document.querySelector(".move_slide");
+    // console.log(abtn,slide);
 
 
 
