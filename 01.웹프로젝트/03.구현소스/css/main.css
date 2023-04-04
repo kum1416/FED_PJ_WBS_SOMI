@@ -90,6 +90,13 @@ section {
     }
 }
 /* 1. 전체 화면 배너 */
+#slide{
+  height: 100%;
+}
+
+#slide li {
+  height: 100%;
+}
 #slide>li>img {
   width: 100%;
   height: 100%;
