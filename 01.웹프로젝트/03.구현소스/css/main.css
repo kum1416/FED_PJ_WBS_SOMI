@@ -90,7 +90,7 @@ section {
     }
 }
 /* 1. 전체 화면 배너 */
-#slide>img {
+#slide>li>img {
   width: 100%;
   height: 100%;
 }
