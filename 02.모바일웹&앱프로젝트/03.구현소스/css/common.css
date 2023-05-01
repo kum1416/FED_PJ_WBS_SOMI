@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* 삼화제지 : 공통 CSS - common.css */
+
+/* 웹폰트 CDN */
+/* 메인메뉴/굵은 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* 서브메뉴/얇은 글씨(설명) */
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+/* font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
+
+/* 초기화 */
+html,body,h1,ul,ol,li{
+margin: 0;
+padding: 0;
+}
+
+body {
+width: 100vw;
+height: 100vh;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+}
+
+/* 공사중 표시 */
+body * {
+  outline: 1px dashed gray;
+  font-family: 'Roboto', sans-serif;
+}
+
+/************************************************/
+
+/* 1. 상단영역 */
+/* 겉박스 */
+#top{
+    position: relative;
+
+    transition: 0.4s ease-in-out;
+}
+/* #top에 오버시 */
+#top:hover{
+    background-color: #fff;
+}
+/* #top 가상요소 */
+#top::after{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+
+    transition: 0.4s ease-in-out;
+}
+/* #top 오버시 가상요소 */
+#top:hover::after{
+    height: 142px;
+}
+
+/* 속박스 */
+.top{
+    /* 플렉스박스 */
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+
+    height: 100px;
+}
+
+/************ 1.로고파트 ************/
+.logo{
+    position: relative;
+    top: 50%;
+    transition: translateY(-50%);
+}
+.logo img{
+    /* width: 273px; */
+    height: 20px;
+}
+/* 로고 두번째 이미지 처음에 숨김 */
+.logo img:last-child{
+    display: none;
+}
