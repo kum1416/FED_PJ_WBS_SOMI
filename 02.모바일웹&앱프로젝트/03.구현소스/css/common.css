@@ -86,3 +86,57 @@ body * {
 .logo img:last-child{
     display: none;
 }
+/* 로고 두번째 이미지 보이기 */
+/* .logo img:last-child{
+    display: inline;
+} */
+
+
+/************ 2.네비파트 ************/
+/* 네비게이션 박스 */
+.gnb{
+    position: relative;
+    display: flex;
+
+    height: 100px;
+    overflow: hidden;
+    /* 트랜지션 */
+    transition: 0.4s ease-in-out;
+}
+/* #top 오버시 GNB */
+#top:hover .gnb{
+    height: 142px;
+}
+/* GNB smenu a요소 오버시 공통  */
+.gnb .smenu a{
+    color: #000;
+
+    /* 트랜지션 */
+    transition: 0.4s ease-in-out;
+}
+.gnb ul{
+    text-align: center;
+}
+.gnb ul>li+li{
+    margin-left: 50px;
+}
+.gnb ul>li{
+    line-height: 100px;
+}
+
+/* 서브메뉴 : .smenu  */
+.smenu li{
+    margin-bottom: 26px;
+}
+.smenu li a{
+    color: #777;
+    font-size: 14px;
+}
+
+
+/************ 3.기타파트 ************/
+
+
+
+
+
