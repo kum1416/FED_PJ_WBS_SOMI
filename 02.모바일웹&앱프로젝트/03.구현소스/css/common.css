@@ -14,15 +14,23 @@ html,body,h1,ul,ol,li{
 margin: 0;
 padding: 0;
 }
+/* ul, ol 초기화 */
+ul,ol{
+    list-style: none;
+}
 
 body {
 width: 100vw;
 height: 100vh;
+background-color: lightblue;
 }
 
 a {
-color: #fff;
+color: #777;
 text-decoration: none;
+}
+.gnb>ul>li>a{
+    color: #000;
 }
 
 /* 공사중 표시 */
@@ -37,38 +45,18 @@ body * {
 /* 겉박스 */
 #top{
     position: relative;
-
-    transition: 0.4s ease-in-out;
-}
-/* #top에 오버시 */
-#top:hover{
     background-color: #fff;
-}
-/* #top 가상요소 */
-#top::after{
-    content: '';
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #fff;
-
-    transition: 0.4s ease-in-out;
-}
-/* #top 오버시 가상요소 */
-#top:hover::after{
-    height: 142px;
 }
 
 /* 속박스 */
 .top{
     /* 플렉스박스 */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100vw;
     margin: 0 auto;
-
+    padding: 0 40px;
+    
     height: 100px;
 }
 
@@ -96,41 +84,70 @@ body * {
 /* 네비게이션 박스 */
 .gnb{
     position: relative;
-    display: flex;
 
     height: 100px;
     overflow: hidden;
     /* 트랜지션 */
     transition: 0.4s ease-in-out;
 }
-/* #top 오버시 GNB */
-#top:hover .gnb{
-    height: 142px;
+
+/* GNB 가상요소 */
+.gnb::after{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+
+    transition: 0.4s ease-in-out;
 }
-/* GNB smenu a요소 오버시 공통  */
-.gnb .smenu a{
+/* GNB 오버시 가상요소 */
+.gnb:hover::after{
+    height: 242px;
+}
+
+/* 가상요소로 밑줄 애니만들기 */
+    .gnb>ul>li>a::after{
+        content: '';
+        display: block;
+        
+        width: 100%;
+        opacity: 0;
+        height: 2px;
+        margin-top: 5px;
+        background-color: #000;
+        /* 트랜지션 : 속시이지 trs */
+        transition: all .3s;
+    }
+/* 오버시 바 보이기 */
+.gnb>ul>li:hover>a::after{
+    opacity: 1;
+}
+
+
+.smenu{
+    /* 내부 컨텐츠 숨기기 */
+    height: 0;
+    overflow: hidden;
+}
+/* 투명도 공통 오버시 */
+.gnb>ul>li:hover .smenu{
+    height: 242px;
+    opacity: 1;
+}
+
+/* smenu a요소 오버시 공통  */
+.smenu:hover a{
     color: #000;
 
     /* 트랜지션 */
     transition: 0.4s ease-in-out;
 }
-.gnb ul{
+.gnb>ul{
+    display: flex;
     text-align: center;
-}
-.gnb ul>li+li{
-    margin-left: 50px;
-}
-.gnb ul>li{
-    line-height: 100px;
-}
-
-/* 서브메뉴 : .smenu  */
-.smenu li{
-    margin-bottom: 26px;
-}
-.smenu li a{
-    color: #777;
-    font-size: 14px;
 }
 
 
