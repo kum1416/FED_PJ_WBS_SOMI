@@ -165,4 +165,34 @@ body * {
   background-color: #000;
 }
 
+/************************************************/
+/* 3. 하단영역 */
+#info{
+  background-color: #000000;
+}
+.info{
+  width: 1200px;
+  height: 228px;
+  margin: 0 auto;
 
+  font-size: min(1vw,14px);
+}
+/* 3-1.하단링크 */
+.blink{
+  color: #777;
+  display: flex;
+  padding-top: 63px;
+  padding-bottom: 23px;
+}
+.blink li+li{
+  margin-left: 15px;
+  border-left: 2px solid #4D4D4D;
+}
+/* 3-2.회사정보 */
+.addr{
+  color: #777;
+  font-style: normal;
+  padding: 23px 0;
+  line-height: 25px;
+  border-top: 1px solid #4D4D4D;
+}
