@@ -70,20 +70,21 @@ body * {
 
 
 /* #top 가상요소로 배경색넣기 */
-#top::after {
+.gnb>ul>li::after {
     content: "";
+    display: block;
     position: absolute;
     top: 100px;
     left: 0;
     width: 100%;
-    height: 0;
+    height: 142px;
     background-color: #fff;
     /* 트랜지션: 속시이지 */
     transition: 0.4s ease-in-out;
 }
 /* #top 오버시 가상요소 */
-#top:hover::after {
-    height: 142px;
+.gnb>ul>li:hover::after {
+    display: block;
     /* border-top: 1px solid #ccc; */
 }
 /************ 1.로고파트 ************/
