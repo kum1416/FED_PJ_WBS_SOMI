@@ -40,7 +40,7 @@ a {
 
 /* 공사중 표시 */
 body * {
-  outline: 1px dashed gray;
+  /* outline: 1px dashed gray; */
   font-family: "Roboto", sans-serif;
 }
 
@@ -55,15 +55,22 @@ body * {
 
 /* 속박스 */
 .top {
+  position: fixed;
+
   /* 플렉스박스 */
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0 40px;
-
+  width: 100%;
   max-width: 1840px;
   height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  align-items: center;
+  
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 /************ 1.로고파트 ************/
@@ -71,8 +78,7 @@ body * {
 .logo {
   /* 세로중앙이동 */
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 100%;
 }
 .logo img {
   /* width: 273px; */
@@ -95,37 +101,12 @@ body * {
 
   height: 100px;
   overflow: hidden;
-  /* 트랜지션 */
-  transition: 0.4s ease-in-out;
-}
-.top > div:nth-child(2) {
-  transform: translateX(-50%);
 }
 
-#top:hover .gnb {
-  height: 242px;
-}
 .gnb > ul {
   /* 플렉스박스 */
   display: flex;
   text-align: center;
-}
-/* 가상요소로 밑줄 애니만들기 */
-.gnb > ul > li > a::after {
-  content: "";
-  display: block;
-
-  width: 100%;
-  opacity: 0;
-  height: 2px;
-  margin-top: 5px;
-  background-color: #000;
-  /* 트랜지션 : 속시이지 trs */
-  transition: all 0.3s;
-}
-/* 오버시 바 보이기 */
-.gnb > ul > li:hover > a::after {
-  opacity: 1;
 }
 
 /* 메뉴 간격 조정 */
@@ -152,20 +133,14 @@ body * {
 .other {
   /* 플렉스박스 */
   display: flex;
-  /* 세로중앙정렬 */
-  top: 50%;
-  transform: translateY(50%);
+  align-items: center;
 }
 .other li {
-    position: relative;
+  position: relative;
+  height: 100%;
+  font-size: 20px;
+}
 
-    transform: translateY(30%);
-    height: 100%;
-}
-.other li:nth-child(1) {
-    width: 24px;
-    height: 24px;
-}
 .other i {
   width: 100%;
   height: 100%;
@@ -191,29 +166,4 @@ body * {
   background-color: #000;
 }
 
-/* 햄버거 버튼바 */
-.ham {
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 50px;
-}
-.ham span {
-  position: absolute;
-  height: 5px;
-  background-color: #000;
-}
 
-/* 햄버거 span바 초기셋팅 */
-.ham span:nth-child(1) {
-  top: 0px;
-  width: 100%;
-}
-.ham span:nth-child(2) {
-  top: 10px;
-  width: 70%;
-}
-.ham span:nth-child(3) {
-  top: 20px;
-  width: 80%;
-}
