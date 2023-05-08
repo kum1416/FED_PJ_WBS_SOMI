@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* 삼화제지 : 메인 CSS - main.css */
+
+/* 공통 외부 CSS 합치기 */
+@import url(./common.css);
+
+/* 섹션1페이지 */
+.page1{
+    height: 200vh;
+    background-color: #DBD9DE;
+}
+.pg1{
+    /* height: 200%; */
+}
+.pg1 img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15vw;
+    width: min(1250px,100vw);
+}

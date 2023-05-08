@@ -16,34 +16,32 @@ h1,
 ul,
 ol,
 li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /* ul, ol 초기화 */
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: lightblue;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
-    color: #777;
-    text-decoration: none;
+  color: #777;
+  text-decoration: none;
 }
 .gnb > ul > li > a {
-    color: #000;
+  color: #000;
 }
 
 /* 공사중 표시 */
 body * {
-    outline: 1px dashed gray;
-    font-family: "Roboto", sans-serif;
+  outline: 1px dashed gray;
+  font-family: "Roboto", sans-serif;
 }
 
 /************************************************/
@@ -51,160 +49,171 @@ body * {
 /* 1. 상단영역 */
 /* 겉박스 */
 #top {
-    position: relative;
-    background-color: #fff;
+  position: relative;
+  background-color: #fff;
 }
 
 /* 속박스 */
 .top {
-    /* 플렉스박스 */
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0 40px;
+  /* 플렉스박스 */
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 40px;
 
-    max-width: 1840px;
-    height: 100px;
+  max-width: 1840px;
+  height: 100px;
 }
 
-
-/* #top 가상요소로 배경색넣기 */
-.gnb>ul>li::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 142px;
-    background-color: #fff;
-    /* 트랜지션: 속시이지 */
-    transition: 0.4s ease-in-out;
-}
-/* #top 오버시 가상요소 */
-.gnb>ul>li:hover::after {
-    display: block;
-    /* border-top: 1px solid #ccc; */
-}
 /************ 1.로고파트 ************/
 /* 로고 */
 .logo {
-    /* 세로중앙이동 */
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  /* 세로중앙이동 */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .logo img {
-    /* width: 273px; */
-    height: 20px;
+  /* width: 273px; */
+  height: 20px;
 }
 /* 로고 두번째 이미지 처음에 숨김 */
 .logo img:last-child {
-    display: none;
+  display: none;
 }
 /* 로고 두번째 이미지 보이기 */
 /* .logo img:last-child{
     display: inline;
 } */
 
-
 /************ 2.네비파트 ************/
 /* 네비게이션 박스 */
-.gnb{
-    position: relative;
-    z-index: 1;
+.gnb {
+  position: relative;
+  z-index: 1;
 
-    height: 100px;
-    overflow: hidden;
-    /* 트랜지션 */
-    transition: 0.4s ease-in-out;
+  height: 100px;
+  overflow: hidden;
+  /* 트랜지션 */
+  transition: 0.4s ease-in-out;
 }
-.top>div:nth-child(2){
-    transform: translateX(-50%);  
+.top > div:nth-child(2) {
+  transform: translateX(-50%);
 }
 
-#top:hover .gnb{
-    height: 242px;
+#top:hover .gnb {
+  height: 242px;
 }
-.gnb>ul {
-    /* 플렉스박스 */
-    display: flex;
-    text-align: center;
+.gnb > ul {
+  /* 플렉스박스 */
+  display: flex;
+  text-align: center;
 }
 /* 가상요소로 밑줄 애니만들기 */
 .gnb > ul > li > a::after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 
-    width: 100%;
-    opacity: 0;
-    height: 2px;
-    margin-top: 5px;
-    background-color: #000;
-    /* 트랜지션 : 속시이지 trs */
-    transition: all 0.3s;
+  width: 100%;
+  opacity: 0;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #000;
+  /* 트랜지션 : 속시이지 trs */
+  transition: all 0.3s;
 }
 /* 오버시 바 보이기 */
 .gnb > ul > li:hover > a::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* 메뉴 간격 조정 */
 .gnb > ul > li + li {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 /* 최상위 메뉴 간격 조정 : ul > li */
-.gnb > ul > li{
-    line-height: 100px;
+.gnb > ul > li {
+  line-height: 100px;
 }
 /* 서브메뉴 간격 조정 : .smemu > ul > li  */
-.smenu > ul > li{
-    line-height: 40px;
+.smenu > ul > li {
+  line-height: 40px;
 }
 /* smenu a요소 오버시 공통  */
 .smenu a:hover {
-    color: #000;
+  color: #000;
 
-    /* 트랜지션 */
-    transition: 0.4s ease-in-out;
+  /* 트랜지션 */
+  transition: 0.4s ease-in-out;
 }
 
 /************ 3.기타파트 ************/
-.other{
-    /* 플렉스박스 */
-    display: flex;
+.other {
+  /* 플렉스박스 */
+  display: flex;
+  /* 세로중앙정렬 */
+  top: 50%;
+  transform: translateY(50%);
 }
+.other li {
+    position: relative;
+
+    transform: translateY(30%);
+    height: 100%;
+}
+.other li:nth-child(1) {
+    width: 24px;
+    height: 24px;
+}
+.other i {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+}
+.other i + i {
+  opacity: 0;
+}
+/* 사이간격주기 */
+.other li + li {
+  margin-left: 20px;
+}
+
 /* 가상요소로 밑줄 애니만들기 */
 .other > li:nth-child(2) > span::after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 
-    width: 100%;
-    height: 3px;
-    margin-top: 5px;
-    background-color: #000;
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #000;
 }
 
 /* 햄버거 버튼바 */
+.ham {
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 50px;
+}
 .ham span {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: #000;
-    /* 트랜지션 */
-    transition: 0.3s;
-  }
+  position: absolute;
+  height: 5px;
+  background-color: #000;
+}
 
 /* 햄버거 span바 초기셋팅 */
 .ham span:nth-child(1) {
-top: 0px;
+  top: 0px;
+  width: 100%;
 }
 .ham span:nth-child(2) {
-top: 10px;
+  top: 10px;
+  width: 70%;
 }
 .ham span:nth-child(3) {
-top: 20px;
+  top: 20px;
+  width: 80%;
 }
-
-
