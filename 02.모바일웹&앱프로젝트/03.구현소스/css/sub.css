@@ -1,5 +1,75 @@
 @charset "utf-8";
 /* 삼화제지 : 서브 CSS - sub.css */
 
-/*************** 서브페이지 ***************/
+/* 공통 외부 CSS 합치기 */
+@import url(./common.css);
 
+/*************** 서브페이지 ***************/
+/* 서브페이지-배경텍스트박스 */
+.sub_txt{
+    font-size: 5vw;
+    font-weight: 600;
+    text-align: center;
+    color: #0D2A43;
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/********* 서브-하단메뉴박스 *********/
+.sub_menu{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* 서브-하단메뉴 공통 */
+.sub_menu ul{
+    /* 플렉스박스 */
+    display: flex;
+}
+.sub_mtxt{
+    width: calc(100vw/3);
+    height: calc(100vh/3);
+    color: #fff;
+}
+/* 서브-하단메뉴 텍스트 */
+.sub_mtxt h3{
+    font-size: 2.5vw;
+    position: absolute;
+    top: 25%;
+    padding-left: 50px;
+}
+.sub_mtxt h4{
+    font-size: 0.8vw;
+    position: absolute;
+    top: 55%;
+    padding-left: 50px;
+}
+/* EXPLORE 화살표 */
+.sub_mtxt h4::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 110%;
+    width: 40%;
+    height: 100%;
+    background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
+}
+
+
+/* 서브-하단메뉴1 */
+.sub_bg1{
+    background: url(../images/sub1_Embossed_img.png) no-repeat 100%/cover;
+}
+
+/* 서브-하단메뉴2 */
+.sub_bg2{
+    background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
+}
+/* 서브-하단메뉴1 */
+.sub_bg3{
+    background: url(../images/sub3_Primium_img.png) no-repeat 100%/cover;
+}
