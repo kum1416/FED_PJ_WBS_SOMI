@@ -185,8 +185,7 @@ body * {
   padding-bottom: 23px;
 }
 .blink li+li{
-  margin-left: 15px;
-  border-left: 2px solid #4D4D4D;
+  padding: 0 10px;
 }
 /* 3-2.회사정보 */
 .addr{
