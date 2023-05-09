@@ -5,3 +5,25 @@
 @import url(./common.css);
 
 /*************** 서브페이지 ***************/
+.sub_first{
+    position: relative;
+
+}
+.sub_pg1{
+    background: url(../images/sub1_Embossed_img.png) no-repeat top/cover;
+    height: 100vh;
+}
+/* 배경 텍스트박스 */
+.sub_bgt{
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
+}
