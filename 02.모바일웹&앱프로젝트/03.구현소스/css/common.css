@@ -15,7 +15,8 @@ body,
 h1,
 ul,
 ol,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
 }
