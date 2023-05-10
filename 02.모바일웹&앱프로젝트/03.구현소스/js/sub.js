@@ -1,63 +1,33 @@
 // 서브페이지 자바스크립트
 
-$(()=>{
-    console.log('hi')
-    
-    // 종이보관함 변수 - 어디에 넣을건지
-    let a = $('.paper_list');
+$(() => {
+    console.log("안녕");
 
-    // 무엇을 반복할건지 반복대상
-    // -> li의 구조를 반복하고 싶어요
+    // 대상선정
+    let plist = $(".paper_list");
 
-    // 준비물 반복된걸 넣을 창고
-    let hcode = ''; // 창고기능 보관
+    let hcode = '';
 
-    let by = ['레자크53','레자크15','레자크73','머메이드','맨들맨들','맨드라미','동글동글','동그라미','폴리폴리']
-    // 8-0? 8번만큼 반복해주세요 라는소리에요 
-    // for(let i = 1; i<9; i++){
-    //     // 뭘 반복해드릴까요?
-    //     // li의 구조 코드를 반복해주세요
-    //     hcode +=`
-    //     <li>
-    //         <a href="#">
-    //             <div class="p_img">
-    //                 <img
-    //                     src="./images_EMBOSSED/${i}_LEATHACK.png"
-    //                     alt="레자크"
-    //                 />
-    //             </div>
-    //             <!-- 종이 이름 -->
-    //             <div class="p_name">
-    //                 <p>${by[i]}</p>
-    //                 <p>레자크${i}</p>
-    //             </div>
-    //         </a>
-    //     </li>
-    //     `;
-    // }
-
-    // a-종이보관함이에요 ul
-    // ul안에 html코드를넣어주세요 
-    //  () <- 얘안에 든애가 코드
-    a.html(hcode)
-
-    const asdf ={
-        "종이" : {
-            "레자크64" : {
-                피터 : "얼마",
-                유즈 : "무엇",
-                무게 : "무엇",
-            },
-            "레자크64" : {
-                피터 : "얼마",
-                유즈 : "무엇",
-                무게 : "무엇",
-            },
-        },
-
+    for (let i = 1; i < 24; i++) {
+        hcode += `
+        <li>
+            <a href="#">
+                <div class="p_img">
+                    <img
+                        src="./images_EMBOSSED/${i}_LEATHACK.png"
+                        alt="레자크"
+                    />
+                </div>
+                <!-- 종이 이름 -->
+                <div class="p_name">
+                    <p>LEATHACK ${i}</p>
+                    <p>레자크 ${i}</p>
+                </div>
+            </a>
+        </li>
+        `;
     }
-    console.log(asdf.종이.레자크64.무게)
 
-    
-
-})
+    // 출력하기
+    plist.html(hcode);
+});

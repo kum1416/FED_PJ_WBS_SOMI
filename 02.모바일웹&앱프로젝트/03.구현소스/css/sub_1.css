@@ -23,7 +23,8 @@
 }
 /* 종이 이미지 */
 .paper_list li{
-    width: calc(100vw/5);
+    width: calc(100vw/5.45);
+    padding-bottom: 38px;
 
 }
 .p_img img{
@@ -50,6 +51,6 @@
 /* 종이보관함  */
 .paper_list{
     display: flex;
-    gap : 0 5%;
+    gap : 0 0.8%;
     flex-wrap: wrap;
 }
