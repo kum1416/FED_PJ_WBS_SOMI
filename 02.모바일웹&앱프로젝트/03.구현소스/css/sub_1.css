@@ -46,3 +46,10 @@
     font-size: min(1.4vw,14px);
     line-height: 20px;
 }
+
+/* 종이보관함  */
+.paper_list{
+    display: flex;
+    gap : 0 5%;
+    flex-wrap: wrap;
+}
