@@ -7,9 +7,14 @@
 /*************** 서브페이지 ***************/
 .sub_pg1{
     position: relative;
-    background: url(../images/sub1_) no-repeat top/cover;
+    background: url(../images_EMBOSSED/1_LEATHACK.png) no-repeat top/cover;
     height: 100vh;
 }
+/* 배경 텍스트박스 */
+.sub_bgt{
+    color: #000;
+}
+
 /*********** 종이리스트 ***********/
 /* 겉박스 */
 .sub_paper{
