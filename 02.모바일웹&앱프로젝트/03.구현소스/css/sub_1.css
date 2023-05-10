@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 삼화제지 : 서브 CSS - sub_first.css */
+/* 삼화제지 : 서브 CSS - sub_1.css */
 
 /* 공통 외부 CSS 합치기 */
 @import url(./common.css);
@@ -9,26 +9,6 @@
     position: relative;
     background: url(../images/sub1_Embossed_img.png) no-repeat top/cover;
     height: 100vh;
-}
-/* 배경 텍스트박스 */
-.sub_bgt{
-    font-size: 3.5vw;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* 화살표 */
-.arrow{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 40px;
-    font-size: 2.5vw;
 }
 /*********** 종이리스트 ***********/
 /* 겉박스 */

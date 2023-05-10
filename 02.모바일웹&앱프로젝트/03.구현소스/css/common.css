@@ -196,3 +196,26 @@ body * {
   line-height: 25px;
   border-top: 1px solid #4D4D4D;
 }
+
+/************************************************/
+/********* 서브페이지 공통 *********/
+/* 배경 텍스트박스 */
+.sub_bgt{
+  font-size: 3.5vw;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 화살표 */
+.arrow{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  font-size: 2.5vw;
+}
