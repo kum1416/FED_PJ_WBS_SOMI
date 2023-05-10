@@ -59,10 +59,10 @@
 .p_name p:first-child{
     font-weight: 600;
     line-height: 24px;
-    font-size: 24px;
+    font-size: min(1.4vw,24px);
 }
 .p_name p:last-child{
     padding-top: 5px;
-    font-size: 14px;
+    font-size: min(1.4vw,14px);
     line-height: 20px;
 }
