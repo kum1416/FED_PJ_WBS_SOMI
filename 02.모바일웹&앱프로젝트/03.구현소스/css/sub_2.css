@@ -20,6 +20,7 @@
 .cont{
     width: 1200px;
     margin: 0 auto;
+    padding-bottom: 110px;
 }
 /* 내용타이틀 */
 .cont_tit{
@@ -89,6 +90,20 @@
 }
 .c2 ul p:first-child{
     padding-top: 30px;
+}
+/* 상담버튼 */
+.cbtn{
+    text-align: center;
+    margin-top: 70px;
+}
+.cbtn button{
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    width: 300px;
+    height: 60px;
+    font-size: min(1vw,16px);
+    font-weight: 400;
+    background: #000;
+    color: #fff;
 }
 
 
