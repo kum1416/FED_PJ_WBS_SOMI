@@ -35,6 +35,15 @@
     color: #fff;
 }
 /* 서브-하단메뉴 텍스트 */
+/* 하단 공통 */
+.sub_menu li{
+    overflow: hidden;
+}
+.sub_mtxt>div:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
 .sub_mtxt h3{
     font-size: 2.5vw;
     position: absolute;
@@ -61,15 +70,21 @@
 
 
 /* 서브-하단메뉴1 */
-.sub_bg1{
+.sub_bg1>div{
+    height: 100%;
     background: url(../images/sub1_Embossed_img.png) no-repeat 100%/cover;
+    transition: 0.5s ease-in-out;
 }
 
 /* 서브-하단메뉴2 */
-.sub_bg2{
+.sub_bg2>div{
+    height: 100%;
     background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
+    transition: 0.5s ease-in-out;
 }
 /* 서브-하단메뉴3 */
-.sub_bg3{
+.sub_bg3>div{
+    height: 100%;
     background: url(../images/sub3_Primium_img.png) no-repeat 100%/cover;
+    transition: 0.5s ease-in-out;
 }
