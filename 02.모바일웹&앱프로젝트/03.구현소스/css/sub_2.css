@@ -75,6 +75,7 @@
 }
 .c2 ul div{
     height: 111px;
+    margin-bottom: 20px;
 }
 .c2 ul img{
     height: 100%;
@@ -87,6 +88,9 @@
     background: url(../images/info.png) no-repeat left center;
     color: #777;
     padding-left: 18px;
+}
+.c2 ul p+p{
+    margin-top: 5px;
 }
 .c2 ul p:first-child{
     padding-top: 30px;
