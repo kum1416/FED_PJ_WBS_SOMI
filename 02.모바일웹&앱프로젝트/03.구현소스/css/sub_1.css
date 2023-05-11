@@ -76,6 +76,14 @@
     color: #fff;
 }
 /* 서브-하단메뉴 텍스트 */
+/* 하단 공통 */
+.sub_menu li{
+    overflow: hidden;
+}
+.sub_mtxt:hover{
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
 /****** 프리미엄 ******/
 .sub_mtxt{
     position: relative;
