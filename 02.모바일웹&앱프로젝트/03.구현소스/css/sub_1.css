@@ -66,8 +66,11 @@
     /* 플렉스박스 */
     display: flex;
 }
+.sub_menu ul li{
+    width: 50%;
+}
+
 .sub_mtxt{
-    width: calc(100vw/2);
     height: 280px;
     color: #fff;
 }
@@ -79,13 +82,14 @@
 }
 .sub_bg3 h3{
     position: absolute;
-    font-size: 2vw;
-    top: 35%;
+    font-size: 1.8vw;
+    top: 38%;
     right: 5%;
 }
 .sub_bg3 h4{
     position: absolute;
-    top: 55%;
+    font-size: 0.8vw;
+    top: 56%;
     right: 5%;
 }
 /* 왼쪽 EXPLORE 화살표 */
@@ -109,14 +113,15 @@
 /****** 컬러레드 ******/
 .sub_bg2 h3{
     position: absolute;
-    font-size: 2vw;
-    top: 35%;
+    font-size: 1.8vw;
+    top: 38%;
     left: 5%;
 }
 /* 컬러레드 */
 .sub_bg2 h4{
     position: absolute;
-    top: 55%;
+    font-size: 0.8vw;
+    top: 56%;
     left: 5%;
 }
 
