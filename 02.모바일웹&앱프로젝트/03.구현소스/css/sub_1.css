@@ -14,7 +14,8 @@
 /* 겉박스 */
 .sub_paper{
     margin: 0 40px;
-    padding-bottom: 100px;
+    padding: 50px 0 100px 0;
+    /* padding-bottom: 100px; */
 }
 /* 서브타이틀 */
 .sub_tit{
