@@ -88,3 +88,28 @@
     background: url(../images/sub3_Primium_img.png) no-repeat 100%/cover;
     transition: 0.5s ease-in-out;
 }
+
+
+
+/* 블랙박스 셋팅 */
+.blackbxwrap{
+    /* 잠시숨겨놈 */
+    /* display: none; */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.blackbox{
+    /* opacity: 0; */
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.ohbx{
+    width: calc(100%/3);
+    overflow: hidden;
+}
