@@ -52,7 +52,7 @@ $(()=>{ // 로딩구역
         console.log(b)
 
         // 검은박스 만들었고 변수지정했고 어디까지 내려가야 하는지 구했음
-        
+
         $(bbx1).css({
             transform : `translateY(${a+'px'})`,
             transition : '0.3s'
@@ -130,6 +130,11 @@ $(()=>{ // 로딩구역
         // 3. setTimeout으로 처음 css바꾸고 난후에 css값 또 바꿔주기 
 
 
+
+
+
+
+        
 
 
 

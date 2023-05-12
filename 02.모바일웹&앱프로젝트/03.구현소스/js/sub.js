@@ -31,4 +31,31 @@ $(() => {
     // 출력하기
     plist.html(hcode);
     
+
+    // 2번째 알려주기 둘다 선셋팅을 해놓고 클래스만 주면되게하기
+        // 언제? -> 로딩시
+        // 누구한테? -> .sub_bgt
+        // 뭘해야될까? -> 클래스 on주기 = addClass(클래스명)
+        // console.log('.sub_bgt')
+        // $('.sub_bgt').addClass('on');
+
+        a1 = $('.sub_bgt')
+        // 변수2= $('.sub_bwe')
+        // 변수3 = $('.sub_bger')
+
+
+
+        // 함수를 만들어서 
+        function adc(x){ //x = 파라미터 ,매개변수 , 전달변수 
+
+            // x는 클래스변수 -> x에 클래스on을 넣어주는 함수
+            x.addClass('on')
+
+            // 이용방법
+            // 원하는 요소를 변수화 한다음에 asd(변수) 끝 
+        }
+
+        adc(a1)
+        // adc(a2)
+        // adc(a3)
 });

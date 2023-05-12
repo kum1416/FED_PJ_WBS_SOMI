@@ -213,7 +213,27 @@ body * {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  /* 추가되었어요 5-12 17:50 */
+  /* overflow: hidden; */
 }
+/* 선셋팅을 해요~ */
+/* 준비 */
+.sub_bgt > h3{
+  /* opacity: 0; */
+  transform: translateY(100%);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+/* 완료  */
+.sub_bgt.on > h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
 /* 화살표 */
 .arrow{
   position: absolute;
