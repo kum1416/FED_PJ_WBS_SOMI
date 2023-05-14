@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* 삼화제지 : 서브 CSS - sub01.css */
+
+/* 공통 외부 CSS 합치기 */
+@import url(./common.css);
+
+/*************** 서브페이지 ***************/
+.sub_pg1{
+    position: relative;
+    background: url(../images/sub3_Primium_img.png) no-repeat top/cover;
+    height: 100vh;
+}
+/*********** 종이리스트 ***********/
+/* 겉박스 */
+.sub_paper{
+    margin: 0 40px;
+    padding: 50px 0 100px 0;
+    /* padding-bottom: 100px; */
+}
+/* 서브타이틀 */
+.sub_tit{
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 40px 0 44px;
+}
+/* 종이 이미지 */
+.paper_list li{
+    width: calc(100vw/5.45);
+    padding-bottom: 38px;
+
+}
+.p_img img{
+    width: 100%;
+    height: 100%;
+}
+/* 종이 이름 */
+.p_name{
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
+}
+.p_name p:first-child{
+    font-weight: 600;
+    line-height: 24px;
+    font-size: min(2vw,24px);
+}
+.p_name p:last-child{
+    padding-top: 5px;
+    font-size: min(1.4vw,14px);
+    line-height: 20px;
+}
+
+/* 종이보관함  */
+.paper_list{
+    display: flex;
+    gap : 0 0.8%;
+    flex-wrap: wrap;
+}
+
+/********* 서브-하단메뉴박스 *********/
+.sub_menu{
+    position: relative;
+    margin-top: 110px;
+}
+/* 서브-하단메뉴 공통 */
+.sub_menu ul{
+    /* 플렉스박스 */
+    display: flex;
+}
+.sub_menu ul li{
+    width: 50%;
+}
+
+.sub_mtxt{
+    height: 280px;
+    color: #fff;
+}
+/* 서브-하단메뉴 텍스트 */
+/* 하단 공통 */
+.sub_menu li{
+    overflow: hidden;
+}
+.sub_mtxt>div:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+/****** 프리미엄 ******/
+.sub_mtxt{
+    position: relative;
+    /* 부모자격 */
+}
+.sub_bg3 h3{
+    position: absolute;
+    font-size: 1.8vw;
+    top: 38%;
+    right: 5%;
+}
+.sub_bg3 h4{
+    position: absolute;
+    font-size: 0.8vw;
+    top: 56%;
+    right: 5%;
+}
+/* 왼쪽 EXPLORE 화살표 */
+.sub_bg3 h4::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 135%;
+    height: 77%;
+    padding-right: 40px;
+    margin-left: 8px;
+    transform: scaleX(-1);
+    background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
+}
+/* 서브-하단메뉴3 */
+.sub_bg3>div{
+    height: 100%;
+    background: url(../images/sub3_Primium_img.png) no-repeat 100%/cover;
+    transition: 0.5s ease-in-out;
+}
+
+/****** 컬러레드 ******/
+.sub_bg2 h3{
+    position: absolute;
+    font-size: 1.8vw;
+    top: 38%;
+    left: 5%;
+}
+/* 컬러레드 */
+.sub_bg2 h4{
+    position: absolute;
+    font-size: 0.8vw;
+    top: 56%;
+    left: 5%;
+}
+
+/* 오른쪽 EXPLORE 화살표 */
+.sub_bg2 h4::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 110%;
+    height: 77%;
+    padding-left: 40px;
+    margin-left: 8px;
+    background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
+}
+
+/* 서브-하단메뉴2 */
+.sub_bg2>div{
+    height: 100%;
+    background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
+    transition: 0.5s ease-in-out;
+}
