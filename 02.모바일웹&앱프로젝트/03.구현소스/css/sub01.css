@@ -7,6 +7,8 @@
 /*************** 서브페이지 ***************/
 .sub_pg1{
     position: relative;
+}
+.sub_bgi1{
     height: 100vh;
     overflow: hidden;
 }
