@@ -95,10 +95,6 @@ $(() => {
     // $('.sub_bgt').addClass('on');
 
     a1 = $(".sub_bgt");
-    b1 = $(".sub_pg1");
-    b2 = $(".sub_pg2");
-    b3 = $(".sub_pg3");
-    console.log(b1,b2,b3);
     // 변수2= $('.sub_bwe')
     // 변수3 = $('.sub_bger')
 
@@ -114,11 +110,14 @@ $(() => {
     }
     // 호출
     adOn(a1);
-    adOn(b1);
-    adOn(b2);
-    adOn(b3);
     // adc(a2)
     // adc(a3)
+
+    ///// 화살표 클릭시 아래페이지로 이동 /////
+    let arrow = $(".arrow");
+    console.log(arrow);
+
+    
 
 
 
