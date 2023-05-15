@@ -1,5 +1,13 @@
 // 서브 데이터 JS - data.js
 
+const mdata ={
+    "ABOUT":["회사소개","인증서"],
+    "PRODUCTS":["SAMWHA PAPER","SMART SEARCH"],
+    "SUSTAINABILITY":["지속가능경영"],
+    "CONTACT":["고객문의","오시는 길","SNS"]
+}
+
+
 let ename = [
     "LEATHACK 64",
     "LEATHACK 66",
