@@ -75,129 +75,42 @@ const subData = {
               <i class="fa-solid fa-arrow-down-long" style="color: #ffffff"></i>
             </div>
           </div>
+
+
+
+
+
+
           <!-- 종이리스트 -->
           <div class="sub_paper">
             <!-- 서브타이틀 -->
             <div class="sub_tit">EMBOSSED PAPER</div>
             <ul class="paper_list">
-              <li>
+
+              <li v-if="(v,i) in jeji">
                 <a href="#">
                   <div class="p_img">
-                    <img src="./images_EMBOSSED/2_LEATHACK.png" alt="레자크" />
+                    <!-- <img v-bind:src="
+                    './images_EMBOSSED/'+ {{v}}  +'_LEATHACK.png'
+                    " alt="레자크" /> -->
                   </div>
                   <!-- 종이 이름 -->
                   <div class="p_name">
-                    <p>LEATHACK 64</p>
-                    <p>레자크 64</p>
+                    <p>{{}}</p>
+                    <p>{{}} 64</p>
                   </div>
                 </a>
               </li>
-              <!-- <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>레작 64</p>
-                                  </div>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>이앙 64</p>
-                                  </div>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>앙안 64</p>
-                                  </div>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>레자크 64</p>
-                                  </div>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>레자크 64</p>
-                                  </div>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>레자크 64</p>
-                                  </div>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="#">
-                                  <div class="p_img">
-                                      <img
-                                          src="./images_EMBOSSED/1_LEATHACK 64.png"
-                                          alt="레자크"
-                                      />
-                                  </div>
-      
-                                  <div class="p_name">
-                                      <p>LEATHACK 64</p>
-                                      <p>레자크 64</p>
-                                  </div>
-                              </a>
-                          </li> -->
+
+
+
             </ul>
+
+
+
+
+
+
             <!-- 서브-하단메뉴박스 -->
             <div class="sub_menu">
               <ul>

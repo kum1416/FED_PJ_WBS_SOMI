@@ -238,13 +238,13 @@ body * {
 /* 선셋팅을 해요~ */
 /* 준비 */
 .sub_bgt > h3{
-  /* opacity: 0; */
-  transform: translateY(100%);
   opacity: 0;
+  transform: translateY(100%);
   transition: .5s ease-out;
 }
 /* 완료  */
 .sub_bgt.on > h3 {
+  transition: .5s ease-out;
   transform: translateY(0);
   opacity: 1;
 }
