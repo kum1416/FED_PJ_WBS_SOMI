@@ -7,8 +7,8 @@
 /*************** 서브페이지 ***************/
 .sub_pg1{
     position: relative;
-    background: url(../images/sub1_Embossed_img.png) no-repeat top/cover;
     height: 100vh;
+    overflow: hidden;
 }
 /*********** 종이리스트 ***********/
 /* 겉박스 */

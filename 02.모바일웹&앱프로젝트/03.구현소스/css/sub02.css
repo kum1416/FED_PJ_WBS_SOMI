@@ -5,10 +5,10 @@
 @import url(./common.css);
 
 /*************** 서브페이지 ***************/
-.sub_pg1{
+.sub_bgi2{
     position: relative;
-    background: url(../images/sub2_Colored_img.png) no-repeat top/cover;
     height: 100vh;
+    overflow: hidden;
 }
 /*********** 종이리스트 ***********/
 /* 겉박스 */

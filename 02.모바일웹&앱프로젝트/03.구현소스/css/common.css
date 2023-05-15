@@ -249,6 +249,23 @@ body * {
   opacity: 1;
 }
 
+/* 서브페이지 배경이미지 확대 CSS */
+.sub_bgi1 img,
+.sub_bgi2 img,
+.sub_bgi3 img{
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  animation: bgi 2s alternate forwards;
+}
+@keyframes bgi {
+  0%{
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(1.01);
+  }
+}
 
 
 

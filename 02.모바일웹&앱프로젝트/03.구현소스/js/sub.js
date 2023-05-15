@@ -95,11 +95,15 @@ $(() => {
     // $('.sub_bgt').addClass('on');
 
     a1 = $(".sub_bgt");
+    b1 = $(".sub_pg1");
+    b2 = $(".sub_pg2");
+    b3 = $(".sub_pg3");
+    console.log(b1,b2,b3);
     // 변수2= $('.sub_bwe')
     // 변수3 = $('.sub_bger')
 
     // 함수를 만들어서
-    function adc(x) {
+    function adOn(x) {
         //x = 파라미터 ,매개변수 , 전달변수
 
         // x는 클래스변수 -> x에 클래스on을 넣어주는 함수
@@ -108,11 +112,14 @@ $(() => {
         // 이용방법
         // 원하는 요소를 변수화 한다음에 asd(변수) 끝
     }
-
     // 호출
-    adc(a1);
+    adOn(a1);
+    adOn(b1);
+    adOn(b2);
+    adOn(b3);
     // adc(a2)
     // adc(a3)
+
 
 
 });
