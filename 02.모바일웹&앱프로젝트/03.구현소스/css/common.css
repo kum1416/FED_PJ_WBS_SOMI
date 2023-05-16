@@ -206,8 +206,8 @@ body * {
   padding-top: 63px;
   padding-bottom: 23px;
 }
-.blink li+li{
-  padding: 0 10px;
+.blink li{
+  padding-right: 10px;
 }
 /* 3-2.회사정보 */
 .addr{
