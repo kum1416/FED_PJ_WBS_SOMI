@@ -137,6 +137,8 @@ const subData = {
               </ul>
             </div>
           </div>
+          <!-- 큰이미지 배경박스 -->
+          <div id="bgbx"></div>
         </section>
       </main>
     `,
