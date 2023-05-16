@@ -21,7 +21,7 @@ const store = new Vuex.Store({
     // (2) 데이터 변경 메서드 구역 : 
     // 호출시 commit()사용!
     mutations:{
-        chgData(dt,pm){
+        chgData(dt,pm){ // pm - 카테고리명
             dt.cat = pm;
         }
         

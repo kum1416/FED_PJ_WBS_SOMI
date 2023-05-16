@@ -48,6 +48,7 @@ new Vue({
             
         };
     },
+    // DOM이 모두 로딩된 후 실행구역
     mounted : function(){
         console.log($('.sub_bgt'))
         setTimeout(()=>{
@@ -70,6 +71,46 @@ new Vue({
             transition: "3s linear"
         })
     }, 0);
+
+    // 공유번호변수
+    let nowNum = 1;
+
+    // 1. 종이 리스트 클릭시 상세페이지 보이기
+    $(".p_img").click(function(e){
+        e.preventDefault();
+
+        // 상세페이지 박스 보이기
+        $("#dbx").show();
+
+        // 종이리스트 data-num 속성읽기 ????????
+        nowNum = $(this).attr("data-num");
+        console.log("현재이미지번호:", nowNum);
+
+    }); /////// click //////
+
+    // 2. 닫기버튼 클릭시 상세페이지 박스 숨기기
+    $(".cbtn").click(function(e){
+        e.preventDefault();
+        // 상세페이지 박스 숨기기
+        $("#dbx").hide();
+    });
+
+    // 3. 이전/다음버튼 클릭시 ?변경
+    $(".abtn").click(function (e) {
+        // 1. 기본이동막기
+        e.preventDefault();
+        // 오른쪽버튼 여부
+        let isB = $(this).is("rb");
+        // 분기하기
+        if(isB){ // 오른쪽버튼
+
+        }
+        else{ // 왼쪽버튼
+
+        }
+    })
+
+
 
     },
 }) //////// 메인영역 뷰 인스턴스 //////// 
