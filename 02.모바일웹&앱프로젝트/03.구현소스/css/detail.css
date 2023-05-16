@@ -7,7 +7,7 @@
 /*************** 서브페이지 ***************/
 .sub_pg1{
     position: relative;
-    background: url(../images_EMBOSSED/1_LEATHACK.png) no-repeat top/cover;
+    background: url(../images/images_EMBOSSED/1k.png) no-repeat top/cover;
     height: 100vh;
 }
 /* 배경 텍스트박스 */
