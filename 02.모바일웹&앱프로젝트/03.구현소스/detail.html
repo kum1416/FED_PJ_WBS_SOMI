@@ -1,183 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>삼화제지 상세페이지</title>
-    <!-- 어썸아이콘 CDN넣기 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <!-- CSS연결 -->
-    <link rel="stylesheet" href="./css/detail.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>삼화제지 상세페이지</title>
+        <!-- 어썸아이콘 CDN넣기 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+        <!-- CSS연결 -->
+        <link rel="stylesheet" href="./css/detail.css" />
 
-    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <!-- 뷰JS vuex CDN -->
-    <script src="https://unpkg.com/vuex@3.0.0"></script>
+        <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <!-- 뷰JS vuex CDN -->
+        <script src="https://unpkg.com/vuex@3.0.0"></script>
 
-    <!-- 제이쿼리 라이브러리 CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- 제이쿼리 라이브러리 CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <!-- 제이쿼리 UI CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <!-- 제이쿼리 UI CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
-    <!-- 자바스크립트 -->
-    <script src="./js/sub.js" type="module"></script>
-  </head>
-  <body>
-    <!-- 1.상단영역 -->
-    <div id="top">
-      <header class="top">
-        <!-- 1.로고파트 -->
-        <div>
-          <h1 class="logo">
-            <a href="#">
-              <!-- 검정로고 -->
-              <img src="./images/logo.png" alt="로고" />
-              <!-- 하얀로고 -->
-              <img src="./images/logo-w.png" alt="로고" />
-            </a>
-          </h1>
+        <!-- 자바스크립트 -->
+        <script src="./js/sub.js" type="module"></script>
+    </head>
+    <body>
+        <!-- 1.상단영역 -->
+        <div id="top">
+            <tarea-comp></tarea-comp>
         </div>
-        <!-- 2.네비파트 -->
-        <div>
-          <nav class="gnb">
-            <ul>
-              <!-- 1.PRODUCTS -->
-              <li>
-                <a href="#">PRODUCTS</a>
-            </li>
-            <!-- 2.EMBOSSED -->
-            <li>
-                <a href="#">EMBOSSED</a>
-            </li>
-            <!-- 3.COLORED -->
-            <li>
-                <a href="#">COLORED</a>
-            </li>
-            <!-- 4.PREMIUM -->
-            <li>
-                <a href="#">PREMIUM</a>
-            </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- 3.기타파트 -->
-        <div>
-          <ul class="other">
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
-              </a>
-            </li>
-            <li>
-              <div>KOR</div>
-            </li>
-            <li>
-              <a href="">
-                <div class="ham">
-                  <i class="fa-solid fa-burger" style="color: #000000"></i>
+        <!-- 2.메인영역 -->
+        <main>
+            <section class="sub_first">
+                <div class="sub_pg1">
+                    <div class="sub_bgi4 pp">
+                        <img
+                            src="./images/images_EMBOSSED/1k.png"
+                            alt="배경이미지"
+                        />
+                    </div>
+                    <!-- 배경 텍스트박스 -->
+                    <div class="sub_bgt">
+                        <h3>LEATHACK 64</h3>
+                    </div>
+                    <!-- 화살표 -->
+                    <div class="arrow">
+                        <i
+                            class="fa-solid fa-arrow-down-long"
+                            style="color: #000000"
+                        ></i>
+                    </div>
                 </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-    </div>
-    <!-- 2.메인영역 -->
-    <main>
-      <section class="sub_first">
-        <div class="sub_pg1">
-          <!-- <div class="sub_bgi4 pp">
-            <img src="./images/images_EMBOSSED/1k.png" alt="배경이미지">
-          </div> -->
-          <!-- 배경 텍스트박스 -->
-          <div class="sub_bgt">
-            <h3>LEATHACK 64</h3>
-          </div>
-          <!-- 화살표 -->
-          <div class="arrow">
-            <i class="fa-solid fa-arrow-down-long" style="color: #000000"></i>
-          </div>
-        </div>
-        <div class="cont">
-          <!-- 내용타이틀 -->
-          <div class="cont_tit">
-            <h3>LEATHACK 64</h3>
-            <p>레자크 64</p>
-          </div>
-          <!-- 내용리스트 -->
-          <div class="cont_list">
-              <ul class="clist">
-                  <li>
-                    <div class="c1">
-                      <h4>FEATURES</h4>
-                      <p>
-                        다양한 패턴 시리즈의 팬시지인 레자크는 On Machine에서 엠보싱된 여러가지 색상의 무늬지입니다.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c1">
-                      <h4>USE</h4>
-                      <p>북커버, 싸바리, 패키지, 팬시제품, 출판물, 쇼핑백</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c1">
-                      <h4>WEIGHT</h4>
-                      <p>120 / 150 / 200g/m²</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c1 c2">
-                      <h4>COLOR</h4>
-                      <ul>
-                        <li>
-                          <div>
-                            <img src="./images/images_EMBOSSED/1k.png" alt="레자크">
-                          </div>
-                        </li>
-                        <p>제품의 색상은 모니터와 해상도의 차이에 따라 실제 색상과 차이가 있을 수 있습니다.</p>
-                        <p>제품의 색상에 따라 평량이 다를 수 있습니다</p>
-                      </ul>
-                    </div>
-                  </li>
-              </ul>
-              <!-- 상담버튼 -->
-              <div class="cbtn">
-                  <button>종이상담</button>
-              </div>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- 3.하단영역 -->
-    <div id="info">
-      <footer class="info">
-        <!-- 3-1.하단링크 -->
-        <ul class="blink">
-          <li>
-            <a href="#">이용약관 |</a>
-          </li>
-          <li>
-            <a href="#">개인정보취급방침 |</a>
-          </li>
-          <li>
-            <a href="#">이메일무단수집거부 |</a>
-          </li>
-          <li>
-            <a href="#">쿠키정책</a>
-          </li>
-        </ul>
-        <!-- 3-2.회사정보 -->
-        <address class="addr">
-          서울 중구 을지로 170 을지트윈타워 동관 7층 | 사업자등록번호 317-81-26964 | TEL 02) 753-1136 | FAX 02)
-          773-7484<br />
-          ⓒ Samwha Paper Co., Ltd. All rights reserved
-        </address>
-      </footer>
-    </div>
-  </body>
+                <div class="cont">
+                    <!-- 내용타이틀 -->
+                    <div class="cont_tit">
+                        <h3>LEATHACK 64</h3>
+                        <p>레자크 64</p>
+                    </div>
+                    <!-- 내용리스트 -->
+                    <div class="cont_list">
+                        <ul class="clist">
+                            <li>
+                                <div class="c1">
+                                    <h4>FEATURES</h4>
+                                    <p>
+                                        다양한 패턴 시리즈의 팬시지인 레자크는
+                                        On Machine에서 엠보싱된 여러가지 색상의
+                                        무늬지입니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c1">
+                                    <h4>USE</h4>
+                                    <p>
+                                        북커버, 싸바리, 패키지, 팬시제품,
+                                        출판물, 쇼핑백
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c1">
+                                    <h4>WEIGHT</h4>
+                                    <p>120 / 150 / 200g/m²</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c1 c2">
+                                    <h4>COLOR</h4>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img
+                                                    src="./images/images_EMBOSSED/1k.png"
+                                                    alt="레자크"
+                                                />
+                                            </div>
+                                        </li>
+                                        <p>
+                                            제품의 색상은 모니터와 해상도의
+                                            차이에 따라 실제 색상과 차이가 있을
+                                            수 있습니다.
+                                        </p>
+                                        <p>
+                                            제품의 색상에 따라 평량이 다를 수
+                                            있습니다
+                                        </p>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 상담버튼 -->
+                        <div class="cbtn">
+                            <button>종이상담</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 3.하단영역 -->
+        <div id="info">
+            <info-comp></info-comp>
+        </div>
+    </body>
 </html>

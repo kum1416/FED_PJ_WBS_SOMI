@@ -5,9 +5,6 @@
 @import url(./common.css);
 
 /*************** 서브페이지 ***************/
-.sub_pg2{
-    position: relative;
-}
 .sub_bgi2{
     height: 100vh;
     overflow: hidden;

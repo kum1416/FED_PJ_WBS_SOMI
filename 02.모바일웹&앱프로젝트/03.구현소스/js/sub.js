@@ -24,6 +24,14 @@ Vue.component("info-comp",{
     template:comData.barea,
 }); ///// 하단영역 Vue component /////
 
+// 상세페이지영역 뷰 템플릿 /////
+Vue.component("win-comp",{
+    template:comData.darea,
+}); ///// 상세페이지영역 Vue component /////
+
+
+
+
 
 // 상단영역 뷰 인스턴스 생성하기 ///////
 new Vue({
