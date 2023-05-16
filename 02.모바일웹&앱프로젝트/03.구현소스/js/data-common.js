@@ -24,7 +24,7 @@ const subData = {
               </li>
               <!-- 2.PRODUCTS -->
               <li>
-                <a href="#">PRODUCTS</a>
+                <a href="./sub.html">PRODUCTS</a>
               </li>
               <!-- 3.SUSTAINABILITY -->
               <li>
