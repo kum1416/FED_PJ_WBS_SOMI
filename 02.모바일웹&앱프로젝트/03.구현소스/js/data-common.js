@@ -89,7 +89,7 @@ const subData = {
             <div class="sub_tit">EMBOSSED PAPER</div>
             <ul class="paper_list">
 
-            <li v-for="(v,i) adata.embossed">
+            <li>
               <a href="#">
                 <div class="p_img">
                   <img src="./images_EMBOSSED/1k.png" alt="레자크" />
