@@ -421,15 +421,3 @@ body * {
   background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
 }
 
-/***********************************************/
-/* 큰 이미지 배경박스 */
-#bgbx {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  display: none;
-  /* 처음에 안보임 */
-}

@@ -168,105 +168,95 @@ const subData = {
           </footer>
     `,
     darea:`
-    <!-- 1.상단영역 -->
-        <div id="top">
-            <tarea-comp></tarea-comp>
-        </div>
-        <!-- 2.메인영역 -->
-        <main>
-            <section class="sub_first">
-                <div class="sub_pg1">
-                    <div class="sub_bgi4 pp">
-                        <img
-                            src="./images/images_EMBOSSED/1k.png"
-                            alt="배경이미지"
-                        />
-                    </div>
-                    <!-- 배경 텍스트박스 -->
-                    <div class="sub_bgt">
-                        <h3>LEATHACK 64</h3>
-                    </div>
-                    <!-- 화살표 -->
-                    <div class="arrow">
-                        <i
-                            class="fa-solid fa-arrow-down-long"
-                            style="color: #000000"
-                        ></i>
-                    </div>
-                </div>
 
-                <div class="cont">
-                    <!-- 내용타이틀 -->
-                    <div class="cont_tit">
-                        <h3>LEATHACK 64</h3>
-                        <p>레자크 64</p>
-                    </div>
-                    <!-- 내용리스트 -->
-                    <div class="cont_list">
-                        <ul class="clist">
-                            <li>
-                                <div class="c1">
-                                    <h4>FEATURES</h4>
-                                    <p>
-                                        다양한 패턴 시리즈의 팬시지인 레자크는
-                                        On Machine에서 엠보싱된 여러가지 색상의
-                                        무늬지입니다.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="c1">
-                                    <h4>USE</h4>
-                                    <p>
-                                        북커버, 싸바리, 패키지, 팬시제품,
-                                        출판물, 쇼핑백
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="c1">
-                                    <h4>WEIGHT</h4>
-                                    <p>120 / 150 / 200g/m²</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="c1 c2">
-                                    <h4>COLOR</h4>
-                                    <ul>
-                                        <li>
-                                            <div>
-                                                <img
-                                                    src="./images/images_EMBOSSED/1k.png"
-                                                    alt="레자크"
-                                                />
-                                            </div>
-                                        </li>
-                                        <p>
-                                            제품의 색상은 모니터와 해상도의
-                                            차이에 따라 실제 색상과 차이가 있을
-                                            수 있습니다.
-                                        </p>
-                                        <p>
-                                            제품의 색상에 따라 평량이 다를 수
-                                            있습니다
-                                        </p>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- 상담버튼 -->
-                        <div class="cbtn">
-                            <button>종이상담</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+          <!-- 상세페이지영역 -->
+              <section class="sub_first">
+                  <div class="sub_pg1">
+                      <div class="sub_bgi4 pp">
+                          <img
+                              src="./images/images_EMBOSSED/1k.png"
+                              alt="배경이미지"
+                          />
+                      </div>
+                      <!-- 배경 텍스트박스 -->
+                      <div class="sub_bgt">
+                          <h3>LEATHACK 64</h3>
+                      </div>
+                      <!-- 화살표 -->
+                      <div class="arrow">
+                          <i
+                              class="fa-solid fa-arrow-down-long"
+                              style="color: #000000"
+                          ></i>
+                      </div>
+                  </div>
 
-        <!-- 3.하단영역 -->
-        <div id="info">
-            <info-comp></info-comp>
-        </div>
+                  <div class="cont">
+                      <!-- 내용타이틀 -->
+                      <div class="cont_tit">
+                          <h3>LEATHACK 64</h3>
+                          <p>레자크 64</p>
+                      </div>
+                      <!-- 내용리스트 -->
+                      <div class="cont_list">
+                          <ul class="clist">
+                              <li>
+                                  <div class="c1">
+                                      <h4>FEATURES</h4>
+                                      <p>
+                                          다양한 패턴 시리즈의 팬시지인 레자크는
+                                          On Machine에서 엠보싱된 여러가지 색상의
+                                          무늬지입니다.
+                                      </p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="c1">
+                                      <h4>USE</h4>
+                                      <p>
+                                          북커버, 싸바리, 패키지, 팬시제품,
+                                          출판물, 쇼핑백
+                                      </p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="c1">
+                                      <h4>WEIGHT</h4>
+                                      <p>120 / 150 / 200g/m²</p>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="c1 c2">
+                                      <h4>COLOR</h4>
+                                      <ul>
+                                          <li>
+                                              <div>
+                                                  <img
+                                                      src="./images/images_EMBOSSED/1k.png"
+                                                      alt="레자크"
+                                                  />
+                                              </div>
+                                          </li>
+                                          <p>
+                                              제품의 색상은 모니터와 해상도의
+                                              차이에 따라 실제 색상과 차이가 있을
+                                              수 있습니다.
+                                          </p>
+                                          <p>
+                                              제품의 색상에 따라 평량이 다를 수
+                                              있습니다
+                                          </p>
+                                      </ul>
+                                  </div>
+                              </li>
+                          </ul>
+                          <!-- 상담버튼 -->
+                          <div class="cbtn">
+                              <button>종이상담</button>
+                          </div>
+                      </div>
+                  </div>
+              </section>
     `
 }; //
 

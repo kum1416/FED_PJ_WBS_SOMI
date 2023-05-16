@@ -4,7 +4,7 @@
 /* 공통 외부 CSS 합치기 */
 @import url(./common.css);
 
-/*************** 서브페이지 ***************/
+/*************** 상세영역페이지 CSS ***************/
 .sub_bgi4{
     height: 100vh;
     overflow: hidden;
