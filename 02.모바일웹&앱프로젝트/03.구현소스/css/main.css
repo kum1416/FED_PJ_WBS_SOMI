@@ -4,7 +4,6 @@
 /* 공통 외부 CSS 합치기 */
 @import url(./common.css);
 @import url(./sub.css);
-@import url(./detail.css);
 
 /*************** 섹션1페이지 ***************/
 .page1{
