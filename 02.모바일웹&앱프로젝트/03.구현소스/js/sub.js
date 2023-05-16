@@ -56,6 +56,11 @@ new Vue({
         },500)
     })
 
+    $('.sub_bgi1 img').css({
+        transform: "scale(1.02)",
+        transition: "3s linear"
+    })
+
     },
 }) //////// 메인영역 뷰 인스턴스 //////// 
 
