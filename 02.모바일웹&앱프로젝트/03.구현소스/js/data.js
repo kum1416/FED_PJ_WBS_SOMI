@@ -461,4 +461,5 @@ let adata = [{
     },
 }];
 
-export default jeji;
+// 내보내기
+export default adata;

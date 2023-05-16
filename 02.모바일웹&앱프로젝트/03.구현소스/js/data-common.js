@@ -87,11 +87,11 @@ const subData = {
             <div class="sub_tit">EMBOSSED PAPER</div>
             <ul class="paper_list">
 
-              <li v-if="(v,i) in jeji">
+              <li v-if="(v,i) in adata">
                 <a href="#">
                   <div class="p_img">
                     <!-- <img v-bind:src="
-                    './images_EMBOSSED/'+ {{v}}  +'_LEATHACK.png'
+                    './images_EMBOSSED/'+ {{v}}  +'k.png'
                     " alt="레자크" /> -->
                   </div>
                   <!-- 종이 이름 -->

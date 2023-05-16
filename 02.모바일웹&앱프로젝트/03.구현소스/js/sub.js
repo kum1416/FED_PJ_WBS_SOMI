@@ -3,9 +3,9 @@
 // 뷰 적용할 서브페이지
 
 // 공통 데이터
-import comData from './data-common.js'
-// 데이터 호출
-import jeji from './data.js'
+import comData from "./data-common.js";
+// 데이터 가져오기
+import adata from "./data.js";
 
 
 // 상단영역 뷰 템플릿 /////
@@ -33,13 +33,16 @@ new Vue({
 //###### 메인영역 뷰 인스턴스 생성하기 ##########
 new Vue({
     el:"#middle",
-    data : {},
+    data : function(){
+        return {
+            
+        };
+    },
     mounted : function(){
         console.log($('.sub_bgt'))
         setTimeout(()=>{
             $('.sub_bgt')
             .addClass('on');
-
         },10)
         
     },
