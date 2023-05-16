@@ -172,6 +172,19 @@ const subData = {
           <!-- 상세페이지영역 -->
               <section class="sub_first">
 
+                  <!-- 오른쪽버튼 -->
+                  <a href="#" class="abtn rb">
+                      <span class="ir"></span>
+                  </a>
+                  <!-- 왼쪽버튼 -->
+                  <a href="#" class="abtn lb">
+                      <span class="ir"></span>
+                  </a>
+                  <!-- 닫기버튼 -->
+                  <a href="#" class="cbtn">
+                      <span class="ir"></span>
+                  </a>
+
                   <div class="cont">
                       <!-- 내용타이틀 -->
                       <div class="cont_tit">
@@ -232,12 +245,12 @@ const subData = {
                               </li>
                           </ul>
                           <!-- 상담버튼 -->
-                          <div class="cbtn">
+                          <div class="pbtn">
                               <button>종이상담</button>
                           </div>
                       </div>
                   </div>
-                  
+
               </section>
     `
 }; //
