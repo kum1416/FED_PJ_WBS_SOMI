@@ -83,7 +83,7 @@
 
 .c2 ul p{
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
-    font-size: min(0.5vw,12px);
+    font-size: min(0.7vw,12px);
     font-weight: 300;
     background: url(../images/info.png) no-repeat left center;
     color: #777;
