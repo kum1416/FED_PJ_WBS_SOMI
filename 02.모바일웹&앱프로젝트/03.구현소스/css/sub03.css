@@ -84,25 +84,28 @@
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
 }
-/****** 프리미엄 ******/
+
+
+/****** 컬러레드 - 왼쪽 ******/
 .sub_mtxt{
     position: relative;
     /* 부모자격 */
 }
-.sub_bg3 h3{
+.sub_bg2 h3{
     position: absolute;
     font-size: 1.8vw;
     top: 38%;
     right: 5%;
 }
-.sub_bg3 h4{
+.sub_bg2 h4{
     position: absolute;
     font-size: 0.8vw;
     top: 56%;
     right: 5%;
 }
+
 /* 왼쪽 EXPLORE 화살표 */
-.sub_bg3 h4::after{
+.sub_bg2 h4::after{
     content: '';
     display: block;
     position: absolute;
@@ -114,30 +117,35 @@
     transform: scaleX(-1);
     background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
 }
-/* 서브-하단메뉴3 */
-.sub_bg3>div{
+
+/* 서브-하단메뉴2 */
+.sub_bg2>div{
     height: 100%;
-    background: url(../images/sub3_Primium_img.png) no-repeat 100%/cover;
+    background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
     transition: 0.5s ease-in-out;
 }
 
-/****** 컬러레드 ******/
-.sub_bg2 h3{
+
+/****** 엠베서드 - 오른쪽 ******/
+.sub_mtxt{
+    position: relative;
+    /* 부모자격 */
+}
+.sub_bg1 h3{
     position: absolute;
     font-size: 1.8vw;
     top: 38%;
     left: 5%;
 }
-/* 컬러레드 */
-.sub_bg2 h4{
+/* 엠베서드 */
+.sub_bg1 h4{
     position: absolute;
     font-size: 0.8vw;
     top: 56%;
     left: 5%;
 }
-
 /* 오른쪽 EXPLORE 화살표 */
-.sub_bg2 h4::after{
+.sub_bg1 h4::after{
     content: '';
     display: block;
     position: absolute;
@@ -148,10 +156,10 @@
     margin-left: 8px;
     background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
 }
-
-/* 서브-하단메뉴2 */
-.sub_bg2>div{
+/* 서브-하단메뉴3 */
+.sub_bg1>div{
     height: 100%;
-    background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
+    background: url(../images/sub1_Embossed_img.png) no-repeat 100%/cover;
     transition: 0.5s ease-in-out;
 }
+
