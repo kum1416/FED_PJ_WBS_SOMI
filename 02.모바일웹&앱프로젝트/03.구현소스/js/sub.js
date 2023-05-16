@@ -73,7 +73,7 @@ new Vue({
     }, 0);
 
     // 공유번호변수
-    let nowNum = 1;
+    // let nowNum = 1;
 
     // 1. 종이 리스트 클릭시 상세페이지 보이기
     $(".p_img").click(function(e){
@@ -83,8 +83,8 @@ new Vue({
         $("#dbx").show();
 
         // 종이리스트 data-num 속성읽기 ????????
-        nowNum = $(this).attr("data-num");
-        console.log("현재이미지번호:", nowNum);
+        // nowNum = $(this).attr("data-num");
+        // console.log("현재이미지번호:", nowNum);
 
     }); /////// click //////
 
@@ -95,7 +95,7 @@ new Vue({
         $("#dbx").hide();
     });
 
-    // 3. 이전/다음버튼 클릭시 ?변경
+    // 3. 이전/다음버튼 클릭시 ????변경
     $(".abtn").click(function (e) {
         // 1. 기본이동막기
         e.preventDefault();
