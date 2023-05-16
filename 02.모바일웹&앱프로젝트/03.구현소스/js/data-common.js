@@ -87,20 +87,18 @@ const subData = {
             <div class="sub_tit">EMBOSSED PAPER</div>
             <ul class="paper_list">
 
-              <li v-if="(v,i) in adata">
-                <a href="#">
-                  <div class="p_img">
-                    <!-- <img v-bind:src="
-                    './images_EMBOSSED/'+ {{v}}  +'k.png'
-                    " alt="레자크" /> -->
-                  </div>
-                  <!-- 종이 이름 -->
-                  <div class="p_name">
-                    <p>{{}}</p>
-                    <p>{{}} 64</p>
-                  </div>
-                </a>
-              </li>
+            <li>
+              <a href="#">
+                <div class="p_img">
+                  <img src="./images_EMBOSSED/1k.png" alt="레자크" />
+                </div>
+                <!-- 종이 이름 -->
+                <div class="p_name">
+                  <p>LEATHACK 64</p>
+                  <p>레자크 64</p>
+                </div>
+              </a>
+            </li>
 
 
 

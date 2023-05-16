@@ -16,6 +16,8 @@ Vue.component("tarea-comp",{
 // 메인영역 뷰 템플릿 /////
 Vue.component("marea-comp",{
     template:comData.marea,
+    method:{
+    }
 }); ///// 메인영역 Vue component /////
 
 // 하단영역 뷰 템플릿 /////
@@ -44,7 +46,8 @@ new Vue({
             $('.sub_bgt')
             .addClass('on');
         },10)
-        
+
+
     },
 }) //////// 메인영역 뷰 인스턴스 //////// 
 
