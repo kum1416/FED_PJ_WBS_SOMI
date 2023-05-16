@@ -47,6 +47,14 @@ new Vue({
             .addClass('on');
         },10)
 
+    ///// 화살표 클릭시 아래페이지로 이동 /////
+    $(".arrow").click(function(){
+        let winh = $('.pp').height()
+        console.log('애로우',winh)
+        $('html,body').animate({
+            scrollTop:winh
+        },500)
+    })
 
     },
 }) //////// 메인영역 뷰 인스턴스 //////// 
