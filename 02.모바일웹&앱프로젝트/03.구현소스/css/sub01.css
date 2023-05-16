@@ -9,52 +9,6 @@
     height: 100vh;
     overflow: hidden;
 }
-/*********** 종이리스트 ***********/
-/* 겉박스 */
-.sub_paper{
-    margin: 0 40px;
-    padding: 50px 0 100px 0;
-    /* padding-bottom: 100px; */
-}
-/* 서브타이틀 */
-.sub_tit{
-    font-size: 2vw;
-    font-weight: 600;
-    padding: 40px 0 44px;
-}
-/* 종이 이미지 */
-.paper_list li{
-    width: calc(100vw/5.45);
-    padding-bottom: 38px;
-
-}
-.p_img img{
-    width: 100%;
-    height: 100%;
-}
-/* 종이 이름 */
-.p_name{
-    text-align: center;
-    color: #000;
-    margin-top: 20px;
-}
-.p_name p:first-child{
-    font-weight: 600;
-    line-height: 24px;
-    font-size: min(2vw,24px);
-}
-.p_name p:last-child{
-    padding-top: 5px;
-    font-size: min(1.4vw,14px);
-    line-height: 20px;
-}
-
-/* 종이보관함  */
-.paper_list{
-    display: flex;
-    gap : 0 0.8%;
-    flex-wrap: wrap;
-}
 
 /********* 서브-하단메뉴박스 *********/
 /****** 프리미엄 이미지 - 왼쪽 ******/

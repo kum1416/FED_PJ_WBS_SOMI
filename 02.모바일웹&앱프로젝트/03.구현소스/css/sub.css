@@ -3,6 +3,9 @@
 
 /* 공통 외부 CSS 합치기 */
 @import url(./common.css);
+@import url(./sub01.css);
+@import url(./sub02.css);
+@import url(./sub03.css);
 
 /*************** 서브페이지 ***************/
 /* 서브페이지-배경텍스트박스 */
@@ -19,45 +22,45 @@
 }
 
 /********* 서브-하단메뉴박스 *********/
-.sub_menu{
+.sbbx{
     position: absolute;
     bottom: 0;
     left: 0;
 }
 /* 서브-하단메뉴 공통 */
-.sub_menu ul{
+.sbbx ul{
     /* 플렉스박스 */
     display: flex;
 }
-.sub_mtxt{
+.smtxt{
     width: calc(100vw/3);
     height: calc(100vh/3);
     color: #fff;
 }
 /* 서브-하단메뉴 텍스트 */
 /* 하단 공통 */
-.sub_menu li{
+.sbbx li{
     overflow: hidden;
 }
-.sub_mtxt>div:hover{
+.smtxt>div:hover{
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
 }
 
-.sub_mtxt h3{
+.smtxt h3{
     font-size: 2.5vw;
     position: absolute;
     top: 25%;
     padding-left: 50px;
 }
-.sub_mtxt h4{
+.smtxt h4{
     font-size: 0.8vw;
     position: absolute;
     top: 55%;
     padding-left: 50px;
 }
 /* EXPLORE 화살표 */
-.sub_mtxt h4::after{
+.smtxt h4::after{
     content: '';
     display: block;
     position: absolute;
@@ -70,20 +73,20 @@
 
 
 /* 서브-하단메뉴1 */
-.sub_bg1>div{
+.sbg1>div{
     height: 100%;
     background: url(../images/sub1_Embossed_img.png) no-repeat 100%/cover;
     transition: 0.5s ease-in-out;
 }
 
 /* 서브-하단메뉴2 */
-.sub_bg2>div{
+.sbg2>div{
     height: 100%;
     background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
     transition: 0.5s ease-in-out;
 }
 /* 서브-하단메뉴3 */
-.sub_bg3>div{
+.sbg3>div{
     height: 100%;
     background: url(../images/sub3_Primium_img.png) no-repeat 100%/cover;
     transition: 0.5s ease-in-out;
@@ -91,7 +94,7 @@
 
 
 
-/* 블랙박스 셋팅 */
+/*********** 블랙박스 셋팅 ***********/
 .blackbxwrap{
     /* 잠시숨겨놈 */
     /* display: none; */
