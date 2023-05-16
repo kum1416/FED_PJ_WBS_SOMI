@@ -86,7 +86,7 @@
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
 }
-/****** 프리미엄 ******/
+/****** 프리미엄 - 왼쪽 ******/
 .sub_mtxt{
     position: relative;
     /* 부모자격 */
@@ -123,7 +123,7 @@
     transition: 0.5s ease-in-out;
 }
 
-/****** 컬러레드 ******/
+/****** 컬러레드 - 오른쪽 ******/
 .sub_bg2 h3{
     position: absolute;
     font-size: 1.8vw;
