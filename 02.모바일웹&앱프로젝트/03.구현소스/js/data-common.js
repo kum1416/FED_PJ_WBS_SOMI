@@ -119,7 +119,7 @@ const subData = {
                 <!-- 서브-하단메뉴3 -->
                 <li>
                   <a href="./sub03.html">
-                    <div class="sub_mtxt sub_bg3">
+                    <div class="sub_mtxt left sub_bg3">
                       <div></div>
                       <h3>PREMIUM PAPER</h3>
                       <h4>PREV</h4>
@@ -129,7 +129,7 @@ const subData = {
                 <!-- 서브-하단메뉴2 -->
                 <li>
                   <a href="./sub02.html">
-                    <div class="sub_mtxt sub_bg2">
+                    <div class="sub_mtxt right sub_bg2">
                       <div></div>
                       <h3>COLORED PAPER</h3>
                       <h4>NEXT</h4>

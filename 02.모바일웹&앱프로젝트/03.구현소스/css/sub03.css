@@ -60,67 +60,7 @@
 }
 
 /********* 서브-하단메뉴박스 *********/
-.sub_menu{
-    position: relative;
-    margin-top: 110px;
-}
-/* 서브-하단메뉴 공통 */
-.sub_menu ul{
-    /* 플렉스박스 */
-    display: flex;
-}
-.sub_menu ul li{
-    width: 50%;
-}
-
-.sub_mtxt{
-    height: 280px;
-    color: #fff;
-}
-/* 서브-하단메뉴 텍스트 */
-/* 하단 공통 */
-.sub_menu li{
-    overflow: hidden;
-}
-.sub_mtxt>div:hover{
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
-}
-
-
-/****** 컬러레드 - 왼쪽 ******/
-.sub_mtxt{
-    position: relative;
-    /* 부모자격 */
-}
-.sub_bg2 h3{
-    position: absolute;
-    font-size: 1.8vw;
-    top: 38%;
-    right: 5%;
-}
-.sub_bg2 h4{
-    position: absolute;
-    font-size: 0.8vw;
-    top: 56%;
-    right: 5%;
-}
-
-/* 왼쪽 EXPLORE 화살표 */
-.sub_bg2 h4::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3%;
-    right: 135%;
-    height: 77%;
-    padding-right: 40px;
-    margin-left: 8px;
-    transform: scaleX(-1);
-    background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
-}
-
-/* 서브-하단메뉴2 */
+/****** 컬러레드 이미지 - 왼쪽 ******/
 .sub_bg2>div{
     height: 100%;
     background: url(../images/sub2_Colored_img.png) no-repeat 100%/cover;
@@ -129,36 +69,6 @@
 
 
 /****** 엠베서드 - 오른쪽 ******/
-.sub_mtxt{
-    position: relative;
-    /* 부모자격 */
-}
-.sub_bg1 h3{
-    position: absolute;
-    font-size: 1.8vw;
-    top: 38%;
-    left: 5%;
-}
-/* 엠베서드 */
-.sub_bg1 h4{
-    position: absolute;
-    font-size: 0.8vw;
-    top: 56%;
-    left: 5%;
-}
-/* 오른쪽 EXPLORE 화살표 */
-.sub_bg1 h4::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3%;
-    left: 110%;
-    height: 77%;
-    padding-left: 40px;
-    margin-left: 8px;
-    background: url(../images/icon_arrow-w.png) no-repeat bottom/100%;
-}
-/* 서브-하단메뉴3 */
 .sub_bg1>div{
     height: 100%;
     background: url(../images/sub1_Embossed_img.png) no-repeat 100%/cover;
