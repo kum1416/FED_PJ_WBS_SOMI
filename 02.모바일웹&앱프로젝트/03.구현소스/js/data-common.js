@@ -92,7 +92,7 @@ const subData = {
             <li>
               <a href="#">
                 <div class="p_img">
-                  <img src="./images_EMBOSSED/1k.png" alt="레자크" />
+                  <img src="./images/images_EMBOSSED/1k.png" alt="레자크" />
                 </div>
                 <!-- 종이 이름 -->
                 <div class="p_name">
