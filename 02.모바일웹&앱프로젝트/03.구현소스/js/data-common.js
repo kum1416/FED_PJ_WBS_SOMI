@@ -1,3 +1,5 @@
+// 공통 data 객체 - data-common.js
+
 const subData = {
   tarea :`
       <header class="top">
@@ -87,15 +89,15 @@ const subData = {
             <div class="sub_tit">EMBOSSED PAPER</div>
             <ul class="paper_list">
 
-            <li>
+            <li v-for="(v,i) adata.embossed">
               <a href="#">
                 <div class="p_img">
                   <img src="./images_EMBOSSED/1k.png" alt="레자크" />
                 </div>
                 <!-- 종이 이름 -->
                 <div class="p_name">
-                  <p>LEATHACK 64</p>
-                  <p>레자크 64</p>
+                  <p>{{}}</p>
+                  <p>{{}}</p>
                 </div>
               </a>
             </li>
@@ -114,7 +116,7 @@ const subData = {
               <ul>
                 <!-- 서브-하단메뉴3 -->
                 <li>
-                  <a href="#">
+                  <a href="./sub03.html">
                     <div class="sub_mtxt sub_bg3">
                       <div></div>
                       <h3>PREMIUM PAPER</h3>
@@ -124,7 +126,7 @@ const subData = {
                 </li>
                 <!-- 서브-하단메뉴2 -->
                 <li>
-                  <a href="#">
+                  <a href="./sub02.html">
                     <div class="sub_mtxt sub_bg2">
                       <div></div>
                       <h3>COLORED PAPER</h3>
