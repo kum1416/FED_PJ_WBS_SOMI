@@ -86,18 +86,19 @@ const subData = {
           <!-- 종이리스트 -->
           <div class="sub_paper">
             <!-- 서브타이틀 -->
-            <div class="sub_tit">EMBOSSED PAPER</div>
+            <div class="sub_tit">{{$store.state.cat.toUpperCase()}} PAPER</div>
             <ul class="paper_list">
-
-            <li>
+            <li v-for="(v,i) in $store.state.adata[0][$store.state.cat]">
               <a href="#">
                 <div class="p_img">
-                  <img src="./images/images_EMBOSSED/1k.png" alt="레자크" />
+                  <img :src="
+                    './images/images_'+$store.state.cat.toUpperCase()+'/'+(i)+'.png'
+                  " alt="레자크" />
                 </div>
                 <!-- 종이 이름 -->
                 <div class="p_name">
-                  <p>{{}}</p>
-                  <p>{{}}</p>
+                  <p>{{v.ENAME}}</p>
+                  <p>{{v.KNAME}}</p>
                 </div>
               </a>
             </li>
@@ -105,6 +106,7 @@ const subData = {
 
 
             </ul>
+
 
 
 

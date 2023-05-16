@@ -4,8 +4,7 @@
 
 // 공통 데이터
 import comData from "./data-common.js";
-// 데이터 가져오기
-import adata from "./data.js";
+import store from "./store.js";
 
 
 // 상단영역 뷰 템플릿 /////
@@ -35,6 +34,7 @@ new Vue({
 //###### 메인영역 뷰 인스턴스 생성하기 ##########
 new Vue({
     el:"#middle",
+    store,// 스토어등록!!!
     data : function(){
         return {
             
