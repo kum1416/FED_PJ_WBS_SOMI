@@ -171,25 +171,6 @@ const subData = {
 
           <!-- 상세페이지영역 -->
               <section class="sub_first">
-                  <div class="sub_pg1">
-                      <div class="sub_bgi4 pp">
-                          <img
-                              src="./images/images_EMBOSSED/1k.png"
-                              alt="배경이미지"
-                          />
-                      </div>
-                      <!-- 배경 텍스트박스 -->
-                      <div class="sub_bgt">
-                          <h3>LEATHACK 64</h3>
-                      </div>
-                      <!-- 화살표 -->
-                      <div class="arrow">
-                          <i
-                              class="fa-solid fa-arrow-down-long"
-                              style="color: #000000"
-                          ></i>
-                      </div>
-                  </div>
 
                   <div class="cont">
                       <!-- 내용타이틀 -->
@@ -256,6 +237,7 @@ const subData = {
                           </div>
                       </div>
                   </div>
+                  
               </section>
     `
 }; //
