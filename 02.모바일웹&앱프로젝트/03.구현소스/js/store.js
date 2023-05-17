@@ -15,6 +15,7 @@ const store = new Vuex.Store({
         cat: "embossed",
         cat2: "colored",
         cat3: "premium",
+        cat4: "other",
         ENAME: "",
         KNAME: "",
         FEATURES: "",

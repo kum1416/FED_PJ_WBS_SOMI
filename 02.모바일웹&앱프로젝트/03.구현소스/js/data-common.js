@@ -178,13 +178,13 @@ const subData = {
           <!-- 종이리스트 -->
           <div class="sub_paper">
             <!-- 서브타이틀 -->
-            <div class="sub_tit">{{$store.state.cat.toUpperCase()}} PAPER</div>
+            <div class="sub_tit">{{$store.state.cat2.toUpperCase()}} PAPER</div>
             <ul class="paper_list">
-            <li v-for="(v,i) in $store.state.adata[0][$store.state.cat]">
+            <li v-for="(v,i) in $store.state.adata[0][$store.state.cat2]">
               <a href="#">
                 <div class="p_img">
                 <img :src="
-                './images/images_'+$store.state.cat.toUpperCase()+'/'+(i)+'.png'"
+                './images/images_'+$store.state.cat2.toUpperCase()+'/'+(i)+'.png'"
                 @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
                   alt="레자크" />
                 </div>
@@ -265,20 +265,20 @@ const subData = {
             <!-- 종이리스트 -->
             <div class="sub_paper">
                 <!-- 서브타이틀 -->
-                <div class="sub_tit">PREMIUM PAPER</div>
+                <div class="sub_tit">{{$store.state.cat3.toUpperCase()}} PAPER</div>
                 <ul class="paper_list">
-                    <li>
+                    <li v-for="(v,i) in $store.state.adata[0][$store.state.cat3]">
                         <a href="#">
                             <div class="p_img">
-                                <img
-                                    src="./images/images_EMBOSSED/1k.png"
-                                    alt="레자크"
-                                />
+                            <img :src="
+                            './images/images_'+$store.state.cat3.toUpperCase()+'/'+(i)+'.png'"
+                            @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
+                              alt="레자크" />
                             </div>
                             <!-- 종이 이름 -->
                             <div class="p_name">
-                                <p>LEATHACK 64</p>
-                                <p>레자크 64</p>
+                                <p>{{v.ENAME}}</p>
+                                <p>{{v.KNAME}}</p>
                             </div>
                         </a>
                     </li>
@@ -286,18 +286,18 @@ const subData = {
 
                 <div class="sub_tit">OTHER SPECIAL PAPER</div>
                 <ul class="paper_list">
-                    <li>
+                    <li v-for="(v,i) in $store.state.adata[0][$store.state.cat4]">
                         <a href="#">
                             <div class="p_img">
-                                <img
-                                    src="./images/images_PREMIUM/8k.png"
-                                    alt="레자크"
-                                />
+                            <img :src="
+                            './images/images_'+$store.state.cat3.toUpperCase()+'/'+(i)+'.png'"
+                            @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
+                              alt="레자크" />
                             </div>
                             <!-- 종이 이름 -->
                             <div class="p_name">
-                                <p>LEATHACK 64</p>
-                                <p>레자크 64</p>
+                                <p>{{v.ENAME}}</p>
+                                <p>{{v.KNAME}}</p>
                             </div>
                         </a>
                     </li>
@@ -305,7 +305,7 @@ const subData = {
 
 
 
-                
+
                   <!-- 서브-하단메뉴박스 -->
                   <div class="sub_menu">
                       <ul>
