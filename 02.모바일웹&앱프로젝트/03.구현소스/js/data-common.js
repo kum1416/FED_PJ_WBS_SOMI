@@ -91,9 +91,10 @@ const subData = {
             <li v-for="(v,i) in $store.state.adata[0][$store.state.cat]">
               <a href="#">
                 <div class="p_img">
-                  <img :src="
-                    './images/images_'+$store.state.cat.toUpperCase()+'/'+(i)+'.png'
-                  " alt="레자크" />
+                <img :src="
+                './images/images_'+$store.state.cat.toUpperCase()+'/'+(i)+'.png'"
+                @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
+                  alt="레자크" />
                 </div>
                 <!-- 종이 이름 -->
                 <div class="p_name">
@@ -188,8 +189,8 @@ const subData = {
                   <div class="cont">
                       <!-- 내용타이틀 -->
                       <div class="cont_tit">
-                          <h3>LEATHACK 64</h3>
-                          <p>레자크 64</p>
+                          <h3>{{$store.state.ENAME}}</h3>
+                          <p>{{$store.state.KNAME}}</p>
                       </div>
                       <!-- 내용리스트 -->
                       <div class="cont_list">
@@ -198,9 +199,7 @@ const subData = {
                                   <div class="c1">
                                       <h4>FEATURES</h4>
                                       <p>
-                                          다양한 패턴 시리즈의 팬시지인 레자크는
-                                          On Machine에서 엠보싱된 여러가지 색상의
-                                          무늬지입니다.
+                                          {{$store.state.FEATURES}}
                                       </p>
                                   </div>
                               </li>
@@ -208,15 +207,14 @@ const subData = {
                                   <div class="c1">
                                       <h4>USE</h4>
                                       <p>
-                                          북커버, 싸바리, 패키지, 팬시제품,
-                                          출판물, 쇼핑백
+                                          {{$store.state.USE}}
                                       </p>
                                   </div>
                               </li>
                               <li>
                                   <div class="c1">
                                       <h4>WEIGHT</h4>
-                                      <p>120 / 150 / 200g/m²</p>
+                                      <p>{{$store.state.WEIGHT}}</p>
                                   </div>
                               </li>
                               <li>
@@ -225,12 +223,21 @@ const subData = {
                                       <ul>
                                           <li>
                                               <div>
-                                                  <img
-                                                      src="./images/images_EMBOSSED/1k.png"
-                                                      alt="레자크"
-                                                  />
+                                                  <img v-for="(v,i) in $store.state.ECOLOR"
+                                                      :src="
+                                                      './images/images_'+
+                                                      $store.state.cat.toUpperCase()+
+                                                      '/'+
+                                                      $store.state.ENAME+
+                                                      '/'+
+                                                      (i+1)+
+                                                      '_'+
+                                                      v+
+                                                      '.png'"
+                                                      alt="레자크">
                                               </div>
                                           </li>
+                                       </ul>
                                           <p>
                                               제품의 색상은 모니터와 해상도의
                                               차이에 따라 실제 색상과 차이가 있을
@@ -240,7 +247,6 @@ const subData = {
                                               제품의 색상에 따라 평량이 다를 수
                                               있습니다
                                           </p>
-                                      </ul>
                                   </div>
                               </li>
                           </ul>
