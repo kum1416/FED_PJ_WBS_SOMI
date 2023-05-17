@@ -101,9 +101,25 @@ new Vue({
             // console.log("현재이미지번호:", nowNum);
         }); /////// click //////
 
-        // 로고이동기능
+        // 로고이동기능 ///////////////////////////////////////////
         $(".logo").click(() => (location.href = "index.html"));
 
+        // gnb 클릭시 링크이동하기 ////////////////////////////////
+        let link = $(".gnb a");
+        
+        let glink1 = link.eq(0);
+        let glink2 = link.eq(1);
+        let glink3 = link.eq(2);
+        let glink4 = link.eq(3);
+        
+        console.log(glink1);
+        glink1.click(()=>{location.href = "sub.html"})
+        glink2.click(()=>{location.href = "sub01.html"})
+        glink3.click(()=>{location.href = "sub02.html"})
+        glink4.click(()=>{location.href = "sub03.html"})
+        
+    
+        ///////////////////////////////////////////////////
         let scTop = 0;
 
         // 메인페이지 종이봉투 없애기/보이기
