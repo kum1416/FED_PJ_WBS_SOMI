@@ -91,6 +91,7 @@ new Vue({
     // 2. 닫기버튼 클릭시 상세페이지 박스 숨기기
     $(".cbtn").click(function(e){
         e.preventDefault();
+        
         // 상세페이지 박스 숨기기
         $("#dbx").hide();
     });
@@ -100,14 +101,14 @@ new Vue({
         // 1. 기본이동막기
         e.preventDefault();
         // 오른쪽버튼 여부
-        let isB = $(this).is("rb");
+        // let isB = $(this).is("rb");
         // 분기하기
-        if(isB){ // 오른쪽버튼?????
+        // if(isB){ // 오른쪽버튼?????
 
-        }
-        else{ // 왼쪽버튼????
+        // }
+        // else{ // 왼쪽버튼????
 
-        }
+        // }
     })
 
     // 로고이동기능
