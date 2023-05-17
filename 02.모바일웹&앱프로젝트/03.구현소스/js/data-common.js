@@ -66,7 +66,7 @@ const subData = {
         <section class="sub_first">
           <div class="sub_pg1">
             <div class="sub_bgi1 pp">
-              <img src="./images/sub1_Embossed_img.png" alt="배경이미지">
+              <img src="./images/sub1.png" alt="배경이미지">
             </div>
             <!-- 배경 텍스트박스 -->
             <div class="sub_bgt">
