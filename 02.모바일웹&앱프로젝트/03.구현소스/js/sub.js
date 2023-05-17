@@ -102,16 +102,53 @@ new Vue({
         // 오른쪽버튼 여부
         let isB = $(this).is("rb");
         // 분기하기
-        if(isB){ // 오른쪽버튼
+        if(isB){ // 오른쪽버튼?????
 
         }
-        else{ // 왼쪽버튼
+        else{ // 왼쪽버튼????
 
         }
     })
 
     // 로고이동기능
     $(".logo").click(() => (location.href = "index.html"));
+
+
+    let scTop = 0;
+
+    // 종이봉투 없애기/보이기
+    // 화면높이값
+    let winH = $(window).height();
+    console.log("화면높이값:", winH);
+
+    // 대상위치값
+    let pgH = $(".page6").offset().top;
+    console.log("6페이지위치:",pgH);
+    
+    let imH = $(".pg1").offset().top;
+    
+    $(window).scroll(function () {
+        // 스크롤위치값
+        scTop = $(this).scrollTop();
+        // console.log(scTop);
+
+        if(scTop > 1850){
+            $(".pg1").hide()
+            .css({
+                transition : '3s easeInOut',
+                opacity: 0.5,
+            });
+        } //// if /////
+        else if(scTop < 1850){
+            $(".pg1").show()
+            .css({
+                transition : '3s easeInOut',
+                opacity: 1,
+            })
+        } ///// else if ////
+
+
+    }); ////////// scroll /////////////
 
     },
 }) //////// 메인영역 뷰 인스턴스 //////// 
