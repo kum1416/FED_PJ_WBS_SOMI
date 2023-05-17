@@ -116,7 +116,7 @@ new Vue({
 
     let scTop = 0;
 
-    // 종이봉투 없애기/보이기
+    // 메인페이지 종이봉투 없애기/보이기
     // 화면높이값
     let winH = $(window).height();
     console.log("화면높이값:", winH);
@@ -136,14 +136,12 @@ new Vue({
             $(".pg1").hide()
             .css({
                 transition : '3s easeInOut',
-                opacity: 0.5,
             });
         } //// if /////
         else if(scTop < 1850){
             $(".pg1").show()
             .css({
                 transition : '3s easeInOut',
-                opacity: 1,
             })
         } ///// else if ////
 
