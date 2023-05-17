@@ -260,9 +260,10 @@
   }
   .c2 ul img{
     height: 100%;
+    padding-right: 10px;
   }
   
-  .c2 ul p{
+  .c2 p{
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size: min(0.vw,12px);
     font-weight: 300;
@@ -270,10 +271,10 @@
     color: #777;
     padding-left: 18px;
   }
-  .c2 ul p+p{
+  .c2 p+p{
     margin-top: 5px;
   }
-  .c2 ul p:first-child{
+  .c2 p:first-child{
     padding-top: 30px;
   }
   /* 상담버튼 */

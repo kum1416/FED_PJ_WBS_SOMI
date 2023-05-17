@@ -1,6 +1,7 @@
 // 공통 data 객체 - data-common.js
 
 const subData = {
+  // 상단 헤더 //
   tarea :`
       <header class="top">
         <!-- 1.로고파트 -->
@@ -61,6 +62,7 @@ const subData = {
       </header>
     
     `,
+    // 메인 영역 - 서브1(엠보스드) //
     marea:`
     <main>
         <section class="sub_first">
@@ -143,6 +145,197 @@ const subData = {
         </section>
       </main>
     `,
+    
+    // 메인 영역 - 서브2(컬러) //
+    carea:`
+    <main>
+      <section class="sub_first">
+          <div class="sub_pg1">
+              <div class="sub_bgi2 pp">
+                  <img
+                      src="./images/sub2.png"
+                      alt="배경이미지"
+                  />
+              </div>
+              <!-- 배경 텍스트박스 -->
+              <div class="sub_bgt">
+                  <h3>COLORED PAPER</h3>
+              </div>
+              <!-- 화살표 -->
+              <div class="arrow">
+                  <i
+                      class="fa-solid fa-arrow-down-long"
+                      style="color: #ffffff"
+                  ></i>
+              </div>
+          </div>
+
+
+
+
+
+
+          <!-- 종이리스트 -->
+          <div class="sub_paper">
+            <!-- 서브타이틀 -->
+            <div class="sub_tit">{{$store.state.cat.toUpperCase()}} PAPER</div>
+            <ul class="paper_list">
+            <li v-for="(v,i) in $store.state.adata[0][$store.state.cat]">
+              <a href="#">
+                <div class="p_img">
+                <img :src="
+                './images/images_'+$store.state.cat.toUpperCase()+'/'+(i)+'.png'"
+                @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
+                  alt="레자크" />
+                </div>
+                <!-- 종이 이름 -->
+                <div class="p_name">
+                  <p>{{v.ENAME}}</p>
+                  <p>{{v.KNAME}}</p>
+                </div>
+              </a>
+            </li>
+
+
+
+            </ul>
+
+
+
+
+
+
+
+          <!-- 서브-하단메뉴박스 -->
+          <div class="sub_menu">
+              <ul>
+                  <!-- 서브-하단메뉴2 -->
+                  <li>
+                      <a href="./sub01.html">
+                          <div class="sub_mtxt left sub_bg1">
+                              <div></div>
+                              <h3>EMBOSSED PAPER</h3>
+                              <h4>PREV</h4>
+                          </div>
+                      </a>
+                  </li>
+                  <!-- 서브-하단메뉴3 -->
+                  <li>
+                      <a href="./sub03.html">
+                          <div class="sub_mtxt right sub_bg3">
+                              <div></div>
+                              <h3>PREMIUM PAPER</h3>
+                              <h4>NEXT</h4>
+                          </div>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    `,
+    // 메인 영역 - 서브3(프리미엄) //
+    parea:`
+      <main>
+        <section class="sub_first">
+            <div class="sub_pg1">
+                <div class="sub_bgi3 pp">
+                    <img
+                        src="./images/sub3.png"
+                        alt="배경이미지"
+                    />
+                </div>
+                <!-- 배경 텍스트박스 -->
+                <div class="sub_bgt">
+                    <h3>PREMIUM PAPER</h3>
+                </div>
+                <!-- 화살표 -->
+                <div class="arrow">
+                    <i
+                        class="fa-solid fa-arrow-down-long"
+                        style="color: #ffffff"
+                    ></i>
+                </div>
+            </div>
+
+
+
+
+            <!-- 종이리스트 -->
+            <div class="sub_paper">
+                <!-- 서브타이틀 -->
+                <div class="sub_tit">PREMIUM PAPER</div>
+                <ul class="paper_list">
+                    <li>
+                        <a href="#">
+                            <div class="p_img">
+                                <img
+                                    src="./images/images_EMBOSSED/1k.png"
+                                    alt="레자크"
+                                />
+                            </div>
+                            <!-- 종이 이름 -->
+                            <div class="p_name">
+                                <p>LEATHACK 64</p>
+                                <p>레자크 64</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="sub_tit">OTHER SPECIAL PAPER</div>
+                <ul class="paper_list">
+                    <li>
+                        <a href="#">
+                            <div class="p_img">
+                                <img
+                                    src="./images/images_PREMIUM/8k.png"
+                                    alt="레자크"
+                                />
+                            </div>
+                            <!-- 종이 이름 -->
+                            <div class="p_name">
+                                <p>LEATHACK 64</p>
+                                <p>레자크 64</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                
+                  <!-- 서브-하단메뉴박스 -->
+                  <div class="sub_menu">
+                      <ul>
+                          <!-- 서브-하단메뉴2 -->
+                          <li>
+                              <a href="./sub02.html">
+                                  <div class="sub_mtxt left sub_bg2">
+                                      <div></div>
+                                      <h3>COLORED PAPER</h3>
+                                      <h4>PREV</h4>
+                                  </div>
+                              </a>
+                          </li>
+                          <!-- 서브-하단메뉴3 -->
+                          <li>
+                              <a href="./sub01.html">
+                                  <div class="sub_mtxt right sub_bg1">
+                                      <div></div>
+                                      <h3>EMBOSSED PAPER</h3>
+                                      <h4>NEXT</h4>
+                                  </div>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+      </main>
+    `,
+    // 하단 푸터 //
     barea:`
           <footer class="info">
             <!-- 3-1.하단링크 -->
@@ -168,6 +361,7 @@ const subData = {
             </address>
           </footer>
     `,
+    // 상세페이지 //
     darea:`
 
           <!-- 상세페이지영역 -->

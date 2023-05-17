@@ -13,6 +13,8 @@ const store = new Vuex.Store({
         adata: adata,
         // 상위분류
         cat: "embossed",
+        cat2: "colored",
+        cat3: "premium",
         ENAME: "",
         KNAME: "",
         FEATURES: "",
