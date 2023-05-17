@@ -110,7 +110,8 @@ new Vue({
         }
     })
 
-
+    // 로고이동기능
+    $(".logo").click(() => (location.href = "index.html"));
 
     },
 }) //////// 메인영역 뷰 인스턴스 //////// 
