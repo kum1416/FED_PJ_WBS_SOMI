@@ -16,7 +16,8 @@ const store = new Vuex.Store({
         cat2: "colored",
         cat3: "premium",
         cat4: "other",
-        kat:['embossed','colored','premium','other'],
+        kat:"",
+        // kat:['embossed','colored','premium','other'],
         ENAME: "",
         KNAME: "",
         FEATURES: "",
@@ -34,6 +35,7 @@ const store = new Vuex.Store({
         chgData(dt, pm) {
             // pm - 카테고리명
             dt.cat = pm;
+            
         },
         chgDetail(dt, {cat1,cat2}) {
             console.log(cat1,cat2);

@@ -47,7 +47,8 @@ Vue.component("win-comp", {
         console.log(ts)
         let arr = ["EMBOSSED","COLORED","PREMIUM"]
         store.state.soso = arr[ts]
-        // console.log(ts,store.state.soso)
+        console.log(ts,store.state.soso)
+
         
         
     }
@@ -107,7 +108,7 @@ new Vue({
             // 2. 닫기버튼 클릭시 상세페이지 박스 숨기기
             $(".cbtn").click(function (e) {
                 e.preventDefault();
-                console.log("허허");
+                // console.log("허허");
                 // 상세페이지 박스 숨기기
                 $("#dbx").hide();
             });
