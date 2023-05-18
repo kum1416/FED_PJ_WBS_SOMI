@@ -1,4 +1,4 @@
-$(()=>{ // 로딩구역
+
     console.log('로딩')
 
         // 검은색박스 - 준비완료
@@ -65,27 +65,27 @@ $(()=>{ // 로딩구역
         setTimeout(()=>{
             $(bbx1).css({
                 transform : `translateY(${a+'px'}) translateX(${b+'px'})`,
-                transition : '0.3s'
+                transition : '0.2s'
             })
             $(bbx2).css({
                 transform : `translateY(${a+'px'}) translateX(${b+'px'})`,
-                transition : '0.3s .3s',
+                transition : '0.2s .2s',
             })
             $(bbx3).css({
                 transform : `translateY(${a+'px'}) translateX(${b+'px'})`,
-                transition : '0.3s .6s',
+                transition : '0.2s .4s',
             })
         },1200)
 
         setTimeout(() => {
             $(".blackbxwrap").hide();
-        }, 2000);
+        }, 1900);
 
 
 
 
     // 등장액션 클래스 on추가 
-    a1 = $(".sub_bgt");
+    let a1 = $(".sub_bgt");
 
     // 함수를 만들어서
     function adc(x) { //x = 파라미터 ,매개변수 , 전달변수
@@ -98,9 +98,3 @@ $(()=>{ // 로딩구역
 
     // 호출하기
     adc(a1);
-
-
-
-
-
-}); // 로딩구역

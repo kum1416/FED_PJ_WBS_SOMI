@@ -39,6 +39,17 @@ Vue.component("info-comp", {
 // 상세페이지영역 뷰 템플릿 /////
 Vue.component("win-comp", {
     template: comData.darea,
+    methods:{
+
+    },
+    mounted(){
+        let ts = Number(document.location.href.split("sub")[1].split(".")[0].split("0")[1]) -1;
+        let arr = ["EMBOSSED","COLORED","PREMIUM"]
+        store.state.soso = arr[ts]
+        // console.log(store.state.soso)
+        
+        
+    }
 }); ///// 상세페이지영역 Vue component /////
 
 
@@ -46,7 +57,9 @@ Vue.component("win-comp", {
 // 상단영역 뷰 인스턴스 생성하기 /////////////////////////
 new Vue({
     el: "#top",
-    mounted: function () {},
+    mounted: function () {
+
+    },
 }); //////// 상단영역 뷰 인스턴스 //////
 
 //###### 메인영역 뷰 인스턴스 생성하기 ##########
@@ -122,18 +135,15 @@ new Vue({
 
         // gnb 클릭시 링크이동하기 ////////////////////////////////
         let link = $(".gnb a");
-        
-        let glink1 = link.eq(0);
-        let glink2 = link.eq(1);
-        let glink3 = link.eq(2);
-        let glink4 = link.eq(3);
-        
-        console.log(glink1);
-        glink1.click(()=>{location.href = "sub.html"})
-        glink2.click(()=>{location.href = "sub01.html"})
-        glink3.click(()=>{location.href = "sub02.html"})
-        glink4.click(()=>{location.href = "sub03.html"})
-        
+        link.each((idx,ele)=>{
+            $(ele).click(function(){
+                if(idx == 0){
+                    location.href = "sub.html"
+                }else{
+                    location.href = `sub0${idx}.html`
+                }
+            })
+        });
     
         ///////////////////////////////////////////////////
         let scTop = 0;
@@ -143,11 +153,7 @@ new Vue({
         let winH = $(window).height();
         console.log("화면높이값:", winH);
 
-        // 대상위치값
-        let pgH = $(".page6").offset().top;
-        console.log("6페이지위치:", pgH);
-
-        let imH = $(".pg1").offset().top;
+       
 
         $(window).scroll(function () {
             // 스크롤위치값

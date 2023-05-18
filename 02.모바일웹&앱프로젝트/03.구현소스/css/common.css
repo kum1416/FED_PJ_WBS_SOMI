@@ -83,6 +83,11 @@ body * {
   position: relative;
   height: 100%;
 }
+/* 나중에 없애기 */
+.logo a{
+  display: inline-block;
+    width: 273px;
+}
 .logo img {
   /* width: 273px; */
   height: 20px;
@@ -167,6 +172,7 @@ body * {
   height: 100%;
   display: block;
   opacity: 1;
+  color: #000;
 }
 .other i + i {
   opacity: 0;

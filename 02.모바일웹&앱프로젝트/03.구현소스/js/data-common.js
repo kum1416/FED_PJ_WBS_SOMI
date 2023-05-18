@@ -417,10 +417,10 @@ const subData = {
                                       <ul>
                                           <li>
                                               <div>
-                                                  <img v-for="(v,i) in $store.state.ECOLOR"
+                                                  <img  v-for="(v,i) in $store.state.ECOLOR"
                                                       :src="
                                                       './images/images_'+
-                                                      $store.state.cat.toUpperCase()+
+                                                      $store.state.soso+
                                                       '/'+
                                                       $store.state.ENAME+
                                                       '/'+
