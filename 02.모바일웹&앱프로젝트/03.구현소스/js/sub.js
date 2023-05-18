@@ -46,7 +46,7 @@ Vue.component("win-comp", {
         let ts = Number(document.location.href.split("sub")[1].split(".")[0].split("0")[1]) -1;
         let arr = ["EMBOSSED","COLORED","PREMIUM"]
         store.state.soso = arr[ts]
-        // console.log(store.state.soso)
+        console.log(ts,store.state.soso)
         
         
     }
@@ -117,13 +117,6 @@ new Vue({
                 e.preventDefault();
                 // 오른쪽버튼 여부
                 let isB = $(this).is("rb");
-                // 분기하기
-                if(isB){ // 오른쪽버튼?????
-
-                }
-                else{ // 왼쪽버튼????
-
-                }
             });
             // 종이리스트 data-num 속성읽기 ????????
             // nowNum = $(this).attr("data-num");
