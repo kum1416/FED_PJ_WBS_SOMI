@@ -44,9 +44,10 @@ Vue.component("win-comp", {
     },
     mounted(){
         let ts = Number(document.location.href.split("sub")[1].split(".")[0].split("0")[1]) -1;
+        console.log(ts)
         let arr = ["EMBOSSED","COLORED","PREMIUM"]
         store.state.soso = arr[ts]
-        console.log(ts,store.state.soso)
+        // console.log(ts,store.state.soso)
         
         
     }
