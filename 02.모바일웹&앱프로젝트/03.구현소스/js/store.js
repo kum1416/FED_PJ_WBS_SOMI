@@ -44,18 +44,6 @@ const store = new Vuex.Store({
             dt.ECOLOR = selD.ECOLOR;
             console.log(dt.ECOLOR);
         },
-        chgDetail2(dt, {cat1,cat2}) {
-            console.log(cat1,cat2);
-            // console.log(dt.adata[0][cat1][cat2]);
-            let selD = dt.adata[0][cat1][cat2];
-            dt.ENAME = selD.ENAME;
-            dt.KNAME = selD.KNAME;
-            dt.FEATURES = selD.FEATURES;
-            dt.USE = selD.USE;
-            dt.WEIGHT = selD.WEIGHT;
-            dt.ECOLOR = selD.ECOLOR;
-            console.log(dt.ECOLOR);
-        },
     },
     // (3) 백엔관련 코딩 비동기처리 메서드 구역 :
     // 호출시 dispatch()사용
