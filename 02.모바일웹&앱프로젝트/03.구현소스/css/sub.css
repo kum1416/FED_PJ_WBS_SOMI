@@ -209,13 +209,13 @@
     padding-bottom: 20px;
   }
   .cont_tit h3{
-    font-size: min(2vw,40px);
+    font-size: min(3.5vw,40px);
     font-weight: 600;
     line-height: 45px;
   }
   .cont_tit p{
     padding-top: 10px;
-    font-size: min(1.4vw,20px);
+    font-size: min(2.5vw,20px);
     font-weight: 300;
     line-height: 20px;
     color: #777;
@@ -232,14 +232,14 @@
     border-top: 1px solid #e5e5e5;
   }
   .c1 h4{
-    font-size: min(1vw,20px);
+    font-size: min(2.5vw,20px);
     font-weight: 600;
     width: 150px;
     padding-left: 10px;
   }
   .c1 p{
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
-    font-size: min(0.8vw,16px);
+    font-size: min(2vw,16px);
     font-weight: 400;
     color: #777;
   }
@@ -270,7 +270,7 @@
   
   .c2 p{
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
-    font-size: min(0.vw,12px);
+    font-size: min(2vw,12px);
     font-weight: 300;
     background: url(../images/info.png) no-repeat left center;
     color: #777;
