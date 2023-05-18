@@ -253,6 +253,11 @@
   }
   .c2 ul{
     padding-top: 28px;
+    /* color 색상 넘치는 부분 y스크롤 설정 */
+    height: 115px;
+    overflow: auto;
+    
+    margin-bottom: 15px;
   }
   .c2 ul div{
     height: 111px;
