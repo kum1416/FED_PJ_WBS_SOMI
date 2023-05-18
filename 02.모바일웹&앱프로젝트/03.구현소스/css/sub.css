@@ -230,6 +230,7 @@
     display: flex;
     padding: 26px 0;
     border-top: 1px solid #e5e5e5;
+    align-items: center;
   }
   .c1 h4{
     font-size: min(2.5vw,20px);
@@ -241,8 +242,10 @@
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-size: min(2vw,16px);
     font-weight: 400;
+    width: 940px;
     color: #777;
   }
+
   /* color 리스트 */
   .c2{
     display: block;
@@ -285,7 +288,7 @@
   /* 상담버튼 */
   .pbtn{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30px;
   }
   .pbtn button{
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';

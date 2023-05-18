@@ -272,7 +272,7 @@ const subData = {
                             <div class="p_img">
                             <img :src="
                             './images/images_'+$store.state.cat3.toUpperCase()+'/'+(i)+'.png'"
-                            @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
+                            @click="$store.commit('chgDetail',{cat1:$store.state.cat3,cat2:i})"
                               alt="레자크" />
                             </div>
                             <!-- 종이 이름 -->
@@ -291,7 +291,7 @@ const subData = {
                             <div class="p_img">
                             <img :src="
                             './images/images_'+$store.state.cat3.toUpperCase()+'/'+(i)+'.png'"
-                            @click="$store.commit('chgDetail',{cat1:$store.state.cat,cat2:i})"
+                            @click="$store.commit('chgDetail',{cat1:$store.state.cat3,cat2:i})"
                               alt="레자크" />
                             </div>
                             <!-- 종이 이름 -->
