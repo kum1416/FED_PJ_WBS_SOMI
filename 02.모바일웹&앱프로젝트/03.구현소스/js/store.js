@@ -16,7 +16,6 @@ const store = new Vuex.Store({
         cat2: "colored",
         cat3: "premium",
         cat4: "other",
-        menu: [],
         ENAME: "",
         KNAME: "",
         FEATURES: "",

@@ -2,7 +2,7 @@
 
 const subData = {
   // 상단 헤더 //
-  tarea :`
+  tarea: `
       <header class="top">
         <!-- 1.로고파트 -->
         <div>
@@ -62,8 +62,8 @@ const subData = {
       </header>
     
     `,
-    // 메인 영역 - 서브1(엠보스드) //
-    marea:`
+  // 메인 영역 - 서브1(엠보스드) //
+  marea: `
     <main>
         <section class="sub_first">
           <div class="sub_pg1">
@@ -145,9 +145,9 @@ const subData = {
         </section>
       </main>
     `,
-    
-    // 메인 영역 - 서브2(컬러) //
-    carea:`
+
+  // 메인 영역 - 서브2(컬러) //
+  carea: `
     <main>
       <section class="sub_first">
           <div class="sub_pg1">
@@ -235,8 +235,8 @@ const subData = {
       </section>
     </main>
     `,
-    // 메인 영역 - 서브3(프리미엄) //
-    parea:`
+  // 메인 영역 - 서브3(프리미엄) //
+  parea: `
       <main>
         <section class="sub_first">
             <div class="sub_pg1">
@@ -335,8 +335,8 @@ const subData = {
           </section>
       </main>
     `,
-    // 하단 푸터 //
-    barea:`
+  // 하단 푸터 //
+  barea: `
           <footer class="info">
             <!-- 3-1.하단링크 -->
             <ul class="blink">
@@ -361,8 +361,8 @@ const subData = {
             </address>
           </footer>
     `,
-    // 상세페이지 //
-    darea:`
+  // 상세페이지 //
+  darea: `
 
           <!-- 상세페이지영역 -->
               <section class="sub_first">
@@ -452,7 +452,7 @@ const subData = {
                   </div>
 
               </section>
-    `
+    `,
 }; //
 
 // 내보내기
