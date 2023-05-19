@@ -164,6 +164,7 @@
     height: 39px;
     background: url(../images/mv_btns.png) no-repeat;
     background-position: -129px -342px;
+    margin-top: 70px;
 
     /* 트랜지션 */
     transition: transform 0.3s;
