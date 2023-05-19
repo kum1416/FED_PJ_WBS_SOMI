@@ -1,0 +1,82 @@
+<header class="top">
+                <!-- 1.로고파트 -->
+                <div>
+                    <h1 class="logo">
+                        <a href="#">
+                            <!-- 검정로고 -->
+                            <img src="./images/logo.png" alt="로고" />
+                            <!-- 하얀로고 -->
+                            <img src="./images/logo-w.png" alt="로고" />
+                        </a>
+                    </h1>
+                </div>
+                <!-- 2.네비파트 -->
+                <div>
+                    <nav class="gnb">
+                        <ul>
+                            <!-- 1.PRODUCTS -->
+                            <li>
+                                <a href="#">PRODUCTS</a>
+                            </li>
+                            <!-- 2.EMBOSSED -->
+                            <li>
+                                <a href="#">EMBOSSED</a>
+                            </li>
+                            <!-- 3.COLORED -->
+                            <li>
+                                <a href="#">COLORED</a>
+                            </li>
+                            <!-- 4.PREMIUM -->
+                            <li>
+                                <a href="#">PREMIUM</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 3.기타파트 -->
+                <div>
+                    <ul class="other">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
+                            </a>
+                        </li>
+                        <li>
+                            <div>KOR</div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="ham">
+                                    <i
+                                        class="fa-solid fa-burger"
+                                        style="color: #000000"
+                                    ></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            ___________________________________
+            
+
+            <div class="sub_pg1">
+                      <div class="sub_bgi4 pp">
+                          <img
+                              src="./images/images_EMBOSSED/1k.png"
+                              alt="배경이미지"
+                          />
+                      </div>
+                      <!-- 배경 텍스트박스 -->
+                      <div class="sub_bgt">
+                          <h3>LEATHACK 64</h3>
+                      </div>
+                      <!-- 화살표 -->
+                      <div class="arrow">
+                          <i
+                              class="fa-solid fa-arrow-down-long"
+                              style="color: #000000"
+                          ></i>
+                      </div>
+                  </div>
