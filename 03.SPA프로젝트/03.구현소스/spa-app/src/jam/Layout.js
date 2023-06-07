@@ -22,7 +22,7 @@ const Layout = () => {
                             <Link to="/pn">Peanut</Link>
                         </li>
                         <li>
-                            <Link to="am/">Almond</Link>
+                            <Link to="/am">Almond</Link>
                         </li>
                         <li>
                             <Link to="/hz">Hazelnut</Link>
@@ -33,8 +33,24 @@ const Layout = () => {
                     </ul>
                 </nav>
             </header>
+            {/* 2. 메인영역 */}
+            <main className="cont">
+                <Outlet />
+            </main>
+            {/* 3. 하단영역 */}
+            <footer className="info">
+                <h2>Contact</h2>
+                <p>
+                    info@wildsouls.gr
+                    <br />
+                    +30 2310 566 874
+                    <br />
+                    E-shop (09:00-15:00)
+                </p>
+            </footer>
         </>
     );
 }; ////////// Layout 컴포넌트 ///////
 
+// 내보내기
 export default Layout;

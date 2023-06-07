@@ -32,8 +32,13 @@ export default function App(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route>
-                  
+                <Route path="/" element={<Layout />}>
+                  <Route index element={<Main />}></Route>
+                  <Route path="ss" element={<Sesame />}></Route>
+                  <Route path="pn" element={< />}></Route>
+                  <Route path="am" element={< />}></Route>
+                  <Route path="hz" element={< />}></Route>
+                  <Route path="cs" element={< />}></Route>
                 </Route>
             </Routes>
         </BrowserRouter>
