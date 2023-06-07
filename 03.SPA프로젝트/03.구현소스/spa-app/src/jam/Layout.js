@@ -1,5 +1,6 @@
 // 메인 레이아웃 컴포넌트
 import Logo from "./Logo";
+import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
     return(
