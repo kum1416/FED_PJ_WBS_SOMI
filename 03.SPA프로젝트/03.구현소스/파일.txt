@@ -1,0 +1,18 @@
+[1] 메인화면모듈
+(1) 구조정의
+Root > section > img Box + title Box + button Box1 + button Box2
+(2) 객체화 : 
+        {
+            "isrc":"이미지경로",
+            "tit":"타이틀",
+            "btn":"버튼문구",
+            "link":"이동카테고리"
+        }
+(3) 기능정의 :
+        1) 타이틀 등장액션
+            (setTimeout+addClass"on") + css
+        2) 버튼 오버시 텍스트 애니메이션
+	(mouseover+animate)
+        3) 화살표 버튼 클릭시 페이지이동
+	(click+animate)
+
