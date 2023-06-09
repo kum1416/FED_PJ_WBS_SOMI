@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지 하드코딩</title>
     <style>
+        /************ 메인버튼 ************/
+        .mainbtn{
+            border-radius: 20%;
+        }
+
+
         /************ 하트버튼 ************/
         .nextbtn{
             position: relative;
@@ -35,17 +41,16 @@
         .love-in{
             fill: #fff;
             stroke-width: 0;
-            max-width: 2rem;
+            max-width: 1.75rem;
         }
         .love-out{
-            /* display: none; */
             fill: none;
             stroke-width: 3.5;
-
+            max-width: 2.4rem;
             z-index: 2;
         }
         .nextbtn:hover{
-            background-color: #000;
+            background-color: lightslategrey;
         }
         .nextbtn:hover .love-in{
             max-width: 2.4rem;

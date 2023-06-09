@@ -16,3 +16,9 @@ Root > section > img Box + title Box + button Box1 + button Box2
         3) 화살표 버튼 클릭시 페이지이동
 	(click+animate)
 
+
+
+상단메뉴
+박스 3개 - 플렉스
+윗라인에 맞게 정렬
+양옆 겉박스에 플렉스/보더바텀
