@@ -57,6 +57,9 @@
         height: 100%;
       }
 
+      .fpage{
+        position: relative;
+      }
       /************ 메인타이틀 ************/
       .maintit {
         position: absolute;
@@ -71,49 +74,55 @@
 
       /************ 메인버튼 ************/
       .mainbtn {
-        position: relative;
-        width: 50%;
-        padding: 15px 40px;
-        border-radius: 30px;
-        border: none;
-        background-color: #000;
-        overflow: hidden;
+      position: relative;
+      width: 350px;
+      max-width: 100%;
+      padding: 15px 40px;
+      background-color: #000;
+      overflow: hidden;
+      height: 50px;
       }
-      .maintit a {
-        font-size: 20px;
-        color: #fff;
-      }
+
       /************ 흐르는 텍스트 ************/
       .runtxt{
-        /* position: absolute; */
-        /* width: 100%; */
-
-      }
-      .runtxt ol{
         position: relative;
-        left: 0;
-        display: flex;
-        width: 200%;
-        white-space: nowrap;
+      display: flex;
+      white-space: nowrap;
+      will-change: transform;
+      width: 2000px;
+      left: 0;
+      animation: marquee 7s linear infinite;
+    animation-play-state: paused;
+    transform: translateX(-50%);
+    left: -150%;
+    }
+
+  .runtxt span{
+    color: #fff;
+    font-size: 20px;
+    padding-right: 100px;
+    display: block;
+    flex: 1;
+    text-align: center;
+  }
+  .mainbtn:hover .runtxt {
+      animation-play-state: running;
 
     }
-    .mainbtn:hover .runtxt ol{
-        animation: runtxt 2s linear infinite;
-      }
 
-      .runtxt li{
-        flex: 1;
-        text-align: center;
-      }
-
-      /* 흐르는 글자 키프레임 */
-        @keyframes runtxt {
-            to{
-                left: 100%;
-            }
-        }
-        /* 키프레임 */
-
+/*     @keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+} */
+@keyframes marquee {
+    to {
+        left: 250%;
+    }
+}
 
       /************ 하트버튼 ************/
       .nextbtn {
@@ -195,14 +204,13 @@
         <h2>Taste the Wild.<br />Find your Soul.</h2>
         <button class="mainbtn">
             <div class="runtxt">
-                <ol>
-                    <li>
-                        <a href="#">Sweet and special jam</a>
-                    </li>
-                    <li>
-                        <a href="#">Sweet and special jam</a>
-                    </li>
-                </ol>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
             </div>
         </button>
       </div>
