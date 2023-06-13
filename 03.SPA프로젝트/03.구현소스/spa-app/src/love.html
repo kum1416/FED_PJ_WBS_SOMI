@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        /* 1. 마진 패딩 초기화 */
+      /* 1. 마진 패딩 초기화 */
       html,
       body,
       h1,
@@ -29,14 +29,87 @@
       ol {
         list-style: none;
       }
-    </style>
-    <script>
 
-    </script>
-</head>
-<body>
+      /************ 메인타이틀 ************/
+      .concept{
+        max-width: 1200px;
+        height: 500px;
+        margin: 0 auto;
+        background-image: url(../public/images/mft1.jpg);
+      }
+      .ct-cont {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: min(4vw, 62px);
+        text-align: center;
+        font-family: "Libre Baskerville", serif;
+        white-space: nowrap;
+      }
+
+      /************ 메인버튼 ************/
+      .mainbtn {
+        position: relative;
+        width: 350px;
+        max-width: 100%;
+        padding: 15px 40px;
+        background-color: #000;
+        overflow: hidden;
+        height: 50px;
+        border-radius: 30px;
+      }
+
+      /************ 흐르는 텍스트 ************/
+      .runtxt {
+        position: relative;
+        display: flex;
+        white-space: nowrap;
+        will-change: transform;
+        width: 2000px;
+        left: 0;
+        animation: marquee 7s linear infinite;
+        animation-play-state: paused;
+        transform: translateX(-50%);
+        left: -150%;
+      }
+
+      .runtxt span {
+        color: #fff;
+        font-size: 20px;
+        padding-right: 100px;
+        display: block;
+        flex: 1;
+        text-align: center;
+      }
+      .mainbtn:hover .runtxt {
+        animation-play-state: running;
+      }
+
+      @keyframes marquee {
+        to {
+          left: 250%;
+        }
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
     <div class="concept">
-        
+      <div class="ct-cont">
+        <h2>The Concept Store</h2>
+        <button class="mainbtn">
+          <div class="runtxt">
+            <span>SWEET AND SPECIAL JAM</span>
+            <span>SWEET AND SPECIAL JAM</span>
+            <span>SWEET AND SPECIAL JAM</span>
+            <span>SWEET AND SPECIAL JAM</span>
+            <span>SWEET AND SPECIAL JAM</span>
+            <span>SWEET AND SPECIAL JAM</span>
+            <span>SWEET AND SPECIAL JAM</span>
+          </div>
+        </button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
