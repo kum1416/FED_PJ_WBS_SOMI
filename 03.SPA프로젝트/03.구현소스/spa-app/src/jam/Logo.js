@@ -5,11 +5,11 @@ const Logo = (props) => {
     const isrc = {
         logo: "./images.logo.svg/"
     }
-    
+
     const mystyle = {
         top: {
-            width: "45px",
-            height: "45px"
+            width: "120px",
+            height: "60px"
         },
     };
 

@@ -6,7 +6,7 @@ font-family: 'Ubuntu', sans-serif;
 */
 
 .top{
-    border: 4px double #000;
+    border-bottom: 1px solid #000;
 }
 .gnb{
     width: 800px;
