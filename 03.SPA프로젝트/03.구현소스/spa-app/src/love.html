@@ -25,10 +25,6 @@
         margin: 0;
         padding: 0;
       }
-      /* body{
-        width: 100%;
-        height: 100vh;
-      } */
       /* ul, ol 초기화 */
       ul,
       ol {
@@ -42,6 +38,7 @@
         border-radius: 0 150px 0 150px;
         background: url(../public/images/store1.jpg)no-repeat center/cover;
       }
+      /************ 메인타이틀 ************/
       .main-cont {
         position: absolute;
         top: 35%;
@@ -56,7 +53,7 @@
         padding-bottom: 50px;
       }
 
-      /************ 메인버튼 ************/
+      /************ 메인버튼 - 중복 ************/
       .mbtnbx {
         position: relative;
         font-family: "Ubuntu", sans-serif;
@@ -102,48 +99,7 @@
           transform: translateY(calc(100% - 8rem));
         }
       }
-      /* .mainbtn {
-        position: relative;
-        width: 350px;
-        max-width: 100%;
-        padding: 15px 40px;
-        background-color: #000;
-        overflow: hidden;
-        height: 50px;
-        border-radius: 30px;
-      } */
 
-      /************ 흐르는 텍스트 ************/
-      /* .runtxt {
-        position: relative;
-        display: flex;
-        white-space: nowrap;
-        will-change: transform;
-        width: 2000px;
-        left: 0;
-        animation: marquee 7s linear infinite;
-        animation-play-state: paused;
-        transform: translateX(-50%);
-        left: -150%;
-      }
-
-      .runtxt span {
-        color: #fff;
-        font-size: 20px;
-        padding-right: 100px;
-        display: block;
-        flex: 1;
-        text-align: center;
-      }
-      .mainbtn:hover .runtxt {
-        animation-play-state: running;
-      }
-
-      @keyframes marquee {
-        to {
-          left: 250%;
-        }
-      } */
     </style>
     <script></script>
   </head>
