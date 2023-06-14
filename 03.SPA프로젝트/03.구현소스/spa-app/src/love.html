@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+      /* 
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Ubuntu', sans-serif
+      */
       /* 1. 마진 패딩 초기화 */
       html,
       body,
@@ -31,25 +36,74 @@
       }
 
       /************ 메인타이틀 ************/
-      .concept{
+      .concept {
         max-width: 1200px;
-        height: 500px;
+        height: 530px;
         margin: 0 auto;
-        background-image: url(../public/images/mft1.jpg);
+        border-radius: 0 150px 0 150px;
+        background-image: url(../public/images/store1.jpg);
       }
       .ct-cont {
         position: absolute;
-        top: 35%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: min(4vw, 62px);
+        font-size: min(4vw, 58px);
         text-align: center;
         font-family: "Libre Baskerville", serif;
         white-space: nowrap;
       }
+      .ct-cont h2 {
+        padding-bottom: 50px;
+      }
 
       /************ 메인버튼 ************/
+      .mbtnbx {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        max-width: 100%;
+        width: 250px;
+        margin: 0 auto;
+        background-color: #000;
+        overflow: hidden;
+        border-radius: 50px;
+        height: 60px;
+      }
       .mainbtn {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+      }
+      .mainbtn .runtxt {
+        position: absolute;
+        white-space: nowrap;
+        color: #fff;
+        will-change: transform;
+        line-height: 60px;
+        display: flex;
+        padding: 0 23px;
+        gap: 50px;
+      }
+      .mainbtn:hover .runtxt {
+        animation: marquee 4s linear infinite;
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(-50%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      @media (hover: hover) and (min-width: 700px) {
+        .animated-title .content {
+          -webkit-transform: translateY(calc(100% - 8rem));
+          transform: translateY(calc(100% - 8rem));
+        }
+      }
+      /* .mainbtn {
         position: relative;
         width: 350px;
         max-width: 100%;
@@ -58,10 +112,10 @@
         overflow: hidden;
         height: 50px;
         border-radius: 30px;
-      }
+      } */
 
       /************ 흐르는 텍스트 ************/
-      .runtxt {
+      /* .runtxt {
         position: relative;
         display: flex;
         white-space: nowrap;
@@ -90,7 +144,7 @@
         to {
           left: 250%;
         }
-      }
+      } */
     </style>
     <script></script>
   </head>
@@ -98,7 +152,17 @@
     <div class="concept">
       <div class="ct-cont">
         <h2>The Concept Store</h2>
-        <button class="mainbtn">
+        <div class="mbtnbx">
+          <div class="mainbtn">
+            <div class="runtxt">
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+              <span>SWEET AND SPECIAL JAM</span>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="mainbtn">
           <div class="runtxt">
             <span>SWEET AND SPECIAL JAM</span>
             <span>SWEET AND SPECIAL JAM</span>
@@ -108,7 +172,7 @@
             <span>SWEET AND SPECIAL JAM</span>
             <span>SWEET AND SPECIAL JAM</span>
           </div>
-        </button>
+        </button> -->
       </div>
     </div>
   </body>
