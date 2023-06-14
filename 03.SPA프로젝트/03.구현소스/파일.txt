@@ -22,3 +22,22 @@ Root > section > img Box + title Box + button Box1 + button Box2
 박스 3개 - 플렉스
 윗라인에 맞게 정렬
 양옆 겉박스에 플렉스/보더바텀
+
+
+
+gnb 구조 보관용
+{/* <li>
+        <Link to="/ss">Sesame</Link>
+</li>
+<li>
+        <Link to="/pn">Peanut</Link>
+</li>
+<li>
+        <Link to="/am">Almond</Link>
+</li>
+<li>
+        <Link to="/hz">Hazelnut</Link>
+</li>
+<li>
+        <Link to="/cs">Cashew</Link>
+</li> */}

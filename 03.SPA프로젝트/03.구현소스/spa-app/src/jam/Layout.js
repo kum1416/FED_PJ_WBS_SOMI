@@ -4,6 +4,31 @@ import "./css/layout.css";
 import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
+    /* gnb 데이타 */
+    const gnb_data = [
+        {
+            txt: "Sesame",
+            link: "/ss",
+        },
+        {
+            txt: "Peanut",
+            link: "/pn",
+        },
+        {
+            txt: "Almond",
+            link: "/am",
+        },
+        {
+            txt: "Hazelnut",
+            link: "/hz",
+        },
+        {
+            txt: "Cashew",
+            link: "/cs",
+        },
+    ]
+
+
     return(
         <>
             {/* 1. 상단영역 */}
@@ -14,21 +39,9 @@ const Layout = () => {
                         <li>
                             <Logo />
                         </li>
-                        <li>
-                            <Link to="/ss">Sesame</Link>
-                        </li>
-                        <li>
-                            <Link to="/pn">Peanut</Link>
-                        </li>
-                        <li>
-                            <Link to="/am">Almond</Link>
-                        </li>
-                        <li>
-                            <Link to="/hz">Hazelnut</Link>
-                        </li>
-                        <li>
-                            <Link to="/cs">Cashew</Link>
-                        </li>
+                        {gnb_data.map((v,i) => {
+                            <Link to={v.link}>{v.txt}</Link>
+                        })}
                     </ul>
                 </nav>
             </header>
