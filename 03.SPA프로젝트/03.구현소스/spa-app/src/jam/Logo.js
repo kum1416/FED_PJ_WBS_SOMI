@@ -5,13 +5,16 @@ const Logo = (props) => {
     const isrc = {
         logo: "./images.logo.svg/"
     }
+    
     const mystyle = {
-        width: "45px",
-        height: "45px"
-    }
+        top: {
+            width: "45px",
+            height: "45px"
+        },
+    };
 
     return(
-        <h1 style={mystyle[props]}>
+        <h1 style={mystyle[props.lg]}>
             <img src={isrc.logo} />
         </h1>
     );

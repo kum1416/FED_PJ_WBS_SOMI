@@ -28,7 +28,6 @@ const Layout = () => {
         },
     ]
 
-
     return(
         <>
             {/* 1. 상단영역 */}
@@ -37,11 +36,13 @@ const Layout = () => {
                 <nav className="gnb">
                     <ul>
                         <li>
-                            <Logo />
+                            <Logo lg="top" />
                         </li>
-                        {gnb_data.map((v,i) => {
-                            <Link to={v.link}>{v.txt}</Link>
-                        })}
+                        {gnb_data.map((v,i) => (
+                            <li key={i}>
+                                <Link to={v.link}>{v.txt.toUpperCase()}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </header>
