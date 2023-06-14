@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>러브컨셉트 하드코딩</title>
+    <title>배너모듈 하드코딩</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
       /* 
@@ -32,27 +32,28 @@
       }
 
       /************ 메인타이틀 ************/
-      .concept {
-        height: 530px;
-        margin: 0 auto;
-        border-radius: 0 150px 0 150px;
-        background: url(../public/images/store1.jpg) no-repeat center/cover;
+      .banbx{
+        /* position: relative; */
+        width: 360px;
+        height: 600px;
+        background-color: tomato;
+        border-radius: 275px;
       }
-      /************ 메인타이틀 ************/
-      .main-cont {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: min(4vw,58px);
-        text-align: center;
-        font-family: "Libre Baskerville", serif;
-        white-space: nowrap;
+      .ban-cont{
+        /* position: absolute;
+        top: 0;
+        left: 0; */
+        width: 100%;
+        height: 100%;
+        background: url(../public/images/banner/jam1.png) no-repeat center/cover;
       }
-      .main-cont h2 {
-        padding-bottom: 50px;
+      .bantit{
+        font-family: 'Libre Baskerville', serif;
+        font-size: 36px;
       }
-
+      .bprice{
+        font-size: 21px;
+      }
       /************ 메인버튼 - 중복 ************/
       .mbtnbx {
         position: relative;
@@ -99,25 +100,26 @@
           transform: translateY(calc(100% - 8rem));
         }
       }
+      
 
     </style>
     <script></script>
   </head>
   <body>
-    <div class="concept">
-      <div class="main-cont">
-        <h2>The Concept Store</h2>
-        <div class="mbtnbx">
-          <div class="mainbtn">
-            <div class="runtxt">
-              <span>SWEET AND SPECIAL JAM</span>
-              <span>SWEET AND SPECIAL JAM</span>
-              <span>SWEET AND SPECIAL JAM</span>
-              <span>SWEET AND SPECIAL JAM</span>
-            </div>
+    <div class="banbx">
+      <div class="ban-cont">
+        <div class="bantit">Hazelnut Butter Crunchy with Cocoa & Date</div>
+        <div class="bprice">€7,90</div>
+      </div>
+      <div class="mbtnbx">
+        <div class="mainbtn">
+          <div class="runtxt">
+            <span>BUY NOW!</span>
+            <span>BUY NOW!</span>
+            <span>BUY NOW!</span>
+            <span>BUY NOW!</span>
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
