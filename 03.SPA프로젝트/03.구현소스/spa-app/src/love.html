@@ -37,23 +37,22 @@
 
       /************ 메인타이틀 ************/
       .concept {
-        max-width: 1200px;
         height: 530px;
         margin: 0 auto;
         border-radius: 0 150px 0 150px;
-        background-image: url(../public/images/store1.jpg);
+        background: url(../public/images/store1.jpg)no-repeat center/cover;
       }
-      .ct-cont {
+      .main-cont {
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: min(4vw, 58px);
+        font-size: min(4vw,58px);
         text-align: center;
         font-family: "Libre Baskerville", serif;
         white-space: nowrap;
       }
-      .ct-cont h2 {
+      .main-cont h2 {
         padding-bottom: 50px;
       }
 
@@ -61,7 +60,7 @@
       .mbtnbx {
         position: relative;
         font-family: "Ubuntu", sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         max-width: 100%;
         width: 250px;
         margin: 0 auto;
@@ -82,7 +81,7 @@
         will-change: transform;
         line-height: 60px;
         display: flex;
-        padding: 0 23px;
+        padding: 0 20px;
         gap: 50px;
       }
       .mainbtn:hover .runtxt {
@@ -150,7 +149,7 @@
   </head>
   <body>
     <div class="concept">
-      <div class="ct-cont">
+      <div class="main-cont">
         <h2>The Concept Store</h2>
         <div class="mbtnbx">
           <div class="mainbtn">
@@ -162,17 +161,6 @@
             </div>
           </div>
         </div>
-        <!-- <button class="mainbtn">
-          <div class="runtxt">
-            <span>SWEET AND SPECIAL JAM</span>
-            <span>SWEET AND SPECIAL JAM</span>
-            <span>SWEET AND SPECIAL JAM</span>
-            <span>SWEET AND SPECIAL JAM</span>
-            <span>SWEET AND SPECIAL JAM</span>
-            <span>SWEET AND SPECIAL JAM</span>
-            <span>SWEET AND SPECIAL JAM</span>
-          </div>
-        </button> -->
       </div>
     </div>
   </body>

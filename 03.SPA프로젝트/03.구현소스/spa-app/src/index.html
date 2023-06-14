@@ -28,19 +28,15 @@
         margin: 0;
         padding: 0;
       }
-      /* body{
-        width: 100%;
-        height: 100vh;
-      } */
+      body{
+        outline: 1px solid gray;
+      }
       /* ul, ol 초기화 */
       ul,
       ol {
         list-style: none;
       }
 
-      html {
-        /* font-size: 10px; */
-      }
       a {
         color: #000;
         text-decoration: none;
@@ -61,19 +57,67 @@
         position: relative;
       }
       /************ 메인타이틀 ************/
-      .maintit {
+      .main-cont {
         position: absolute;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: min(4vw,62px);
+        font-size: min(4vw,58px);
         text-align: center;
         font-family: "Libre Baskerville", serif;
         white-space: nowrap;
       }
+      .main-cont h2 {
+        padding-bottom: 50px;
+      }
 
       /************ 메인버튼 ************/
+      .mbtnbx {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        max-width: 100%;
+        width: 250px;
+        margin: 0 auto;
+        background-color: #000;
+        overflow: hidden;
+        border-radius: 50px;
+        height: 60px;
+      }
       .mainbtn {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+      }
+      .mainbtn .runtxt {
+        position: absolute;
+        white-space: nowrap;
+        color: #fff;
+        will-change: transform;
+        line-height: 60px;
+        display: flex;
+        padding: 0 20px;
+        gap: 50px;
+      }
+      .mainbtn:hover .runtxt {
+        animation: marquee 4s linear infinite;
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(-50%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      @media (hover: hover) and (min-width: 700px) {
+        .animated-title .content {
+          -webkit-transform: translateY(calc(100% - 8rem));
+          transform: translateY(calc(100% - 8rem));
+        }
+      }
+      /* .mainbtn {
       position: relative;
       width: 350px;
       max-width: 100%;
@@ -82,10 +126,10 @@
       overflow: hidden;
       height: 50px;
       border-radius: 30px;
-      }
+      } */
 
       /************ 흐르는 텍스트 ************/
-      .runtxt{
+      /* .runtxt{
         position: relative;
       display: flex;
       white-space: nowrap;
@@ -109,7 +153,7 @@
   .mainbtn:hover .runtxt {
       animation-play-state: running;
 
-    }
+    } */
 
 /*     @keyframes marquee {
     from {
@@ -119,11 +163,11 @@
         transform: translateX(50%);
     }
 } */
-@keyframes marquee {
+/* @keyframes marquee {
     to {
         left: 250%;
     }
-}
+} */
 
       /************ 하트버튼 ************/
       .nextbtn {
@@ -195,29 +239,23 @@
 
     </style>
     <script>
-$(()=>{
-  $(".runtxt").
-})
     </script>
   </head>
   <body>
     <section class="fpage">
-      <div class="imbx">
-        <!-- <img src="../public/images/mft1.jpg" alt="메인이미지" /> -->
-      </div>
-      <div class="maintit">
+      <div class="imbx"></div>
+      <div class="main-cont">
         <h2>Taste the Wild.<br />Find your Soul.</h2>
-        <button class="mainbtn">
+        <div class="mbtnbx">
+          <div class="mainbtn">
             <div class="runtxt">
               <span>SWEET AND SPECIAL JAM</span>
               <span>SWEET AND SPECIAL JAM</span>
               <span>SWEET AND SPECIAL JAM</span>
               <span>SWEET AND SPECIAL JAM</span>
-              <span>SWEET AND SPECIAL JAM</span>
-              <span>SWEET AND SPECIAL JAM</span>
-              <span>SWEET AND SPECIAL JAM</span>
             </div>
-        </button>
+          </div>
+        </div>
       </div>
       <button class="nextbtn">
         <div class="flove"></div>
