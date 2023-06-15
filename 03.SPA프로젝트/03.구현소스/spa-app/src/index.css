@@ -1,7 +1,11 @@
 @charset "utf-8";
 /* 전체 페이지 공통 CSS
 - index.html 페이지 전체에 적용됨! */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+/* 
+font-family: 'Libre Baskerville', serif;
+font-family: 'Ubuntu', sans-serif
+*/
 
 html,body,ul,ol,dl,dt,dd,p,figure,figcaption,h1,h2,h3,h4 {
   margin: 0;

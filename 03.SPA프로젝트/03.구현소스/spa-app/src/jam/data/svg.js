@@ -14,3 +14,5 @@ const svgData = {
     ></path>`,
 };
 
+export default svgData;
+
