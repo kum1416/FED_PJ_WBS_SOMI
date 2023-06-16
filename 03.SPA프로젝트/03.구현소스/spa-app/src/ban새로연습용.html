@@ -12,7 +12,7 @@
       font-family: 'Ubuntu', sans-serif
       */
 
-      *{
+      * {
         outline: 0.5px solid aqua;
       }
       /* CSS변수처리 */
@@ -42,37 +42,46 @@
       }
       /************ 배너타이틀 ************/
       .bna-cont {
-          position: relative;
-          font-size: var(--Lfont);
-          text-align: center;
+        position: relative;
+        font-size: var(--Lfont);
+        text-align: center;
         font-family: "Libre Baskerville", serif;
         white-space: nowrap;
-    }
-    .bna-cont h2 {
+      }
+      .bna-cont h2 {
         padding-bottom: 50px;
       }
       .bna-cont p {
         font-size: var(--Sfont);
       }
-      
+
       /************ 배너랩핑박스 ************/
       .bna-wrap {
-          position: relative;
-          width: 360px;
+        position: relative;
+        width: 360px;
         height: 514px;
         margin: 50px 0;
       }
+      /* .bna-wrap::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+      } */
 
       /************ 따라다니는 이미지 ************/
       .ban-mover {
-        position: absolute;
-        z-index: 555;
+        position: fixed;
+        z-index: 10;
         width: 40px;
         height: 100px;
-        transition: 0.5s ease-out;
         background-image: url(../public/images/cursor_hand.png);
         background-repeat: no-repeat;
         background-size: contain;
+        transition: 0.5s ease-out;
+        display: none;
+        pointer-events: none;
       }
       .bna-wrap:hover .ban-mover {
         opacity: 1;
@@ -111,8 +120,8 @@
 
       /* 배경 */
       .ban-bg {
-        width: min(30vw,360px);
-        height: min(52vw,514px);
+        width: min(30vw, 360px);
+        height: min(52vw, 514px);
         position: relative;
         border-radius: 275px;
         overflow: hidden;
@@ -170,10 +179,22 @@
         display: flex;
         padding: 0 20px;
         gap: 50px;
+        left: -87px;
       }
-      .mainbtn:hover .runtxt {
+      .mainbtn .runtxt:hover {
         animation: marquee 4s linear infinite;
       }
+
+      .mainbtn .runtxt span{
+        opacity: 0;
+      }
+      .mainbtn .runtxt:hover span{
+        opacity: 1;
+      }
+      .mainbtn .runtxt span:nth-child(2){
+        opacity: 1;
+      }
+      
 
       @keyframes marquee {
         from {
@@ -201,16 +222,15 @@
         // 배너박스
         const bbx = document.querySelector(".bna-wrap");
         // 갭 // 가로크기 //
-        let gap2 = mover.clientWidth / 2;
 
-        bbx.onmousemove = function () {
-          event.stopPropagation();
+        bbx.onmousemove = function (e) {
+          e.stopPropagation();
           // 마우스 포인터 위치
-          console.log("x:", event.clientX, "\ny:", event.clientY);
+          console.log("x:", e.pageX, "\ny:", e.pageY);
 
           // 위치값 보정 (gap은 무버크기의 절반)
-          var posx = event.offsetX - gap2;
-          var posy = event.offsetY - gap2;
+          var posx = e.pageX - 25;
+          var posy = e.pageY - 50;
 
           // 무버 위치값 이동
           mover.style.top = posy + "px";
@@ -260,9 +280,9 @@
           <img src="../public/images/banner/jamhover1.jpg" alt="배경" />
         </div>
       </div>
-      <div class="ban-mover"></div>
     </section>
 
+    <div class="ban-mover"></div>
     <!-- <div class="ban-wrap">
       <div class="ban-cont">
         <div class="ban-img">
