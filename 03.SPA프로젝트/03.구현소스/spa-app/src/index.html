@@ -41,6 +41,13 @@
         text-decoration: none;
       }
 
+      /* 폰트 사이즈 변수셋팅 */
+:root {
+  --Lfont: min(5vw,36px);
+  --Mfont: min(3.5vw,22px);
+  --Sfont: min(2.5vw,14px);
+}
+
       /************ 메인박스 ************/
       .imbx{
         position: relative;
@@ -61,12 +68,13 @@
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: min(4vw,58px);
+        font-size: var(--Lfont);
         text-align: center;
         font-family: "Libre Baskerville", serif;
         white-space: nowrap;
       }
       .main-cont h2 {
+        font-size: var(--Mfont);
         padding-bottom: 50px;
       }
 

@@ -12,9 +12,14 @@
       font-family: 'Ubuntu', sans-serif
       */
 
+      *{
+        outline: 0.5px solid aqua;
+      }
       /* CSS변수처리 */
       :root {
-        --msz: 50px;
+        --Lfont: min(5vw, 58px);
+        --Mfont: min(3.5vw, 36px);
+        --Sfont: min(2.5vw, 21px);
       }
       /* 1. 마진 패딩 초기화 */
       html,
@@ -35,51 +40,44 @@
       ol {
         list-style: none;
       }
-
-      /************ 메인타이틀 ************/
-      /*       .ban-con{
-        position: relative;
-        z-index: 222;
+      /************ 배너타이틀 ************/
+      .bna-cont {
+          position: relative;
+          font-size: var(--Lfont);
+          text-align: center;
+        font-family: "Libre Baskerville", serif;
+        white-space: nowrap;
+    }
+    .bna-cont h2 {
+        padding-bottom: 50px;
       }
-      .ban-con img{
-        width: min(50vw,400px);
-      } */
-      /************ 메인텍스트 ************/
-      /*       .bna-tit h3{
-        font-size: 40px;
+      .bna-cont p {
+        font-size: var(--Sfont);
       }
-      .bna-tit p{
-        font-size: 30px;
-      }
-      .ban-bg{
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .ban-bg img{
-        width: min(50vw,400px);
-      }
-      .bna-wrap{
-        display: flex;
-      } */
-      /* aspect-ratio: 360 / 514; */
-
+      
+      /************ 배너랩핑박스 ************/
       .bna-wrap {
-        position: relative;
-        width: 360px;
+          position: relative;
+          width: 360px;
         height: 514px;
+        margin: 50px 0;
       }
 
-      /* 따라다니는 이미지 */
+      /************ 따라다니는 이미지 ************/
       .ban-mover {
         position: absolute;
         z-index: 555;
-        width: 50px;
+        width: 40px;
         height: 100px;
-        transition: 0.4s ease-out;
-        /* curosr: url(../public/images/cursor-hand.png) 20 30, auto; */
+        transition: 0.5s ease-out;
+        background-image: url(../public/images/cursor_hand.png);
+        background-repeat: no-repeat;
+        background-size: contain;
       }
-      .ban-mover img{
+      .bna-wrap:hover .ban-mover {
+        opacity: 1;
+      }
+      .ban-mover img {
         width: 100%;
         height: 100%;
       }
@@ -155,7 +153,8 @@
         overflow: hidden;
         border-radius: 50px;
         height: 60px;
-        transform: translateY(15px);
+        margin-top: 20px;
+        /* transform: translateY(15px); */
       }
       .mainbtn {
         font-size: 18px;
@@ -212,11 +211,8 @@
           // 위치값 보정 (gap은 무버크기의 절반)
           var posx = event.offsetX - gap2;
           var posy = event.offsetY - gap2;
-          // offsetX,offsetY는 부모자격요소에서의
-          // 위치이므로 .mover가 absolute이며
-          // 부모자격요소 안에 있을때 사용된다!
 
-          // 무버에게 위치값 이동 셋팅하기(무버중앙위치 보정)
+          // 무버 위치값 이동
           mover.style.top = posy + "px";
           mover.style.left = posx + "px";
         }; //////////// mousemove 이벤트함수 //////
@@ -234,12 +230,16 @@
   </head>
   <body>
     <section>
+      <div class="bna-cont">
+        <h2>Wildly Loved</h2>
+        <p>
+          You will find our wild products in their simplest form. No additives or <br />anything else can spoil their
+          nature
+        </p>
+      </div>
       <div class="bna-wrap">
-          <div class="ban-mover">
-              <img src="../public/images/cursor_hand.png" alt="소잼" />
-          </div>
         <div class="ban-con">
-          <img src="../public/images/banner/jam1.png" alt="소잼" />
+          <img src="../public/images/banner/jam1.png" alt="잼이미지" />
           <div class="bna-tit">
             <h3>Hazelnut Butter<br />Crunchy with Cocoa <br />& Date</h3>
             <p>€7,90</p>
@@ -260,6 +260,7 @@
           <img src="../public/images/banner/jamhover1.jpg" alt="배경" />
         </div>
       </div>
+      <div class="ban-mover"></div>
     </section>
 
     <!-- <div class="ban-wrap">
