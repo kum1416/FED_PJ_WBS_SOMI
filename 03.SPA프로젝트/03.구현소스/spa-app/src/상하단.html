@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>배너모듈 하드코딩</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+            /* 
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Ubuntu', sans-serif
+      */
+
+            * {
+                outline: 0.5px solid aqua;
+            }
+            /* CSS변수처리 */
+            :root {
+                --Lfont: min(5vw, 58px);
+                --Mfont: min(3.5vw, 36px);
+                --Sfont: min(2.5vw, 21px);
+            }
+            /* 1. 마진 패딩 초기화 */
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            ul,
+            ol,
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            /* ul, ol 초기화 */
+            ul,
+            ol {
+                list-style: none;
+            }
+            /************ 배너타이틀 ************/
+        </style>
+        <script></script>
+    </head>
+    <body>
+      <h2 class="logo">
+        <img src="../public/images/logo.svg" alt="로고">
+      </h2>
+        <header className="top">
+            <!-- 네비게이션 -->
+            <nav className="gnb">
+                <ul>
+                    <li>
+                        <Logo lg="top" />
+                    </li>
+                    <li>
+                        <a href="$">Sesame</a>
+                    </li>
+                    <li>
+                        <a href="$">Peanut</a>
+                    </li>
+                    <li>
+                        <a href="$">Almond</a>
+                    </li>
+                    <li>
+                        <a href="$">Hazelnut</a>
+                    </li>
+                    <li>
+                        <a href="$">Cashew</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <footer className="info">
+            <h2>Contact</h2>
+            <p>
+                info@wildsouls.gr
+                <br />
+                +30 2310 566 874
+                <br />
+                E-shop (09:00-15:00)
+            </p>
+        </footer>
+    </body>
+</html>
