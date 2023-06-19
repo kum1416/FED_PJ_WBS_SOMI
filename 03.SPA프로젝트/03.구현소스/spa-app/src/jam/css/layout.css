@@ -5,55 +5,106 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Ubuntu', sans-serif;
 */
 
-.top{
-    border-bottom: 1px solid #000;
+.top {
+  border-bottom: 1px solid #000;
 }
-.gnb{
-    width: 800px;
-    margin: 0 auto;
+.gnb {
+  width: 800px;
+  margin: 0 auto;
 }
-.gnb ul{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    list-style: none;
+.gnb ul {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
-.gnb li{
-    margin: 0 10px;
+.gnb li {
+  margin: 0 10px;
 }
-.gnb a{
-    color: #000;
-    text-decoration: none;
+.gnb a {
+  color: #000;
+  text-decoration: none;
 }
-.gnb a:hover{
-    color: hotpink;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-shadow: 2px 2px 2px #555;
+.gnb a:hover {
+  color: hotpink;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-shadow: 2px 2px 2px #555;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-
 
 /* 메인영역 */
-.cont{
-    text-align: center;
-    /* padding: 30px; */
+.cont {
+  text-align: center;
+  /* padding: 30px; */
 }
-.cont img{
-    max-width: 100%;
+.cont img {
+  max-width: 100%;
 }
-iframe{
-    width: 731px;
-    height: 412px;
+iframe {
+  width: 731px;
+  height: 412px;
 }
 
-/* 하단영역 */
-.info{
-    text-align: center;
-    padding: 30px;
-    background-image: linear-gradient(to bottom, #CCC, #777);
-    color: #fff;
+
+/************ 하단영역 ************/
+#info {
+  position: relative;
 }
+.info {
+  text-align: center;
+  padding: 30px;
+}
+.info h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.info p {
+  margin-top: 20px;
+}
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.footer-cont a {
+  font-size: var(--Mfont);
+}
+.footer-cont a + a {
+  margin-left: 15px;
+}
+/* 하단 애니메이션 */
+.footer-fit {
+  overflow: hidden;
+}
+.footer-flow {
+  /* position: absolute; */
+  /* left: 0; */
+  display: flex;
+  width: 200vw;
+  height: 120px;
+  margin-top: 50px;
+  overflow: hidden;
+
+  /* 애니메이션 */
+  animation: footer-flow 15s linear infinite;
+}
+.footer-flow img {
+  flex-shrink: 1;
+  display: block;
+  width: 50%;
+}
+
+/* footer-flow 키프레임 */
+@keyframes footer-flow {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transition: translateX(0%);
+  }
+}
+/* 키프레임 */

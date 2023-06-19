@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo = (props) => {
     const isrc = {
-        logo: "./images.logo.svg/"
+        logo: "../images/logo.svg"
     }
 
     const mystyle = {
