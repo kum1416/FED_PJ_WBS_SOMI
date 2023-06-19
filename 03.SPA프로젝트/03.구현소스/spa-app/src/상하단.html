@@ -59,7 +59,6 @@
             }
             /************ 로고박스 ************/
             .logo {
-                /* height: 161px; */
                 text-align: center;
                 margin-top: 30px;
             }
@@ -77,23 +76,23 @@
                 position: absolute;
                 top: 0;
                 display: flex;
-                justify-content: center;
-                gap: 90px;
+                gap: 50px;
                 font-size: var(--Sfont);
 
                 border-bottom: 1px solid #000;
             }
             /* gnb li 리스트 */
             .gnb ul li {
-              padding-left: 70px;
+              padding: 0 70px;
               padding-bottom: 25px;
             }
             .left-menu {
-                width: 42%;
+                justify-content: end;
+                width: 45%;
             }
             .right-menu {
                 right: 0;
-                width: 42%;
+                width: 45%;
             }
             .gnb a {
                 transition: 0.4s ease-in-out;
@@ -147,7 +146,7 @@
         <div id="info">
             <footer class="info">
                 <!-- 로고박스 -->
-                <h2 class="logo">
+                <!-- <h2 class="logo"> -->
                     <a href="#">
                         <img src="../public/images/logo.svg" alt="로고" />
                     </a>
