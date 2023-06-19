@@ -112,6 +112,9 @@
       .cart a {
         font-size: var(--Sfont);
       }
+      i{
+        color: #000;
+      }
 
       /************ 하단영역 ************/
       #info {
@@ -135,6 +138,9 @@
       .footer-cont a {
         font-size: var(--Mfont);
       }
+      .footer-cont a+a{
+        margin-left: 15px;
+      }
       /* 하단 애니메이션 */
       .footer-fit{
           overflow: hidden;
@@ -149,7 +155,7 @@
             overflow: hidden;
             
         /* 애니메이션 */
-        animation: footer-flow 13s linear infinite;
+        animation: footer-flow 15s linear infinite;
       }
       .footer-flow img {
         flex-shrink: 1;
@@ -232,10 +238,10 @@
           <div class="footer-cont">
             <h2>Follow Us</h2>
             <a href="#">
-              <i class="fa-brands fa-instagram" style="color: #000000"></i>
+              <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="#">
-              <i class="fa-brands fa-square-facebook" style="color: #000000"></i>
+              <i class="fa-brands fa-square-facebook"></i>
             </a>
           </div>
         </div>
