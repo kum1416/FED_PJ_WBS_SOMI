@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 텍스트모듈용 CSS - text.css */
+
+/************ 타이틀공통 ************/
+.text-cont {
+    position: relative;
+    font-size: var(--Lfont);
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    white-space: nowrap;
+}
+/************ 타이틀내용 ************/
+.text-cont h2 {
+    padding-bottom: 50px;
+}
+.text-cont p {
+    font-size: var(--Sfont);
+}
