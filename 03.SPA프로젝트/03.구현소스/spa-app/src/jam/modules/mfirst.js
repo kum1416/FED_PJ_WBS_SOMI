@@ -21,13 +21,14 @@ function jqFn(){
         // 글자 등장액션 //////////////////////////////
         // 글자 넣을 대상
         const stage = document.querySelector(".main-cont h2");
-        // console.log(acttext);
+        // console.log(stage);
 
-        const acttext = ["Taste","the","Wild.","Find","your","Soul."];
+        const acttext1 = ["Taste","the","Wild."];
+        const acttext2 = ["Find","your","Soul."];
         let hcode="";
         let idx = 0;
 
-        for(let x of acttext){
+        for(let x of acttext1 || acttext2){
             if(x===" ") x = "&nbsp;";
             hcode +=
             `<div style="transition-delay: ${idx*0.1}s">

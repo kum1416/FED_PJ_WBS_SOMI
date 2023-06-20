@@ -33,7 +33,8 @@
 }
 /* 글자 등장액션 셋팅 */
 .main-cont h2 div{
-  transform: translateY(15%);
+  display: inline-block;
+  transform: translateY(20%);
   opacity: 0;
   /* 트랜지션: 속시이지 */
   transition: .3s ease-in;
