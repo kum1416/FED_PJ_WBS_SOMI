@@ -4,8 +4,10 @@ import "./css/layout.css";
 import { Link, Outlet } from "react-router-dom";
 
 /* 폰트어썸 임포트 */
-// import {  faShoppingBasket, faInstagram, faFacebookSquare } from "@fortawesome/free-solid-svg-icons";
+import {  faShoppingBasket, faInstagram, faFacebookSquare, faGrinStars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
 
 const Layout = () => {
   /* gnb 데이타 */
@@ -67,6 +69,7 @@ const Layout = () => {
           {/* 장바구니 */}
           <div className="cart">
             <a href="#">
+              <i class="fa-solid fa-basket-shopping"></i>
               {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
             </a>
           </div>
@@ -111,9 +114,11 @@ const Layout = () => {
             <div className="footer-cont">
               <h2>Follow Us</h2>
               <a href="#">
-              {/* <FontAwesomeIcon icon={faInstagram} /> */}
+                <i class="fa-brands fa-instagram"></i>
+              {/* <FontAwesomeIcon icon={faGrinStars} /> */}
               </a>
               <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
               {/* <FontAwesomeIcon icon={faFacebookSquare} /> */}
               </a>
             </div>

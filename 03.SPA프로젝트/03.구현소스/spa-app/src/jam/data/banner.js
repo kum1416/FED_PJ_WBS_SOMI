@@ -1,4 +1,5 @@
 // 배너 컴포넌트 사용 데이터 - data/banner.js
+// 메인페이지에서 사용되는 컴포넌트
 
 
 const ban_data = [

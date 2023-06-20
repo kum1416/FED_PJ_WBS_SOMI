@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* 전체 페이지 공통 CSS
 - index.html 페이지 전체에 적용됨! */
+/* 폰트어썸 */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
 /* 
 font-family: 'Libre Baskerville', serif;
