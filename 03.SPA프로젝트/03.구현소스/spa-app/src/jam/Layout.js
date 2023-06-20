@@ -35,9 +35,47 @@ const Layout = () => {
   return (
     <>
       {/* 1. 상단영역 */}
+      <div id="top">
       <header className="top">
         {/* 네비게이션 */}
         <nav className="gnb">
+          <ul className="left-menu">
+            <li>
+              <a href="#">Sesame</a>
+            </li>
+            <li>
+              <a href="#">Peanut</a>
+            </li>
+            <li>
+              <a href="#">Almond</a>
+            </li>
+          </ul>
+          {/* 로고박스 */}
+          <h2 className="logo">
+            <a href="#">
+                <Logo lg="top" />
+            </a>
+          </h2>
+          <ul className="right-menu">
+            <li>
+              <a href="#">Hazelnut</a>
+            </li>
+            <li>
+              <a href="#">Cashew</a>
+            </li>
+          </ul>
+          {/* 장바구니 */}
+          <div className="cart">
+            <a href="#">
+              {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
+            </a>
+          </div>
+        </nav>
+      </header>
+    </div>
+      {/* <header className="top"> */}
+        {/* 네비게이션 */}
+{/*         <nav className="gnb">
           <ul>
             <li>
               <Logo lg="top" />
@@ -49,7 +87,7 @@ const Layout = () => {
             ))}
           </ul>
         </nav>
-      </header>
+      </header> */}
       {/* 2. 메인영역 */}
       <main className="cont">
         <Outlet />

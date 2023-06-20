@@ -8,8 +8,8 @@ const Logo = (props) => {
 
     const mystyle = {
         top: {
-            width: "120px",
-            height: "60px"
+            // width: "120px",
+            // height: "60px"
         },
     };
 

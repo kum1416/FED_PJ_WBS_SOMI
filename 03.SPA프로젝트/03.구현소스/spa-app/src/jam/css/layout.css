@@ -1,11 +1,74 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
-/* 
-font-family: 'Libre Baskerville', serif;
-font-family: 'Ubuntu', sans-serif;
-*/
 
+/************ 상단영역 ************/
+#top {
+  position: relative;
+  z-index: 1;
+}
 .top {
+  /* max-width: 1530px; */
+  margin: 0 auto;
+  /* height: 90px; */
+}
+/************ 로고박스 ************/
+.logo {
+  text-align: center;
+  margin-top: 30px;
+}
+.logo img {
+  height: 100%;
+}
+
+/************ 네비게이션 ************/
+.gnb {
+  position: relative;
+  min-height: 46px;
+}
+/* gnb ul박스 */
+.gnb ul {
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 50px;
+  font-size: var(--Mfont);
+  
+  border-bottom: 1px solid #000;
+}
+/* gnb li 리스트 */
+.gnb ul li {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 70px;
+  padding-bottom: 25px;
+}
+.left-menu {
+  justify-content: end;
+  width: 45%;
+}
+.right-menu {
+  right: 0;
+  width: 45%;
+}
+.gnb a {
+  transition: 0.4s ease-in-out;
+}
+.gnb a:hover {
+  color: peru;
+}
+/* 장바구니 */
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+}
+.cart a {
+  font-size: var(--Sfont);
+}
+i {
+  color: #000;
+}
+
+/* .top {
   border-bottom: 1px solid #000;
 }
 .gnb {
@@ -34,7 +97,7 @@ font-family: 'Ubuntu', sans-serif;
 }
 h1 {
   text-align: center;
-}
+} */
 
 /* 메인영역 */
 .cont {
@@ -48,7 +111,6 @@ iframe {
   width: 731px;
   height: 412px;
 }
-
 
 /************ 하단영역 ************/
 #info {

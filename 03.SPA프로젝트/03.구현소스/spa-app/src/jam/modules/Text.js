@@ -15,8 +15,8 @@ function jqFn(){
     $(()=>{
 
         // html 코드 삽입(svg데이터)
-        document.querySelector(".flove").innerHTML=svgData.loveout;
-        document.querySelector(".elove").innerHTML=svgData.lovein;
+        // document.querySelector(".flove").innerHTML=svgData.loveout;
+        // document.querySelector(".elove").innerHTML=svgData.lovein;
 
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
