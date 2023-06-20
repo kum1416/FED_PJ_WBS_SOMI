@@ -18,6 +18,32 @@ function jqFn(){
         document.querySelector(".flove").innerHTML=svgData.loveout;
         document.querySelector(".elove").innerHTML=svgData.lovein;
 
+        // 글자 등장액션 //////////////////////////////
+        // 글자 넣을 대상
+        const stage = document.querySelector(".main-cont h2");
+        // console.log(acttext);
+
+        const acttext = ["Taste","the","Wild.","Find","your","Soul."];
+        let hcode="";
+        let idx = 0;
+
+        for(let x of acttext){
+            if(x===" ") x = "&nbsp;";
+            hcode +=
+            `<div style="transition-delay: ${idx*0.1}s">
+                ${x}</div>`;
+            
+            idx++;
+        } ////// for //////////
+
+        console.log(hcode);
+        stage.innerHTML = hcode;
+
+        /* 클래스 on넣기 */
+        setTimeout(()=>{
+            stage.classList.add("on");
+        },2000);
+
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
@@ -28,7 +54,7 @@ function Mfirst(){
         <section className="fpage">
             <div className="imbx"></div>
             <div className="main-cont">
-                <h2>Taste the Wild.<br />Find your Soul.</h2>
+                <h2></h2>
                 <div className="mbtnbx">
                 <div className="mainbtn">
                     <div className="runtxt">
