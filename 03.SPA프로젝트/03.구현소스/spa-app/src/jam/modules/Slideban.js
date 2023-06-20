@@ -14,7 +14,7 @@ function jqFn(){
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
-function Slideban(){
+function SlideBan(){
     return(
         <>
         {/* 모듈코드 */}
@@ -26,5 +26,5 @@ function Slideban(){
     )
 }
 
-export default Slideban;
+export default SlideBan;
 

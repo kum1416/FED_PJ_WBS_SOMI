@@ -1,7 +1,10 @@
 // jam 참깨 페이지 컴포넌트 - Main.js
 import React from "react";
-import Mfirst from "./modules/mfirst";
+import Mfirst from "./modules/Mfirst";
 import Text from "./modules/Text";
+import Banner from "./modules/Banner";
+import ImgSwipe from "./modules/ImgSwipe";
+import SlideBan from "./modules/SlideBan";
 
 const Main = () => {
         return(
@@ -10,6 +13,14 @@ const Main = () => {
               <Mfirst />
               {/* 2.텍스트모듈 */}  
               <Text />
+              {/* 3.배너모듈 */}  
+              {/* <Banner /> */}
+              {/* 4.스와이프모듈 */}  
+              {/* <ImgSwipe /> */}
+              {/* 5.텍스트모듈 */}  
+              <Text />
+              {/* 6.슬라이드배너모듈 */}  
+              {/* <SlideBan /> */}
             </>
         );
 }; /////////////// Main /////////////
