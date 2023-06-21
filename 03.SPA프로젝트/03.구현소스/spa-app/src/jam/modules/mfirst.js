@@ -14,11 +14,11 @@ import $ from "jquery";
 function jqFn(){
     $(()=>{
 
-        // html 코드 삽입(svg데이터)
+        // html 코드 삽입(svg데이터) =========================
         document.querySelector(".flove").innerHTML=svgData.loveout;
         document.querySelector(".elove").innerHTML=svgData.lovein;
 
-        // 글자 등장액션 //////////////////////////////
+        // 글자 등장액션 =====================================
         // 글자 넣을 대상
         const stage = document.querySelector(".main-cont h2");
         // console.log(stage);
@@ -26,6 +26,7 @@ function jqFn(){
         const acttext1 = ["Taste","the","Wild."];
         const acttext2 = ["Find","your","Soul."];
 
+        // 1번째줄 텍스트===============
         let hcode1="<div>";
         let idx = 0;
         for(let x of acttext1){
@@ -40,7 +41,7 @@ function jqFn(){
         // console.log(hcode1);
         stage.innerHTML = hcode1;
 
-        // 2번째줄==================================
+        // 2번째줄 텍스트===============
         let hcode2="<div>";
 
         for(let x of acttext2){

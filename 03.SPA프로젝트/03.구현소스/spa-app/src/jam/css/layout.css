@@ -52,7 +52,7 @@
 .gnb a {
   transition: 0.4s ease-in-out;
 }
-.gnb a:hover {
+.gnb ul li:hover a {
   color: peru;
 }
 /* 장바구니 */
@@ -67,6 +67,24 @@
 }
 i {
   color: #000;
+}
+/********* 메뉴 젤리효과 *********/
+
+.gnb ul li:hover {
+  -webkit-animation: jelly 0.5s;
+          animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 
 /* .top {

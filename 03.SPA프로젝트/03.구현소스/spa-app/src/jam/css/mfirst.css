@@ -38,11 +38,10 @@
 
 /* 글자 등장액션 셋팅 */
 .main-cont h2 span{
-  /* display: inline-block; */
-  transform: translateY(20%);
+  transform: translateY(25%);
   opacity: 0;
   /* 트랜지션: 속시이지 */
-  transition: .3s ease-in;
+  transition: .2s ease-in;
 }
 .main-cont h2.on span{
   transform: translateY(0);
@@ -76,9 +75,20 @@
   display: flex;
   padding: 0 20px;
   gap: 50px;
+  left: -269px;
 }
 .mainbtn:hover .runtxt {
   animation: marquee 4s linear infinite;
+}
+
+.mainbtn .runtxt span{
+  opacity: 0;
+}
+.mainbtn .runtxt:hover span{
+  opacity: 1;
+}
+.mainbtn .runtxt span:nth-child(2){
+  opacity: 1;
 }
 
 @keyframes marquee {
@@ -111,6 +121,8 @@
   background-color: #e30613;
   /* 트랜지션 */
   transition: 0.5s ease-out;
+
+  box-shadow: 1px 1px 5px #000;
 }
 .nextbtn svg {
   position: absolute;
