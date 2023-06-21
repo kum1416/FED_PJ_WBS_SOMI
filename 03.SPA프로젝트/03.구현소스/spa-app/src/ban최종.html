@@ -208,6 +208,9 @@
       // 로딩구역
       window.addEventListener("load", function () {
         console.log("로딩완료!");
+        
+        // BUY NOW 버튼
+        const mbtnbx = document.querySelector(".mbtnbx");
 
         // 움직일 대상: 돌아다니는 원 .mover
         const mover = document.querySelector(".ban-mover");
@@ -238,6 +241,7 @@
           // 나가면 사라짐
           mover.style.display = "none";
         }; ///////// mouseleave /////////////////
+
       }); ///////////// 로드구역 ///////////////
     </script>
   </head>
