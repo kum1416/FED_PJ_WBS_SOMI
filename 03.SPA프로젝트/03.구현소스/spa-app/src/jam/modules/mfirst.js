@@ -25,20 +25,38 @@ function jqFn(){
 
         const acttext1 = ["Taste","the","Wild."];
         const acttext2 = ["Find","your","Soul."];
-        let hcode="";
-        let idx = 0;
 
-        for(let x of acttext1 || acttext2){
+        let hcode1="<div>";
+        let idx = 0;
+        for(let x of acttext1){
             if(x===" ") x = "&nbsp;";
-            hcode +=
-            `<div style="transition-delay: ${idx*0.1}s">
-                ${x}</div>`;
+            hcode1 +=
+            `<span style="transition-delay: ${idx*0.1}s">
+                ${x}</span>`;
+            idx++;
+        } ////// for //////////
+        hcode1 += `</div>`
+
+        // console.log(hcode1);
+        stage.innerHTML = hcode1;
+
+        // 2번째줄==================================
+        let hcode2="<div>";
+
+        for(let x of acttext2){
+            if(x===" ") x = "&nbsp;";
+            hcode2 +=
+            `<span style="transition-delay: ${idx*0.1}s">
+                ${x}</span>`;
             
             idx++;
         } ////// for //////////
+        hcode2 += `</div>`
 
-        console.log(hcode);
-        stage.innerHTML = hcode;
+
+        console.log(hcode2);
+        stage.innerHTML += hcode2;
+
 
         /* 클래스 on넣기 */
         setTimeout(()=>{

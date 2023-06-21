@@ -32,14 +32,14 @@
   justify-content: center;
 }
 /* 글자 등장액션 셋팅 */
-.main-cont h2 div{
-  display: inline-block;
+.main-cont h2 span{
+  /* display: inline-block; */
   transform: translateY(20%);
   opacity: 0;
   /* 트랜지션: 속시이지 */
   transition: .3s ease-in;
 }
-.main-cont h2.on div{
+.main-cont h2.on span{
   transform: translateY(0);
   opacity: 1;
 }

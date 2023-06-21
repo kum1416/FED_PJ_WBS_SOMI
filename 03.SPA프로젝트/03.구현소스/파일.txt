@@ -108,3 +108,23 @@ ______________________
 앱솔루트 추가 시 감싸고 있는 박스에 주고 위치값 주기
 ________________________
 onclick="alert(33)"
+________________________
+btn btn-primary btn-jelly
+
+
+.btn-jelly:hover {
+  -webkit-animation: jelly 0.5s;
+          animation: jelly 0.5s;
+
+
+@keyframes jelly {
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

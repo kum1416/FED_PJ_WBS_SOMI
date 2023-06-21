@@ -8,171 +8,189 @@
     <!-- 어썸아이콘 CDN넣기 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
-      /* 
-      font-family: 'Libre Baskerville', serif;
-      font-family: 'Ubuntu', sans-serif
-      */
+            @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+            /*
+            font-family: 'Libre Baskerville', serif;
+            font-family: 'Ubuntu', sans-serif
+            */
 
-      * {
-        /* outline: 0.5px solid aqua; */
-      }
-      /* CSS변수처리 */
-      :root {
-        --Lfont: min(5vw, 58px);
-        --Mfont: min(3.5vw, 36px);
-        --Sfont: min(2.5vw, 21px);
-      }
-      /* 1. 마진 패딩 초기화 */
-      html,
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      ul,
-      ol,
-      p {
-        margin: 0;
-        padding: 0;
-      }
-      /* ul, ol 초기화 */
-      ul,
-      ol {
-        list-style: none;
-      }
+            * {
+              /* outline: 0.5px solid aqua; */
+            }
+            /* CSS변수처리 */
+            :root {
+              --Lfont: min(5vw, 58px);
+              --Mfont: min(3.5vw, 36px);
+              --Sfont: min(2.5vw, 21px);
+            }
+            /* 1. 마진 패딩 초기화 */
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            ul,
+            ol,
+            p {
+              margin: 0;
+              padding: 0;
+            }
+            /* ul, ol 초기화 */
+            ul,
+            ol {
+              list-style: none;
+            }
 
-      a {
-        text-decoration: none;
-        color: #000;
-      }
-      .cont {
-        height: 300px;
-      }
-      /************ 상단영역 ************/
-      #top {
-        position: relative;
-      }
-      .top {
-        /* max-width: 1530px; */
-        margin: 0 auto;
-        height: 90px;
-      }
-      /************ 로고박스 ************/
-      .logo {
-        text-align: center;
-        margin-top: 30px;
-      }
-      .logo img {
-        height: 100%;
-      }
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+            .cont {
+              height: 300px;
+            }
+            /************ 상단영역 ************/
+            #top {
+              position: relative;
+            }
+            .top {
+              /* max-width: 1530px; */
+              margin: 0 auto;
+              height: 90px;
+            }
+            /************ 로고박스 ************/
+            .logo {
+              text-align: center;
+              margin-top: 30px;
+            }
+            .logo img {
+              height: 100%;
+            }
 
-      /************ 네비게이션 ************/
-      .gnb {
-        position: relative;
-        min-height: 46px;
-      }
-      /* gnb ul박스 */
-      .gnb ul {
-        position: absolute;
-        top: 0;
-        display: flex;
-        gap: 50px;
-        font-size: var(--Sfont);
+            /************ 네비게이션 ************/
+            .gnb {
+              position: relative;
+              min-height: 46px;
+            }
+            /* gnb ul박스 */
+            .gnb ul {
+              position: absolute;
+              top: 0;
+              display: flex;
+              gap: 50px;
+              font-size: var(--Sfont);
 
-        border-bottom: 1px solid #000;
-      }
-      /* gnb li 리스트 */
-      .gnb ul li {
-        padding: 0 70px;
-        padding-bottom: 25px;
-      }
-      .left-menu {
-        justify-content: end;
-        width: 45%;
-      }
-      .right-menu {
-        right: 0;
-        width: 45%;
-      }
-      .gnb a {
-        transition: 0.4s ease-in-out;
-      }
-      .gnb a:hover {
-        color: peru;
-      }
-      /* 장바구니 아이콘 */
-      .cart {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 50px;
-      }
-      .cart a {
-        font-size: var(--Sfont);
-      }
-      i{
-        color: #000;
-      }
+              border-bottom: 1px solid #000;
+            }
+            /* gnb li 리스트 */
+            .gnb ul li {
+              padding: 0 70px;
+              padding-bottom: 25px;
+            }
+            .left-menu {
+              justify-content: end;
+              width: 45%;
+            }
+            .right-menu {
+              right: 0;
+              width: 45%;
+            }
+            .gnb a {
+              transition: 0.4s ease-in-out;
+            }
+            .gnb a:hover {
+              color: peru;
+            }
+            /* 장바구니 아이콘 */
+            .cart {
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin-right: 50px;
+            }
+            .cart a {
+              font-size: var(--Sfont);
+            }
+            i{
+              color: #000;
+            }
+            /********* 젤리효과 *********/
 
-      /************ 하단영역 ************/
-      #info {
-        position: relative;
-      }
-      .info {
-        text-align: center;
-      }
-      .info h2 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-      .info p {
-        margin-top: 20px;
-      }
-      .footer-flex {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-      }
-      .footer-cont a {
-        font-size: var(--Mfont);
-      }
-      .footer-cont a+a{
-        margin-left: 15px;
-      }
-      /* 하단 애니메이션 */
-      .footer-fit{
-          overflow: hidden;
-          margin-top: 50px;
-        }
-        .footer-flow {
-            /* position: absolute; */
-            /* left: 0; */
-            display: flex;
-            width: 200vw;
-            height: 120px;
-            overflow: hidden;
-            
-        /* 애니메이션 */
-        animation: footer-flow 15s linear infinite;
-      }
-      .footer-flow img {
-        flex-shrink: 1;
-        display: block;
-        width: 50%;
-      }
+            .gnb ul li:hover {
+              -webkit-animation: jelly 0.5s;
+                      animation: jelly 0.5s;
+            }
 
-      /* footer-flow 키프레임 */
-      @keyframes footer-flow {
-        from{
-            transform: translateX(-50%);
-        }
-        to {
-            transition: translateX(0%);
-        }
-      }
-      /* 키프레임 */
+            @keyframes jelly {
+              25% {
+                transform: scale(0.9, 1.1);
+              }
+              50% {
+                transform: scale(1.1, 0.9);
+              }
+              75% {
+                transform: scale(0.95, 1.05);
+              }
+            }
+
+            /************ 하단영역 ************/
+            #info {
+              position: relative;
+            }
+            .info {
+              text-align: center;
+            }
+            .info h2 {
+              margin-top: 30px;
+              margin-bottom: 20px;
+            }
+            .info p {
+              margin-top: 20px;
+            }
+            .footer-flex {
+              display: flex;
+              justify-content: center;
+              gap: 50px;
+            }
+            .footer-cont a {
+              font-size: var(--Mfont);
+            }
+            .footer-cont a+a{
+              margin-left: 15px;
+            }
+            /* 하단 애니메이션 */
+            .footer-fit{
+                overflow: hidden;
+                margin-top: 50px;
+              }
+              .footer-flow {
+                  /* position: absolute; */
+                  /* left: 0; */
+                  display: flex;
+                  width: 200vw;
+                  height: 120px;
+                  overflow: hidden;
+
+              /* 애니메이션 */
+              animation: footer-flow 15s linear infinite;
+            }
+            .footer-flow img {
+              flex-shrink: 1;
+              display: block;
+              width: 50%;
+            }
+
+            /* footer-flow 키프레임 */
+            @keyframes footer-flow {
+              from{
+                  transform: translateX(-50%);
+              }
+              to {
+                  transition: translateX(0%);
+              }
+            }
+            /* 키프레임 */
     </style>
     <script></script>
   </head>
@@ -244,12 +262,12 @@
         </div>
         <!-- 하단 애니메이션 메뉴 -->
         <div class="footer-fit">
-            <div class="footer-flow">
-                  <img src="../public/images/footer.png" alt="하단이미지" />
-                  <img src="../public/images/footer.png" alt="하단이미지" />
-                  <img src="../public/images/footer.png" alt="하단이미지" />
-                  <img src="../public/images/footer.png" alt="하단이미지" />
-            </div>
+          <div class="footer-flow">
+            <img src="../public/images/footer.png" alt="하단이미지" />
+            <img src="../public/images/footer.png" alt="하단이미지" />
+            <img src="../public/images/footer.png" alt="하단이미지" />
+            <img src="../public/images/footer.png" alt="하단이미지" />
+          </div>
         </div>
       </footer>
     </div>
