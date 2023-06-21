@@ -97,10 +97,12 @@
     </style>
     <script>
       $(()=>{
-        $(".slide li").animate({
-          opacity: "1",
-          top: "30%",
-          transform: "rotate(340deg)"
+        $(".abtn").click(function(){
+          $(".slide li").animate({
+            opacity: "1",
+            top: "30%",
+            transform: "rotate(340deg)"
+        })
         })
       })
     </script>
@@ -126,11 +128,13 @@
               <img src="../public/images/slide/slide5.jpg" alt="배너이미지" />
             </li>
           </ul>
-          <!--이동버튼-->
-          <!-- <a href="#" class="abtn ab1"><img src="images/left_btn.png" alt="왼쪽이동버튼" /></a>
-          <a href="#" class="abtn ab2"><img src="images/right_btn.png" alt="오른쪽이동버튼" /></a> -->
         </div>
       </div>
     </div>
+    
+    <!--이동버튼-->
+    <a href="#" class="abtn ab1"><img src="images/left_btn.png" alt="왼쪽이동버튼" /></a>
+    <a href="#" class="abtn ab2"><img src="images/right_btn.png" alt="오른쪽이동버튼" /></a>
+    
   </body>
 </html>
