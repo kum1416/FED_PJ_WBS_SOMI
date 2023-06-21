@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배너모듈 하드코딩</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+      /* 
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Ubuntu', sans-serif
+      */
+
+      * {
+        outline: 0.5px solid aqua;
+      }
+      /* CSS변수처리 */
+      :root {
+        --Lfont: min(5vw, 58px);
+        --Mfont: min(3.5vw, 36px);
+        --Sfont: min(2.5vw, 21px);
+      }
+      /* 1. 마진 패딩 초기화 */
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      ul,
+      ol,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      /* ul, ol 초기화 */
+      ul,
+      ol {
+        list-style: none;
+      }
+      /************ 전체박스 ************/
+
+
+      /************ a태그 감싸기 ************/
+
+      /************ 잼이미지 겉박스 ************/
+
+      /************ 잼텍스트 겉박스 ************/
+
+      /************ 잼이름박스 ************/
+
+      /************ 잼가격겉박 ************/
+
+    </style>
+    <script>
+      // 로딩구역
+      window.addEventListener("load", function () {
+        console.log("로딩완료!");
+
+        // 움직일 대상: 돌아다니는 원 .mover
+        const mover = document.querySelector(".ban-mover");
+
+        // 배너박스
+        const bbx = document.querySelector(".bna-wrap");
+        // 갭 // 가로크기 //
+
+        bbx.onmousemove = function (e) {
+          e.stopPropagation();
+          // 마우스 포인터 위치
+          console.log("x:", e.pageX, "\ny:", e.pageY);
+
+          // 위치값 보정 (gap은 무버크기의 절반)
+          var posx = e.pageX - 25;
+          var posy = e.pageY - 50;
+
+          // 무버 위치값 이동
+          mover.style.top = posy + "px";
+          mover.style.left = posx + "px";
+        }; //////////// mousemove 이벤트함수 //////
+
+        bbx.onmouseenter = () => {
+          // 들어오면 나타남
+          mover.style.display = "block";
+        }; ///////// mouseenter /////////////////
+        bbx.onmouseleave = () => {
+          // 나가면 사라짐
+          mover.style.display = "none";
+        }; ///////// mouseleave /////////////////
+      }); ///////////// 로드구역 ///////////////
+    </script>
+  </head>
+  <body>
+    <div class="ban-wrap">
+      <!-- 전체박스 -->
+      <div class="ban-inner">
+        <!-- a태그 감싸기 -->
+        <a href="#">
+          <!-- 잼이미지 겉박스 -->
+          <div class="ban-imgbx">
+              <div class="ban-img__hover">
+                <div class="hoverbx"></div>
+              </div>
+              <div class="ban-img__push">
+                <div class="pushbx">
+                  <img src="../public/images/banner/jam1.png" alt="잼이미지" />
+                </div>
+              </div>
+          </div>
+          <!-- 잼텍스트 겉박스 -->
+          <div class="ban-txtbx">
+            <!-- 잼이름박스 -->
+            <h2>Hazelnut Butter Crunchy with Cocoa &amp; Date</h2>
+            <!-- 잼가격겉박스 -->
+            <div class="ban-pribx">
+              <div class="ban-price">
+                <bdi>
+                  <span>€</span>
+                  7,90
+                </bdi>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- 버튼박스 -->
+        <a href="#">BUY NOW!</a>
+      </div>
+  </body>
+</html>
