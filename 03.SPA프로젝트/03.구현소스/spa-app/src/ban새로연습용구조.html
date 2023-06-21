@@ -40,18 +40,168 @@
       ol {
         list-style: none;
       }
+      a{
+        text-decoration: none;
+        color: #000;
+      }
       /************ 전체박스 ************/
-
-
+      .ban-wrap{
+        position: absolute;
+        left: 0;
+        width: 421px;
+        padding-right: 29px;
+        padding-left: 29px;
+      }
+      .ban-inner{
+        max-width: 360px;
+      }
       /************ a태그 감싸기 ************/
-
+      .ban-inner>a{
+        position: relative;
+        display: block;
+        z-index: 2;
+      }
       /************ 잼이미지 겉박스 ************/
+      .ban-imgbx{
+        position: relative;
+        padding: 18% 0 18%;
+      }
+      /************************/
+      .ban-img__hover{
+        background-color: #abafd6;
+        position: absolute;
+        left: 0%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 275px;
+      }
+      .hoverbx{
+        background-image: url(../public/images/banner/jamhover1.jpg);
+        transition: 0.3s ease-in-out;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+      }
+      .ban-wrap:hover .hoverbx{
+        opacity: 1;
+      }
+      .ban-img__push{
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+      }
+      .pushbx{
+        /* overflow: hidden; */
+        padding-bottom: 13%
+      }
+      .pushbx img{
+        width: 100%;
+      }
 
-      /************ 잼텍스트 겉박스 ************/
-
+      /*========== 잼텍스트 겉박스 ==========*/
+      .ban-txtbx{
+        font-family: "Libre Baskerville", serif;
+        letter-spacing: -2px;
+        position: relative;
+        margin-top: -22%;
+        z-index: 2;
+      }
       /************ 잼이름박스 ************/
+      .ban-txtbx h2{
+        font-size: var(--Mfont);
+        /* max-width: 350px; */
+        margin-bottom: 7px;
+        overflow-wrap: inherit;
+      }
+      /************ 잼가격겉박스 ************/
+      .ban-pribx{
+        font-size: var(--Sfont);
+        margin-bottom: 25px;
+      }
+      .ban-price{
+        box-sizing: border-box;
+      }
+      
+      /************ 메인버튼 - 중복 ************/
+      .mbtnbx {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        max-width: 100%;
+        width: 250px;
+        background-color: #000;
+        overflow: hidden;
+        border-radius: 50px;
+        height: 60px;
+        margin-top: 20px;
+        /* transform: translateY(15px); */
+      }
+      .mainbtn {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+      }
+      .mainbtn .runtxt {
+        position: absolute;
+        white-space: nowrap;
+        color: #fff;
+        will-change: transform;
+        line-height: 60px;
+        display: flex;
+        padding: 0 20px;
+        gap: 50px;
+        left: -87px;
+      }
+      .mainbtn .runtxt:hover {
+        animation: marquee 4s linear infinite;
+      }
 
-      /************ 잼가격겉박 ************/
+      .mainbtn .runtxt span{
+        opacity: 0;
+      }
+      .mainbtn .runtxt:hover span{
+        opacity: 1;
+      }
+      .mainbtn .runtxt span:nth-child(2){
+        opacity: 1;
+      }
+      
+
+      @keyframes marquee {
+        from {
+          transform: translateX(-50%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      @media (hover: hover) and (min-width: 700px) {
+        .animated-title .content {
+          -webkit-transform: translateY(calc(100% - 8rem));
+          transform: translateY(calc(100% - 8rem));
+        }
+      }
+      /************ 따라다니는 이미지 ************/
+      .ban-mover {
+      position: fixed;
+      z-index: 10;
+      width: 50px;
+      height: 100px;
+      background-image: url(../public/images/cursor_hand.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: 0.5s ease-out;
+      display: none;
+      pointer-events: none;
+
+      }
 
     </style>
     <script>
@@ -63,7 +213,7 @@
         const mover = document.querySelector(".ban-mover");
 
         // 배너박스
-        const bbx = document.querySelector(".bna-wrap");
+        const bbx = document.querySelector(".ban-wrap");
         // 갭 // 가로크기 //
 
         bbx.onmousemove = function (e) {
@@ -124,7 +274,20 @@
           </div>
         </a>
         <!-- 버튼박스 -->
-        <a href="#">BUY NOW!</a>
+        <a href="#">
+          <div class="mbtnbx">
+            <div class="mainbtn">
+              <div class="runtxt">
+                <span>BUY NOW!</span>
+                <span>BUY NOW!</span>
+                <span>BUY NOW!</span>
+                <span>BUY NOW!</span>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
+
+      <div class="ban-mover"></div>
   </body>
 </html>
