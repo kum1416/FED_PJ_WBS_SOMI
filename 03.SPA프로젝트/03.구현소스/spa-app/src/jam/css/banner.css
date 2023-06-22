@@ -3,6 +3,7 @@
 
 /************ 전체박스 ************/
 .ban-cover{
+  background-color: #be5a4b;
   overflow: hidden;
 }
 .ban-flex{
@@ -117,7 +118,7 @@
   line-height: 60px;
   display: flex;
   padding: 0 20px;
-  gap: 50px;
+  gap: 50px; 
   left: -80px;
 }
 .mainbtn .runtxt:hover {
