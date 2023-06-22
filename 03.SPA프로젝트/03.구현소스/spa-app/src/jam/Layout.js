@@ -60,16 +60,16 @@ const Layout = () => {
           </h2>
           <ul className="right-menu">
             <li>
-              <Link to="/hz">Hazelnut</Link>
+              <Link to="/am">Hazelnut</Link>
             </li>
             <li>
-              <Link to="/cs">Cashew</Link>
+              <Link to="/am">Cashew</Link>
             </li>
           </ul>
           {/* 장바구니 */}
           <div className="cart">
             <a href="#">
-              <i class="fa-solid fa-basket-shopping"></i>
+              <i className="fa-solid fa-basket-shopping"></i>
               {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
             </a>
           </div>
@@ -114,11 +114,11 @@ const Layout = () => {
             <div className="footer-cont">
               <h2>Follow Us</h2>
               <a href="#">
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               {/* <FontAwesomeIcon icon={faGrinStars} /> */}
               </a>
               <a href="#">
-                <i class="fa-brands fa-square-facebook"></i>
+                <i className="fa-brands fa-square-facebook"></i>
               {/* <FontAwesomeIcon icon={faFacebookSquare} /> */}
               </a>
             </div>

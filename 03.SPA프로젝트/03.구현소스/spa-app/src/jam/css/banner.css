@@ -2,6 +2,13 @@
 /* 텍스트모듈용 CSS - banner.css */
 
 /************ 전체박스 ************/
+.ban-cover{
+  overflow: hidden;
+}
+.ban-flex{
+  display: flex;
+  gap: 0 50px;
+}
 .ban-wrap {
   position: relative;
   left: 0;
@@ -35,11 +42,7 @@
   border-radius: 275px;
 }
 .hoverbx {
-  /* background-image: url(../../../public/images/banner/jamhover1.jpg); */
   transition: 0.3s ease-in-out;
-  /* background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat; */
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -59,6 +62,7 @@
 }
 .pushbx img, .hoverbx img {
   width: 100%;
+  height: 100%;
 }
 
 /*========== 잼텍스트 겉박스 ==========*/
@@ -68,6 +72,7 @@
   position: relative;
   margin-top: -22%;
   z-index: 2;
+  text-align: left;
 }
 /************ 잼이름박스 ************/
 .ban-txtbx h2 {
@@ -113,7 +118,7 @@
   display: flex;
   padding: 0 20px;
   gap: 50px;
-  left: -87px;
+  left: -80px;
 }
 .mainbtn .runtxt:hover {
   animation: marquee 4s linear infinite;
