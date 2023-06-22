@@ -11,9 +11,10 @@ function jqFn() {
   $(() => {
     console.log("로딩완료!");
 
-    // BUY NOW 버튼
+    // BUY NOW 버튼===================================
     const mbtnbx = document.querySelector(".mbtnbx");
 
+    // 마우스오버 버튼=============================================
     // 움직일 대상: 돌아다니는 원 .mover
     const mover = document.querySelector(".ban-mover");
 
@@ -44,8 +45,50 @@ function jqFn() {
       mover.style.display = "none";
     }; ///////// mouseleave /////////////////
 
+    // 배너 가로드래그=============================================
+    const drag = document.querySelector(".ban-flex"); 
+    console.log(drag);
 
+    function dragBan(){
+        drag.draggable({
+            axis: "x",
+          })
+          .css({
+            transition: ".5s ease-out",
+          }); /// css ///
     
+        // 한계값 //////////
+        let fpt = $(window).width() / 3;
+        console.log("첫번째한계값:", fpt);
+        
+        let lpt = drag.width() - fpt * 2;
+        console.log("마지막한계값:", lpt);
+    
+        $("html,body").on("mousedown mouseup mousemove", () => {
+            // 1. left위치값
+            let mpos = drag.offset().left;
+            console.log("현재left:", mpos);
+    
+            // 2. 처음한계값 체크하여 제한하기
+            if (mpos > fpt) {
+                // 첫번째한계값에 고정!
+                drag.css({
+                    left: fpt + "px",
+                }); ///// css //////
+            } /////// if //////
+    
+            // 3. 마지막한계값 체크하여 제한하기
+            else if (mpos < -lpt) {
+                // 마지막한계값에 고정
+                drag.css({
+                    left: -lpt + "px",
+                }); ///// css //////
+            } ///// else if //////
+        }); //////////// 마우스이벤트함수 ////////
+    }; /////////////////// dragBan /////////////////////
+    
+
+
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
