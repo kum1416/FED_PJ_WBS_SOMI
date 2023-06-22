@@ -43,6 +43,9 @@ function jqFn() {
       // 나가면 사라짐
       mover.style.display = "none";
     }; ///////// mouseleave /////////////////
+
+
+    
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
 

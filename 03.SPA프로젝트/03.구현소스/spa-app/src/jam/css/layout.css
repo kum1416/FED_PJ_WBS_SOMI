@@ -3,13 +3,12 @@
 
 /************ 상단영역 ************/
 #top {
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 1;
 }
 .top {
-  /* max-width: 1530px; */
   margin: 0 auto;
-  /* height: 90px; */
 }
 /************ 로고박스 ************/
 .logo {
@@ -53,7 +52,8 @@
   transition: 0.4s ease-in-out;
 }
 .gnb ul li:hover a {
-  color: peru;
+  color: paleturquoise;
+  text-shadow: 1px 1px 3px #000;
 }
 /* 장바구니 */
 .cart {
@@ -87,38 +87,8 @@ i {
   }
 }
 
-/* .top {
-  border-bottom: 1px solid #000;
-}
-.gnb {
-  width: 800px;
-  margin: 0 auto;
-}
-.gnb ul {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-.gnb li {
-  margin: 0 10px;
-}
-.gnb a {
-  color: #000;
-  text-decoration: none;
-}
-.gnb a:hover {
-  color: hotpink;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-shadow: 2px 2px 2px #555;
-}
-h1 {
-  text-align: center;
-} */
 
-/* 메인영역 */
+/************** 메인영역 **************/
 .cont {
   text-align: center;
   /* padding: 30px; */

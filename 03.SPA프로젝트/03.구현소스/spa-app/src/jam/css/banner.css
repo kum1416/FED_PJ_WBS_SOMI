@@ -18,7 +18,7 @@
   padding-left: 29px;
 }
 .ban-inner {
-  max-width: 360px;
+  width: 360px;
 }
 /************ a태그 감싸기 ************/
 .ban-inner > a {
