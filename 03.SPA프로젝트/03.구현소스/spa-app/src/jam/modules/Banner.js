@@ -19,7 +19,7 @@ function Banner(props){
         <section className="ban-cover">
             {/* 모듈코드 */}
             <div className="ban-wrap">
-            {/* 전체박스 */}
+                {/* 전체박스 */}
                 <div className="ban-inner">
                     {/* a태그 감싸기 */}
                     <a href="#">

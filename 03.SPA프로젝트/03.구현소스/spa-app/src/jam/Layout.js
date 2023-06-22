@@ -43,13 +43,13 @@ const Layout = () => {
         <nav className="gnb">
           <ul className="left-menu">
             <li>
-              <a href="#">Sesame</a>
+              <Link to="/ss">Sesame</Link>
             </li>
             <li>
-              <a href="#">Peanut</a>
+              <Link to="/pn">Peanut</Link>
             </li>
             <li>
-              <a href="#">Almond</a>
+              <Link to="/am">Almond</Link>
             </li>
           </ul>
           {/* 로고박스 */}
@@ -60,10 +60,10 @@ const Layout = () => {
           </h2>
           <ul className="right-menu">
             <li>
-              <a href="#">Hazelnut</a>
+              <Link to="/hz">Hazelnut</Link>
             </li>
             <li>
-              <a href="#">Cashew</a>
+              <Link to="/cs">Cashew</Link>
             </li>
           </ul>
           {/* 장바구니 */}
