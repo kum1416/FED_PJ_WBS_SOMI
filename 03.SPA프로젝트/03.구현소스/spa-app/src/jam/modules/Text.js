@@ -24,7 +24,7 @@ function Text(props){
         
         <div className="text-cont">
           <div className="badge">
-            <img className="badge-ani" src="./images/no_circle.png" alt="뱃지" />
+            <img className="badge-ani badge-ani__rotate" src="./images/no_circle.png" alt="뱃지" />
             <img className="badge-ani" src="./images/plastic-free-1.png" alt="뱃지" />
           </div>
           <div className="text-cont__wrap" style={{textAlign : props.ct}}>
