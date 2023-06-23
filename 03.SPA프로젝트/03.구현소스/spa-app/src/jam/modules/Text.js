@@ -14,23 +14,49 @@ import $ from "jquery";
 function jqFn(){
     $(()=>{
 
-        // html 코드 삽입(svg데이터)
-        // document.querySelector(".flove").innerHTML=svgData.loveout;
-        // document.querySelector(".elove").innerHTML=svgData.lovein;
-
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
-function Text(){
+function Text(props){
     return(
         <>
         {/* 모듈코드 */}
+        
         <div className="text-cont">
-        <h2>Wildly Loved</h2>
-        <p>
-          You will find our wild products in their simplest form. No additives or <br />anything else can spoil their
-          nature
-        </p>
+          <div className="badge">
+            <img className="badge-ani" src="./images/no_circle.png" alt="뱃지" />
+            <img className="badge-ani" src="./images/plastic-free-1.png" alt="뱃지" />
+          </div>
+          <div className="text-cont__wrap" style={{textAlign : props.ct}}>
+            <h2>{text_data[props.dd].tit}</h2>
+
+              {/* { 조건문을 이용해서 스플릿해서 출력하기
+                <div>
+                <p>
+                {text_data[props.dd].cont.split('^')[0]}
+                </p>
+                <p>
+                {text_data[props.dd].cont.split('^')[1]}
+                </p>
+                {
+                  // 조건문으로 스플릿으로짜른 배열3번째가 비어있지않다면 실행
+                  // text_data[props.dd]['cont'].split('^')[2] !== '' &&
+                  // 조건문 - 짜른배열이 3개짜리라면?? 실행해주세요
+                  // text_data[props.dd]['cont'].split('^').length == 2 &&
+                <p>
+                {text_data[props.dd].cont.split('^')[2]}
+                </p>
+                }
+              </div>
+              } */}
+
+              {
+                // map을 이용한 배열 반복문! 
+                text_data[props.dd].cont.split('^').map((x,i)=>
+                <p>{x}</p>
+                 )
+              }
+          </div>
       </div>
         
         {/* 빈루트를 만들고 JS로드함수포함 */}

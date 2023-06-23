@@ -1,5 +1,6 @@
 // 메인 컴포넌트 - Banner.js
 // 메인CSS
+import React from "react-dom"
 import "../css/banner.css";
 // 메인 데이터
 import ban_data from "../data/banner";
@@ -86,7 +87,6 @@ function jqFn() {
             } ///// else if //////
         }); //////////// 마우스이벤트함수 ////////
     }; /////////////////// dragBan /////////////////////
-    
 
 
   }); /////// jQB ////////
@@ -95,6 +95,7 @@ function jqFn() {
 function Banner(props) {
   return (
     <section className="ban-cover">
+
       {/* 모듈코드 */}
       <div className="ban-flex">
         {ban_data.map((v, i) => (
@@ -105,7 +106,7 @@ function Banner(props) {
               <a href="#">
                 {/* 잼이미지 겉박스 */}
                 <div className="ban-imgbx">
-                  <div className="ban-img__hover">
+                  <div className="ban-img__hover" style={{backgroundColor : v.color}}>
                     <div className="hoverbx">
                       <img src={v.hsrc} alt="잼이미지" />
                     </div>

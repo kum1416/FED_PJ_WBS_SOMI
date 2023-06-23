@@ -12,13 +12,13 @@ const Main = () => {
               {/* 1.메인모듈 */}  
               <Mfirst />
               {/* 2.텍스트모듈 */}  
-              <Text />
+              <Text ct="left" dd="0" />
               {/* 3.배너모듈 */}  
               <Banner />
               {/* 4.스와이프모듈 */}  
               {/* <ImgSwipe /> */}
               {/* 5.텍스트모듈 */}  
-              <Text />
+              <Text ct="center" dd="1" />
               {/* 6.슬라이드배너모듈 */}  
               {/* <SlideBan /> */}
             </>

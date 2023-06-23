@@ -17,7 +17,7 @@
 /************ 메인타이틀 ************/
 .main-cont {
   position: absolute;
-  top: 35%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: min(4vw, 58px);
@@ -26,7 +26,7 @@
   white-space: nowrap;
 }
 .main-cont h2 {
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
