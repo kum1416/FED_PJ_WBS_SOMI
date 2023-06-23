@@ -220,3 +220,117 @@ map
 얼만큼?? 배열안에 요소개수만큼!
 
 [ {}, {}, {}, {}, ]
+
+______________________      
+{/* <header className="top"> */}
+      {/* 네비게이션 */}
+      {/*         <nav className="gnb">
+          <ul>
+            <li>
+              <Logo lg="top" />
+            </li>
+            {gnb_data.map((v, i) => (
+              <li key={i}>
+                <Link to={v.link}>{v.txt.toUpperCase()}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header> */} 했던거 보관용 안씀
+______________________
+203.06.23 보관용
+        if(newList.length!=0){ //결과가 있으면!
+
+        <div className="text-cont">
+        <h2>Wildly Loved</h2>
+        <p>
+          You will find our wild products in their simplest form. No additives or <br />anything else can spoil their
+          nature
+        </p>
+      </div>
+
+
+
+_______________
+
+
+      {/* 연습 */}
+      {/* .ban-img__hover */}
+      <div style={{color : 'red'}}>
+        안녕하세요 
+      </div>
+______________
+
+const Main = () => {
+        return(
+            <>
+              {/* 1.메인모듈 */}  
+              <Mfirst />
+              {/* 2.텍스트모듈 */}  
+              <Text ct="left" h2="Wildly Loved" />
+              {/* 3.배너모듈 */}  
+              <Banner />
+              {/* 4.스와이프모듈 */}  
+              {/* <ImgSwipe /> */}
+              {/* 5.텍스트모듈 */}  
+              <Text ct="right" h2="안녕하세요"/>
+              {/* 6.슬라이드배너모듈 */}  
+              {/* <SlideBan /> */}
+
+__><h2>{props.h2}</h2>
+
+____________________
+<텍스트컴포넌트 무엇 ="값"></텍스트컴포넌트>
+위들리 럽
+텍스트데이터[props.무엇]["tit"]
+
+<텍스트컴포넌트></텍스트컴포넌트>
+아울윌드어웨이
+
+_______________
+{text_data[1].cont}
+
+
+-> 바뀌어야되는곳에 props.어쩌구
+____________________
+            <h2>{text_data[props.dd].tit}</h2>
+
+              {/* { 조건문을 이용해서 스플릿해서 출력하기
+                <div>
+                <p>
+                {text_data[props.dd].cont.split('^')[0]}
+                </p>
+                <p>
+                {text_data[props.dd].cont.split('^')[1]}
+                </p>
+                {
+                  // 조건문으로 스플릿으로짜른 배열3번째가 비어있지않다면 실행
+                  // text_data[props.dd]['cont'].split('^')[2] !== '' &&
+                  // 조건문 - 짜른배열이 3개짜리라면?? 실행해주세요
+                  // text_data[props.dd]['cont'].split('^').length == 2 &&
+                <p>
+                {text_data[props.dd].cont.split('^')[2]}
+                </p>
+                }
+              </div>
+              } */}
+
+              {
+                // map을 이용한 배열 반복문! 
+                text_data[props.dd].cont.split('^').map((x,i)=>
+                <p>{x}</p>
+                 )
+              }
+-> 맵은 반복문인데 배열만 됨!
+______________
+1. 버튼 모듈만들기
+2. 드래그배너->드래그 되게 만들기
+3. 스와이프 모듈
+4. 슬라이드배너 모듈
+5. 서브페이지 css
+6. 컨셉모듈
+7. 미디어쿼리
+8. 미디어용 gnb
+____________
+
+

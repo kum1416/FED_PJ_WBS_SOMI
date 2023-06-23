@@ -34,6 +34,6 @@ a {
 /* 폰트 사이즈 변수셋팅 */
 :root {
   --Lfont: min(5vw, 58px);
-  --Mfont: min(3.5vw, 36px);
+  --Mfont: min(4vw, 36px);
   --Sfont: min(2.5vw, 21px);
 }

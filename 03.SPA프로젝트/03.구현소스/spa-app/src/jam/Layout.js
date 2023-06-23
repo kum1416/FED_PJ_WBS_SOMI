@@ -3,11 +3,27 @@ import Logo from "./Logo";
 import "./css/layout.css";
 import { Link, Outlet } from "react-router-dom";
 
+// 제이쿼리
+import $ from "jquery";
+
 /* 폰트어썸 임포트 */
-import {  faShoppingBasket, faInstagram, faFacebookSquare, faGrinStars } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingBasket, faInstagram, faFacebookSquare, faGrinStars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
+
+
+// 제이쿼리 로드구역 함수 /////////
+function jqFn(){
+    $(()=>{
+      
+      $(".ham").click(()=>{
+        $(".ham").toggleClass("on")
+        $(".mobile-menu").toggleClass("on")
+      })
+
+    }); /////// jQB ////////
+} ///////////// jqFn /////////////
 
 const Layout = () => {
   /* gnb 데이타 */
@@ -38,59 +54,52 @@ const Layout = () => {
     <>
       {/* 1. 상단영역 */}
       <div id="top">
-      <header className="top">
-        {/* 네비게이션 */}
-        <nav className="gnb">
-          <ul className="left-menu">
-            <li>
-              <Link to="/ss">Sesame</Link>
-            </li>
-            <li>
-              <Link to="/pn">Peanut</Link>
-            </li>
-            <li>
-              <Link to="/am">Almond</Link>
-            </li>
-          </ul>
-          {/* 로고박스 */}
-          <h2 className="logo">
-            <a href="#">
-                <Logo lg="top" />
-            </a>
-          </h2>
-          <ul className="right-menu">
-            <li>
-              <Link to="/am">Hazelnut</Link>
-            </li>
-            <li>
-              <Link to="/am">Cashew</Link>
-            </li>
-          </ul>
-          {/* 장바구니 */}
-          <div className="cart">
-            <a href="#">
-              <i className="fa-solid fa-basket-shopping"></i>
-              {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
-            </a>
-          </div>
-        </nav>
-      </header>
-    </div>
-      {/* <header className="top"> */}
-        {/* 네비게이션 */}
-{/*         <nav className="gnb">
-          <ul>
-            <li>
-              <Logo lg="top" />
-            </li>
-            {gnb_data.map((v, i) => (
-              <li key={i}>
-                <Link to={v.link}>{v.txt.toUpperCase()}</Link>
+        <header className="top">
+          {/* 네비게이션 */}
+          <nav className="gnb">
+            <ul className="left-menu">
+              <li>
+                <Link to="/ss">{gnb_data[0].txt.toUpperCase()}</Link>
               </li>
-            ))}
-          </ul>
-        </nav>
-      </header> */}
+              <li>
+                <Link to="/pn">{gnb_data[1].txt.toUpperCase()}</Link>
+              </li>
+              <li>
+                <Link to="/am">{gnb_data[2].txt.toUpperCase()}</Link>
+              </li>
+            </ul>
+            {/* 로고박스 */}
+            <h2 className="logo">
+              <a href="#">
+                <Logo lg="top" />
+              </a>
+            </h2>
+            <ul className="right-menu">
+              <li>
+                <Link to="/am">{gnb_data[3].txt.toUpperCase()}</Link>
+              </li>
+              <li>
+                <Link to="/am">{gnb_data[4].txt.toUpperCase()}</Link>
+              </li>
+            </ul>
+            {/* 장바구니 */}
+            <div className="cart">
+              <a href="#">
+                <i className="fa-solid fa-basket-shopping"></i>
+                {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
+              </a>
+            </div>
+          </nav>
+          {/* 햄버거버튼 */}
+          <div className="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          {/* 모바일메뉴가림막 */}
+          <div className="mobile-menu"></div>
+        </header>
+      </div>
       {/* 2. 메인영역 */}
       <main className="cont">
         <Outlet />
@@ -101,7 +110,7 @@ const Layout = () => {
           {/* 로고박스 */}
           <h2 className="logo">
             <a href="#">
-                  <Logo lg="top" />
+              <Logo lg="top" />
             </a>
           </h2>
           <div className="footer-flex">
@@ -115,11 +124,11 @@ const Layout = () => {
               <h2>Follow Us</h2>
               <a href="#">
                 <i className="fa-brands fa-instagram"></i>
-              {/* <FontAwesomeIcon icon={faGrinStars} /> */}
+                {/* <FontAwesomeIcon icon={faGrinStars} /> */}
               </a>
               <a href="#">
                 <i className="fa-brands fa-square-facebook"></i>
-              {/* <FontAwesomeIcon icon={faFacebookSquare} /> */}
+                {/* <FontAwesomeIcon icon={faFacebookSquare} /> */}
               </a>
             </div>
           </div>
@@ -134,6 +143,9 @@ const Layout = () => {
           </div>
         </footer>
       </div>
+
+      {/* 빈루트를 만들고 JS로드함수포함 */}
+      {jqFn()}
     </>
   );
 }; ////////// Layout 컴포넌트 ///////
