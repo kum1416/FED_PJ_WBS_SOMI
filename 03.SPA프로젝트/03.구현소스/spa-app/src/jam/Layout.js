@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; */
 function jqFn() {
     $(() => {
         // 모바일 햄버거 메뉴 on추가
-        $(".ham").click(()=>{
+        $(".ham").on('click',function(){
             $(".ham").toggleClass("on");
             $(".mobile-menu").toggleClass("on");
         });
