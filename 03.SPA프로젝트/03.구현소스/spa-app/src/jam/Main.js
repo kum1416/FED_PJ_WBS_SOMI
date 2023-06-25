@@ -18,7 +18,7 @@ const Main = () => {
               {/* 3.배너모듈 */}  
               <Banner />
               {/* 4.스와이프모듈 */}  
-              {/* <ImgSwipe /> */}
+              <ImgSwipe />
               {/* 5.텍스트모듈 */}  
               <Text ct="center" dd="1" />
               {/* 6.슬라이드배너모듈 */}  
