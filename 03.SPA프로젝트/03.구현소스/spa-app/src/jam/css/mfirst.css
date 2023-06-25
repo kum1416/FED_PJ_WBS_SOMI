@@ -3,167 +3,175 @@
 
 /************ 메인박스 ************/
 .imbx {
-  position: relative;
-  height: 100vh;
-  background: url(../../../public/images/mft1.jpg) no-repeat top/cover;
+    position: relative;
+    height: 100vh;
+    background: url(../../../public/images/mft1.jpg) no-repeat top/cover;
 }
 .imbx img {
-  height: 100%;
+    height: 100%;
 }
 
 .fpage {
-  position: relative;
+    position: relative;
 }
 /************ 메인타이틀 ************/
 .main-cont {
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: min(4vw, 58px);
-  text-align: center;
-  font-family: "Libre Baskerville", serif;
-  white-space: nowrap;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: min(4vw, 58px);
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    white-space: nowrap;
 }
 .main-cont h2 {
-  /* padding-bottom: 50px; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    /* padding-bottom: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* 글자 사이간격 */
-.main-cont h2 div span+span {
-  margin-left: 5px;
+.main-cont h2 div span + span {
+    margin-left: 5px;
 }
 
 /* 글자 등장액션 셋팅 */
-.main-cont h2 span{
-  transform: translateY(25%);
-  opacity: 0;
-  /* 트랜지션: 속시이지 */
-  transition: .2s ease-in;
+.main-cont h2 span {
+    transform: translateY(25%);
+    opacity: 0;
+    /* 트랜지션: 속시이지 */
+    transition: 0.2s ease-in;
 }
-.main-cont h2.on span{
-  transform: translateY(0);
-  opacity: 1;
+.main-cont h2.on span {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /************ 메인버튼 ************/
 .mbtnbx {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  max-width: 100%;
-  width: 250px;
-  margin: 0 auto;
-  background-color: #000;
-  overflow: hidden;
-  border-radius: 50px;
-  height: 60px;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    width: 250px;
+    margin: 0 auto;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 50px;
+    height: 60px;
 }
 .mainbtn {
-  font-size: 18px;
-  width: 100%;
-  height: auto;
+    font-size: 18px;
+    width: 100%;
+    height: auto;
 }
-.mainbtn .runtxt {
-  position: absolute;
-  white-space: nowrap;
-  color: #fff;
-  will-change: transform;
-  line-height: 60px;
-  display: flex;
-  padding: 0 20px;
-  gap: 50px;
-  left: -269px;
+.mainbtn .runtxt1 {
+    position: absolute;
+    white-space: nowrap;
+    color: #fff;
+    will-change: transform;
+    line-height: 60px;
+    display: flex;
+    padding: 0 20px;
+    gap: 50px;
+    left: -270px;
 }
-.mainbtn:hover .runtxt {
-  animation: marquee 4s linear infinite;
+.mainbtn:hover .runtxt1 {
+    animation: marquee 4s linear infinite;
 }
 
-.mainbtn .runtxt span{
-  opacity: 0;
+.mainbtn .runtxt1 span {
+    opacity: 0;
 }
-.mainbtn .runtxt:hover span{
-  opacity: 1;
+.mainbtn .runtxt1:hover span {
+    opacity: 1;
 }
-.mainbtn .runtxt span:nth-child(2){
-  opacity: 1;
+.mainbtn .runtxt1 span:nth-child(2) {
+    opacity: 1;
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 @media (hover: hover) and (min-width: 700px) {
-  .animated-title .content {
-    -webkit-transform: translateY(calc(100% - 8rem));
-    transform: translateY(calc(100% - 8rem));
-  }
+    .animated-title .content {
+        -webkit-transform: translateY(calc(100% - 8rem));
+        transform: translateY(calc(100% - 8rem));
+    }
 }
 
 /************ 하트버튼 ************/
 .nextbtn {
-  position: absolute;
-  bottom: -2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  border: 0;
-  background: none;
-  cursor: pointer;
-  background-color: #e30613;
-  /* 트랜지션 */
-  transition: 0.5s ease-out;
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    background-color: #e30613;
+    /* 트랜지션 */
+    transition: 0.5s ease-out;
 
-  box-shadow: 1px 1px 5px #000;
+    box-shadow: 1px 1px 5px #000;
 }
 .nextbtn svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  stroke: #000;
-  stroke-linecap: round;
-  stroke-dasharray: 347%;
-  stroke-dashoffset: 0%;
-  /* 트랜지션 */
-  transition: 0.5s ease-out;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-dasharray: 347%;
+    stroke-dashoffset: 0%;
+    /* 트랜지션 */
+    transition: 0.5s ease-out;
 }
 .love-in {
-  fill: #fff;
-  stroke-width: 0;
-  max-width: 1.75rem;
+    fill: #fff;
+    stroke-width: 0;
+    max-width: 1.75rem;
 }
 .love-out {
-  fill: none;
-  stroke-width: 3.5;
-  max-width: 2.4rem;
-  z-index: 2;
+    fill: none;
+    stroke-width: 3.5;
+    max-width: 2.4rem;
+    z-index: 2;
 }
 .nextbtn:hover {
-  background-color: #000;
+    background-color: #000;
 }
 .nextbtn:hover .love-in {
-  max-width: 2.4rem;
+    max-width: 2.4rem;
 }
 .nextbtn:hover .love-out {
-  stroke: blueviolet;
-  animation: love 0.7s 1 alternate;
+    stroke: blueviolet;
+    animation: love 0.7s 1 alternate;
 }
 
 @keyframes love {
-  0% {
-    stroke-dashoffset: 347%;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
+    0% {
+        stroke-dashoffset: 347%;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*=============== 미디어쿼리 ===============*/
+@media screen and (max-width: 900px) {
+    .nextbtn {
+        width: 5rem;
+        height: 5rem;
+    }
 }

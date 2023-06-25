@@ -133,7 +133,7 @@ function Banner(props) {
               <a href="#">
                 <div className="mbtnbx">
                   <div className="mainbtn">
-                    <div className="runtxt">
+                    <div className="runtxt2">
                       <span>BUY NOW!</span>
                       <span>BUY NOW!</span>
                       <span>BUY NOW!</span>

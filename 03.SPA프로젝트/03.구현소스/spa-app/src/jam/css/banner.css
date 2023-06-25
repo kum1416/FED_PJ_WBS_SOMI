@@ -3,7 +3,7 @@
 
 /************ 전체박스 ************/
 .ban-cover{
-  background-color: #be5a4b;
+  /* background-color: #be5a4b; */
   overflow: hidden;
 }
 .ban-flex{
@@ -112,7 +112,7 @@
   width: 100%;
   height: auto;
 }
-.mainbtn .runtxt {
+.mainbtn .runtxt2 {
   position: absolute;
   white-space: nowrap;
   color: #fff;
@@ -123,17 +123,17 @@
   gap: 50px; 
   left: -80px;
 }
-.mainbtn .runtxt:hover {
+.mainbtn .runtxt2:hover {
   animation: marquee 4s linear infinite;
 }
 
-.mainbtn .runtxt span {
+.mainbtn .runtxt2 span {
   opacity: 0;
 }
-.mainbtn .runtxt:hover span {
+.mainbtn .runtxt2:hover span {
   opacity: 1;
 }
-.mainbtn .runtxt span:nth-child(2) {
+.mainbtn .runtxt2 span:nth-child(2) {
   opacity: 1;
 }
 
