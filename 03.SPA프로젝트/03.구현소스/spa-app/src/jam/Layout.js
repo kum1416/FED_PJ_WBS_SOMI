@@ -22,9 +22,9 @@ function jqFn() {
       $(this).toggleClass("on");
       $(".mobile-menu").toggleClass("on");
 
-      $(".left-menu").delay(1000).animate({
+/*       $(".left-menu").delay(1000).animate({
         left: "0%",
-      });
+      }); */
 
       // $(".right-menu")
     });
@@ -95,7 +95,7 @@ const Layout = () => {
             </div>
           </nav>
 
-          {/* 모바일메뉴가림막 */}
+          {/* 모바일메뉴가림막+모바일메뉴 */}
           <div className="mobile-menu">
             <ul className="mobile-menu__wrap">
               {gnb_data.map((v, i) => (
