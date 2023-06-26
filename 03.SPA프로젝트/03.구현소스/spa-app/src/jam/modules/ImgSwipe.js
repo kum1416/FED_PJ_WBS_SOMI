@@ -1,6 +1,5 @@
 // 메인 컴포넌트 - imgswipe.js
-// 메인CSS
-import "../css/imgswipe.css";
+
 // 데이터
 import imgswipe_data from "../data/imgswipe";
 
@@ -10,6 +9,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+// 메인CSS
+import "../css/imgswipe.css";
 
 // import required modules
 import { EffectCards } from "swiper";

@@ -7,9 +7,12 @@
   padding: 15% 0;
 }
 /************************/
+.swiper, swiper-container {
+  margin-left: 0;
+}
 
 .swiper {
-  width: min(50vw, 520px);
+  width: min(70vw, 520px);
   margin-left: 0;
 }
 .swipebx {
@@ -51,9 +54,16 @@ swiper-container {
 }
 
 /*================= 미디어쿼리 =================*/
-/* @media screen and (max-width: 900px) {
-  .swipe-parents {
+@media screen and (max-width: 900px) {
+/*   .swipe-parents {
     position: relative;
     z-index: -1;
+  } */
+  .swipe-parents {
+    flex-direction: column;
+    padding: 15% 0;
   }
-} */
+  .swiper, swiper-container {
+    margin-left: auto;
+  }
+}

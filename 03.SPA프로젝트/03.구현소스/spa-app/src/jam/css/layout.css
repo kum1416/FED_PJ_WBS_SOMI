@@ -3,264 +3,263 @@
 
 /************ 상단영역 ************/
 #top {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 .top {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 /************ 로고박스 ************/
 .logo {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 .logo img {
-    height: 100%;
+  height: 100%;
 }
 
 /************ 네비게이션 ************/
 .gnb {
-    position: relative;
-    min-height: 46px;
-    z-index: 6;
+  position: relative;
+  min-height: 46px;
+  z-index: 6;
 }
 /* gnb ul박스 */
 .gnb ul {
-    position: absolute;
-    top: 0;
-    display: flex;
-    gap: 50px;
-    font-size: var(--Sfont);
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 50px;
+  font-size: var(--Sfont);
 
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 /* gnb li 리스트 */
 .gnb ul li {
-    font-family: "Ubuntu", sans-serif;
-    padding: 0 70px;
-    padding-bottom: 25px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 70px;
+  padding-bottom: 25px;
 }
 .left-menu {
-    justify-content: end;
-    width: 45%;
+  justify-content: end;
+  width: 45%;
 }
 .right-menu {
-    right: 0;
-    width: 45%;
+  right: 0;
+  width: 45%;
 }
 .gnb a {
-    transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .gnb ul li:hover a {
-    color: whitesmoke;
-    text-shadow: 1px 1px 3px #000;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px #000;
 }
 /* 장바구니 */
 .cart {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
 }
 .cart a {
-    font-size: var(--Sfont);
+  font-size: var(--Sfont);
 }
 i {
-    color: #000;
+  color: #000;
 }
 /********* 메뉴 젤리효과 *********/
 
 .gnb ul li:hover {
-    -webkit-animation: jelly 0.5s;
-    animation: jelly 0.5s;
+  -webkit-animation: jelly 0.5s;
+  animation: jelly 0.5s;
 }
 
 @keyframes jelly {
-    25% {
-        transform: scale(0.9, 1.1);
-    }
-    50% {
-        transform: scale(1.1, 0.9);
-    }
-    75% {
-        transform: scale(0.95, 1.05);
-    }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 
 /************** 메인영역 **************/
 .cont {
-    text-align: center;
-    /* padding: 30px; */
+  text-align: center;
+  /* padding: 30px; */
 }
 .cont img {
-    max-width: 100%;
+  max-width: 100%;
 }
 iframe {
-    width: 731px;
-    height: 412px;
+  width: 731px;
+  height: 412px;
 }
 
 /************ 하단영역 ************/
 #info {
-    position: relative;
+  position: relative;
 }
 .info {
-    text-align: center;
-    padding: 30px 0;
+  text-align: center;
+  padding: 30px 0;
 }
 .info h2 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .info p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .footer-flex {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 .footer-cont a {
-    font-size: var(--Mfont);
+  font-size: var(--Mfont);
 }
 .footer-cont a + a {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 /* 하단 애니메이션 */
 .footer-fit {
-    overflow: hidden;
+  overflow: hidden;
 }
 .footer-flow {
-    /* position: absolute; */
-    /* left: 0; */
-    display: flex;
-    width: 200vw;
-    height: 120px;
-    margin-top: 50px;
-    overflow: hidden;
+  /* position: absolute; */
+  /* left: 0; */
+  display: flex;
+  width: 200vw;
+  height: 120px;
+  margin-top: 50px;
+  overflow: hidden;
 
-    /* 애니메이션 */
-    animation: footer-flow 15s linear infinite;
+  /* 애니메이션 */
+  animation: footer-flow 15s linear infinite;
 }
 .footer-flow img {
-    flex-shrink: 1;
-    display: block;
-    width: 50%;
+  flex-shrink: 1;
+  display: block;
+  width: 50%;
 }
 
 /* footer-flow 키프레임 */
 @keyframes footer-flow {
-    from {
-        transform: translateX(-50%);
-    }
-    to {
-        transition: translateX(0%);
-    }
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transition: translateX(0%);
+  }
 }
 /* 키프레임 */
 
 /*================= 미디어쿼리 =================*/
 @media screen and (max-width: 900px) {
-    /********** 햄버거버튼 **********/
-    .ham {
-        position: absolute;
-        top: 15%;
-        left: 5%;
-        width: 50px;
-        height: 40px;
-        z-index: 7;
-        cursor: pointer;
-    }
-    
-    /* 햄 아래 공통 */
-    .ham div {
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        border-radius: 3px;
-        transition: .3s ease-in-out;
+  /********** 햄버거버튼 **********/
+  .ham {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 50px;
+    height: 40px;
+    z-index: 7;
+    cursor: pointer;
+  }
 
-        background-color: #000;
-    }
-    /**** on추가 ****/
-    .ham.on div {
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        border-radius: 3px;
+  /* 햄 아래 공통 */
+  .ham div {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
 
-        background-color: blueviolet;
-        cursor: pointer;
-    }
+    background-color: #000;
+  }
+  /**** on추가 ****/
+  .ham.on div {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
 
-    .ham div:first-child {
-        top: 0;
-    }
-    .ham div:nth-child(1) {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .ham div:last-child {
-        bottom: 0;
-    }
-    /**** on추가 ****/
-    .ham.on div:first-child {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .ham.on div:nth-child(2) {
-        opacity: 0;
-    }
-    .ham.on div:last-child {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
+    background-color: blueviolet;
+    cursor: pointer;
+  }
 
-    /********** 모바일메뉴가림막 **********/
-    .mobile-menu {
-        position: fixed;
-        background-color: #e9a8c6;
-        top: 0;
-        left: 100%;
-        bottom: 0;
-        right: 0;
-        z-index: 5;
+  .ham div:first-child {
+    top: 0;
+  }
+  .ham div:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .ham div:last-child {
+    bottom: 0;
+  }
+  /**** on추가 ****/
+  .ham.on div:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .ham.on div:nth-child(2) {
+    opacity: 0;
+  }
+  .ham.on div:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 
-        transition: 1s ease-out;
-    }
-    /**** on추가 ****/
-    .mobile-menu.on {
-        position: fixed;
-        background-color: #e9a8c6;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 5;
-    }
+  /********** 모바일메뉴가림막 **********/
+  .mobile-menu {
+    position: fixed;
+    background-color: #e9a8c6;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
 
-    /* 장바구니 */
-    .cart a {
-        font-size: var(--Lfont);
-    }
-    /************ gnb 레이아웃 변경 ************/
-    .gnb ul {
-        display: none;
-        opacity: 0;
-        transition: 1s ease-in-out;
-    }
-    
-    .ham.on+.gnb ul {
-        display: block;
-        opacity: 1;
-        flex-direction: column;
-        margin-top: 25vh;
-        border: none;
-        font-size: var(--Lfont);
-        z-index: 10;
+    transition: 1s ease-out;
+  }
+  /**** on추가 ****/
+  .mobile-menu.on {
+    position: fixed;
+    background-color: #e9a8c6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  }
 
-    }
-    .gnb ul li {
-        padding: 0 50px;
-        padding-bottom: 40px;
-    }
+  /* 장바구니 */
+  .cart a {
+    font-size: var(--Lfont);
+  }
+  /************ gnb 레이아웃 변경 ************/
+  .gnb ul {
+    display: none;
+    opacity: 0;
+    transition: 1s ease-in-out;
+  }
+
+  .ham.on + .gnb ul {
+    display: block;
+    opacity: 1;
+    flex-direction: column;
+    margin-top: 25vh;
+    border: none;
+    font-size: var(--Lfont);
+    z-index: 10;
+  }
+  .gnb ul li {
+    padding: 0 50px;
+    padding-bottom: 40px;
+  }
 }

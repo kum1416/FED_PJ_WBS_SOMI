@@ -62,4 +62,7 @@
     .text-cont h2 {
         padding-bottom: 15px;
     }
+    .text-cont__wrap {
+        margin-left: auto;
+    }
 }
