@@ -55,7 +55,7 @@ function jqFn() {
     /* 클래스 on넣기 */
     setTimeout(() => {
       stage.classList.add("on");
-    }, 2000);
+    }, 1000);
 
     ///// 러브버튼 클릭시 아래페이지로 이동 /////
     $(".nextbtn").click(function () {
