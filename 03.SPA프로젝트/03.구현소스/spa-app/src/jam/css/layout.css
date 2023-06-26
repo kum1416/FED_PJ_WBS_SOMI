@@ -245,14 +245,14 @@ iframe {
   /************ gnb 레이아웃 변경 ************/
   .gnb ul {
     display: none;
-    opacity: 0;
-    transition: 1s ease-in-out;
+    /* opacity: 0; */
+    transition: .1s 1s ease-in-out;
   }
 
   .ham.on + .gnb ul {
-    display: block;
-    opacity: 1;
+    /* opacity: 1; */
     flex-direction: column;
+    left: 100%;
     margin-top: 25vh;
     border: none;
     font-size: var(--Lfont);

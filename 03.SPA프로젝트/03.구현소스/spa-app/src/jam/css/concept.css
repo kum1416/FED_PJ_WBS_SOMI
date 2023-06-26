@@ -1,4 +1,71 @@
 @charset "utf-8";
 /* 텍스트모듈용 CSS - concept.css */
 
-/************ 공통 ************/
+/************ 메인타이틀 ************/
+.concept {
+  height: 530px;
+  margin: 0 auto;
+  border-radius: 0 150px 0 150px;
+  background: url(../public/images/concept/concept1.png) no-repeat center/cover;
+}
+/************ 메인타이틀 ************/
+.main-cont {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: min(4vw, 58px);
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  white-space: nowrap;
+}
+.main-cont h2 {
+  padding-bottom: 50px;
+}
+
+/************ 메인버튼 - 중복 ************/
+.mbtnbx {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  max-width: 100%;
+  width: 250px;
+  margin: 0 auto;
+  background-color: #000;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 60px;
+}
+.mainbtn {
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+}
+.mainbtn .runtxt {
+  position: absolute;
+  white-space: nowrap;
+  color: #fff;
+  will-change: transform;
+  line-height: 60px;
+  display: flex;
+  padding: 0 20px;
+  gap: 50px;
+}
+.mainbtn:hover .runtxt {
+  animation: marquee 4s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 8rem));
+  }
+}

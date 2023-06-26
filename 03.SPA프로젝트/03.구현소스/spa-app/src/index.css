@@ -22,7 +22,7 @@ body{
   background-color: #ed7b49;
 }
 /* ul,ol */
-ul,ol{
+ul,ol,li{
   list-style: none;
 }
 
