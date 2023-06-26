@@ -56,6 +56,12 @@ const Layout = () => {
             {/* 1. 상단영역 */}
             <div id="top">
                 <header className="top">
+                     {/* 햄버거버튼 */}
+                     <div className="ham">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     {/* 네비게이션 */}
                     <nav className="gnb">
                         <ul className="left-menu">
@@ -101,12 +107,7 @@ const Layout = () => {
                             </a>
                         </div>
                     </nav>
-                    {/* 햄버거버튼 */}
-                    <div className="ham">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                   
 
                     {/* 모바일메뉴가림막 */}
                     <div className="mobile-menu"></div>

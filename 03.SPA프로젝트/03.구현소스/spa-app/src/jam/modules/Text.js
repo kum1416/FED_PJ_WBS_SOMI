@@ -53,7 +53,7 @@ function Text(props){
               {
                 // map을 이용한 배열 반복문! 
                 text_data[props.dd].cont.split('^').map((x,i)=>
-                <p>{x}</p>
+                <p key={i}>{x}</p>
                  )
               }
           </div>

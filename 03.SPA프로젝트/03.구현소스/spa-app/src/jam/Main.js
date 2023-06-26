@@ -20,7 +20,7 @@ const Main = () => {
               {/* 4.텍스트모듈 */}  
               <Text ct="center" dd="1" />
               {/* 5.스와이프모듈 */}  
-              <ImgSwipe />
+              <ImgSwipe pg="main" />
               {/* 6.슬라이드배너모듈 */}  
               {/* <SlideBan /> */}
             </>

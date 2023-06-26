@@ -23,6 +23,7 @@
 .gnb {
     position: relative;
     min-height: 46px;
+    z-index: 6;
 }
 /* gnb ul박스 */
 .gnb ul {
@@ -159,7 +160,7 @@ iframe {
 }
 /* 키프레임 */
 
-/*=============== 미디어쿼리 ===============*/
+/*================= 미디어쿼리 =================*/
 @media screen and (max-width: 900px) {
     /********** 햄버거버튼 **********/
     .ham {
@@ -168,7 +169,7 @@ iframe {
         left: 5%;
         width: 50px;
         height: 40px;
-        z-index: 5;
+        z-index: 7;
         cursor: pointer;
     }
     
@@ -246,10 +247,9 @@ iframe {
         display: none;
     }
     
-    .ham.on .gnb ul {
+    .ham.on+.gnb ul {
         display: block;
         flex-direction: column;
-        gap: 30px;
         margin-top: 20vh;
         border: none;
         font-size: var(--Lfont);

@@ -56,6 +56,19 @@ function jqFn() {
         setTimeout(() => {
             stage.classList.add("on");
         }, 2000);
+
+        ///// 러브버튼 클릭시 아래페이지로 이동 /////
+        $(".nextbtn").click(function () {
+            let winh = $(".fpage").height();
+            console.log("러브버튼", winh);
+            $("html,body").animate(
+                {
+                    scrollTop: winh,
+                },
+                500
+            );
+        });
+
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
 

@@ -1,6 +1,8 @@
 // 메인 컴포넌트 - imgswipe.js
 // 메인CSS
 import "../css/imgswipe.css"
+// 데이터
+import imgswipe_data from "../data/imgswipe";
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -11,8 +13,12 @@ import "swiper/css";
 
 // import required modules
 import { EffectCards } from "swiper";
+import { data } from "jquery";
 
-export default function ImgSwipe() {
+export default function ImgSwipe(props) {
+  // 데이터
+  const isdt = imgswipe_data;
+
   return (
     <>
       <Swiper
@@ -21,15 +27,15 @@ export default function ImgSwipe() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {
+          isdt.map((v,i)=>
+          <SwiperSlide key={i}>
+            <section className="swipebx">
+              <img src={v.isrc} alt="스와이프이미지"/>
+            </section>
+          </SwiperSlide>
+          )
+        }
       </Swiper>
     </>
   );
