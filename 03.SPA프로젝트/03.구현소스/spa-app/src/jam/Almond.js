@@ -5,7 +5,7 @@ import Mfirst from "./modules/Mfirst";
 const Almond = () => {
         return(
             <>
-                <Mfirst />
+                <Mfirst cg="change" />
             </>
         );
 }; /////////////// Almond /////////////

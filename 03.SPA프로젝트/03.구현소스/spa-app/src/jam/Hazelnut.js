@@ -5,7 +5,7 @@ import Mfirst from "./modules/Mfirst";
 const Hazelnut = () => {
         return(
             <>
-                <Mfirst />
+                <Mfirst cg="change" />
             </>
         );
 }; /////////////// Hazelnut /////////////

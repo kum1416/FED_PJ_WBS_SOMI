@@ -83,9 +83,9 @@ const Layout = () => {
                         </ul>
                         {/* 로고박스 */}
                         <h2 className="logo">
-                            <a href="#">
+                            <Link to="/">
                                 <Logo lg="top" />
-                            </a>
+                            </Link>
                         </h2>
                         <ul className="right-menu">
                             <li>

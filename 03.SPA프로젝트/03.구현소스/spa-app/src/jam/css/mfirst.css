@@ -5,7 +5,7 @@
 .imbx {
     position: relative;
     height: 100vh;
-    background: url(../../../public/images/mft1.jpg) no-repeat top/cover;
+    background: url(../../../public/images/mft1.jpg) no-repeat top/100%;
 }
 .imbx img {
     height: 100%;

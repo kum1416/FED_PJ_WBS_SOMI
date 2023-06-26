@@ -18,12 +18,18 @@ function jqFn(){
 } ///////////// jqFn /////////////
 
 function Text(props){
+  // 뱃지 속성
+  const chstyle = {
+    change: {
+      display: "none",
+    }
+  }
     return(
         <>
         {/* 모듈코드 */}
         
         <div className="text-cont">
-          <div className="badge">
+          <div className="badge" style={chstyle[props.ch]}>
             <img className="badge-ani badge-ani__rotate" src="./images/no_circle.png" alt="뱃지" />
             <img className="badge-ani" src="./images/plastic-free-1.png" alt="뱃지" />
           </div>

@@ -5,7 +5,7 @@ import Mfirst from "./modules/Mfirst";
 const Sesame = () => {
         return(
             <>
-                <Mfirst />
+                <Mfirst cg="change" />
             </>
         );
 }; /////////////// Sesame /////////////

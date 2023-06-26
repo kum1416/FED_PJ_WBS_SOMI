@@ -250,7 +250,7 @@ iframe {
     .ham.on+.gnb ul {
         display: block;
         flex-direction: column;
-        margin-top: 20vh;
+        margin-top: 25vh;
         border: none;
         font-size: var(--Lfont);
         z-index: 10;

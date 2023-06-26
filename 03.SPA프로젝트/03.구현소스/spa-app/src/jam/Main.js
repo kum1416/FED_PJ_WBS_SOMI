@@ -14,11 +14,11 @@ const Main = () => {
               <Mfirst po="left" />
               {/* <FlowBtn dd="0" /> */}
               {/* 2.텍스트모듈 */}  
-              <Text ct="left" dd="0" />
+              <Text ct="center" dd="0" />
               {/* 3.배너모듈 */}  
               <Banner />
               {/* 4.텍스트모듈 */}  
-              <Text ct="center" dd="1" />
+              <Text ct="left" dd="1" ch="change" />
               {/* 5.스와이프모듈 */}  
               <ImgSwipe pg="main" />
               {/* 6.슬라이드배너모듈 */}  

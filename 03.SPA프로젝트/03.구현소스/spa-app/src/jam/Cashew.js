@@ -5,7 +5,7 @@ import Mfirst from "./modules/Mfirst";
 const Cashew = () => {
         return(
             <>
-                <Mfirst />
+                <Mfirst cg="change" />
             </>
         );
 }; /////////////// Cashew /////////////

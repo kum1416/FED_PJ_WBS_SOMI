@@ -5,7 +5,7 @@ import Mfirst from "./modules/Mfirst";
 const Peanut = () => {
         return(
             <>
-                <Mfirst />
+                <Mfirst cg="change" />
             </>
         );
 }; /////////////// Peanut /////////////
