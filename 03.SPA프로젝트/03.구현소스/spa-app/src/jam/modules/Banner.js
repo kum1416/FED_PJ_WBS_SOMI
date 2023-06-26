@@ -20,31 +20,41 @@ function jqFn() {
     const mover = document.querySelector(".ban-mover");
 
     // 배너박스
-    const bbx = document.querySelector(".ban-wrap");
+    const bbx = document.querySelectorAll(".ban-wrap");
     // 갭 // 가로크기 //
 
-    bbx.onmousemove = function (e) {
-      e.stopPropagation();
-      // 마우스 포인터 위치
-      console.log("x:", e.pageX, "\ny:", e.pageY);
+    bbx.forEach(
+      ele=>{
+        ele.onmousemove = function (e) {
+        e.stopPropagation();
+        // 마우스 포인터 위치
+        console.log("x:", e.pageX, "\ny:", e.pageY);
+        console.log(window.scrollY);
 
-      // 위치값 보정 (gap은 무버크기의 절반)
-      var posx = e.pageX - 25;
-      var posy = e.pageY - 50;
+        // 위치값 보정 (gap은 무버크기의 절반)
+        var posx = e.pageX - 25;
+        var posy = e.pageY - 50;
 
-      // 무버 위치값 이동
-      mover.style.top = posy + "px";
-      mover.style.left = posx + "px";
-    }; //////////// mousemove 이벤트함수 //////
+        // 무버 위치값 이동
+        mover.style.top = posy + "px";
+        mover.style.left = posx + "px";
+    }
 
-    bbx.onmouseenter = () => {
+    ele.onmouseenter = () => {
       // 들어오면 나타남
       mover.style.display = "block";
     }; ///////// mouseenter /////////////////
-    bbx.onmouseleave = () => {
+    ele.onmouseleave = () => {
       // 나가면 사라짐
       mover.style.display = "none";
     }; ///////// mouseleave /////////////////
+
+  }); //////////// mousemove 이벤트함수 //////
+
+
+
+
+
 
     // 배너 가로드래그=============================================
     const drag = document.querySelector(".ban-flex"); 

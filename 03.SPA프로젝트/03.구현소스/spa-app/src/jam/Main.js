@@ -17,10 +17,12 @@ const Main = () => {
               <Text ct="center" dd="0" />
               {/* 3.배너모듈 */}  
               <Banner />
+              <div className="swipe-parents">
               {/* 4.텍스트모듈 */}  
-              <Text ct="left" dd="1" ch="change" />
-              {/* 5.스와이프모듈 */}  
-              <ImgSwipe pg="main" />
+                <Text ct="left" dd="1" ch="change" />
+                {/* 5.스와이프모듈 */}  
+                <ImgSwipe pg="main" />
+              </div>
               {/* 6.슬라이드배너모듈 */}  
               {/* <SlideBan /> */}
             </>

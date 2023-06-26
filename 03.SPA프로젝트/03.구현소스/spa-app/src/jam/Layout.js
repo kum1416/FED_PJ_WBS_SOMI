@@ -51,6 +51,17 @@ const Layout = () => {
         },
     ];
 
+    const hcode = v => {
+        return (
+            <li>
+                <Link to={v.link}>
+                    {v.txt.toUpperCase()}
+                </Link>
+            </li>
+        )
+    }
+
+
     return (
         <>
             {/* 1. 상단영역 */}
@@ -65,22 +76,9 @@ const Layout = () => {
                     {/* 네비게이션 */}
                     <nav className="gnb">
                         <ul className="left-menu">
-                            <li>
-                                <Link to="/ss">
-                                    {gnb_data[0].txt.toUpperCase()}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/pn">
-                                    {gnb_data[1].txt.toUpperCase()}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/am">
-                                    {gnb_data[2].txt.toUpperCase()}
-                                </Link>
-                            </li>
+                            {gnb_data.map((v,i)=> i<=2?hcode(v):'')}
                         </ul>
+
                         {/* 로고박스 */}
                         <h2 className="logo">
                             <Link to="/">
@@ -88,16 +86,7 @@ const Layout = () => {
                             </Link>
                         </h2>
                         <ul className="right-menu">
-                            <li>
-                                <Link to="/am">
-                                    {gnb_data[3].txt.toUpperCase()}
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/am">
-                                    {gnb_data[4].txt.toUpperCase()}
-                                </Link>
-                            </li>
+                            {gnb_data.map((v,i)=> i>2?hcode(v):'')}
                         </ul>
                         {/* 장바구니 */}
                         <div className="cart">
