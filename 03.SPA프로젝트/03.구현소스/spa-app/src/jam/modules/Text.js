@@ -34,7 +34,9 @@ function Text(props){
             <img className="badge-ani" src="./images/plastic-free-1.png" alt="뱃지" />
           </div>
           <div className="text-cont__wrap" style={{textAlign : props.ct}}>
-            <h2>{text_data[props.dd].tit}</h2>
+            {text_data[props.dd].tit.split('^').map((x,i)=>
+              <h2 key={i}>{x}</h2>
+            )}
 
               {/* { 조건문을 이용해서 스플릿해서 출력하기
                 <div>

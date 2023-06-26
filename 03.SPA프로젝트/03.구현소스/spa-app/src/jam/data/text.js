@@ -8,7 +8,7 @@ const text_data = [
         "cont":"You will find our wild products in their simplest form. ^No additives or anything else can spoil their nature",
     },
     {
-        "tit":"Our Wild Way",
+        "tit":"Our ^Wild Way",
         "cont":"Our philosophy is present in every stage of our ^production. We are endeavoring to contribute to the ^creation of a better world.",
     },
     {

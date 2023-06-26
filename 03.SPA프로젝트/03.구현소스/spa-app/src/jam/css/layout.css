@@ -245,14 +245,22 @@ iframe {
     /************ gnb 레이아웃 변경 ************/
     .gnb ul {
         display: none;
+        opacity: 0;
+        transition: 1s ease-in-out;
     }
     
     .ham.on+.gnb ul {
         display: block;
+        opacity: 1;
         flex-direction: column;
         margin-top: 25vh;
         border: none;
         font-size: var(--Lfont);
         z-index: 10;
+
+    }
+    .gnb ul li {
+        padding: 0 50px;
+        padding-bottom: 40px;
     }
 }
