@@ -17,9 +17,12 @@ function jqFn() {
     $(() => {
         // 모바일 햄버거 메뉴 on추가
         $(".ham").on('click',function(){
-            $(".ham").toggleClass("on");
+            console.log("메뉴 클릭");
+
+            $(this).toggleClass("on");
             $(".mobile-menu").toggleClass("on");
         });
+        
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
