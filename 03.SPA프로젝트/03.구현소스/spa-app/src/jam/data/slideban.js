@@ -4,8 +4,8 @@
 
 const imgswipe_data = [
     {
-        isrc:"./images/imgswipe/imgswipe1.jpg",
-        hsrc:"./images/imgswipe/imgswipehover1.jpg",
+        isrc:"./images/imgswipe/imgswipe1.png",
+        hsrc:"./images/imgswipe/imgswipehover1.png",
         tit:"imgswipe Butter",
         price:"€6,90",
         item:"NUT BUTTERS",
