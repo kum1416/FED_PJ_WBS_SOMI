@@ -3,13 +3,14 @@
 
 /************ 메인타이틀 ************/
 .concept {
+  position: relative;
   height: 530px;
   margin: 0 auto;
   border-radius: 0 150px 0 150px;
-  background: url(../public/images/concept/concept1.png) no-repeat center/cover;
+  background: url(../../../public/images/concept/concept1.png) no-repeat center/cover;
 }
 /************ 메인타이틀 ************/
-.main-cont {
+.main-cont__concept {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -19,7 +20,7 @@
   font-family: "Libre Baskerville", serif;
   white-space: nowrap;
 }
-.main-cont h2 {
+.main-cont__concept h2 {
   padding-bottom: 50px;
 }
 
@@ -41,7 +42,7 @@
   width: 100%;
   height: auto;
 }
-.mainbtn .runtxt {
+.mainbtn .runtxt1 {
   position: absolute;
   white-space: nowrap;
   color: #fff;
@@ -51,7 +52,7 @@
   padding: 0 20px;
   gap: 50px;
 }
-.mainbtn:hover .runtxt {
+.mainbtn:hover .runtxt1 {
   animation: marquee 4s linear infinite;
 }
 

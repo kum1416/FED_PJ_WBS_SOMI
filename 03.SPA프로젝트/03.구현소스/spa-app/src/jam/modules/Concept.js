@@ -16,11 +16,11 @@ function Concept() {
     <>
       {/* 모듈코드 */}
       <div className="concept">
-        <div className="main-cont">
+        <div className="main-cont__concept">
           <h2>The Concept Store</h2>
           <div className="mbtnbx">
             <div className="mainbtn">
-              <div className="runtxt">
+              <div className="runtxt1">
                 <span>SWEET AND SPECIAL JAM</span>
                 <span>SWEET AND SPECIAL JAM</span>
                 <span>SWEET AND SPECIAL JAM</span>

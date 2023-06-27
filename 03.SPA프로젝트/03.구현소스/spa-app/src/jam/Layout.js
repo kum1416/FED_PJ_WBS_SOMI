@@ -32,6 +32,7 @@ function jqFn() {
     let ham = document.querySelector(".ham");
     let moMenu = document.querySelector(".mobile-menu");
     let menuClick = document.querySelectorAll(".mobile-menu__wrap li");
+    let body = document.querySelector("body");
     // 모바일 메뉴 열기
     ham.addEventListener("click", function () {
       if (moMenu.classList.contains("on")) {
@@ -41,12 +42,17 @@ function jqFn() {
         ham.classList.add("on");
         moMenu.classList.add("on");
       }
+
+      body.style.overflow = "hidden";
+
     });
     // 모바일 메뉴 클릭 이동
     menuClick.forEach(ele=>{
       ele.onclick = () => {
-        moMenu.style.opacity = "0";
+        moMenu.classList.remove("on");
+        // moMenu.style.opacity = "0";
         ham.classList.remove("on");
+        body.style.overflowY = "scroll";
       }
     });
     // $(menuClick).on("click",function(){
@@ -63,9 +69,7 @@ function jqFn() {
 } ///////////// jqFn /////////////
 
 const Layout = () => {
-  function test(){
-      
-  }
+
   /* gnb 데이타 */
   const gnb_data = [
     {
@@ -134,7 +138,7 @@ const Layout = () => {
             <ul className="mobile-menu__wrap">
               {gnb_data.map((v, i) => (
                 <li key={i}>
-                  <Link onClick={test} to={v.link}>
+                  <Link to={v.link}>
                     {v.txt.toUpperCase()}
                   </Link>
                 </li>

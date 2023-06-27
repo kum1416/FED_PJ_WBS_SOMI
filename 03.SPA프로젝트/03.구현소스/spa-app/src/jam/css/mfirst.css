@@ -41,7 +41,11 @@
     transform: translateY(25%);
     opacity: 0;
     /* 트랜지션: 속시이지 */
-    transition: 0.2s ease-in;
+    /* transition: opacity 0.2s ease-in; */
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-property: transform,opacity ;
+    /* transition: transform 0.2s ease-in; */
 }
 .main-cont h2.on span {
     transform: translateY(0);
