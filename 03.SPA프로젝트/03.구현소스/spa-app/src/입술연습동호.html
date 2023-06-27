@@ -2,10 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./mypracticeJS/jquery-3.6.1.min.js"></script>
+    <title>슬라이드배너 하드코딩</title>
+    <!-- 어썸아이콘 CDN넣기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+      /* 
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Ubuntu', sans-serif
+      */
+
+      * {
+        outline: 0.5px solid aqua;
+      }
+      /* CSS변수처리 */
+      :root {
+        --Lfont: min(5vw, 58px);
+        --Mfont: min(3.5vw, 36px);
+        --Sfont: min(2.5vw, 21px);
+      }
+      /* 1. 마진 패딩 초기화 */
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      ul,
+      ol,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      /* ul, ol 초기화 */
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      /************ 입술 ************/
       body {
         height: 100vh;
       }

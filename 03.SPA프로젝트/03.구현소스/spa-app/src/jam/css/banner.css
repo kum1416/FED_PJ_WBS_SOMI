@@ -6,6 +6,16 @@
   /* background-color: #be5a4b; */
   overflow: hidden;
 }
+.ban-flex::before {
+  content: '';
+  top: 84%;
+  right: 10%;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  border-radius: 0 230px 0 0;
+  background-color: #be5a4b;
+}
 .ban-flex {
   display: flex;
   gap: 0 50px;

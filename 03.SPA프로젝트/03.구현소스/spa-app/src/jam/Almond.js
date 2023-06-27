@@ -8,8 +8,10 @@ const Almond = () => {
         return(
             <>
                 <Mfirst cg="change" />
-                <Banner st="style" gi="grid" />
-                <Concept />
+                <div className="subpage">
+                    <Banner st="style" gi="grid" />
+                    <Concept />
+                </div>
             </>
         );
 }; /////////////// Almond /////////////
