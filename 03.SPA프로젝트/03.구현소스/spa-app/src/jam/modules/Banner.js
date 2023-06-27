@@ -13,6 +13,7 @@ import sesame_data from "../data/sesame";
 
 // 제이쿼리
 import $ from "jquery";
+import { useLocation } from "react-router-dom";
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
@@ -107,6 +108,10 @@ function jqFn() {
 } ///////////// jqFn /////////////
 
 function Banner(props) {
+
+  // const loc = useLocation();
+  // 속성값 받기
+  // const pm = loc.state.selban;
 
   // const dataSelec = ()=>{
   //   if(props.st == "almond_data") selecdata = almond_data

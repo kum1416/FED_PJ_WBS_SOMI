@@ -9,7 +9,7 @@ const Almond = () => {
             <>
                 <Mfirst cg="change" si="imgsize" />
                 <div className="subpage">
-                    <Banner st="style" gi="grid" />
+                    <Banner st="style" gi="grid" cat="almond" />
                     <Concept img={Math.ceil(Math.random()*3)} />
                 </div>
             </>
