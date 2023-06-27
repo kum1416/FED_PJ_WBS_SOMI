@@ -4,6 +4,7 @@ import React from "react-dom"
 import "../css/banner.css";
 // 메인 데이터
 import ban_data from "../data/banner";
+import almond_data from "../data/almond";
 // 제이쿼리
 import $ from "jquery";
 
@@ -103,11 +104,30 @@ function jqFn() {
 } ///////////// jqFn /////////////
 
 function Banner(props) {
+
+  // const dataSelec = ()=>{
+  //   if(props.st == "almond_data") selecdata = almond_data
+  // };
+  const banstyle = {
+    style: {
+      maxWidth: "1200px",
+      margin: "0 auto",
+      padding: "10% 0"
+    },
+    grid: {
+      display: "grid",
+      gridTemplateColumns: "repeat(2, 1fr)",
+      justifyItems: "center",
+      gridRowGap: "50px",
+    },
+  };
+  
   return (
-    <section className="ban-cover">
+
+    <section className="ban-cover" style={banstyle[props.st]}>
 
       {/* 모듈코드 */}
-      <div className="ban-flex">
+      <div className="ban-flex" style={banstyle[props.gi]}>
         {ban_data.map((v, i) => (
           <div className="ban-wrap" key={i}>
             {/* 전체박스 */}

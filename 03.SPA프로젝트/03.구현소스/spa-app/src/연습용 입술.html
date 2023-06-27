@@ -22,25 +22,25 @@
       }
     </style>
     <script>
-        $(() => {
-          let a;
-          let b;
-          $("body").on("mousemove", function (e) {
-            console.log("무브", a, b);
-            a = e.pageX;
-            b = e.pageY;
-            $(window).on("mouseup", function () {
-              console.log("뗐어");
-              console.log(a, b);
-              $("body").append(`
-                       <div class="point" style="top:${b}px; left:${a}px">
-                           <img src="../public/images/concept/concept1.png" alt="">
-                           </div>
-                           `);
-            });
+      $(() => {
+        let a;
+        let b;
+        $("body").on("mousemove", function (e) {
+          console.log("무브", a, b);
+          a = e.pageX;
+          b = e.pageY;
+          $(window).on("mouseup", function () {
+            console.log("뗐어");
+            console.log(a, b);
+            $("body").append(`
+                <div class="point" style="top:${b}px; left:${a}px">
+                    <img src="../public/images/concept/concept1.png" alt="">
+                    </div>
+              `);
           });
         });
-      </script>
+      });
+    </script>
   </head>
   <body>
     <div class="point">
