@@ -32,7 +32,7 @@ function jqFn() {
     let ham = document.querySelector(".ham");
     let moMenu = document.querySelector(".mobile-menu");
     let menuClick = document.querySelectorAll(".mobile-menu__wrap li");
-    // 메뉴 열기
+    // 모바일 메뉴 열기
     ham.addEventListener("click", function () {
       if (moMenu.classList.contains("on")) {
         ham.classList.remove("on");
@@ -42,10 +42,17 @@ function jqFn() {
         moMenu.classList.add("on");
       }
     });
-    $(menuClick).on("click",function(){
-      console.log("여기다가 하시면 됩니다");
-        moMenu.remove("on");
+    // 모바일 메뉴 클릭 이동
+    menuClick.forEach(ele=>{
+      ele.onclick = () => {
+        moMenu.style.opacity = "0";
+        ham.classList.remove("on");
+      }
     });
+    // $(menuClick).on("click",function(){
+    //   console.log("여기다가 하시면 됩니다");
+    //     moMenu.remove("on");
+    // });
 
     // 메뉴 닫기<- 메뉴가 열린 후에(.ham.on 상태이면...)
     // .addEventListener("click",function(){
