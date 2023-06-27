@@ -3,183 +3,191 @@
 
 /************ 전체박스 ************/
 .ban-cover {
-  /* background-color: #be5a4b; */
-  overflow: hidden;
+    /* background-color: #be5a4b; */
+    overflow: hidden;
 }
 .ban-flex::before {
-  content: '';
-  top: 84%;
-  right: 10%;
-  position: absolute;
-  width: 90%;
-  height: 100%;
-  border-radius: 0 230px 0 0;
-  background-color: #be5a4b;
+    content: "";
+    top: 84%;
+    right: 10%;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    border-radius: 0 230px 0 0;
+    background-color: #be5a4b;
+    display: none;
 }
 .ban-flex {
-  display: flex;
-  gap: 0 50px;
+    display: flex;
+    gap: 0 50px;
 }
 .ban-wrap {
-  position: relative;
-  left: 0;
-  width: 421px;
-  padding-right: 29px;
-  padding-left: 29px;
+    position: relative;
+    left: 0;
+    width: 421px;
+    padding-right: 29px;
+    padding-left: 29px;
 }
 .ban-inner {
-  width: min(42vw, 360px);
+    width: min(42vw, 360px);
 }
 /************ a태그 감싸기 ************/
 .ban-inner > a {
-  position: relative;
-  display: block;
-  z-index: 2;
+    position: relative;
+    display: block;
+    z-index: 2;
 }
 /************ 잼이미지 겉박스 ************/
 .ban-imgbx {
-  position: relative;
-  padding: 18% 0 18%;
+    position: relative;
+    padding: 18% 0 18%;
 }
 /************************/
 .ban-img__hover {
-  background-color: #abafd6;
-  position: absolute;
-  left: 0%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 275px;
+    background-color: #abafd6;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 275px;
 }
 .hoverbx {
-  transition: 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  opacity: 0;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
 }
 .ban-wrap:hover .hoverbx {
-  opacity: 1;
+    opacity: 1;
 }
 .ban-img__push {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 .pushbx {
-  /* overflow: hidden; */
-  padding-bottom: 13%;
+    /* overflow: hidden; */
+    padding-bottom: 13%;
 }
 .pushbx img,
 .hoverbx img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /*========== 잼텍스트 겉박스 ==========*/
 .ban-txtbx {
-  font-family: "Libre Baskerville", serif;
-  letter-spacing: -2px;
-  position: relative;
-  margin-top: -22%;
-  z-index: 2;
-  text-align: left;
+    font-family: "Libre Baskerville", serif;
+    letter-spacing: -2px;
+    position: relative;
+    margin-top: -22%;
+    z-index: 2;
+    text-align: left;
 
-  aspect-ratio: 2/1;
+    aspect-ratio: 2/1;
 }
 /************ 잼이름박스 ************/
 .ban-txtbx h2 {
-  font-size: var(--Mfont);
-  /* max-width: 350px; */
-  margin-bottom: 7px;
-  overflow-wrap: inherit;
+    font-size: var(--Mfont);
+    /* max-width: 350px; */
+    margin-bottom: 7px;
+    overflow-wrap: inherit;
 }
 /************ 잼가격겉박스 ************/
 .ban-pribx {
-  font-size: var(--Sfont);
-  margin-bottom: 25px;
+    font-size: var(--Sfont);
+    margin-bottom: 25px;
 }
 .ban-price {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /************ 메인버튼 - 중복 ************/
 .mbtnbx {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  max-width: 100%;
-  width: 250px;
-  background-color: #000;
-  overflow: hidden;
-  border-radius: 50px;
-  height: 60px;
-  margin-top: 20px;
-  /* transform: translateY(15px); */
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    width: 250px;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 50px;
+    height: 60px;
+    margin-top: 20px;
+    /* transform: translateY(15px); */
 }
 .mainbtn {
-  font-size: 18px;
-  width: 100%;
-  height: auto;
+    font-size: 18px;
+    width: 100%;
+    height: auto;
 }
 .mainbtn .runtxt2 {
-  position: absolute;
-  white-space: nowrap;
-  color: #fff;
-  will-change: transform;
-  line-height: 60px;
-  display: flex;
-  padding: 0 20px;
-  gap: 50px;
-  left: -80px;
+    position: absolute;
+    white-space: nowrap;
+    color: #000;
+    will-change: transform;
+    line-height: 60px;
+    display: flex;
+    padding: 0 20px;
+    gap: 50px;
+    left: -80px;
 }
 .mainbtn .runtxt2:hover {
-  animation: marquee 4s linear infinite;
+    animation: marquee 4s linear infinite;
 }
 
 .mainbtn .runtxt2 span {
-  opacity: 0;
+    opacity: 0;
 }
 .mainbtn .runtxt2:hover span {
-  opacity: 1;
+    opacity: 1;
 }
 .mainbtn .runtxt2 span:nth-child(2) {
-  opacity: 1;
+    opacity: 1;
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 @media (hover: hover) and (min-width: 700px) {
-  .animated-title .content {
-    -webkit-transform: translateY(calc(100% - 8rem));
-    transform: translateY(calc(100% - 8rem));
-  }
+    .animated-title .content {
+        -webkit-transform: translateY(calc(100% - 8rem));
+        transform: translateY(calc(100% - 8rem));
+    }
 }
 /************ 따라다니는 이미지 ************/
 .ban-mover {
-  position: absolute;
-  z-index: 100;
-  width: 50px;
-  height: 100px;
-  background-image: url(../../../public/images/cursor_hand.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: 0.5s ease-out;
-  display: none;
-  pointer-events: none;
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    height: 100px;
+    background-image: url(../../../public/images/cursor_hand.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s ease-out;
+    display: none;
+    pointer-events: none;
 }
 
 /*================= 미디어쿼리 =================*/
-/* @media screen and (max-width: 900px) {
-  .ban-cover {
-    position: relative;
-  }
-} */
+@media screen and (max-width: 750px) {
+    .ban-inner {
+        width: min(70vw, 360px);
+    }
+    .ban-wrap {
+        width: auto;
+    }
+
+    .ban-flex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

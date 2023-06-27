@@ -80,13 +80,20 @@ function Mfirst(props) {
     change: {
       display: "none",
     },
+    imgsize:{
+      
+        position: "relative",
+        height: "72vh",
+        objectFit: "cover",
+        backgroundPosition: "center",
+    },
   };
 
   return (
     <>
       {/* 모듈코드 */}
       <section className="fpage">
-        <div className="imbx"></div>
+        <div className="imbx" style={btnstyle[props.si]}></div>
         <div className="main-cont" style={btnstyle[props.cg]}>
           <h2></h2>
           <div className="mbtnbx">

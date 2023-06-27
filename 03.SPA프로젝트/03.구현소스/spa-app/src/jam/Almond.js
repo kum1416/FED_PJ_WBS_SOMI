@@ -7,10 +7,10 @@ import Banner from "./modules/Banner";
 const Almond = () => {
         return(
             <>
-                <Mfirst cg="change" />
+                <Mfirst cg="change" si="imgsize" />
                 <div className="subpage">
                     <Banner st="style" gi="grid" />
-                    <Concept />
+                    <Concept img={Math.ceil(Math.random()*3)} />
                 </div>
             </>
         );

@@ -4,7 +4,13 @@ import React from "react-dom"
 import "../css/banner.css";
 // 메인 데이터
 import ban_data from "../data/banner";
+// 서브 페이지 배너 데이터
 import almond_data from "../data/almond";
+import cashew_data from "../data/cashew";
+import hazelnut_data from "../data/hazelnut";
+import peanut_data from "../data/peanut";
+import sesame_data from "../data/sesame";
+
 // 제이쿼리
 import $ from "jquery";
 
@@ -94,6 +100,7 @@ function jqFn() {
             } ///// else if //////
         }); //////////// 마우스이벤트함수 ////////
     }; /////////////////// dragBan /////////////////////
+    //===============================================================
 
 
   }); /////// jQB ////////
@@ -157,7 +164,7 @@ function Banner(props) {
               </a>
               {/* 버튼박스 */}
               <a href="#">
-                <div className="mbtnbx">
+                <div className="mbtnbx" style={{backgroundColor : v.color}}>
                   <div className="mainbtn">
                     <div className="runtxt2">
                       <span>BUY NOW!</span>

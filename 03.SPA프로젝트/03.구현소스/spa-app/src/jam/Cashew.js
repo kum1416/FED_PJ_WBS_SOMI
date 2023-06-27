@@ -7,7 +7,7 @@ import Mfirst from "./modules/Mfirst";
 const Cashew = () => {
         return(
             <>
-                <Mfirst cg="change" />
+                <Mfirst cg="change" si="imgsize" />
                 <Banner st="style" gi="grid" />
                 <Concept />
             </>
