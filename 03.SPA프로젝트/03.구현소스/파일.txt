@@ -332,5 +332,30 @@ ______________
 7. 미디어쿼리
 8. 미디어용 gnb -> 세모
 ____________
+2023.06.27 보관용
+
+    // 모바일 햄버거 메뉴 on추가
+    // $(".ham").on("click", function () {
+    //   console.log("메뉴 클릭");
+
+    //   $(this).toggleClass("on");
+    //   $(".mobile-menu").toggleClass("on");
+    // });
+
+    // $(".mobile-menu__wrap li a").on("click", function () {
+    //   console.log("모바일 메뉴 클릭");
+    //   $(".ham").removeClass("on");
+    //   $(".mobile-menu").removeClass("on");
+    // })
 
 
+    // $(menuClick).on("click",function(){
+    //   console.log("여기다가 하시면 됩니다");
+    //     moMenu.remove("on");
+    // });
+
+    // 메뉴 닫기<- 메뉴가 열린 후에(.ham.on 상태이면...)
+    // .addEventListener("click",function(){
+    //   ham.classList.remove('on');
+    //   moMenu.classList.remove('on');
+    // });

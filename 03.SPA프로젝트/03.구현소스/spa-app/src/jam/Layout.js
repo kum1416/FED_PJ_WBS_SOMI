@@ -15,25 +15,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; */
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
   $(() => {
-    // 모바일 햄버거 메뉴 on추가
-    // $(".ham").on("click", function () {
-    //   console.log("메뉴 클릭");
-
-    //   $(this).toggleClass("on");
-    //   $(".mobile-menu").toggleClass("on");
-    // });
-
-    // $(".mobile-menu__wrap li a").on("click", function () {
-    //   console.log("모바일 메뉴 클릭");
-    //   $(".ham").removeClass("on");
-    //   $(".mobile-menu").removeClass("on");
-    // })
 
     let ham = document.querySelector(".ham");
     let moMenu = document.querySelector(".mobile-menu");
     let menuClick = document.querySelectorAll(".mobile-menu__wrap li");
     let body = document.querySelector("body");
-    // 모바일 메뉴 열기
+    // 모바일 메뉴 열기 on추가 =====================================
     ham.addEventListener("click", function () {
       if (moMenu.classList.contains("on")) {
         ham.classList.remove("on");
@@ -42,11 +29,10 @@ function jqFn() {
         ham.classList.add("on");
         moMenu.classList.add("on");
       }
-
       body.style.overflow = "hidden";
-
     });
-    // 모바일 메뉴 클릭 이동
+
+    // 모바일 메뉴 클릭 이동 =======================================
     menuClick.forEach(ele=>{
       ele.onclick = () => {
         moMenu.classList.remove("on");
@@ -55,16 +41,7 @@ function jqFn() {
         body.style.overflowY = "scroll";
       }
     });
-    // $(menuClick).on("click",function(){
-    //   console.log("여기다가 하시면 됩니다");
-    //     moMenu.remove("on");
-    // });
 
-    // 메뉴 닫기<- 메뉴가 열린 후에(.ham.on 상태이면...)
-    // .addEventListener("click",function(){
-    //   ham.classList.remove('on');
-    //   moMenu.classList.remove('on');
-    // });
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
