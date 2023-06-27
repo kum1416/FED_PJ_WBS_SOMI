@@ -165,9 +165,9 @@ iframe {
 
 /*================= 미디어쿼리 =================*/
 @media screen and (max-width: 1200px) {
-    #top {
+    /* #top {
         position: fixed;
-    }
+    } */
     /********** 햄버거버튼 **********/
     .top .ham {
         position: absolute;

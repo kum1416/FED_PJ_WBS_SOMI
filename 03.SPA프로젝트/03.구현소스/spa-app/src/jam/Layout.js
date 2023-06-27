@@ -16,22 +16,49 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; */
 function jqFn() {
   $(() => {
     // 모바일 햄버거 메뉴 on추가
-    $(".ham").on("click", function () {
-      console.log("메뉴 클릭");
+    // $(".ham").on("click", function () {
+    //   console.log("메뉴 클릭");
 
-      $(this).toggleClass("on");
-      $(".mobile-menu").toggleClass("on");
+    //   $(this).toggleClass("on");
+    //   $(".mobile-menu").toggleClass("on");
+    // });
 
-/*       $(".left-menu").delay(1000).animate({
-        left: "0%",
-      }); */
+    // $(".mobile-menu__wrap li a").on("click", function () {
+    //   console.log("모바일 메뉴 클릭");
+    //   $(".ham").removeClass("on");
+    //   $(".mobile-menu").removeClass("on");
+    // })
 
-      // $(".right-menu")
+    let ham = document.querySelector(".ham");
+    let moMenu = document.querySelector(".mobile-menu");
+    let menuClick = document.querySelectorAll(".mobile-menu__wrap li");
+    // 메뉴 열기
+    ham.addEventListener("click", function () {
+      if (moMenu.classList.contains("on")) {
+        ham.classList.remove("on");
+        moMenu.classList.remove("on");
+      } else {
+        ham.classList.add("on");
+        moMenu.classList.add("on");
+      }
     });
+    $(menuClick).on("click",function(){
+      console.log("여기다가 하시면 됩니다");
+        moMenu.remove("on");
+    });
+
+    // 메뉴 닫기<- 메뉴가 열린 후에(.ham.on 상태이면...)
+    // .addEventListener("click",function(){
+    //   ham.classList.remove('on');
+    //   moMenu.classList.remove('on');
+    // });
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
 const Layout = () => {
+  function test(){
+      
+  }
   /* gnb 데이타 */
   const gnb_data = [
     {
@@ -100,7 +127,9 @@ const Layout = () => {
             <ul className="mobile-menu__wrap">
               {gnb_data.map((v, i) => (
                 <li key={i}>
-                  <Link to={v.link}>{v.txt.toUpperCase()}</Link>
+                  <Link onClick={test} to={v.link}>
+                    {v.txt.toUpperCase()}
+                  </Link>
                 </li>
               ))}
             </ul>
