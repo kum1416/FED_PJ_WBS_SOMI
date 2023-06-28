@@ -440,6 +440,8 @@ for of는 요소한개마다 돌아줌
 
 9. 버튼 모듈을 따로 만들었을때 각 컴포넌트에 적용시키면 각각 위치나 css 그런거는
    어떻게 수정하는거죠?
+   -> 굳이 모듈로 만들면 비효율적임
+   텍스트가 다 똑같기 때문임
 
 10. 컨셉트모듈 -> 랜덤이미지 뿌려지게 하는 방법(완료)
     <Concept img="1" /> 고정이미지
@@ -499,8 +501,103 @@ ________________________________________
  요소값은 모든요소를 감싸고있는 랩 (body)에 요소를 추가하는 append 사용하였음
 
  요약 - 마우스위치값구하고 마우스올릴때 원하는요소를 body에 넣기! 요소는앱솔! 
+ css
 
 12. ★텍스트 모듈 레이아웃 변경 
+
+________________________________________
+2023.06.28(수) 보관용
+.gnb ul li {
+    font-family: "Ubuntu", sans-serif;
+    /* padding: 0 70px; */
+    width: 25%;
+    /* padding-bottom: 25px; */
+    text-align: center;
+    padding: 4% 5%;
+}
+58
+
+.logo {
+    text-align: center;
+    margin-top: 30px;
+    aspect-ratio: 121/161;
+    width: 121px;
+    margin: 0 auto;
+} 25
+
+#top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}14
+
+.gnb {
+    position: absolute;
+    min-height: 46px;
+    z-index: 6;
+    top: 0;
+    width: 100%;
+    left: 0;
+}37
+
+
+______________________
+햄버거 버튼 수정 추가된 부분
+.top .ham {
+
+    transform: translateY(100%);
+}
+
+.ham div {
+    width: 50px;
+
+}
+________
+첫번쨰
+.ham.on div:first-child {
+    transform: rotate(-45deg) translate(2px, 0px);
+}
+세번째
+.ham.on div:last-child {
+    transform: rotate(45deg) translate(-10px, -12px);
+}
+_____________________
+left: -116px;
+
+    position: absolute;
+    top: 67%;
+    left: 0;
+    width: 55vw;
+    height: 100%;
+    /* height: 150%; */
+    font-size: var(--Lfont);
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    background-color: #be5a4b;
+    /* z-index: 0; */
+    border-radius: 0 230px 0 0;
+
+
+_____
+// 여기에 데이터 다들은거 임포트하고 ex)data from data.js
+<Route path="/" element={<Layout data = "data.almond"/>}>
+
+
+______________________
+.swiper {
+    /* width: min(70vw, 520px); */
+    margin-left: 0;
+    width: 90vw;
+    margin: 0 auto;
+}
+.swiper, swiper-container {
+    /* margin-left: 0; */
+}
+
+클래스 이름 따로 주기
+
 
 
 

@@ -1,13 +1,23 @@
 // 메인 컴포넌트 - Banner.js
 // 메인CSS
-import React from "react-dom"
+import React from "react-dom";
 import "../css/banner.css";
 // 메인 데이터
 import ban_data from "../data/banner";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
 // 제이쿼리
 import $ from "jquery";
 import { Link, useLocation } from "react-router-dom";
+
+// 스와이프 연결
+import "swiper/css";
+import "swiper/css/scrollbar";
+import "swiper/css/pagination";
+
+// import "./styles.css";
+import { Pagination } from "swiper";
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
@@ -25,9 +35,8 @@ function jqFn() {
     const bbx = document.querySelectorAll(".ban-wrap");
     // 갭 // 가로크기 //
 
-    bbx.forEach(
-      ele=>{
-        ele.onmousemove = function (e) {
+    bbx.forEach((ele) => {
+      ele.onmousemove = function (e) {
         e.stopPropagation();
         // 마우스 포인터 위치
         // console.log("x:", e.pageX, "\ny:", e.pageY);
@@ -40,69 +49,65 @@ function jqFn() {
         // 무버 위치값 이동
         mover.style.top = posy + "px";
         mover.style.left = posx + "px";
-    }
+      };
 
-    ele.onmouseenter = () => {
-      // 들어오면 나타남
-      mover.style.display = "block";
-    }; ///////// mouseenter /////////////////
-    ele.onmouseleave = () => {
-      // 나가면 사라짐
-      mover.style.display = "none";
-    }; ///////// mouseleave /////////////////
-
-  }); //////////// mousemove 이벤트함수 //////
-
+      ele.onmouseenter = () => {
+        // 들어오면 나타남
+        mover.style.display = "block";
+      }; ///////// mouseenter /////////////////
+      ele.onmouseleave = () => {
+        // 나가면 사라짐
+        mover.style.display = "none";
+      }; ///////// mouseleave /////////////////
+    }); //////////// mousemove 이벤트함수 //////
 
     // 배너 가로드래그=============================================
-    const drag = document.querySelector(".ban-flex"); 
+    const drag = document.querySelector(".ban-flex");
     console.log(drag);
 
-    function dragBan(){
-        drag.draggable({
-            axis: "x",
-          })
-          .css({
-            transition: ".5s ease-out",
-          }); /// css ///
-    
-        // 한계값 //////////
-        let fpt = $(window).width() / 3;
-        console.log("첫번째한계값:", fpt);
-        
-        let lpt = drag.width() - fpt * 2;
-        console.log("마지막한계값:", lpt);
-    
-        $("html,body").on("mousedown mouseup mousemove", () => {
-            // 1. left위치값
-            let mpos = drag.offset().left;
-            console.log("현재left:", mpos);
-    
-            // 2. 처음한계값 체크하여 제한하기
-            if (mpos > fpt) {
-                // 첫번째한계값에 고정!
-                drag.css({
-                    left: fpt + "px",
-                }); ///// css //////
-            } /////// if //////
-    
-            // 3. 마지막한계값 체크하여 제한하기
-            else if (mpos < -lpt) {
-                // 마지막한계값에 고정
-                drag.css({
-                    left: -lpt + "px",
-                }); ///// css //////
-            } ///// else if //////
-        }); //////////// 마우스이벤트함수 ////////
-    }; /////////////////// dragBan /////////////////////
+    function dragBan() {
+      drag
+        .draggable({
+          axis: "x",
+        })
+        .css({
+          transition: ".5s ease-out",
+        }); /// css ///
+
+      // 한계값 //////////
+      let fpt = $(window).width() / 3;
+      console.log("첫번째한계값:", fpt);
+
+      let lpt = drag.width() - fpt * 2;
+      console.log("마지막한계값:", lpt);
+
+      $("html,body").on("mousedown mouseup mousemove", () => {
+        // 1. left위치값
+        let mpos = drag.offset().left;
+        console.log("현재left:", mpos);
+
+        // 2. 처음한계값 체크하여 제한하기
+        if (mpos > fpt) {
+          // 첫번째한계값에 고정!
+          drag.css({
+            left: fpt + "px",
+          }); ///// css //////
+        } /////// if //////
+
+        // 3. 마지막한계값 체크하여 제한하기
+        else if (mpos < -lpt) {
+          // 마지막한계값에 고정
+          drag.css({
+            left: -lpt + "px",
+          }); ///// css //////
+        } ///// else if //////
+      }); //////////// 마우스이벤트함수 ////////
+    } /////////////////// dragBan /////////////////////
     //===============================================================
-
-
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
 function Banner(props) {
-
   // const loc = useLocation();
   // 속성값 받기
   // const pm = loc.state.selban;
@@ -111,74 +116,76 @@ function Banner(props) {
   //   if(props.st == "almond_data") selecdata = almond_data
   // };
 
-  
   return (
-
     <section className="ban-cover">
-
       {/* 모듈코드 */}
       <div className="ban-flex">
-
-
-
-        {/* 맵시작 */}
-        {ban_data.map((v, i) => (
-          <>
-          {console.log(v)}
-            <Link to={v.path}>
-          <div className="ban-wrap" key={i}>
-            {/* 전체박스 */}
-            <div className="ban-inner">
-              {/* a태그 감싸기 */}
-              <a href="#">
-                {/* 잼이미지 겉박스 */}
-                <div className="ban-imgbx">
-                  <div className="ban-img__hover" style={{backgroundColor : v.color}}>
-                    <div className="hoverbx">
-                      <img src={v.hsrc} alt="잼이미지" />
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper swiper-drag"
+        >
+          {/* 맵시작 */}
+          {ban_data.map((v, i) => (
+            <>
+              {/* {console.log(v)} */}
+              <Link to={v.path} key={i}>
+                <SwiperSlide>
+                  <div className="ban-wrap">
+                    {/* 전체박스 */}
+                    <div className="ban-inner">
+                      {/* a태그 감싸기 */}
+                      <a href="#">
+                        {/* 잼이미지 겉박스 */}
+                        <div className="ban-imgbx">
+                          <div className="ban-img__hover" style={{ backgroundColor: v.color }}>
+                            <div className="hoverbx">
+                              <img src={v.hsrc} alt="잼이미지" />
+                            </div>
+                          </div>
+                          <div className="ban-img__push">
+                            <div className="pushbx">
+                              <img src={v.isrc} alt="잼이미지" />
+                            </div>
+                          </div>
+                        </div>
+                        {/* 잼텍스트 겉박스 */}
+                        <div className="ban-txtbx">
+                          {/* 잼이름박스 */}
+                          <h2>{v.tit}</h2>
+                          {/* 잼가격겉박스 */}
+                          <div className="ban-pribx">
+                            <div className="ban-price">
+                              <div>{v.price}</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      {/* 버튼박스 */}
+                      <a href="#">
+                        <div className="mbtnbx" style={{ backgroundColor: v.color }}>
+                          <div className="mainbtn">
+                            <div className="runtxt2">
+                              <span>BUY NOW!</span>
+                              <span>BUY NOW!</span>
+                              <span>BUY NOW!</span>
+                              <span>BUY NOW!</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                  <div className="ban-img__push">
-                    <div className="pushbx">
-                      <img src={v.isrc} alt="잼이미지" />
-                    </div>
-                  </div>
-                </div>
-                {/* 잼텍스트 겉박스 */}
-                <div className="ban-txtbx">
-                  {/* 잼이름박스 */}
-                  <h2>{v.tit}</h2>
-                  {/* 잼가격겉박스 */}
-                  <div className="ban-pribx">
-                    <div className="ban-price">
-                      <div>{v.price}</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              {/* 버튼박스 */}
-              <a href="#">
-                <div className="mbtnbx" style={{backgroundColor : v.color}}>
-                  <div className="mainbtn">
-                    <div className="runtxt2">
-                      <span>BUY NOW!</span>
-                      <span>BUY NOW!</span>
-                      <span>BUY NOW!</span>
-                      <span>BUY NOW!</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          </Link>
-          </>
-        ))}
-        {/* 맵끝 */}
-
-
-
-        
+                </SwiperSlide>
+              </Link>
+            </>
+          ))}
+          {/* 맵끝 */}
+        </Swiper>
       </div>
 
       <div className="ban-mover"></div>

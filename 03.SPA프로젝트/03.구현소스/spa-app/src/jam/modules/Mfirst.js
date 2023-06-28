@@ -49,7 +49,7 @@ function jqFn() {
     } ////// for //////////
     hcode2 += `</div>`;
 
-    console.log(hcode2);
+    // console.log(hcode2);
     stage.innerHTML += hcode2;
 
     /* 클래스 on넣기 */
