@@ -166,17 +166,13 @@
     pointer-events: none;
 }
 
-/*================= 미디어쿼리 =================*/
-/* @media screen and (max-width: 750px) {
-} */
 
-
-/* tmdhk */
+/********************** 스와이퍼 CSS **********************/
 #app {
     height: 100%;
   }
   
-  .swiper-drag {
+  .swiper {
     width: 100%;
     height: 100%;
   }
@@ -184,8 +180,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: #fff; */
-  
+      
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
@@ -198,4 +193,14 @@
     height: 100%;
     object-fit: cover;
   }
-  
+  /* 블릿 안보이기 */
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    display: none;
+  }
+
+  /*================= 미디어쿼리 =================*/
+@media screen and (max-width: 750px) {
+    .swiper-wrapper{
+        gap: 0 50px;
+    }
+}

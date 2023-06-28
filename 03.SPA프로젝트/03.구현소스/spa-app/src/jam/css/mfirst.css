@@ -20,7 +20,7 @@
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: min(4vw, 58px);
+    font-size: var(--Lfont);
     text-align: center;
     font-family: "Libre Baskerville", serif;
     white-space: nowrap;
@@ -32,9 +32,9 @@
     justify-content: center;
 }
 /* 글자 사이간격 */
-.main-cont h2 div span + span {
+/* .main-cont h2 div span + span {
     margin-left: 5px;
-}
+} */
 
 /* 글자 등장액션 셋팅 */
 .main-cont h2 span {

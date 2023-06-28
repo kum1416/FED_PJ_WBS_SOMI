@@ -44,7 +44,7 @@ export default function ImgSwipe(props) {
 
   return (
     <>
-      <Swiper loop={true} effect={"cards"} grabCursor={true} modules={[EffectCards]} className="mySwiper">
+      <Swiper loop={true} effect={"cards"} grabCursor={true} modules={[EffectCards]} className="mySwiper imgswiper">
         {isdt.map((v, i) => (
           <SwiperSlide key={i}>
             <section className="swipebx">
