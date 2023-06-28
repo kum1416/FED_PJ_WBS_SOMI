@@ -11,11 +11,16 @@ function jqFn() {
   $(() => {}); /////// jQB ////////
 } ///////////// jqFn /////////////
 
-function Concept() {
+function Concept(props) {
+
+  console.log(props.img - 1)
+  let a = props.img - 1
+
   return (
     <>
       {/* 모듈코드 */}
       <div className="concept">
+        <img src={concept_data[a].isrc}/>
         <div className="main-cont__concept">
           <h2>The Concept Store</h2>
           <div className="mbtnbx">

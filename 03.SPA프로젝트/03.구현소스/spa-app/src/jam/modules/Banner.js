@@ -7,7 +7,7 @@ import ban_data from "../data/banner";
 
 // 제이쿼리
 import $ from "jquery";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
@@ -118,7 +118,14 @@ function Banner(props) {
 
       {/* 모듈코드 */}
       <div className="ban-flex">
+
+
+
+        {/* 맵시작 */}
         {ban_data.map((v, i) => (
+          <>
+          {console.log(v)}
+            <Link to={v.path}>
           <div className="ban-wrap" key={i}>
             {/* 전체박스 */}
             <div className="ban-inner">
@@ -164,7 +171,14 @@ function Banner(props) {
               </a>
             </div>
           </div>
+          </Link>
+          </>
         ))}
+        {/* 맵끝 */}
+
+
+
+        
       </div>
 
       <div className="ban-mover"></div>

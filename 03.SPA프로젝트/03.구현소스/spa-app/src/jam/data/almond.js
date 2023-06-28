@@ -1,7 +1,6 @@
 // 배너 컴포넌트 사용 데이터 - data/banner.js
 
-const almond_data = {
-  almond: [
+const almond_data = [
     {
       idx: "1",
       isrc: "./images/almond/almond1.png",
@@ -32,7 +31,7 @@ const almond_data = {
     {
       idx: "4",
       isrc: "./images/almond/almond4.png",
-      hsrc: "./images/almond/almondhover4.png",
+      hsrc: "",
       tit: "Almond Butter Crunchy with Cocoa & Date",
       price: "€7,90",
       item: "NUT BUTTERS",
@@ -50,7 +49,7 @@ const almond_data = {
     {
       idx: "6",
       isrc: "./images/almond/almond6.png",
-      hsrc: "./images/almond/almondhover6.png",
+      hsrc: "",
       tit: "Roasted Blanched Almond",
       price: "€5,50",
       item: "DRY NUTS",
@@ -59,7 +58,7 @@ const almond_data = {
     {
       idx: "7",
       isrc: "./images/almond/almond7.png",
-      hsrc: "./images/almond/almondhover7.png",
+      hsrc: "",
       tit: "Raw Blanched Almond",
       price: "€5,00",
       item: "DRY NUTS",
@@ -68,7 +67,7 @@ const almond_data = {
     {
       idx: "8",
       isrc: "./images/almond/almond8.png",
-      hsrc: "./images/almond/almondhover8.png",
+      hsrc: "",
       tit: "Roasted Almond",
       price: "€5,00",
       item: "DRY NUTS",
@@ -77,13 +76,13 @@ const almond_data = {
     {
       idx: "9",
       isrc: "./images/almond/almond9.png",
-      hsrc: "./images/almond/almondhover9.png",
+      hsrc: "",
       tit: "Raw Almond",
       price: "€4,75",
       item: "DRY NUTS",
       color: "#fceeea",
     },
-  ],
-};
+  ]
+
 // 데이터 내보내기
 export default almond_data;

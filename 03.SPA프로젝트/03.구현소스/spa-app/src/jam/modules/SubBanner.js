@@ -14,6 +14,8 @@ import sesame_data from "../data/sesame";
 // 제이쿼리
 import $ from "jquery";
 import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
@@ -56,6 +58,17 @@ function jqFn() {
         mover.style.display = "none";
       }; ///////// mouseleave /////////////////
     }); //////////// mousemove 이벤트함수 //////
+
+
+    // if(!document.querySelector('.aaaa')){ return }
+    let aa = $('.sub_ban-cover').offset().top;
+    let bb = $('.sub_ban-tbg').height();
+    let cc = aa - bb
+
+    $('.sub_ban-tbg').css({
+      transform : `translateY(${cc}px)`
+    })
+    console.log( aa,bb)
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
@@ -68,17 +81,45 @@ function SubBanner(props) {
   //     gridRowGap: "50px",
   //   },
   // };
+  // console.log(props.data) props.data는 almond데이터와 동일!!!
 
+  // 어라?? 호버했는데 이미지안나와요 오또케 
+  // answer -> state를 이용한 상태관리를 통해
+  // 일반상태의 코드와 호버시 코드를 삼항연산자를 이용해 코딩을해준다.
+
+  // 질문? 리액트에서 상태를 관리하는 state! 는 어떻게 작성할까요??
+  // 코딩테스트
+  // 답 : const or let [num , setNum] = useState(값) <-예의상 이렇게씀
+  // 답 : const or let [변수 , 변수조정] = useState(값) <-이렇게작성해도 잘됨
+  
+
+  // useEffect(()=>{
+  //   if(a){
+  //     $('.sub_hoverbx').animate({
+  //       opacity : 1
+  //     },300)
+  //   }
+  // },[])
+  // useEffect(()=>{
+  //   if(a == 0){
+  //     $('.sub_hoverbx').animate({
+  //       opacity : 0
+  //     },300)
+  //   }
+  // },[])
+  // 스테이트를 작성해줌 a가 0일때는 일반상태 1일때는 호버상태
   return (
     <section className="sub_ban-cover">
       <div className="sub_ban-title">
-        <h2>ALMOND</h2>
-        <p>ALMOND</p>
+        
+        <h2>{props.cat.toUpperCase()}</h2>
+        <p>{props.cat}</p>
       </div>
       <div className="sub_ban-tbg"></div>
       {/* 모듈코드 */}
       <div className="sub_ban-flex">
-        {ban_data.map((v, i) => (
+
+        {props.data.map((v, i) => (
           <div className="sub_ban-wrap" key={i}>
             {/* 전체박스 */}
             <div className="sub_ban-inner">
@@ -86,16 +127,31 @@ function SubBanner(props) {
               <a href="#">
                 {/* 잼이미지 겉박스 */}
                 <div className="sub_ban-imgbx">
-                  <div className="sub_ban-img__hover" style={{ backgroundColor: v.color }}>
-                    <div className="sub_hoverbx">
-                      <img src={v.hsrc} alt="잼이미지" />
-                    </div>
+
+
+                    {/* 색이똑같으세요 변경요망 */}
+                  <div className="sub_ban-img__hover" style={{ backgroundColor: v.color }} >
+
+                    {/* 호버시 코드 */}
+                    <div className="sub_hoverbx" >
+                      {/* 삼항연산자를 이용한 v.hsrc가 빈칸이니? 맞으면 아무것도출력안함 빈칸이 아니면 출력함 */}
+                      {
+                        v.hsrc == "" ? null : <img src={ v.hsrc } alt="잼이미지" />
+                      }
+                      
+                    </div> 
+                    
                   </div>
+
+                  {/* 평범상태 코드 */}
                   <div className="sub_ban-img__push">
                     <div className="sub_pushbx">
                       <img src={v.isrc} alt="잼이미지" />
                     </div>
                   </div>
+
+
+
                 </div>
                 {/* 잼텍스트 겉박스 */}
                 <div className="sub_ban-txtbx">
@@ -124,7 +180,12 @@ function SubBanner(props) {
               </a>
             </div>
           </div>
-        ))}
+
+
+        ))} 
+        {/* 맵끝 */}
+
+
       </div>
 
       <div className="ban-mover"></div>

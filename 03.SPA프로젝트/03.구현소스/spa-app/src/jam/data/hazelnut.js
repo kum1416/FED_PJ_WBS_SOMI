@@ -1,8 +1,7 @@
 // 배너 컴포넌트 사용 데이터 - data/banner.js
 
 
-const hazelnut_data = {
-    "hazelnut":[
+const hazelnut_data = [
         {
             "idx": "1",
             "isrc":"./images/hazelnut/hazelnut1.png",
@@ -42,15 +41,14 @@ const hazelnut_data = {
         {
             "idx": "5",
             "isrc":"./images/hazelnut/hazelnut5.png",
-            "hsrc":"./images/hazelnut/hazelnuthover5.png",
+            "hsrc":"",
             "tit":"Roasted Hazelnut",
             "price":"€5,50",
             "item":"DRY NUTS",
             "color":"#a5493d",
         },
 
-    ],
-}
+    ];
 
 
 

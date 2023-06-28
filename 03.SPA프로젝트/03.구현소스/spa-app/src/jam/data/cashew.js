@@ -1,7 +1,6 @@
 // 배너 컴포넌트 사용 데이터 - data/banner.js
 
-const cashew_data = {
-    "cashew": [
+const cashew_data = [
         {
             "idx": "1",
             "isrc": "./images/cashew/cashew1.png",
@@ -23,7 +22,7 @@ const cashew_data = {
         {
             "idx": "3",
             "isrc": "./images/cashew/cashew3.png",
-            "hsrc": "./images/cashew/cashewhover3.png",
+            "hsrc": "",
             "tit": "Roasted Cashew",
             "price": "€5,50",
             "item": "DRY NUTS",
@@ -32,14 +31,13 @@ const cashew_data = {
         {
             "idx": "4",
             "isrc": "./images/cashew/cashew4.png",
-            "hsrc": "./images/cashew/cashewhover4.png",
+            "hsrc": "",
             "tit": "Raw Cashew",
             "price": "€5,25",
             "item": "DRY NUTS",
             "color": "#fceeea",
         },
-    ],
-};
+    ];
 
 // 데이터 내보내기
 export default cashew_data;

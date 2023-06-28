@@ -9,6 +9,7 @@ import Peanut from "./jam/Peanut"
 import Almond from "./jam/Almond"
 import Hazelnut from "./jam/Hazelnut"
 import Cashew from "./jam/Cashew"
+// 여기에 데이터 다들은거 임포트하고 ex)data from data.js
 
 
 

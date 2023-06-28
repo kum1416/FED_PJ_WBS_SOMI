@@ -1,7 +1,6 @@
 // 배너 컴포넌트 사용 데이터 - data/banner.js
 
-const peanut_data = {
-    "peanut": [
+const peanut_data = [
         {
             "idx": "1",
             "isrc": "./images/peanut/peanut1.png",
@@ -50,14 +49,13 @@ const peanut_data = {
         {
             "idx": "6",
             "isrc": "./images/peanut/peanut6.png",
-            "hsrc": "./images/peanut/peanuthover6.png",
+            "hsrc": "",
             "tit": "Roasted Peanut",
             "price": "€3,50",
             "item": "DRY NUTS",
             "color": "#a5493d",
         },
-    ],
-};
+    ];
 
 // 데이터 내보내기
 export default peanut_data;

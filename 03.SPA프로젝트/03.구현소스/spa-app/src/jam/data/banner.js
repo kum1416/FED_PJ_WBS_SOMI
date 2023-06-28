@@ -10,6 +10,7 @@ const ban_data = [
         price:"€7,90",
         item:"NUT BUTTERS",
         color:"#abafd6",
+        path : "hz",
     },
     {
         isrc:"./images/banner/jam2.png",
@@ -18,6 +19,7 @@ const ban_data = [
         price:"€5,20",
         item:"NUT BUTTERS",
         color:"#72a080",
+        path : "pn",
     },
     {
         isrc:"./images/banner/jam3.png",
@@ -26,6 +28,7 @@ const ban_data = [
         price:"€5,90",
         item:"SESAME ΒUTTER / TAHINI",
         color:"#a95d50",
+        path : "ss",
     },
     {
         isrc:"./images/banner/jam4.png",
@@ -34,6 +37,7 @@ const ban_data = [
         price:"€6,90",
         item:"NUT BUTTERSI",
         color:"#abafd6",
+        path : "hz",
     },
     {
         isrc:"./images/banner/jam5.png",
@@ -42,6 +46,7 @@ const ban_data = [
         price:"€4,90",
         item:"SESAME ΒUTTER / TAHINI",
         color:"#fecf6b",
+        path : "ss",
     },
     {
         isrc:"./images/banner/jam6.png",
@@ -50,6 +55,7 @@ const ban_data = [
         price:"€6,90",
         item:"NUT BUTTERS",
         color:"#afe2f8",
+        path : "cs",
     },
     {
         isrc:"./images/banner/jam7.png",
@@ -58,6 +64,7 @@ const ban_data = [
         price:"€5,90",
         item:"SESAME ΒUTTER / TAHINI",
         color:"#fff7b0",
+        path : "ss",
     },
     {
         isrc:"./images/banner/jam8.png",
@@ -66,6 +73,7 @@ const ban_data = [
         price:"€5,90",
         item:"SESAME ΒUTTER / TAHINI",
         color:"#a6d07d",
+        path : "ss",
     },
     {
         isrc:"./images/banner/jam9.png",
@@ -74,6 +82,7 @@ const ban_data = [
         price:"€7,20",
         item:"NUT BUTTERS",
         color:"#f6b8d3",
+        path : "am",
     },
     {
         isrc:"./images/banner/jam10.png",
@@ -82,6 +91,7 @@ const ban_data = [
         price:"€6,40",
         item:"SESAME ΒUTTER / TAHINI",
         color:"#f84f5a",
+        path : "ss",
     },
     {
         isrc:"./images/banner/jam11.png",
@@ -90,6 +100,7 @@ const ban_data = [
         price:"€5,90",
         item:"SESAME ΒUTTER / TAHINI",
         color:"#ad6aa9",
+        path : "ss",
     },
 ];
 
