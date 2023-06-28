@@ -21,9 +21,9 @@
   font-family: "Libre Baskerville", serif;
   white-space: nowrap;
 }
-.main-cont__concept h2 {
+/* .main-cont__concept h2 {
   padding-bottom: 50px;
-}
+} */
 
 /************ 메인버튼 - 중복 ************/
 .mbtnbx {

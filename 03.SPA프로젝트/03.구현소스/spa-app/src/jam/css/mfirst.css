@@ -48,6 +48,7 @@
     /* transition: transform 0.2s ease-in; */
 }
 .main-cont h2.on span {
+    display: inline-block;
     transform: translateY(0);
     opacity: 1;
 }

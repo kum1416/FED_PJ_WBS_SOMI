@@ -17,7 +17,7 @@ const Main = () => {
               <Text ct="center" dd="0" />
               {/* 3.배너모듈 */}  
               <Banner />
-              <div className="swipe-parents">
+              <div className="swipe-parents aaaa">
               {/* 4.텍스트모듈 */}  
                 <Text ct="left" dd="1" ch="change" />
                 {/* 5.스와이프모듈 */}  

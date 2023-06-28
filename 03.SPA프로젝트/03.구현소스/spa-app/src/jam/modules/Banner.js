@@ -4,12 +4,6 @@ import React from "react-dom"
 import "../css/banner.css";
 // 메인 데이터
 import ban_data from "../data/banner";
-// 서브 페이지 배너 데이터
-import almond_data from "../data/almond";
-import cashew_data from "../data/cashew";
-import hazelnut_data from "../data/hazelnut";
-import peanut_data from "../data/peanut";
-import sesame_data from "../data/sesame";
 
 // 제이쿼리
 import $ from "jquery";
@@ -36,8 +30,8 @@ function jqFn() {
         ele.onmousemove = function (e) {
         e.stopPropagation();
         // 마우스 포인터 위치
-        console.log("x:", e.pageX, "\ny:", e.pageY);
-        console.log(window.scrollY);
+        // console.log("x:", e.pageX, "\ny:", e.pageY);
+        // console.log(window.scrollY);
 
         // 위치값 보정 (gap은 무버크기의 절반)
         var posx = e.pageX - 25;
@@ -116,26 +110,14 @@ function Banner(props) {
   // const dataSelec = ()=>{
   //   if(props.st == "almond_data") selecdata = almond_data
   // };
-  const banstyle = {
-    style: {
-      maxWidth: "1200px",
-      margin: "0 auto",
-      padding: "10% 0"
-    },
-    grid: {
-      display: "grid",
-      gridTemplateColumns: "repeat(2, 1fr)",
-      justifyItems: "center",
-      gridRowGap: "50px",
-    },
-  };
+
   
   return (
 
-    <section className="ban-cover" style={banstyle[props.st]}>
+    <section className="ban-cover">
 
       {/* 모듈코드 */}
-      <div className="ban-flex" style={banstyle[props.gi]}>
+      <div className="ban-flex">
         {ban_data.map((v, i) => (
           <div className="ban-wrap" key={i}>
             {/* 전체박스 */}

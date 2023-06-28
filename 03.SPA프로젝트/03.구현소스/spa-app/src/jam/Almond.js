@@ -2,14 +2,14 @@
 import React from "react";
 import Concept from "./modules/Concept";
 import Mfirst from "./modules/Mfirst";
-import Banner from "./modules/Banner";
+import SubBanner from "./modules/SubBanner";
 
 const Almond = () => {
         return(
             <>
-                <Mfirst cg="change" si="imgsize" />
+                <Mfirst cg="change" si="imgsize" to="top" />
                 <div className="subpage">
-                    <Banner st="style" gi="grid" cat="almond" />
+                    <SubBanner cat="almond" />
                     <Concept img={Math.ceil(Math.random()*3)} />
                 </div>
             </>

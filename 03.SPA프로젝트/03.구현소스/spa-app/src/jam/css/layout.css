@@ -1,11 +1,23 @@
 @charset "utf-8";
 /* 상하단 레이아웃 컴포넌트 - layout.css */
 
+/* 바디스크롤 */
+body.on{
+    overflow: hidden;
+}
+body{
+    overflow: auto;
+}
+
+
 /************ 상단영역 ************/
 #top {
     position: absolute;
     width: 100%;
     z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 7;
 }
 .top {
     margin: 0 auto;
@@ -14,6 +26,9 @@
 .logo {
     text-align: center;
     margin-top: 30px;
+    aspect-ratio: 121/161;
+    width: 121px;
+    margin: 0 auto;
 }
 .logo img {
     height: 100%;
@@ -21,9 +36,13 @@
 
 /************ 네비게이션 ************/
 .gnb {
-    position: relative;
+    position: absolute;
     min-height: 46px;
     z-index: 6;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin-top: 20px;
 }
 /* gnb ul박스 */
 .gnb ul {
@@ -34,12 +53,17 @@
     font-size: var(--Sfont);
 
     border-bottom: 1px solid #000;
+    height: 100%;
+    align-items: center;
 }
 /* gnb li 리스트 */
 .gnb ul li {
     font-family: "Ubuntu", sans-serif;
-    padding: 0 70px;
-    padding-bottom: 25px;
+    /* padding: 0 70px; */
+    width: 25%;
+    /* padding-bottom: 25px; */
+    text-align: center;
+    padding: 4% 5%;
 }
 .left-menu {
     justify-content: end;
@@ -59,9 +83,9 @@
 /* 장바구니 */
 .cart {
     position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 50px;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
 }
 .cart a {
     font-size: var(--Sfont);
@@ -171,12 +195,13 @@ iframe {
     /********** 햄버거버튼 **********/
     .top .ham {
         position: absolute;
-        top: 15%;
+        top: 0%;
         left: 5%;
         width: 50px;
         height: 40px;
         z-index: 7;
         cursor: pointer;
+        transform: translateY(215%);
     }
 
     /* 햄 아래 공통 */
@@ -184,6 +209,7 @@ iframe {
         position: absolute;
         width: 100%;
         height: 5px;
+        width: 50px;
         border-radius: 3px;
         transition: 0.5s ease-in-out;
 
@@ -212,13 +238,13 @@ iframe {
     }
     /**** on추가 ****/
     .ham.on div:first-child {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(2px, 0px);
     }
     .ham.on div:nth-child(2) {
         opacity: 0;
     }
     .ham.on div:last-child {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-10px, -12px);
     }
     /* 장바구니 */
     .cart a {
@@ -240,7 +266,6 @@ iframe {
         width: 100%;
         height: 100vh;
         z-index: 5;
-
         transition: 0.5s ease-out;
     }
     /**** on추가 ****/
@@ -250,6 +275,7 @@ iframe {
         top: 0;
         left: 0;
         z-index: 5;
+        opacity: 1;
     }
     /* ul */
     .mobile-menu .mobile-menu__wrap {
@@ -282,3 +308,16 @@ iframe {
         transform: scale(1.2);
     }
 }
+
+
+.point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .point img {
+    width: 100%;
+    height: 100%;
+  }

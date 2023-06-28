@@ -20,8 +20,8 @@ function jqFn() {
     const stage = document.querySelector(".main-cont h2");
     // console.log(stage);
 
-    const acttext1 = ["Taste", "the", "Wild."];
-    const acttext2 = ["Find", "your", "Soul."];
+    const acttext1 = "Tast the Wild.";
+    const acttext2 = "Find your Soul.";
 
     // 1번째줄 텍스트===============
     let hcode1 = "<div>";
@@ -87,6 +87,9 @@ function Mfirst(props) {
         objectFit: "cover",
         backgroundPosition: "center",
     },
+    top:{
+        top: "50%",
+    }
   };
 
   return (
@@ -107,7 +110,7 @@ function Mfirst(props) {
             </div>
           </div>
         </div>
-        <button className="nextbtn">
+        <button className="nextbtn" style={btnstyle[props.to]}>
           <div className="flove"></div>
           <div className="elove"></div>
         </button>

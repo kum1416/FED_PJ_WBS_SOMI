@@ -6,15 +6,10 @@ const Logo = (props) => {
         logo: "../images/logo.svg"
     }
 
-    const mystyle = {
-        top: {
-            // width: "120px",
-            // height: "60px"
-        },
-    };
+    
 
     return(
-        <h1 style={mystyle[props.lg]}>
+        <h1>
             <img src={isrc.logo} />
         </h1>
     );

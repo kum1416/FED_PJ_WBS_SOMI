@@ -5,6 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 
 // 제이쿼리
 import $ from "jquery";
+import { useEffect } from "react";
 
 /* 폰트어썸 임포트 */
 /* import { faShoppingBasket, faInstagram, faFacebookSquare, faGrinStars } from "@fortawesome/free-solid-svg-icons";
@@ -25,22 +26,90 @@ function jqFn() {
       if (moMenu.classList.contains("on")) {
         ham.classList.remove("on");
         moMenu.classList.remove("on");
+        moMenu.style.opacity = "1";
       } else {
         ham.classList.add("on");
         moMenu.classList.add("on");
       }
-      body.style.overflow = "hidden";
+      body.classList.toggle('on');
     });
 
     // 모바일 메뉴 클릭 이동 =======================================
     menuClick.forEach(ele=>{
       ele.onclick = () => {
+        console.log('확인')
         moMenu.classList.remove("on");
-        // moMenu.style.opacity = "0";
+        moMenu.style.opacity = "0";
         ham.classList.remove("on");
-        body.style.overflowY = "scroll";
+        // body.style.overflow = "scroll";
+        body.classList.remove('on')
       }
     });
+
+    // 로고를 클릭하면 분홍화면 치우기 = momenu에 클래스를 지워준다.
+    $('.logo').on('click',function(){
+      console.log('로고')
+      // 분홍화면mobile-menu
+      $('.mobile-menu').removeClass('on')
+      $('.ham').removeClass('on')
+      $('body').removeClass('on')
+    })
+    $('.ham').on('click',()=>{
+      $('.mobile-menu').css({opacity :1})
+    })
+
+    // 목표놈이 있는지 없는지 체크하는 방법! false일때 원하는 코드를 실행!
+    // console.log(!document.querySelector('.aaaa'))
+    // console.log(!$('.aaaa'))
+
+
+
+    
+    $(window).on('scroll',function(){
+      if(!document.querySelector('.aaaa')){ return }
+      // 현재 내 스크롤 위치
+      let a = $(this).scrollTop();
+      // console.log('내스크롤값',a)
+      // 대상으로 정한 놈의 위치
+      let b = $('.aaaa').offset().top;
+      let c = $('.aaaa').innerHeight();
+      // console.log('목표놈',b)
+      // console.log('목표놈높이값',c)
+      // console.log('최종목표',b - c/2)
+      let d = b - c/2 
+      
+      
+        if(a >= d){
+          $("body").css({backgroundColor : "#ed7b49", transition : '.3s'})
+        }
+        else {
+          $("body").css({backgroundColor : "#be5a4b", transition : '.3s'})
+        }
+    }) // 스크롤 이벤트 //
+
+
+    // 내 마우스 위치를 담을 변수 
+    let a; let b;
+    // 위치 바꾸고싶으면 윈도우바꾸셈 
+    $(window).on('mousemove',function(e){
+      // 마우스가 잘 움직이는지 확인 마우스 움직이는건 ? mousemove
+      // console.log('확인')
+      // console.log("무브", a, b);
+          a = e.pageX;
+          b = e.pageY;
+
+        // $(window).on('mouseup',function(){
+        //   console.log('올려~')
+        //   $("body").append(`
+        //     <div class="point" style="top:${b}px; left:${a}px">
+        //         <img src="../images/lips.png" alt="">
+        //         </div>
+        //   `);
+        // })
+
+
+    })
+  
 
   }); /////// jQB ////////
 } ///////////// jqFn /////////////
@@ -79,6 +148,10 @@ const Layout = () => {
     );
   };
 
+  useEffect(()=>{
+    jqFn()
+  },[])
+
   return (
     <>
       {/* 1. 상단영역 */}
@@ -97,7 +170,7 @@ const Layout = () => {
             {/* 로고박스 */}
             <h2 className="logo">
               <Link to="/">
-                <Logo lg="top" />
+                <Logo />
               </Link>
             </h2>
             <ul className="right-menu">{gnb_data.map((v, i) => (i > 2 ? hcode(v, i) : ""))}</ul>
@@ -169,7 +242,7 @@ const Layout = () => {
       </div>
 
       {/* 빈루트를 만들고 JS로드함수포함 */}
-      {jqFn()}
+      {/* {jqFn()} */}
     </>
   );
 }; ////////// Layout 컴포넌트 ///////
