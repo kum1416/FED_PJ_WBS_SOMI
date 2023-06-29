@@ -289,6 +289,12 @@ const Layout = () => {
           <div className="footer-fit">
             <div className="footer-flow">
               <div>
+                <img src="../images/footer1.png" alt="하단이미지" />
+                <img src="../images/footer2.png" alt="하단이미지" />
+                <img src="../images/footer3.png" alt="하단이미지" />
+                <img src="../images/footer4.png" alt="하단이미지" />
+              </div>
+             {/* <div>
               <img src="../images/footer.png" alt="하단이미지" />
               </div>
               <div>
@@ -296,10 +302,7 @@ const Layout = () => {
               </div>
               <div>
               <img src="../images/footer.png" alt="하단이미지" />
-              </div>
-              <div>
-              <img src="../images/footer.png" alt="하단이미지" />
-              </div>
+              </div>  */}
             </div>
           </div>
         </footer>
