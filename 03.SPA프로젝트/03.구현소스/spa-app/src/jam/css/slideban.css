@@ -6,7 +6,7 @@
   position: relative;
   padding: 3% 0;
 
-  /* 나중에 사이즈 제대로맞춰서 수정요망 히히 */
+  /* 나중에 사이즈 제대로맞춰서 수정하기 */
   margin-left: 2%;
 }
 .slideban-inner {
@@ -91,6 +91,8 @@
   transform: scale(0.7);
   opacity: 1; /* 안보임 */
 }
+
+
 
 /*********** 이동버튼 설정 ***********/
 /* 공통 */
