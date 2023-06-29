@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding: 15% 0;
     overflow: hidden;
+    user-select: none;
 }
 /* 배너 타이틀 */
 .sub_ban-tbg{
@@ -168,7 +169,8 @@
     display: flex;
     padding: 0 20px;
     gap: 50px;
-    left: -80px;
+    left: 50%;
+    transform: translateX(-37%);
 }
 .mainbtn .runtxt2:hover {
     animation: marquee 4s linear infinite;
@@ -186,10 +188,10 @@
 
 @keyframes marquee {
     from {
-        transform: translateX(-50%);
+        transform: translateX(-37%);
     }
     to {
-        transform: translateX(0%);
+        transform: translateX(-11.5%);
     }
 }
 @media (hover: hover) and (min-width: 700px) {
@@ -226,7 +228,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
     /* buy now! */
-    .mainbtn .runtxt2{
+    /* .mainbtn .runtxt2{
         left: -110px;
-    }
+    } */
 }

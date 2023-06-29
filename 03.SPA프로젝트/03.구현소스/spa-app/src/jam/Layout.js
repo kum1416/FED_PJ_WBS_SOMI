@@ -180,7 +180,7 @@ function jqFn() {
       }, 600);
       // 몇초뒤 새미들어간 그거지워줘! -> 새미가없는데?
       setTimeout(() => {
-        $(".data-" + saemi).remove();
+        $(".data-" + saemi).fadeOut(200);
       }, 800);
     };
 

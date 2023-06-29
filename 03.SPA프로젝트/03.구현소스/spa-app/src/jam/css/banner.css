@@ -7,7 +7,6 @@
 }
 .ban-flex {
     display: flex;
-    gap: 0 50px;
 }
 .ban-wrap {
     position: relative;
@@ -17,7 +16,7 @@
     padding-left: 29px;
 }
 .ban-inner {
-    width: min(42vw, 360px);
+    width: min(24vw, 400px);
 }
 /************ a태그 감싸기 ************/
 .ban-inner > a {
@@ -175,6 +174,8 @@
   .swiper {
     width: 100%;
     height: 100%;
+    padding: 50px !important;
+    user-select: none;
   }
   
   .swiper-slide {
@@ -198,9 +199,10 @@
     display: none;
   }
 
+
+
+
   /*================= 미디어쿼리 =================*/
-@media screen and (max-width: 750px) {
-    .swiper-wrapper{
-        gap: 0 50px;
-    }
-}
+/* @media screen and (max-width: 750px) {
+    
+} */
