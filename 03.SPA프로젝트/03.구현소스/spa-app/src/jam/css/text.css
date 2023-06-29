@@ -63,6 +63,26 @@
         padding-bottom: 15px;
     }
     .text-cont__wrap {
-        margin-left: auto;
+        margin-left: 0;
+    }
+
+    /* 모바일용 레이아웃 - 뱃지 */
+    .text-cont {
+        flex-direction: column;
+    }
+    
+    .badge {
+        width: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .badge-ani {
+        position: static;
+        width: 21%;
+    }
+    
+    .badge-ani:last-child {
+        transform: scale(1.2);
+        margin-left: -21%;
     }
 }
