@@ -3,12 +3,20 @@
 import "../css/slideban.css";
 // 메인 데이터
 import slideban_data from "../data/slideban";
+
+// svg 데이터
+import svgData from "../data/svg";
+
 // 제이쿼리
 import $ from "jquery";
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
   $(() => {
+
+    // html 코드 삽입(svg데이터) =========================
+    document.querySelector(".slidesvg").innerHTML = svgData.slidecenter;
+
     // 슬라이드 배너 ==============================================
     // 양쪽버튼 : .abtn
     let lbtn =$('.lbtn')
@@ -61,6 +69,7 @@ function SlideBan(props) {
       {/* 모듈코드 */}
       <div className="slideban-wrap">
         <div className="slideban-inner">
+          <div className="slidesvg"></div>
           <div className="slideban-listbx">
             <ul id="slideban">
               {slideban_data.map((v, i) => (
@@ -69,8 +78,8 @@ function SlideBan(props) {
                 </li>
               ))}
             </ul>
-          </div>
         </div>
+      </div>
 
         {/* 이동버튼 */}
         <a href="#" className="abtn lbtn">

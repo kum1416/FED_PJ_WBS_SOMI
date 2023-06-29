@@ -38,6 +38,38 @@
     height: 100%;
 }
 
+/* 슬라이드 svg */
+.slidesvg{
+  /* color: #E29473; */
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 25vw;
+  background-color: #E7BEAF;
+  max-width: 36.25rem;
+}
+.slidesvg svg{
+  /* stroke: currentColor; */
+    fill: #E7BEAF;
+    stroke-width: 5px;
+    max-width: 100%;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 0%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    stroke: #704e0d;
+    stroke-linecap: round;
+
+    /* 트랜지션 */
+    transition: 0.5s ease-out;
+}
+
+
 /******** 슬라이드 개별이미지 위치설정 ********/
 
 /*===== 왼쪽 제일 끝 =====*/
