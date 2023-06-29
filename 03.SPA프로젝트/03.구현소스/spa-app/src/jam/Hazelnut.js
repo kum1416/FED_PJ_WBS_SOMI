@@ -10,7 +10,7 @@ const Hazelnut = () => {
             <>
                 <Mfirst cg="change" si="imgsize" to="top" />
                 <SubBanner cat="hazelnut" data={hazelnut_data} />
-                <Concept img="0" />
+                <Concept img="2" />
             </>
         );
 }; /////////////// Hazelnut /////////////

@@ -49,7 +49,7 @@ function jqFn() {
     // 로고를 클릭하면 분홍화면 치우기 = momenu에 클래스를 지워준다.
     $('.logo').on('click',function(){
       console.log('로고')
-      // 분홍화면mobile-menu
+      // 분홍화면 mobile-menu
       $('.mobile-menu').removeClass('on')
       $('.ham').removeClass('on')
       $('body').removeClass('on')
@@ -58,7 +58,7 @@ function jqFn() {
       $('.mobile-menu').css({opacity :1})
     })
 
-    // 목표놈이 있는지 없는지 체크하는 방법! false일때 원하는 코드를 실행!
+    // 목표가 있는지 없는지 체크하는 방법! false일때 원하는 코드를 실행!
     // console.log(!document.querySelector('.aaaa'))
     // console.log(!$('.aaaa'))
 
@@ -70,11 +70,11 @@ function jqFn() {
       // 현재 내 스크롤 위치
       let a = $(this).scrollTop();
       // console.log('내스크롤값',a)
-      // 대상으로 정한 놈의 위치
+      // 대상으로 정한 목표의 위치
       let b = $('.aaaa').offset().top;
       let c = $('.aaaa').innerHeight();
-      // console.log('목표놈',b)
-      // console.log('목표놈높이값',c)
+      // console.log('목표',b)
+      // console.log('목표높이값',c)
       // console.log('최종목표',b - c/2)
       let d = b - c/2 
     
@@ -85,29 +85,6 @@ function jqFn() {
           $("body").css({backgroundColor : "#be5a4b", transition : '.3s'})
         }
     }) // 스크롤 이벤트===================================================
-
-    // 연습용
-
-    // 내 마우스 위치를 담을 변수 
-    let a; let b;
-    // 위치 바꾸고싶으면 윈도우바꾸셈 
-    $(window).on('mousemove',function(e){
-      // 마우스가 잘 움직이는지 확인 마우스 움직이는건 ? mousemove
-      // console.log('확인')
-      // console.log("무브", a, b);
-          a = e.pageX;
-          b = e.pageY;
-
-        // $(window).on('mouseup',function(){
-        //   console.log('올려~')
-        //   $("body").append(`
-        //     <div class="point" style="top:${b}px; left:${a}px">
-        //         <img src="../images/lips.png" alt="">
-        //         </div>
-        //   `);
-        // })
-    }) 
-
 
 
     // 마우스 클릭시 이미지 생성 ==============================================
