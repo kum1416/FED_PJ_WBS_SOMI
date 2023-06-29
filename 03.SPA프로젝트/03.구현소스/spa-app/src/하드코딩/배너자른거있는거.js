@@ -3,26 +3,22 @@
 import React from "react-dom"
 import "../css/banner.css";
 // 메인 데이터
-import ban_data from "../data/banner";
+import ban_data from "../jam/data/banner";
+
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // 제이쿼리
 import $ from "jquery";
 import { Link, useLocation } from "react-router-dom";
 
-// 스와이프 연결=======================================
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+// 스와이프 연결
 import "swiper/css";
 import "swiper/css/scrollbar";
+import "swiper/css/pagination";
 
-import "./styles.css";
+// import "./styles.css";
+import { Pagination } from "swiper";
 
-// import required modules
-import { Scrollbar } from "swiper";
-//=====================================================
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
@@ -129,21 +125,6 @@ function Banner(props) {
   
   return (
 
-    <>
-      <Swiper
-        scrollbar={{
-          hide: true,
-        }}
-        modules={[Scrollbar]}
-        className="mySwiper"
-      >
-        <SwiperSlide key={i}>
-
-
-        </SwiperSlide>
-
-
-
     <section className="ban-cover">
 
       {/* 모듈코드 */}
@@ -202,19 +183,33 @@ function Banner(props) {
             </div>
           </div>
           </Link>
+
+          
+
+
+
+
+
           </>
         ))}
         {/* 맵끝 */}
-        </Swiper>
-    </>
+
       </div>
-
-
-
-        
 
       <div className="ban-mover"></div>
 
+          {/* asdasfasdasfsafasfasfsaffas */}
+          <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+      </Swiper>
       {/* 빈루트를 만들고 JS로드함수포함 */}
       {jqFn()}
     </section>

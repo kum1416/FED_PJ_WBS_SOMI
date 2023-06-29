@@ -56,16 +56,6 @@ function jqFn() {
         mover.style.display = "none";
       }; ///////// mouseleave /////////////////
     }); //////////// mousemove 이벤트함수 //////
-    
-  // let slist = document.querySelectorAll(".swiper-slide");
-  // console.log(slist);
-
-  // const slSeq = () => {
-  //   slist = document.querySelectorAll(".swiper-slide");
-  //   slist.insertBefore(slist[slist.length - 1], slist[0]);
-  // };
-  // // 호출하기
-  // for (let i = 0; i < 2; i++) slSeq();
 
 
   }); /////// jQB ////////

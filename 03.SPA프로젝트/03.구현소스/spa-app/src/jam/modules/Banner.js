@@ -64,9 +64,6 @@ function jqFn() {
 } ///////////// jqFn /////////////
 
 function Banner(props) {
-    // const dataSelec = ()=>{
-    //   if(props.st == "almond_data") selecdata = almond_data
-    // };
 
     return (
         <section className="ban-cover">
