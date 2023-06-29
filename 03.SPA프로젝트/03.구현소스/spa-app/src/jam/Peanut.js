@@ -10,7 +10,7 @@ const Peanut = () => {
             <>
                 <Mfirst cg="change" si="imgsize" to="top" />
                 <SubBanner cat="peanut" data={peanut_data} />
-                <Concept img="1" />
+                <Concept img="2" />
             </>
         );
 }; /////////////// Peanut /////////////
