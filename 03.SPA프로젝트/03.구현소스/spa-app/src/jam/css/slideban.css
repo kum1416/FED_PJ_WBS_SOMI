@@ -5,6 +5,9 @@
 .slideban-wrap {
   position: relative;
   padding: 3% 0;
+
+  /* 나중에 사이즈 제대로맞춰서 수정요망 히히 */
+  margin-left: 2%;
 }
 .slideban-inner {
   position: relative;
@@ -35,40 +38,56 @@
   height: 100%;
 }
 
-/******** 개별이미지 위치설정 ********/
+/******** 슬라이드 개별이미지 위치설정 ********/
+
+/* 왼쪽 제일 끝 */
+#slideban li:nth-child(1) {
+  top: 5%;
+  left: -300%;
+  transform: scale(0.7);
+  opacity: 1; /* 안보임 */
+}
 
 /* 왼쪽 끝 */
-#slideban li:nth-child(1) {
-  top: -5%;
+#slideban li:nth-child(2) {
+  top: -10%;
   left: -210%;
   transform: scale(0.7);
   opacity: 1; /* 안보임 */
 }
 /* 왼쪽 바로옆 */
-#slideban li:nth-child(2) {
-  top: -10%;
+#slideban li:nth-child(3) {
+  top: -25%;
   left: -110%;
   transform: scale(0.9);
   filter: grayscale(50%);
 }
 
 /* 중앙이미지 */
-#slideban li:nth-child(3) {
-  top: -25%;
+#slideban li:nth-child(4) {
+  top: -30%;
   left: 0;
   transform: scale(1);
 }
 /* 오른쪽 바로옆 */
-#slideban li:nth-child(4) {
-  top: -10%;
+#slideban li:nth-child(5) {
+  top: -25%;
   left: 110%;
   transform: scale(0.9);
   filter: grayscale(50%);
 }
 /* 오른쪽 끝 */
-#slideban li:nth-child(5) {
-  top: -5%;
+#slideban li:nth-child(6) {
+  top: -10%;
   left: 210%;
+  transform: scale(0.7);
+  opacity: 1; /* 안보임 */
+}
+
+/* 오른쪽 제일끝 */
+#slideban li:nth-child(7) {
+  top: 5%;
+  left: 300%;
   transform: scale(0.7);
   opacity: 1; /* 안보임 */
 }

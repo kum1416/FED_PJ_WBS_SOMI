@@ -23,6 +23,14 @@ const slideban_data = [
         idx:"5",
         isrc:"./images/slideban/slideban5.png",
     },
+    {
+        idx:"5",
+        isrc:"./images/slideban/slideban1.png",
+    },
+    {
+        idx:"5",
+        isrc:"./images/slideban/slideban2.png",
+    },
 
 ];
 
