@@ -120,12 +120,12 @@ function jqFn() {
     // 커서 위치 알아내기
     $(window).on('mousemove',function(e){
       let gap = $(".kiss-imbx").width();
-      console.log("gap",gap)
+      // console.log("gap",gap)
       // console.log("x:",e.pageX,"y:",e.pageY);
       csy = e.pageY-gap;
       csx = e.pageX-gap;
       
-      console.log("값:",gap,csx,csy);
+      // console.log("값:",gap,csx,csy);
 
     });
 
@@ -311,10 +311,18 @@ const Layout = () => {
           {/* 하단 애니메이션 메뉴 */}
           <div className="footer-fit">
             <div className="footer-flow">
+              <div>
               <img src="../images/footer.png" alt="하단이미지" />
+              </div>
+              <div>
               <img src="../images/footer.png" alt="하단이미지" />
+              </div>
+              <div>
               <img src="../images/footer.png" alt="하단이미지" />
+              </div>
+              <div>
               <img src="../images/footer.png" alt="하단이미지" />
+              </div>
             </div>
           </div>
         </footer>

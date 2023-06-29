@@ -89,8 +89,7 @@ function SubBanner(props) {
           <div className="sub_ban-wrap" key={i}>
             {/* 전체박스 */}
             <div className="sub_ban-inner">
-              {/* a태그 감싸기 */}
-              <a href="#">
+
                 {/* 잼이미지 겉박스 */}
                 <div className="sub_ban-imgbx">
 
@@ -130,9 +129,9 @@ function SubBanner(props) {
                     </div>
                   </div>
                 </div>
-              </a>
+
               {/* 버튼박스 */}
-              <a href="#">
+
                 <div className="mbtnbx" style={{ backgroundColor: v.color }}>
                   <div className="mainbtn">
                     <div className="runtxt2">
@@ -143,7 +142,7 @@ function SubBanner(props) {
                     </div>
                   </div>
                 </div>
-              </a>
+
             </div>
           </div>
 
