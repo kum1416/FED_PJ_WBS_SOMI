@@ -4,14 +4,18 @@
 /****************************/
 .slideban-wrap {
     position: relative;
-    padding: 3% 0;
+    padding: 20% 0;
 
     /* 나중에 사이즈 제대로맞춰서 수정하기 */
-    margin-left: 2%;
+    margin-left: 4%;
 }
 .slideban-inner {
     position: relative;
 }
+.slideban-listbx{
+  position: relative;
+}
+
 /* ul */
 #slideban {
     position: relative;
@@ -38,29 +42,26 @@
     height: 100%;
 }
 
-/* 슬라이드 svg */
-.slidesvg{
-  /* color: #E29473; */
-  position: absolute;
-  top: 22%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 25vw;
-  background-color: #E7BEAF;
-  max-width: 36.25rem;
+/*===== 슬라이드 svg =====*/
+.slidesvg {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 25vw;
+    background-color: #e7beaf;
+    max-width: 36.25rem;
 }
-.slidesvg svg{
-  /* stroke: currentColor; */
-    fill: #E7BEAF;
-    stroke-width: 5px;
-    max-width: 100%;
-    stroke-dasharray: 700;
-    stroke-dashoffset: 0%;
-
+.slidesvg svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: #e7beaf;
+    stroke-width: 5px;
+    max-width: 100%;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 0%;
 
     stroke: #704e0d;
     stroke-linecap: round;
@@ -68,7 +69,6 @@
     /* 트랜지션 */
     transition: 0.5s ease-out;
 }
-
 
 /******** 슬라이드 개별이미지 위치설정 ********/
 
@@ -88,7 +88,6 @@
     opacity: 1;
 }
 
-
 /*===== 왼쪽 끝 =====*/
 #slideban li:nth-child(2) {
     top: -10%;
@@ -106,7 +105,6 @@
     opacity: 1;
 }
 
-
 /*===== 왼쪽 바로옆 =====*/
 #slideban li:nth-child(3) {
     top: -25%;
@@ -120,7 +118,6 @@
     left: 0%;
     transform: scale(1);
 }
-
 
 /*===== 중앙이미지 =====*/
 #slideban li:nth-child(4) {
@@ -136,7 +133,6 @@
     filter: grayscale(50%);
 }
 
-
 /*===== 오른쪽 바로옆 =====*/
 #slideban li:nth-child(5) {
     top: -25%;
@@ -151,7 +147,6 @@
     transform: scale(0.7);
     filter: grayscale(50%);
 }
-
 
 /*===== 오른쪽 끝 =====*/
 #slideban li:nth-child(6) {
@@ -169,7 +164,6 @@
     filter: grayscale(50%);
     opacity: 1; /* 안보임 */
 }
-
 
 /*===== 오른쪽 제일끝 =====*/
 #slideban li:nth-child(7) {
@@ -192,7 +186,7 @@
 /* 공통 */
 .abtn {
     position: absolute;
-    top: -5%;
+    top: 38%;
     transform: translateY(-50%);
     width: 4%;
     max-width: 55px;
