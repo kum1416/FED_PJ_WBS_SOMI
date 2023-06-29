@@ -66,9 +66,6 @@ function jqFn() {
 } ///////////// jqFn /////////////
 
 function Banner(props) {
-  // const loc = useLocation();
-  // 속성값 받기
-  // const pm = loc.state.selban;
 
   // const dataSelec = ()=>{
   //   if(props.st == "almond_data") selecdata = almond_data

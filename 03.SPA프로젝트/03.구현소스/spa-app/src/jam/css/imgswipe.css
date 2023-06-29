@@ -53,6 +53,11 @@ swiper-container {
   margin-left: 0;
 }
 
+/************ 따라다니는 이미지 ************/
+.ban-mover {
+  background-image: url(../../../public/images/cursor-card.png);
+}
+
 /*================= 미디어쿼리 =================*/
 @media screen and (max-width: 900px) {
 /*   .swipe-parents {

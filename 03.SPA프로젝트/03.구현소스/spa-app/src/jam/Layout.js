@@ -64,7 +64,7 @@ function jqFn() {
 
 
 
-    
+    // 스크롤시 배경색 변경 ==============================================
     $(window).on('scroll',function(){
       if(!document.querySelector('.aaaa')){ return }
       // 현재 내 스크롤 위치
@@ -77,17 +77,17 @@ function jqFn() {
       // console.log('목표놈높이값',c)
       // console.log('최종목표',b - c/2)
       let d = b - c/2 
-      
-      
+    
         if(a >= d){
           $("body").css({backgroundColor : "#ed7b49", transition : '.3s'})
         }
         else {
           $("body").css({backgroundColor : "#be5a4b", transition : '.3s'})
         }
-    }) // 스크롤 이벤트 //
+    }) // 스크롤 이벤트===================================================
 
 
+    // 마우스 클릭시 이미지 생성 ==============================================
     // 내 마우스 위치를 담을 변수 
     let a; let b;
     // 위치 바꾸고싶으면 윈도우바꾸셈 
@@ -106,9 +106,39 @@ function jqFn() {
         //         </div>
         //   `);
         // })
+    }) 
 
 
+
+    // 연습용
+    let gap = $(".kiss-imbx").width()/2;
+
+    // 커서 위치 알아내기
+    $("body").on('mousemove',function(e){
+      // console.log("x:",e.pageX,"y:",e.pageY);
+      let csy = e.pageY-gap;
+      let csx = e.pageX-gap;
+
+      console.log("값:",gap,csx,csy);
+
+    });
+
+    $(window).on('mouseup',function(){
+      console.log("마우스업");
+      $("body").append(`
+          <div class="kiss-imbx">
+            <img src="../images/kiss.png" alt="입술이미지" />
+          </div>
+      `)
+
+      $(".kiss-imbx").css({
+        top: csx+"px",
+        left: csy+"px",
+      })
     })
+    
+    
+    //======================================================================
   
 
   }); /////// jQB ////////
@@ -178,7 +208,6 @@ const Layout = () => {
             <div className="cart">
               <a href="#">
                 <i className="fa-solid fa-basket-shopping"></i>
-                {/* <FontAwesomeIcon icon={faShoppingBasket} /> */}
               </a>
             </div>
           </nav>
@@ -221,11 +250,9 @@ const Layout = () => {
               <h2>Follow Us</h2>
               <a href="#">
                 <i className="fa-brands fa-instagram"></i>
-                {/* <FontAwesomeIcon icon={faGrinStars} /> */}
               </a>
               <a href="#">
                 <i className="fa-brands fa-square-facebook"></i>
-                {/* <FontAwesomeIcon icon={faFacebookSquare} /> */}
               </a>
             </div>
           </div>

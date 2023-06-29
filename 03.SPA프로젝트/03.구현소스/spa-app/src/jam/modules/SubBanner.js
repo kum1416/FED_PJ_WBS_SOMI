@@ -73,41 +73,7 @@ function jqFn() {
 } ///////////// jqFn /////////////
 
 function SubBanner(props) {
-  // const banstyle = {
-  //   grid: {
-  //     display: "grid",
-  //     gridTemplateColumns: "repeat(2, 1fr)",
-  //     justifyItems: "center",
-  //     gridRowGap: "50px",
-  //   },
-  // };
-  // console.log(props.data) props.data는 almond데이터와 동일!!!
-
-  // 어라?? 호버했는데 이미지안나와요 오또케 
-  // answer -> state를 이용한 상태관리를 통해
-  // 일반상태의 코드와 호버시 코드를 삼항연산자를 이용해 코딩을해준다.
-
-  // 질문? 리액트에서 상태를 관리하는 state! 는 어떻게 작성할까요??
-  // 코딩테스트
-  // 답 : const or let [num , setNum] = useState(값) <-예의상 이렇게씀
-  // 답 : const or let [변수 , 변수조정] = useState(값) <-이렇게작성해도 잘됨
   
-
-  // useEffect(()=>{
-  //   if(a){
-  //     $('.sub_hoverbx').animate({
-  //       opacity : 1
-  //     },300)
-  //   }
-  // },[])
-  // useEffect(()=>{
-  //   if(a == 0){
-  //     $('.sub_hoverbx').animate({
-  //       opacity : 0
-  //     },300)
-  //   }
-  // },[])
-  // 스테이트를 작성해줌 a가 0일때는 일반상태 1일때는 호버상태
   return (
     <section className="sub_ban-cover">
       <div className="sub_ban-title">
@@ -129,7 +95,7 @@ function SubBanner(props) {
                 <div className="sub_ban-imgbx">
 
 
-                    {/* 색이똑같으세요 변경요망 */}
+                    {/* 색상같음 */}
                   <div className="sub_ban-img__hover" style={{ backgroundColor: v.color }} >
 
                     {/* 호버시 코드 */}

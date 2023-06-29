@@ -2,14 +2,26 @@
 // 메인페이지에서 사용되는 컴포넌트
 
 
-const imgswipe_data = [
+const slideban_data = [
     {
-        isrc:"./images/imgswipe/imgswipe1.png",
-        hsrc:"./images/imgswipe/imgswipehover1.png",
-        tit:"imgswipe Butter",
-        price:"€6,90",
-        item:"NUT BUTTERS",
-        color:"#afe2f8",
+        idx:"1",
+        isrc:"./images/slideban/slideban1.png",
+    },
+    {
+        idx:"2",
+        isrc:"./images/slideban/slideban2.png",
+    },
+    {
+        idx:"3",
+        isrc:"./images/slideban/slideban3.png",
+    },
+    {
+        idx:"4",
+        isrc:"./images/slideban/slideban4.png",
+    },
+    {
+        idx:"5",
+        isrc:"./images/slideban/slideban5.png",
     },
 
 ];
@@ -17,4 +29,4 @@ const imgswipe_data = [
 
 
 // 데이터 내보내기
-export default imgswipe_data;
+export default slideban_data;
