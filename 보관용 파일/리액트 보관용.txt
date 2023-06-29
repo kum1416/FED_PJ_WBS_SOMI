@@ -1,0 +1,210 @@
+[레이아웃 js]
+제이쿼리 구역
+
+// 제이쿼리 로드구역 함수 /////////
+function jqFn() {
+  $(() => {
+
+    let ham = document.querySelector(".ham");
+    let moMenu = document.querySelector(".mobile-menu");
+    let menuClick = document.querySelectorAll(".mobile-menu__wrap li");
+    let body = document.querySelector("body");
+    // 모바일 메뉴 열기 on추가 =====================================
+    ham.addEventListener("click", function () {
+      if (moMenu.classList.contains("on")) {
+        ham.classList.remove("on");
+        moMenu.classList.remove("on");
+        moMenu.style.opacity = "1";
+      } else {
+        ham.classList.add("on");
+        moMenu.classList.add("on");
+      }
+      body.classList.toggle('on');
+    });
+
+    // 모바일 메뉴 클릭 이동 =======================================
+    menuClick.forEach(ele=>{
+      ele.onclick = () => {
+        console.log('확인')
+        moMenu.classList.remove("on");
+        moMenu.style.opacity = "0";
+        ham.classList.remove("on");
+        // body.style.overflow = "scroll";
+        body.classList.remove('on')
+      }
+    });
+
+    // 로고를 클릭하면 분홍화면 치우기 = momenu에 클래스를 지워준다.
+    $('.logo').on('click',function(){
+      console.log('로고')
+      // 분홍화면 mobile-menu
+      $('.mobile-menu').removeClass('on')
+      $('.ham').removeClass('on')
+      $('body').removeClass('on')
+    })
+    $('.ham').on('click',()=>{
+      $('.mobile-menu').css({opacity :1})
+    })
+
+    // 목표가 있는지 없는지 체크하는 방법! false일때 원하는 코드를 실행!
+    // console.log(!document.querySelector('.aaaa'))
+    // console.log(!$('.aaaa'))
+
+
+
+    // 스크롤시 배경색 변경 ==============================================
+    $(window).on('scroll',function(){
+      if(!document.querySelector('.aaaa')){ return }
+      // 현재 내 스크롤 위치
+      let a = $(this).scrollTop();
+      // console.log('내스크롤값',a)
+      // 대상으로 정한 놈의 위치
+      let b = $('.aaaa').offset().top;
+      let c = $('.aaaa').innerHeight();
+      // console.log('목표놈',b)
+      // console.log('목표놈높이값',c)
+      // console.log('최종목표',b - c/2)
+      let d = b - c/2 
+    
+        if(a >= d){
+          $("body").css({backgroundColor : "#ed7b49", transition : '.3s'})
+        }
+        else {
+          $("body").css({backgroundColor : "#be5a4b", transition : '.3s'})
+        }
+    }) // 스크롤 이벤트===================================================
+
+    // 연습용
+
+    // 내 마우스 위치를 담을 변수 
+    let a; let b;
+    // 위치 바꾸고싶으면 윈도우바꾸셈 
+    $(window).on('mousemove',function(e){
+      // 마우스가 잘 움직이는지 확인 마우스 움직이는건 ? mousemove
+      // console.log('확인')
+      // console.log("무브", a, b);
+          a = e.pageX;
+          b = e.pageY;
+
+        // $(window).on('mouseup',function(){
+        //   console.log('올려~')
+        //   $("body").append(`
+        //     <div class="point" style="top:${b}px; left:${a}px">
+        //         <img src="../images/lips.png" alt="">
+        //         </div>
+        //   `);
+        // })
+    }) 
+
+
+
+    // 마우스 클릭시 이미지 생성 ==============================================
+    let kiss = $(".kiss-imbx");
+    let gap = $(".kiss-imbx").width()/2;
+    let csy;
+    let csx;
+    
+    // console.log(gap);
+    // 커서 위치 알아내기
+    $(window).on('mousemove',function(e){
+      let gap = $(".kiss-imbx").width();
+      // console.log("gap",gap)
+      // console.log("x:",e.pageX,"y:",e.pageY);
+      csy = e.pageY-gap;
+      csx = e.pageX-gap;
+      
+      // console.log("값:",gap,csx,csy);
+
+    });
+
+    // 클래스값 변수
+    let saemi = 0;
+
+    // 광클금지 변수
+    let dami = 0;
+
+    $(window).on('mouseup',function(e){
+      // 광클금지
+      if(dami) return;
+      dami = 1;
+      setTimeout(() => {
+        dami = 0;
+      }, 100);
+
+      console.log("마우스업");
+      saemi++;
+      
+      $("body").append(`
+      <div class="kiss-imbx data-${saemi}">
+      <img src="../images/kiss.png" alt="입술이미지" />
+      </div>
+      `)
+      
+      $(".data-" + saemi).css({
+        top: csy+"px",
+        left: csx+"px",
+        transform: "translate(50%,50%)",
+      })
+      // 호출
+      kissFn(saemi); // 새미 비동기
+    });
+
+    
+    const kissFn = (saemi) => {
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-17%)"
+        })
+      }, 200);
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-34%)"
+        })
+      }, 400);
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-51%)"
+        })
+      }, 600);
+      // 몇초뒤 새미들어간 그거지워줘! -> 새미가없는데?
+      setTimeout(() => {
+        $(".data-" + saemi).fadeOut(200);
+      }, 800);
+    };
+
+    
+    //======================================================================
+  
+
+  }); /////// jQB ////////
+} ///////////// jqFn /////////////
+
+
+텍스트js에 있던 내용
+              {/* { 조건문을 이용해서 스플릿해서 출력하기
+                <div>
+                <p>
+                {text_data[props.dd].cont.split('^')[0]}
+                </p>
+                <p>
+                {text_data[props.dd].cont.split('^')[1]}
+                </p>
+                {
+                  // 조건문으로 스플릿으로짜른 배열3번째가 비어있지않다면 실행
+                  // text_data[props.dd]['cont'].split('^')[2] !== '' &&
+                  // 조건문 - 짜른배열이 3개짜리라면?? 실행해주세요
+                  // text_data[props.dd]['cont'].split('^').length == 2 &&
+                <p>
+                {text_data[props.dd].cont.split('^')[2]}
+                </p>
+                }
+              </div>
+              } */}
+
+
+
+배너js에 유정언니가 대충 이렇게 하면 되지 않을까? 하고 써준거
+리턴 바로 위에 썼음
+    // const dataSelec = ()=>{
+    //   if(props.st == "almond_data") selecdata = almond_data
+    // };
