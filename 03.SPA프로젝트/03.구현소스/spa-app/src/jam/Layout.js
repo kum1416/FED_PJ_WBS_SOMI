@@ -111,32 +111,79 @@ function jqFn() {
 
 
     // 연습용
+    let kiss = $(".kiss-imbx");
     let gap = $(".kiss-imbx").width()/2;
-
+    let csy;
+    let csx;
+    
+    // console.log(gap);
     // 커서 위치 알아내기
-    $("body").on('mousemove',function(e){
+    $(window).on('mousemove',function(e){
+      let gap = $(".kiss-imbx").width();
+      console.log("gap",gap)
       // console.log("x:",e.pageX,"y:",e.pageY);
-      let csy = e.pageY-gap;
-      let csx = e.pageX-gap;
-
+      csy = e.pageY-gap;
+      csx = e.pageX-gap;
+      
       console.log("값:",gap,csx,csy);
 
     });
 
-    $(window).on('mouseup',function(){
-      console.log("마우스업");
-      $("body").append(`
-          <div class="kiss-imbx">
-            <img src="../images/kiss.png" alt="입술이미지" />
-          </div>
-      `)
+    // 클래스값 변수
+    let saemi = 0;
 
-      $(".kiss-imbx").css({
-        top: csx+"px",
-        left: csy+"px",
+    // 광클금지 변수
+    let dami = 0;
+
+    $(window).on('mouseup',function(e){
+      // 광클금지
+      if(dami) return;
+      dami = 1;
+      setTimeout(() => {
+        dami = 0;
+      }, 100);
+
+      console.log("마우스업");
+      saemi++;
+      
+      $("body").append(`
+      <div class="kiss-imbx data-${saemi}">
+      <img src="../images/kiss.png" alt="입술이미지" />
+      </div>
+      `)
+      
+      $(".data-" + saemi).css({
+        top: csy+"px",
+        left: csx+"px",
+        transform: "translate(50%,50%)",
       })
-    })
+      // 호출
+      kissFn(saemi); // 새미 비동기
+    });
+
     
+    const kissFn = (saemi) => {
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-17%)"
+        })
+      }, 200);
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-34%)"
+        })
+      }, 400);
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-51%)"
+        })
+      }, 600);
+      // 몇초뒤 새미들어간 그거지워줘! -> 새미가없는데?
+      setTimeout(() => {
+        $(".data-" + saemi).remove();
+      }, 800);
+    };
+
     
     //======================================================================
   
@@ -211,6 +258,11 @@ const Layout = () => {
               </a>
             </div>
           </nav>
+
+          {/* kiss 박스(숨김) */}
+          <div className="kiss-imbx" style={{display:"none"}}>
+            <img src="../images/kiss.png" alt="입술이미지" />
+          </div>
 
           {/* 모바일메뉴가림막+모바일메뉴 */}
           <div className="mobile-menu">

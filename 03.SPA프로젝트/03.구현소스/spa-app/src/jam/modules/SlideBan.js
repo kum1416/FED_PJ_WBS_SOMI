@@ -8,16 +8,23 @@ import $ from "jquery";
 
 // 제이쿼리 로드구역 함수 /////////
 function jqFn() {
-  $(() => {}); /////// jQB ////////
+  $(() => {
+    // 슬라이드 배너 ==============================================
+    // 양쪽버튼 : .abtn
+
+
+
+
+  }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
 function SlideBan(props) {
   return (
     <>
       {/* 모듈코드 */}
-      <div class="slideban-wrap">
-        <div class="slideban-inner">
-          <div class="slideban-listbx">
+      <div className="slideban-wrap">
+        <div className="slideban-inner">
+          <div className="slideban-listbx">
             <ul id="slideban">
               {slideban_data.map((v, i) => (
                 <li key={i}>
@@ -29,10 +36,10 @@ function SlideBan(props) {
         </div>
 
         {/* 이동버튼 */}
-        <a href="#" class="abtn lbtn">
+        <a href="#" className="abtn lbtn">
           <img src="./images/lbtn.png" alt="왼쪽이동버튼" />
         </a>
-        <a href="#" class="abtn rbtn">
+        <a href="#" className="abtn rbtn">
           <img src="./images/rbtn.png" alt="오른쪽이동버튼" />
         </a>
       </div>
