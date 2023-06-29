@@ -2,7 +2,7 @@
 // 버튼CSS
 import "../css/flowbtn.css";
 // 메인 데이터
-import flowbtn_data from "../data/flowbtn";
+import flowbtn_data from "../jam/data/flowbtn";
 // 제이쿼리
 import $ from "jquery";
 
