@@ -3,115 +3,177 @@
 
 /****************************/
 .slideban-wrap {
-  position: relative;
-  padding: 3% 0;
+    position: relative;
+    padding: 3% 0;
 
-  /* 나중에 사이즈 제대로맞춰서 수정하기 */
-  margin-left: 2%;
+    /* 나중에 사이즈 제대로맞춰서 수정하기 */
+    margin-left: 2%;
 }
 .slideban-inner {
-  position: relative;
+    position: relative;
 }
 /* ul */
 #slideban {
-  position: relative;
-  width: 20%;
-  height: 100%;
-  aspect-ratio: 1/2;
-  margin: 0 auto;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    aspect-ratio: 1/2;
+    margin: 0 auto;
 }
 /* li */
 #slideban li {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 288px;
-  border-radius: 55px;
-  overflow: hidden;
-  /* opacity: 1; */
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 288px;
+    border-radius: 55px;
+    overflow: hidden;
+    /* opacity: 1; */
 
-  transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 #slideban img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /******** 슬라이드 개별이미지 위치설정 ********/
 
-/* 왼쪽 제일 끝 */
+/*===== 왼쪽 제일 끝 =====*/
 #slideban li:nth-child(1) {
-  top: 5%;
-  left: -300%;
-  transform: scale(0.7);
-  opacity: 1; /* 안보임 */
+    top: 5%;
+    left: -300%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+    opacity: 1; /* 안보임 */
+}
+/* 왼쪽 제일 끝 -> 이동 */
+#slideban li:nth-child(1) {
+    top: -10%;
+    left: -210%;
+    filter: grayscale(50%);
+    opacity: 1;
 }
 
+
+/*===== 왼쪽 끝 =====*/
+#slideban li:nth-child(2) {
+    top: -10%;
+    left: -210%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+    opacity: 1; /* 안보임 */
+}
 /* 왼쪽 끝 */
 #slideban li:nth-child(2) {
-  top: -10%;
-  left: -210%;
-  transform: scale(0.7);
-  opacity: 1; /* 안보임 */
+    top: -25%;
+    left: -110%;
+    transform: scale(0.9);
+    filter: grayscale(50%);
+    opacity: 1;
+}
+
+
+/*===== 왼쪽 바로옆 =====*/
+#slideban li:nth-child(3) {
+    top: -25%;
+    left: -110%;
+    transform: scale(0.9);
+    filter: grayscale(50%);
 }
 /* 왼쪽 바로옆 */
 #slideban li:nth-child(3) {
-  top: -25%;
-  left: -110%;
-  transform: scale(0.9);
-  filter: grayscale(50%);
+    top: -30%;
+    left: 0%;
+    transform: scale(1);
 }
 
+
+/*===== 중앙이미지 =====*/
+#slideban li:nth-child(4) {
+    top: -30%;
+    left: 0;
+    transform: scale(1);
+}
 /* 중앙이미지 */
 #slideban li:nth-child(4) {
-  top: -30%;
-  left: 0;
-  transform: scale(1);
+    top: -25%;
+    left: 110%;
+    transform: scale(0.9);
+    filter: grayscale(50%);
+}
+
+
+/*===== 오른쪽 바로옆 =====*/
+#slideban li:nth-child(5) {
+    top: -25%;
+    left: 110%;
+    transform: scale(0.9);
+    filter: grayscale(50%);
 }
 /* 오른쪽 바로옆 */
 #slideban li:nth-child(5) {
-  top: -25%;
-  left: 110%;
-  transform: scale(0.9);
-  filter: grayscale(50%);
+    top: -10%;
+    left: 210%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+}
+
+
+/*===== 오른쪽 끝 =====*/
+#slideban li:nth-child(6) {
+    top: -10%;
+    left: 210%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+    opacity: 1; /* 안보임 */
 }
 /* 오른쪽 끝 */
 #slideban li:nth-child(6) {
-  top: -10%;
-  left: 210%;
-  transform: scale(0.7);
-  opacity: 1; /* 안보임 */
+    top: 5%;
+    left: 300%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+    opacity: 1; /* 안보임 */
 }
 
+
+/*===== 오른쪽 제일끝 =====*/
+#slideban li:nth-child(7) {
+    top: 5%;
+    left: 300%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+    opacity: 1; /* 안보임 */
+}
 /* 오른쪽 제일끝 */
 #slideban li:nth-child(7) {
-  top: 5%;
-  left: 300%;
-  transform: scale(0.7);
-  opacity: 1; /* 안보임 */
+    top: 5%;
+    left: -300%;
+    transform: scale(0.7);
+    filter: grayscale(50%);
+    opacity: 1; /* 안보임 */
 }
-
-
 
 /*********** 이동버튼 설정 ***********/
 /* 공통 */
 .abtn {
-  position: absolute;
-  top: -5%;
-  transform: translateY(-50%);
-  width: 4%;
-  max-width: 55px;
-  /* 최대크기지정 */
+    position: absolute;
+    top: -5%;
+    transform: translateY(-50%);
+    width: 4%;
+    max-width: 55px;
+    /* 최대크기지정 */
 }
 .abtn img {
-  width: 100%;
+    width: 100%;
 }
 /* 오른쪽버튼 */
 .rbtn {
-  right: 30%;
+    right: 30%;
 }
 /* 왼쪽버튼 */
 .lbtn {
-  left: 30%;
+    left: 30%;
 }
