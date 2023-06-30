@@ -15,7 +15,7 @@ import Cashew from "./jam/Cashew"
 
 export default function App(){
     return(
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
                   <Route index element={<Main />}></Route>
@@ -26,7 +26,7 @@ export default function App(){
                   <Route path="cs" element={<Cashew />}></Route>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 } /////////////// App 컴포넌트 /////////
 
