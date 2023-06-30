@@ -233,7 +233,7 @@ const Layout = () => {
 
           {/* kiss 박스(숨김) */}
           <div className="kiss-imbx" style={{ display: "none" }}>
-            <img src="../images/kiss.png" alt="입술이미지" />
+            <img src="./images/kiss.png" alt="입술이미지" />
           </div>
 
           {/* 모바일메뉴가림막+모바일메뉴 */}
@@ -284,73 +284,63 @@ const Layout = () => {
 
               <div className="flowbx">
               <div>
-                <img src="../images/footer1.png" alt="하단이미지" />
+                <img src="./images/footer1.png" alt="하단이미지" />
               </div>
                 <div>
-              <img src="../images/footer2.png" alt="하단이미지" />
+              <img src="./images/footer2.png" alt="하단이미지" />
                 </div>
                 <div>
-              <img src="../images/footer3.png" alt="하단이미지" />
+              <img src="./images/footer3.png" alt="하단이미지" />
                 </div>
                 <div>
-              <img src="../images/footer4.png" alt="하단이미지" />
-                </div>
-              </div>
-
-              <div className="flowbx">
-              <div>
-                <img src="../images/footer1.png" alt="하단이미지" />
-              </div>
-                <div>
-              <img src="../images/footer2.png" alt="하단이미지" />
-                </div>
-                <div>
-              <img src="../images/footer3.png" alt="하단이미지" />
-                </div>
-                <div>
-              <img src="../images/footer4.png" alt="하단이미지" />
+              <img src="./images/footer4.png" alt="하단이미지" />
                 </div>
               </div>
 
               <div className="flowbx">
               <div>
-                <img src="../images/footer1.png" alt="하단이미지" />
+                <img src="./images/footer1.png" alt="하단이미지" />
               </div>
                 <div>
-              <img src="../images/footer2.png" alt="하단이미지" />
+              <img src="./images/footer2.png" alt="하단이미지" />
                 </div>
                 <div>
-              <img src="../images/footer3.png" alt="하단이미지" />
+              <img src="./images/footer3.png" alt="하단이미지" />
                 </div>
                 <div>
-              <img src="../images/footer4.png" alt="하단이미지" />
+              <img src="./images/footer4.png" alt="하단이미지" />
                 </div>
               </div>
 
               <div className="flowbx">
               <div>
-                <img src="../images/footer1.png" alt="하단이미지" />
+                <img src="./images/footer1.png" alt="하단이미지" />
               </div>
                 <div>
-              <img src="../images/footer2.png" alt="하단이미지" />
+              <img src="./images/footer2.png" alt="하단이미지" />
                 </div>
                 <div>
-              <img src="../images/footer3.png" alt="하단이미지" />
+              <img src="./images/footer3.png" alt="하단이미지" />
                 </div>
                 <div>
-              <img src="../images/footer4.png" alt="하단이미지" />
+              <img src="./images/footer4.png" alt="하단이미지" />
                 </div>
               </div>
 
-              {/* <div>
-              <img src="../images/footer.png" alt="하단이미지" />
-              </div>
+              <div className="flowbx">
               <div>
-              <img src="../images/footer.png" alt="하단이미지" />
+                <img src="./images/footer1.png" alt="하단이미지" />
               </div>
-              <div>
-              <img src="../images/footer.png" alt="하단이미지" />
-              </div>  */}
+                <div>
+              <img src="./images/footer2.png" alt="하단이미지" />
+                </div>
+                <div>
+              <img src="./images/footer3.png" alt="하단이미지" />
+                </div>
+                <div>
+              <img src="./images/footer4.png" alt="하단이미지" />
+                </div>
+              </div>
 
             </div>
           </div>
