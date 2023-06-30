@@ -162,7 +162,6 @@ iframe {
 .footer-flow {
     display: flex;
     width: 200%;
-    height: 120px;
     margin-top: 50px;
     overflow: hidden;
 
@@ -170,8 +169,8 @@ iframe {
     animation: footer-flow 15s linear infinite;
 }
 .footer-flow >div {
+    display: flex;
     flex-shrink: 1;
-    display: block;
     width: 50%;
     /* aspect-ratio: 3459/497; */
 }
@@ -312,6 +311,7 @@ iframe {
         transform: scale(1.2);
     }
 }
+
 
 .point {
     position: absolute;

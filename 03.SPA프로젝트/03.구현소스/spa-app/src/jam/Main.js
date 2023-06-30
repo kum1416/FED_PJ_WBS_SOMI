@@ -24,7 +24,7 @@ const Main = () => {
                 <ImgSwipe pg="main" />
               </div>
               {/* 6.슬라이드배너모듈 */}  
-              <SlideBan />
+              {/* <SlideBan /> */}
             </>
         );
 }; /////////////// Main /////////////
