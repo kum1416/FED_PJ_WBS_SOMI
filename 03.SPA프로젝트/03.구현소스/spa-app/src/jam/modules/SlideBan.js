@@ -26,135 +26,149 @@ function jqFn() {
         lbtn.on("click", function (e) {
             // console.log('좌클릭')
             e.preventDefault();
-            // 소미s : 좌클릭을 하면! ...
-            // 1번째 디브는 2의 위치로
+            $('#slideban').append($('#slideban li').last())
+            
             li.eq(0).css({
+                transition : '1s',
                 top: "-10%",
                 left: "-210%",
                 filter: "grayscale(50%)",
                 opacity: "1",
             });
-            // 2번째 디브는 3의 위치로
+            
             li.eq(1).css({
+                transition : '1s',
                 top: "-25%",
                 left: "-110%",
                 transform: "scale(0.9)",
                 filter: "grayscale(50%)",
                 opacity: "1",
             });
-            // 3번째 디브는 4의 위치로
+            
             li.eq(2).css({
+                transition : '1s',
                 top: "-30%",
                 left: "0%",
                 transform: "scale(1)",
                 filter: "grayscale(0%)",
             });
-            // 4번째 디브는 5의 위치로
+            
             li.eq(3).css({
+                transition : '1s',
                 top: "-25%",
                 left: "110%",
                 transform: "scale(0.9)",
                 filter: "grayscale(50%)",
             });
-            // 5번째 디브는 6의 위치로
+            
             li.eq(4).css({
+                transition : '1s',
                 top: "-10%",
                 left: "210%",
                 transform: "scale(0.7)",
                 filter: "grayscale(50%)",
             });
-            // 5번째 디브는 6의 위치로
+            
             li.eq(5).css({
+                transition : '1s',
                 top: "5%",
                 left: "300%",
                 transform: "scale(0.7)",
                 filter: "grayscale(50%)",
                 opacity: "1",
             });
-            // 마지막디브 7번째리스트는 첫번째의 위치로
-            // 첫번째의 위치는 맨왼쪽 끝이라는 얘기
+            
             li.eq(6).css({
-                transition : 'none',
+                transition : '1s',
                 top: "5%",
                 left: "-300%",
                 transform: "scale(0.7)",
                 filter: "grayscale(50%)",
                 opacity: "1",
             });
+            
+            
 
-            // 먼저 움직인다 디브들을 - 했음
-
-            // 옮겼다면 첫번째 디브를 랩핑박스의 맨뒤로 넣어준다.
-            // 프리펜드
 
             
         });
         rbtn.on("click", function (e) {
+
             console.log("우클릭");
+
             e.preventDefault();
+
+            $('#slideban').append($('#slideban li').first())
             // 우클릭은 좌클릭과 반대로 
             
-             // 소미s : 우클릭을 하면! ...
-            // 마지막 디브는 6의 위치로 ... 
-            li.eq(6).css({
-                top: "-10%",
-                left: "210%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
-            // 2번째 디브는 3의 위치로
-            li.eq(5).css({
-                top: "-25%",
-                left: "110%",
-                transform: "scale(0.9)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
-            // 3번째 디브는 4의 위치로
-            li.eq(4).css({
-                top: "-30%",
-                left: "0%",
-                transform: "scale(1)",
-                filter: "grayscale(0%)",
-            });
-            // 4번째 디브는 5의 위치로
-            li.eq(3).css({
-                top: "-25%",
-                left: "-110%",
-                transform: "scale(0.9)",
-                filter: "grayscale(50%)",
-            });
-            // 5번째 디브는 6의 위치로
-            li.eq(2).css({
-                top: "-10%",
-                left: "-210%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-            });
-            // 5번째 디브는 6의 위치로
-            li.eq(1).css({
-                top: "5%",
-                left: "-300%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
-            // 마지막디브 7번째리스트는 첫번째의 위치로
-            // 첫번째의 위치는 맨왼쪽 끝이라는 얘기
-            li.eq(0).css({
-                top: "5%",
-                left: "-300%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
+            // li.eq(6).css({
+            //     transition : '1s',
+            //     top: "-10%",
+            //     left: "210%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+            // li.eq(5).css({
+            //     transition : '1s',
+            //     top: "-25%",
+            //     left: "110%",
+            //     transform: "scale(0.9)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+            // li.eq(4).css({
+            //     transition : '1s',
+            //     top: "-30%",
+            //     left: "0%",
+            //     transform: "scale(1)",
+            //     filter: "grayscale(0%)",
+            // });
+            
+            // li.eq(3).css({
+            //     transition : '1s',
+            //     top: "-25%",
+            //     left: "-110%",
+            //     transform: "scale(0.9)",
+            //     filter: "grayscale(50%)",
+            // });
+            
+            // li.eq(2).css({
+            //     transition : '1s',
+            //     top: "-10%",
+            //     left: "-210%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            // });
+            
+            // li.eq(1).css({
+            //     transition : '1s',
+            //     top: "5%",
+            //     left: "-300%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+            
+            // li.eq(0).css({
+                
+            //     transition : '1s',
+            //     top: "5%",
+            //     left: "300%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+                
 
 
             // 어펜드 - 요소를 맨끝으로 옮겨줌
             // 누굴? li의 맨 첫번째를
             // 어디로? 슬라이드이 맨끝으로
-            slide.append(li.eq(0))
+            
 
 
 

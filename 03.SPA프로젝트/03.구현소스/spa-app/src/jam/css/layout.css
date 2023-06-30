@@ -7,6 +7,7 @@ body.on {
 }
 body {
     overflow: auto;
+    overflow-x: hidden;
 }
 
 /************ 상단영역 ************/

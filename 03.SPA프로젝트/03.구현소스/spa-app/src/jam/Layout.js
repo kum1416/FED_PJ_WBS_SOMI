@@ -131,10 +131,10 @@ function jqFn() {
         transform: "translate(50%,50%)",
       });
       // 호출
-      kissFn(saemi); // 새미 비동기
+      kissFn(saemi);
     });
 
-    const kissFn = (saemi) => {
+    const kissFn = (saemi) => { // 새미는 각각의 새미
       setTimeout(() => {
         $(".kiss-imbx img").css({
           transform: "translateX(-17%)",
@@ -150,10 +150,14 @@ function jqFn() {
           transform: "translateX(-51%)",
         });
       }, 600);
-      // 몇초뒤 새미들어간 그거지워줘! -> 새미가없는데?
+      
+      // 새미 지우기
       setTimeout(() => {
         $(".data-" + saemi).fadeOut(200);
       }, 800);
+      setTimeout(() => {
+        $(".data-" + saemi).remove();
+      }, 1000);
     };
 
     //======================================================================
@@ -337,7 +341,7 @@ const Layout = () => {
               <img src="../images/footer4.png" alt="하단이미지" />
                 </div>
               </div>
-              
+
               {/* <div>
               <img src="../images/footer.png" alt="하단이미지" />
               </div>

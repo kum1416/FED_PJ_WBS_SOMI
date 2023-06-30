@@ -208,3 +208,65 @@ function jqFn() {
     // const dataSelec = ()=>{
     //   if(props.st == "almond_data") selecdata = almond_data
     // };
+
+
+____________________________________________
+2023.06.30(금)
+새미변수 설명
+    // 클래스값 변수
+    let saemi = 0;
+    // 새미는 각각의 클래스를 주기위한 변수 -> 닫았다 열었다 / 새미변수를 쓰지 않으면 같은이름의 모두에게 적용됨
+
+    // 광클금지 변수
+    let dami = 0;
+
+    $(window).on("mouseup", function (e) {
+      // 광클금지
+      if (dami) return;
+      dami = 1;
+      setTimeout(() => {
+        dami = 0;
+      }, 100);
+
+      console.log("마우스업");
+      saemi++; // 각각의 애니메이션 주기 위해 새미변수 사용(증가시키면 따로따로 )
+
+      $("body").append(`
+      <div class="kiss-imbx data-${saemi}">
+      <img src="../images/kiss.png" alt="입술이미지" />
+      </div>
+      `);
+
+      $(".data-" + saemi).css({ // 각각의 새미에게 위치값
+        top: csy + "px",
+        left: csx + "px",
+        transform: "translate(50%,50%)",
+      });
+      // 호출
+      kissFn(saemi); // 새미 비동기 -> 변수에 각각의 새미가 들어가는거 0/1/2/3/4
+    });
+
+    const kissFn = (saemi) => { // 새미는 각각의 새미
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-17%)",
+        });
+      }, 200);
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-34%)",
+        });
+      }, 400);
+      setTimeout(() => {
+        $(".kiss-imbx img").css({
+          transform: "translateX(-51%)",
+        });
+      }, 600);
+      // 몇초뒤 새미들어간 그거지워줘! -> 새미가없는데?
+      setTimeout(() => {
+        $(".data-" + saemi).fadeOut(200);
+      }, 800);
+      setTimeout(() => {
+        $(".data-" + saemi).remove();
+      }, 1000);
+    };
