@@ -81,12 +81,12 @@
     opacity: 1; /* 안보임 */
 }
 /* 왼쪽 제일 끝 -> 이동 */
-#slideban li:nth-child(1) {
+/* #slideban li:nth-child(1) {
     top: -10%;
     left: -210%;
     filter: grayscale(50%);
     opacity: 1;
-}
+} */
 
 /*===== 왼쪽 끝 =====*/
 #slideban li:nth-child(2) {
@@ -97,13 +97,13 @@
     opacity: 1; /* 안보임 */
 }
 /* 왼쪽 끝 */
-#slideban li:nth-child(2) {
+/* #slideban li:nth-child(2) {
     top: -25%;
     left: -110%;
     transform: scale(0.9);
     filter: grayscale(50%);
     opacity: 1;
-}
+} */
 
 /*===== 왼쪽 바로옆 =====*/
 #slideban li:nth-child(3) {
@@ -113,11 +113,11 @@
     filter: grayscale(50%);
 }
 /* 왼쪽 바로옆 */
-#slideban li:nth-child(3) {
+/* #slideban li:nth-child(3) {
     top: -30%;
     left: 0%;
     transform: scale(1);
-}
+} */
 
 /*===== 중앙이미지 =====*/
 #slideban li:nth-child(4) {
@@ -126,12 +126,12 @@
     transform: scale(1);
 }
 /* 중앙이미지 */
-#slideban li:nth-child(4) {
+/* #slideban li:nth-child(4) {
     top: -25%;
     left: 110%;
     transform: scale(0.9);
     filter: grayscale(50%);
-}
+} */
 
 /*===== 오른쪽 바로옆 =====*/
 #slideban li:nth-child(5) {
@@ -141,12 +141,12 @@
     filter: grayscale(50%);
 }
 /* 오른쪽 바로옆 */
-#slideban li:nth-child(5) {
+/* #slideban li:nth-child(5) {
     top: -10%;
     left: 210%;
     transform: scale(0.7);
     filter: grayscale(50%);
-}
+} */
 
 /*===== 오른쪽 끝 =====*/
 #slideban li:nth-child(6) {
@@ -157,13 +157,13 @@
     opacity: 1; /* 안보임 */
 }
 /* 오른쪽 끝 */
-#slideban li:nth-child(6) {
+/* #slideban li:nth-child(6) {
     top: 5%;
     left: 300%;
     transform: scale(0.7);
     filter: grayscale(50%);
-    opacity: 1; /* 안보임 */
-}
+    opacity: 1; 
+} */
 
 /*===== 오른쪽 제일끝 =====*/
 #slideban li:nth-child(7) {
@@ -174,13 +174,13 @@
     opacity: 1; /* 안보임 */
 }
 /* 오른쪽 제일끝 */
-#slideban li:nth-child(7) {
+/* #slideban li:nth-child(7) {
     top: 5%;
     left: -300%;
     transform: scale(0.7);
     filter: grayscale(50%);
-    opacity: 1; /* 안보임 */
-}
+    opacity: 1; 
+} */
 
 /*********** 이동버튼 설정 ***********/
 /* 공통 */
