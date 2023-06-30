@@ -121,7 +121,7 @@ function jqFn() {
 
       $("body").append(`
       <div class="kiss-imbx data-${saemi}">
-      <img src="../images/kiss.png" alt="입술이미지" />
+      <img src="./images/kiss.png" alt="입술이미지" />
       </div>
       `);
 
