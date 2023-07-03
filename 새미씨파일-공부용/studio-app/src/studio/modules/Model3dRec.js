@@ -58,7 +58,7 @@ export default function Model3dRec() {
     }
 
   } //////// SetImgSize 메서드 /////////
-  
+    
   return (
     <div className="cvswrap">
       <Canvas className="canvas_tit" camera={{ position: [useImgSize(), 0.1, useImgSize()] }}>
@@ -66,6 +66,7 @@ export default function Model3dRec() {
         {/* 조명설정 */}
         <spotLight/>
         <rectAreaLight/>
+        {/* 조명위치 / 밝기값 */}
         <pointLight position={[0, 20, 10]} intensity={1.5} />
         <ambientLight />
         
