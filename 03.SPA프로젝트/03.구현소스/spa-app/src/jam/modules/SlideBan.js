@@ -101,11 +101,72 @@ function jqFn() {
             $('#slideban').append($('#slideban li').first())
             // 우클릭은 좌클릭과 반대로 
             
-            // li.eq(6).css({
+                
+            // li.eq(0).css({
+            //     transition : '1s',
+            //     top: "-10%",
+            //     left: "-210%",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+            
+            // li.eq(1).css({
+            //     transition : '1s',
+            //     top: "-25%",
+            //     left: "-110%",
+            //     transform: "scale(0.9)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+            
+            // li.eq(2).css({
+            //     transition : '1s',
+            //     top: "-30%",
+            //     left: "0%",
+            //     transform: "scale(1)",
+            //     filter: "grayscale(0%)",
+            // });
+            
+            // li.eq(3).css({
+            //     transition : '1s',
+            //     top: "-25%",
+            //     left: "110%",
+            //     transform: "scale(0.9)",
+            //     filter: "grayscale(50%)",
+            // });
+            
+            // li.eq(4).css({
             //     transition : '1s',
             //     top: "-10%",
             //     left: "210%",
             //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            // });
+            
+            // li.eq(5).css({
+            //     transition : '1s',
+            //     top: "5%",
+            //     left: "300%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+            
+            // li.eq(6).css({
+            //     transition : '1s',
+            //     top: "5%",
+            //     left: "-300%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+            ////////////////////////////    
+            // li.eq(6).css({
+            //     transition : '1s',
+            //     top: "-10%",
+            //     left: "210%",
+            //     // transform: "scale(0.7)",
             //     filter: "grayscale(50%)",
             //     opacity: "1",
             // });
