@@ -189,10 +189,12 @@
 /* 공통 */
 .abtn {
     position: absolute;
-    top: 38%;
+    top: 70%;
+    /* top: 38%; */
     transform: translateY(-50%);
-    width: 4%;
-    max-width: 55px;
+    width: 6%;
+    /* width: 4%; */
+    max-width: 80px;
     /* 최대크기지정 */
 }
 .abtn img {
@@ -200,9 +202,11 @@
 }
 /* 오른쪽버튼 */
 .rbtn {
-    right: 30%;
+    right: 47%;
+    /* right: 30%; */
 }
 /* 왼쪽버튼 */
 .lbtn {
-    left: 30%;
+    display: none;
+    left: 48%;
 }

@@ -712,6 +712,95 @@ ___________________________________
 - ★ 푸터 흐르는텍스트 width를 변경했더니 처음에 이미지가 눌려서 보임
   ->  height 값이 오토 -> 값을 못 읽는다고 동호씨가 그러네요
   -> div 안에 이미지 4개 넣고 
+_____________________________________________
+2023.08.31
+슬라이드배너 오른쪽 버튼 보관용 js
+SlideBan.js lbtn밑에 제이쿼리 구역에 위치
+rbtn.on("click", function (e) {
+
+            console.log("우클릭");
+
+            e.preventDefault();
+
+            $('#slideban').append($('#slideban li').first())
+            // 우클릭은 좌클릭과 반대로 
+           
+
+            ////////////////////////////    
+            // li.eq(6).css({
+            //     transition : '1s',
+            //     top: "-10%",
+            //     left: "210%",
+            //     // transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+            // li.eq(5).css({
+            //     transition : '1s',
+            //     top: "-25%",
+            //     left: "110%",
+            //     transform: "scale(0.9)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+            // li.eq(4).css({
+            //     transition : '1s',
+            //     top: "-30%",
+            //     left: "0%",
+            //     transform: "scale(1)",
+            //     filter: "grayscale(0%)",
+            // });
+            
+            // li.eq(3).css({
+            //     transition : '1s',
+            //     top: "-25%",
+            //     left: "-110%",
+            //     transform: "scale(0.9)",
+            //     filter: "grayscale(50%)",
+            // });
+            
+            // li.eq(2).css({
+            //     transition : '1s',
+            //     top: "-10%",
+            //     left: "-210%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            // });
+            
+            // li.eq(1).css({
+            //     transition : '1s',
+            //     top: "5%",
+            //     left: "-300%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+            
+            // li.eq(0).css({
+                
+            //     transition : '1s',
+            //     top: "5%",
+            //     left: "300%",
+            //     transform: "scale(0.7)",
+            //     filter: "grayscale(50%)",
+            //     opacity: "1",
+            // });
+
+                
+
+
+            // 어펜드 - 요소를 맨끝으로 옮겨줌
+            // 누굴? li의 맨 첫번째를
+            // 어디로? 슬라이드이 맨끝으로
+            
+
+
+
+
+
+        });
 
 
 

@@ -93,6 +93,7 @@ function jqFn() {
 
             
         });
+
         rbtn.on("click", function (e) {
 
             console.log("우클릭");
@@ -101,66 +102,6 @@ function jqFn() {
 
             $('#slideban').append($('#slideban li').first())
             // 우클릭은 좌클릭과 반대로 
-            
-            li.eq(6).css({
-                transition : '1s',
-                top: "5%",
-                left: "-300%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
-            
-            li.eq(5).css({
-                transition : '1s',
-                top: "5%",
-                left: "300%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
-            
-            li.eq(4).css({
-                transition : '1s',
-                top: "-10%",
-                left: "210%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-            });
-            
-            li.eq(3).css({
-                transition : '1s',
-                top: "-25%",
-                left: "110%",
-                transform: "scale(0.9)",
-                filter: "grayscale(50%)",
-            });
-            
-            li.eq(2).css({
-                transition : '1s',
-                top: "-30%",
-                left: "0%",
-                transform: "scale(1)",
-                filter: "grayscale(0%)",
-            });
-            
-            li.eq(1).css({
-                transition : '1s',
-                top: "-25%",
-                left: "-110%",
-                transform: "scale(0.9)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
-            
-            li.eq(0).css({
-                transition : '1s',
-                top: "-10%",
-                left: "-210%",
-                transform: "scale(0.7)",
-                filter: "grayscale(50%)",
-                opacity: "1",
-            });
            
 
             ////////////////////////////    
@@ -238,6 +179,12 @@ function jqFn() {
 
 
         });
+        
+        
+
+
+
+
     }); /////// jQB ////////
 } ///////////// jqFn /////////////
 
@@ -260,6 +207,10 @@ function SlideBan(props) {
                 </div>
 
                 {/* 이동버튼 */}
+                {/* <a href="#" className="abtn lbtn">
+                    <img src="./images/btn.png" alt="배너이동버튼" />
+                </a> */}
+
                 <a href="#" className="abtn lbtn">
                     <img src="./images/lbtn.png" alt="왼쪽이동버튼" />
                 </a>
